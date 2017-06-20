@@ -1,0 +1,18 @@
+---
+title: "Giraffe."
+author: "Clemens Schmid"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: ["references.bib"]
+output:
+  bookdown::gitbook: default
+  bookdown::pdf_book: default
+---
+
+# Notizen
+
+Theoretische Position der Arbeit im Spannungsfeld Prozessuale&Post-Prozessuale Archäologie:
+
+[@renfrew_towards_1994, 3-5]
+
+# Referenzen
