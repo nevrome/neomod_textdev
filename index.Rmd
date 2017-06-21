@@ -9,4 +9,20 @@ output:
   bookdown::pdf_book: default
 ---
 
-# Kommentar
+# Inhaltsplanung
+
+- Einführung
+    - Theoretische Grundlagen (vier Säulen)
+        - $^1$/$_6$ Cognitive Archaeology
+        - $^1$/$_6$ Meme
+        - $^1$/$_6$ Agentenbasierte Modellierung
+        - $^1$/$_2$ Neolithisierung 
+    - Fragestellung
+- Daten und Methode
+    - Welt
+    - Agenten
+    - Interaktion
+- Ergebnisse
+- Diskussion
+
+
