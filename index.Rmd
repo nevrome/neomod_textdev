@@ -9,10 +9,4 @@ output:
   bookdown::pdf_book: default
 ---
 
-# Notizen
-
-Theoretische Position der Arbeit im Spannungsfeld Prozessuale&Post-Prozessuale Archäologie:
-
-[@renfrew_towards_1994, 3-5]
-
-# Referenzen
+# Kommentar
