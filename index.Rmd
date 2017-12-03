@@ -1,5 +1,5 @@
 ---
-title: "Giraffe."
+title: "Ein computerbasiertes Cultural Evolution Modell am Fallbeispiel europäisch-bronzezeitlicher Bestattungssitten"
 author: "Clemens Schmid"
 site: "bookdown::bookdown_site"
 output:
@@ -10,5 +10,6 @@ bibliography: ["references.bib"]
 link-citations: yes
 ---
 
-# Inhaltsplanung {-}
+# Abstract {-}
 
+...
