@@ -1,1 +1,32 @@
 # Cultural Evolution
+
+Die Grundaussage der *Cultural Evolution Theorie* ist, dass die Prozesse der natürlichen Entwicklung von Spezies durch Evolution auch bei der menschlichen Kulturentwicklung wirken. Mechanismen der Evolution wie Selektion und Mutation sind die entscheidenden Kräfte, deren Wirkung entscheidet, welche Ideen und Innovationen sich langfristig durchsetzen. Entsprechend kann Neo-Darwinistische Terminologie und Modellbildung zumindest eingeschränkt auch in anthropologischen Kontexten sinnvoll eingesetzt werden. 
+
+*Cultural Evolution Theorie* wird in der archäologischen Fachliteratur vor allem als *Darwinian Archaeology* oder *Evolutionary Archaeology* diskutiert. Daneben gibt es eine ganze Reihe weiterer Begriffe und Schulen, die alle thematisch mit Nuancen sehr ähnliche Grundaussagen vertreten. Das ist kein rein archäologisches Forschungsgebiet: Verhaltensbiologie, Neurologie, Genetik, Soziologie und verschiedene Anthropologische Fächer haben in diesem Kontext eigene theoretische Überlegungen mit unterschiedlichen Schwerpunkten hervorgebracht. 
+
+Eric Aldan Smith unterscheidet drei große Strömungen^[ @SmithThreestylesevolutionary2000. Stephen Shennan greift diese Unterscheidung auf [@ShennanGenesmemeshuman2002, 15-18.]] in der Untersuchung menschlichen Verhaltens aus einer Evolutionsperspektive:
+
+1. *Evolutionary psychology*:
+
+2. *Behavioural ecology*:
+
+3. *Dual inheritance theory*:
+
+Smith legt seinem Artikel Tabelle \@ref(tab:smiththreestyles) bei, die Unterschiede der Strömungen übersichtlich darstellt.
+
+Table: (\#tab:smiththreestyles) Caption here.
+
+|   | Evolutionary psychology | Behavioural ecology | Dual inheritance theory |
+|---|---|---|---|
+| What is being explained: | Psychological mechanisms | Behavioural strategies | Cultural evolution |
+| Key constraints: | Cognitive, genetic | Ecological, material | Structural, information |
+| Temporal scale of adaptive change: | Long-term (genetic) | Short-term (phenotypic) | Medium-term (cultural) |
+| Expected current adaptiveness: | Lowest | Highest | Intermediate |
+| Hypothesis generation: | Informal inference | Optimality models | Population-level models |
+| Hypothesis-testing methods: | Survey, lab experiment | Quantitative ethnographic observartion | Mathematical modelling and simulation |
+| Favoured topics: | Mating, parenting, sex differences | Subsistence, reproductive strategies | Large-scale cooperation, maladaptation |
+
+
+
+
+
