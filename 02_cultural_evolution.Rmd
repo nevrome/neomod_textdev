@@ -1,23 +1,25 @@
 # Cultural Evolution
 
+## Definition und Forschungsstand
+
 Die Grundaussage der *Cultural Evolution Theorie* ist, dass die Prozesse der natürlichen Entwicklung von Spezies durch Evolution auch bei der menschlichen Kulturentwicklung wirken. Mechanismen der Evolution wie Selektion und Mutation sind die entscheidenden Kräfte, deren Wirkung entscheidet, welche Ideen und Innovationen sich langfristig durchsetzen. Entsprechend kann Neo-Darwinistische Terminologie und Modellbildung zumindest eingeschränkt auch in anthropologischen Kontexten sinnvoll eingesetzt werden. 
 
 *Cultural Evolution Theorie* wird in der archäologischen Fachliteratur vor allem als *Darwinian Archaeology* oder *Evolutionary Archaeology* diskutiert. Daneben gibt es eine ganze Reihe weiterer Begriffe und Schulen, die alle thematisch mit Nuancen sehr ähnliche Grundaussagen vertreten. Das ist kein rein archäologisches Forschungsgebiet: Verhaltensbiologie, Neurologie, Genetik, Soziologie und verschiedene Anthropologische Fächer haben in diesem Kontext eigene theoretische Überlegungen mit unterschiedlichen Schwerpunkten hervorgebracht. 
 
 Eric Aldan Smith unterscheidet drei große Strömungen^[ @SmithThreestylesevolutionary2000. Stephen Shennan greift diese Unterscheidung auf [@ShennanGenesmemeshuman2002, 15-18.]] in der Untersuchung menschlichen Verhaltens aus einer Evolutionsperspektive:
 
-1. *Evolutionary psychology*:
+1. *Evolutionary psychology* konzentriert sich auf die Entwicklung des menschlichen Denkens vor dem Hintergrund seiner evolutionären Geschichte. Selektiver Druck im Kontext einer *Environment of Evolutionary Adaptiveness (EEA)* habe zur Ausbildung spezialisierter Verhaltensmodule geführt, die sich maßgeblich auf die Umgebung Pleistozäner Jäger- und Sammler beziehen. Da der Mensch überwältigend größten Teil seiner Entwicklung in diesem Bezugsrahmen erlebt hat, könnte davon ausgegangen werden, dass er beispielsweise ideal an das nomadische Leben in kleinen Gruppen in großer gegenseitiger Abhängigkeit angepasst sei. Der *Evolutionary psychology* wird vorgeworfen, die unangemessen vereinfachende Annahmen über vorgeschichtliches Verhalten zu treffen, ohne sich ausreichend mit jenen archäologischen Daten und Auswertungsergebnissen auseinanderzusetzen, die eine Rekonstruktion der tatsächlichen Lebensverhältnisse in der Vorgeschichte erlauben würden^[@ShennanGenesmemeshuman2002, 15.]. Aus archäologischer Perspektive greift unter anderem @Mithenprehistorymindsearch1996 *Evolutionary psychology* auf.
 
-2. *Behavioural ecology*:
+2. *Behavioural ecology* nimmt den klassisch-darwinistischen Standpunkt ein, Menschen und menschliches Verhalten könnte ebenso wie tierisches als permanente Maximierung des Reproduktionserfolgs durch Selektion verstanden werden. Bewusste oder unbewusste Entscheidungen würden hinsichtlich der Frage getroffen werden, inwiefern das Ergebnis den Erhalt der eigenen genetischen Information gewährleistet. Die Vielfalt menschlichen Verhaltens würde sich aus der gleichermaßen großen Diversität biologischer- und sozialer Nischen erklären, die sehr viele unterschiedliche Strategien ermöglicht. Die Wirkung von Kultur (hier: vererbtes Verhalten) in diesem Kontext sei untergeordnet, da erfolglose Strategien unabhängig davon in wenigen Generationen durch biologische Selektion aussterben würden^[@ShennanGenesmemeshuman2002, 16.].  
 
-3. *Dual inheritance theory*:
+3. *Dual inheritance theory* stellt sich gegen die Aussage, menschliches Verhalten könnte nur in Hinblick auf Reproduktionserfolg erklärt werden. Um das zu rechtfertigen postuliert sie neben der Vererbung von Genen ein zweites Vererbungssystem von Ideen und Kulturmerkmalen. Auch diese würden von Generation zu Generation, von Person zu Person und von Tag zu Tag weitergereicht und stünden unter dem Einfluss von Selektion zu Mutation. Da diese Einflüsse in anderen zeitlichen, räumlichen und kausalen Maßstäben agieren würden als jene, die bei Genen wirken, könnte diese Theorie auch das Auftreten von Verhaltensmerkmalen erklären, dass aus einer Reproduktionsperspektive nicht sinnvoll ist. Die beiden Vererbungssysteme könnten unabhängig und in ihrer Interaktion erforscht werden, wobei Konzepte zur Erklärung des einen potentiell auch zur Erklärung im anderen geeignet sein könnten^[@ShennanGenesmemeshuman2002, 16-17.]. 
 
 Smith legt seinem Artikel Tabelle \@ref(tab:smiththreestyles) bei, die Unterschiede der Strömungen übersichtlich darstellt.
 
-Table: (\#tab:smiththreestyles) Caption here.
+Table: (\#tab:smiththreestyles) Three Styles of Evolutionary Explanation (nach [@SmithThreestylesevolutionary2000]).
 
 |   | Evolutionary psychology | Behavioural ecology | Dual inheritance theory |
-|---|---|---|---|
+|---------------------|---------------------|---------------------|---------------------|
 | What is being explained: | Psychological mechanisms | Behavioural strategies | Cultural evolution |
 | Key constraints: | Cognitive, genetic | Ecological, material | Structural, information |
 | Temporal scale of adaptive change: | Long-term (genetic) | Short-term (phenotypic) | Medium-term (cultural) |
@@ -26,7 +28,13 @@ Table: (\#tab:smiththreestyles) Caption here.
 | Hypothesis-testing methods: | Survey, lab experiment | Quantitative ethnographic observartion | Mathematical modelling and simulation |
 | Favoured topics: | Mating, parenting, sex differences | Subsistence, reproductive strategies | Large-scale cooperation, maladaptation |
 
+### Memetik
 
+### Cultural Virus Theorie
+
+## Synthese
+
+## Kritik
 
 
 

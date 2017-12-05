@@ -3,8 +3,8 @@ title: "Ein computerbasiertes Cultural Evolution Modell am Fallbeispiel europäi
 author: "Clemens Schmid"
 site: "bookdown::bookdown_site"
 output:
-  bookdown::gitbook: default
-  #bookdown::pdf_book: default
+  #bookdown::gitbook: default
+  bookdown::pdf_book: default
 documentclass: book
 bibliography: ["references.bib"]
 link-citations: yes
