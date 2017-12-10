@@ -6,11 +6,12 @@ Die Grundaussage der *Cultural evolution theory* ist, dass die Prozesse der nat�
 
 *Cultural evolution theory* wird in der archäologischen Fachliteratur vor allem als *Darwinian Archaeology* oder *Evolutionary Archaeology* diskutiert. Daneben gab und gibt es in der Forschungsgeschichte eine ganze Reihe weiterer Begriffe und Schulen, die alle mit dem Evolutionsbegriff verknüpft sind, aber unterschiedliche Ansichten vertreten. Das ist kein rein archäologisches Forschungsgebiet: Unter anderem Verhaltensbiologie, Neurologie, Genetik, Soziologie und alle Anthropologischen Fächer sind betroffen und haben sich an dieser Diskussion beteiligt. Die Übertragung biologisch-evolutiver Wirkmechanismen zur Erklärung menschlichen Verhaltens war bereits Bestandteil der frühesten öffentlichen Debatte um Darwins Evolutionstheorie als seine Standartwerke *On the Origin of Species* ^[@Darwinoriginspeciesmeans1859] und *The Descent of Man*^[@Darwindescentmanselection1871] in der Fachwelt und Öffentlichkeit verarbeitet wurden^[**Zitat!**]. 
 
-Die biologische Forschung ist nicht bei Darwin stehen geblieben sondern hat sich über die Korrekturen im *Neodarwinismus* durch August Weismann und Alfred Russel Wallace um 1890, über die *Synthetische Theorie der biologischen Evolution* um 1940 und die *Erweiterte Synthetischen Theorie* Ende der 1990er weiterentwickelt^[**Zitat!** und **Ausbauen!**!].
+Die biologische Forschung ist nicht bei Darwin stehen geblieben sondern hat sich über die Korrekturen im *Neodarwinismus* durch August Weismann und Alfred Russel Wallace um 1890, über die *Synthetische Theorie der biologischen Evolution* um 1940 und die *Erweiterte Synthetischen Theorie* Ende der 1990er weiterentwickelt. **Ausbauen!**^[@bowler_evolution_1989]
 
 Parallel zu den Entwicklungen in den Naturwissenschaften -- allerdings mit geringen Wechselwirkungen -- wurde Evolutionstheorie auch im wissenschaftichen Diskurs der Sozialwissenschaften reflektiert. Eine erste wesentliche Spannungslinie, die hier betrachtet werden muss und die gerade in der Archäologie große Wirkung entfaltet hat, fragt nach der politisch-ökonomischen Konsequenz von Evolution. Sie reicht von *Evolutionismus* über *Neoevolutionismus* hin zu *Kulturrelativismus*  und *Multilinearer Evolution*.  
 
-*Evolutionismus* ist ...
+*Evolutionismus* ist ... @petermann_geschichte_2004
+
 *Evolutionismus* ist unter anderem Grundlage jener Rechtfertigung für Rassismus und Imperialismus, die heute zurecht als *Sozialdarwinismus* verurteilt wird^[@ShennanGenesmemeshuman2002, 11.].
 
 *Neoevolutionismus* erweitert ...
