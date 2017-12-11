@@ -10,7 +10,7 @@ Die biologische Forschung ist nicht bei Darwin stehen geblieben sondern hat sich
 
 Parallel zu den Entwicklungen in den Naturwissenschaften -- allerdings mit geringen Wechselwirkungen -- wurde Evolutionstheorie auch im wissenschaftichen Diskurs der Sozialwissenschaften reflektiert. Eine erste wesentliche Spannungslinie, die hier betrachtet werden muss und die gerade in der Archäologie große Wirkung entfaltet hat, fragt nach der politisch-ökonomischen Konsequenz von Evolution. Sie reicht von *Evolutionismus* über *Neoevolutionismus* hin zu *Kulturrelativismus*  und *Multilinearer Evolution*.  
 
-*Evolutionismus* ist ... @petermann_geschichte_2004
+*Evolutionismus* ist ...Karl Popper, L.L. Cavalli-Sforza, F.T. Cloak, J.M. Cullen  @petermann_geschichte_2004
 
 *Evolutionismus* ist unter anderem Grundlage jener Rechtfertigung für Rassismus und Imperialismus, die heute zurecht als *Sozialdarwinismus* verurteilt wird^[@ShennanGenesmemeshuman2002, 11.].
 
@@ -45,6 +45,19 @@ Table: (\#tab:smiththreestyles) Three Styles of Evolutionary Explanation (nach @
 
 ### Memetik
 
+Memetik (engl. *Memetics*) ist eine Variante der oben beschriebenen *Dual inheritance theory*. Der Begriff *Meme* wurde 1976 vom britischen Evolutionsbiologen Richard Dawkins in seinem Buch *The selfish gene* eingeführt^[@Dawkinsselfishgene1976. Ich werde im folgenden aus einer Neuauflage des Buches zitieren, die 2016 40 Jahre nach der Erstpublikation veröffentlicht und um Kommentare von Dawkins erweitert wurde: @Dawkinsselfishgene40th2016.]. Obgleich populärwissenschaftlich hat es doch in verschiedenen Fachbereichen beachtliche Rezeption erfahren und darf als Grundstein der Memetik gelten. 
+
+Dawkins führt in darin unter anderem einen wesentlichen Perspektivenwechsel durch, indem er Evolution nicht aus der Sicht der sich entwickelnden Organismen sondern aus der der Gene betrachtet. Gene würden -- freilich nicht bewusst -- Organismen als komplexe Vehikel für ihre eigene Reproduktion nutzen: *the gene's eye view*. **Ausbauen!**
+
+Es stellt sich die Frage, ob auch der Mensch diesen Prozessen uneingeschränkt unterworfen ist. Dawkins verneint das: Sein Kulturverhalten würde den Menschen von allen anderen bekannten Lebewesen abheben. Auch bei Tieren gibt es Verhaltensmuster, die unabhängig von genetischer Vererbung von Individuum zu Individuum weitergegeben werden: beispielsweise bestimmte Melodien des Gesangs von Singvögeln, die erwachsene Tiere voneinander lernen. Kein anderes Lebewesen erreicht jedoch das Niveau des Menschen, der Sprache, Mode, Ritual, Kunst, Architektur und Technologie besitzt und sie unter ständigen Anpassungen tradiert. Die Entwicklungen in diesen Bereichen über archäologische Zeiträume zeigt eine Tendenz hin zu zunehmend höherer Komplexität und Vielfalt. Geschwindigkeit und Diversität liegen weit jenseits dessen, was genetische Evolution zu leisten in der Lage wäre. Erklärungsversuche dafür von *Evolutionary psychology* und *Human behavioural ecology* empfindet Dawkins als unzureichend. Stattdessen abstrahiert er die von ihm postulierte Evolutionstheorie und führt den Begriff des *Replikators* ein. Wenn irgendeine Form von Replikatoren vorhanden sei, dann würde zwangsläufig Evolution stattfinden. Gene seien Replikatoren -- Ideen, Gedanken, *Meme* aber ebenso. Dawkins zelebriert den Moment der Schöpfung seines Neologismus theatralisch:  
+
+> I think that a new kind of replicator has recently emerged on this very planet. It ist staring us in the face. It is still in its infancy, still drifting clumsily about in its primeval soup, but already is it achieving evolutionary change at a rate that leaves the old gene panting far behind.
+The new soup is the soup of human culture. We need a name for the new replicator, a noun that conveys the idea of a unit of cultural transmission, or a unit of *imitation*. 'Mimeme' comes from a suitable Greek root, but I want a monosyllable that sounds a bit like 'gene'. I hope my classicist friends will forgive me if I abbreviate mimeme to meme. 
+>
+> -- @Dawkinsselfishgene40th2016, 291.
+
+
+^[@Dawkinsselfishgene40th2016, 287-]
 
 
 ### Cultural Virus Theorie
