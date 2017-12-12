@@ -4,7 +4,9 @@ author: "Clemens Schmid"
 site: "bookdown::bookdown_site"
 output:
   #bookdown::gitbook: default
-  bookdown::pdf_book: default
+  bookdown::pdf_book:
+    toc: true
+    toc_depth: 3
 documentclass: book
 bibliography: ["references.bib"]
 link-citations: yes
