@@ -1,1 +1,19 @@
 # Bestattungsritus in der Europäischen Bronzezeit
+
+## Wahl des Fallbeispiels
+
+Ziel dieser Arbeit ist die Formulierung eines computerbasierten Cultural Evolution Modells. Um die Sinnhaftigkeit dieses Ansatzes zu erforschen, ist es unerlässlich ein Fallbeispiel heranzuziehen, das potentiell geeignet ist durch ein solches abgebildet zu werden. Für den Kontext des Fallbeispiels sollen sich idealerweise Synergieeffekte ergeben. Das heißt, das Modell sollte geeignet sein, archäologische Fragestellungen in seinem Kontext zu beantworten oder zumindest aus einer neuen Perspektive zugänglich zu machen. Scheitert dies, so ist zwar nicht der gesamte Ansatz zu verwerfen, jedoch darf die Nützlichkeit der Methode aus archäologischer Perspektive in Zweifel gezogen werden. 
+
+Die Wahl des Fallbeispiels hat also wesentliche Konsequenzen für das Gesamtergebnis der Arbeit. Konkret drückt sich das etwa in der Natur der untersuchten Meme und Memeplexe aus: Unmittelbar funktional relevante Meme, die z.B. eine Veränderung der Subsistenzsstrategie hervorrufen, sind anders zu analysieren als Modememe in Keramikverzierung und Gewandschmuck. Jedes Fallbeispiel ist über eine Auswahl archäologischer Daten zugänglich. Diese sind höchst heterogen strukturiert, mit unterschiedlichen Zielsetzungen -- meist nicht der, einer Cultural Evolution Analyse -- aufgenommen und decken sehr verschiedene zeitliche und geographische Räume und Skalenniveaus ab. Ideal wäre sicher, selbst Daten zu zu einzelnen Memen und deren Entwicklung zu sammeln. Das ist aber im Rahmen dieser Arbeit nicht machbar, ohne viel Zeit zu verlieren, die für theoretische Vorüberlegungen sowie die Modellimplementierung und -Analyse investiert werden sollte. Die Suche nach einem Fallbeispiel war aus dieser Konsequenz gleichermaßen die Suche nach einem Datensatz, bei dem Anküpfungspunkte zur Modellidee zu erwarten waren. 
+
+Ein spezielles Subset der C14-Datenbank Radon-B^[@jutta_kneisel_radon-b_2013] erfüllt diese Bedingung. 
+
+## Vorüberlegungen zur Archäologischen Untersuchung von Bestattungen
+
+## Räumliche und zeitliche Trends im Bestattungsritus der Bronzezeit 
+
+### Körperbestattung und Brandbestattung
+
+### Flachgrab und Hügelgrab
+
+## Fragestellungen
