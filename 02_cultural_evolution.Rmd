@@ -62,6 +62,19 @@ Meme seien kleine abgrenzbare Informationseinheiten wie Melodien, Geflügelte Wo
 > 
 > -- @Dawkinsselfishgene40th2016, 292.
 
+Warum ist das menschliche Gehirn empfänglich für Meme? Gibt es einen klassisch evolutionären Vorteil von dieser Empfänglichkeit? Nach Dawkins ist die grundsätzliche Kulturfähigkeit des Menschen durchaus ein Effekt genetischer Mutation und Selektion. Ab einem gewissen Punkt -- in fließendem Übergang -- wäre allerdings der Replikator Meme im Kulturraum entstanden und hätte die Zügel in die Hand genommen. Die genetische Evolution habe also den Nährboden bzw. das Medium einer neuen, viel schnelleren Form der Evolution geschaffen.
+
+> Whenever conditions arise in which a new kind of replicator *can* make copies of itself, the new replicators *will* tend to take over, and start a new kind of evolution of their own. Once this new evolution begins, it will in no necessary sense be subservient to the old. 
+> 
+> -- @Dawkinsselfishgene40th2016, 293.
+
+Wenn nun auch im Medium Kultur die Mechanismen der Evolution wirken würden, dann müssten sich die Replikatoren Meme dem selben Druck beugen wie die Gene in der natürlichen Umwelt. Überleben könnten nur Replikatorenvarianten mit einer hohen Qualität der Eigenschaften *longevity*, *fecundity* und *copyying-fidelity*^[@Dawkinsselfishgene40th2016, 47-49.].
+
+*longevity* -- Langlebigkeit -- wäre eine günstige Eigenschaft für einen Replikatortyp, da er seinen Gesamtbestand im Medium so einerseits leicht hoch halten kann und außerdem mehr Zeit für Reproduktion zur Verfügung steht. 
+
+*fecundity* -- Fruchtbarkeit -- wäre für die Durchsetzungsfähigkeit eines Replikatortyps noch wichtiger als *longevity*: Um so mehr Kopien er in kürzerer Zeit von sich selbst anfertigen kann, desto schneller wird er das Medium dominieren. 
+
+*copyying-fidelity* -- Kopiertreu -- scheint hier zunächst deplaziert. Ein gewisser Grad an Mutationsfähigkeit ist unerlässlich für Anpassung. Tritt allerdings bei einem Replikatortyp eine zu große Instabilität auf, so argumentiert Dawkins, könnte er seine Identität nicht aufrechterhalten und würde entweder schnell von Varianten abgelöst, die aus ihm selbst vervorgegangen sind, oder sich völlig auflösen. 
 
 ### Cultural Virus Theorie
 
