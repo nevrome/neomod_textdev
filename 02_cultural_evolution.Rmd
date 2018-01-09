@@ -8,15 +8,15 @@ Die Grundaussage der *Cultural evolution theory* ist, dass die Prozesse der nat�
 
 Die biologische Forschung ist nicht bei Darwin stehen geblieben sondern hat sich über die Korrekturen im *Neodarwinismus* durch August Weismann und Alfred Russel Wallace um 1890, über die *Synthetische Theorie der biologischen Evolution* um 1940 und die *Erweiterte Synthetischen Theorie* Ende der 1990er weiterentwickelt. **Ausbauen!**^[@bowler_evolution_1989]
 
-Parallel zu den Entwicklungen in den Naturwissenschaften -- allerdings mit geringen Wechselwirkungen -- wurde Evolutionstheorie auch im wissenschaftichen Diskurs der Sozialwissenschaften reflektiert. Eine erste wesentliche Spannungslinie, die hier betrachtet werden muss und die gerade in der Archäologie große Wirkung entfaltet hat, fragt nach der politisch-ökonomischen Konsequenz von Evolution. Sie reicht von *Evolutionismus* über *Neoevolutionismus* hin zu *Kulturrelativismus*  und *Multilinearer Evolution*.  
+Parallel zu den Entwicklungen in den Naturwissenschaften -- allerdings mit allgemein geringen Wechselwirkungen -- wurde Evolutionstheorie auch im wissenschaftichen Diskurs der Sozialwissenschaften reflektiert. Eine erste wesentliche Spannungslinie, die hier betrachtet werden muss, reicht von *Evolutionismus* über *Neoevolutionismus* hin zu *Kulturrelativismus* und *Multilinearer Evolution*. Sie hat in der Archäologie große Wirkung entfaltet und ist untrennbar mit der Geschichte des Faches verknüpft.     
 
-*Evolutionismus* ist ...Karl Popper, L.L. Cavalli-Sforza, F.T. Cloak, J.M. Cullen  @petermann_geschichte_2004
-
-*Evolutionismus* ist unter anderem Grundlage jener Rechtfertigung für Rassismus und Imperialismus, die heute zurecht als *Sozialdarwinismus* verurteilt wird^[@ShennanGenesmemeshuman2002, 11.].
+Klassischer *Evolutionismus* ist ein Überbegriff für die erste Übertragung biologischer Evolutionsforschung auf die Kulturgeschichte. Er betont den Aspekt des Aufstiegs und der Zunahme organisatorischer Komplexität. Die menschliche Kultur hätte sich über mehrere Fortschrittssstufen von einem primitiven Urzustand zur modernen Industriegesellschaft weiterentwickelt. Die Beschreibung einer Kultur kann vor diesem Hintergrund in sehr einfachen Begriffen und mit wenigen Parametern erfolgen^[Brockhaus (Zitat nachtragen)]. Bei der ersten Formulierung Evolutionistischer Theorie hat Darwins Werk jedoch nur eine untergeordnete Rolle gespielt. Protagonisten wie Herbert Spencer und John Lubbok orientierten sich stattdessen z.B. an Charles Lyell, der in der ersten Hälfte des 19. Jahrhunderts mit den geologischen Schlüsselprinzipien *Aktualismus* (rezente, natürliche Phänomene haben so auch in der Vergangenheit stattgefunden) und *Gradualismus* (geologischer Wandel ist langsam und stetig) wesentliche Grundlagen für die Evolutionsforschung gelegt hatte. Die Prinzipien gaben der stratigraphischen Vergesellschaftung menschlicher Skelettüberreste mit Pleistozänen Tierknochen eine neue Bedeutung, die eine auf breiter Front *vergleichende Methode* rechtfertigte. Damit wurden vorgeschichtliche Gesellschaften dem Vergleich mit 'primitiven', rezenten Gesellschaften zugänglich. Evolutionismus konzentrierte sich nicht auf Mechanismen der Evolution wie Mutation und Selektion, sondern griff ein dem Kapitalismus entlehntes Konzept von Wettbewerb und Weiterentwicklung der Kulturen auf, das durch Vergleich mit rezenten Gesellschaften und deren Organisationsgrad versteh- und kategorisierbar geworden war. Die Evolutionisten bildeten keine kohärente Schule. Stattdessen wurde eine Gruppe von Individuen -- maßgeblich Herbert Spencer, John Ferguson McLennan, Edward Burnett Tylor und Lewis Henry Morgan -- abschätzig von Gegnern mit diesem Begriff belegt. Tatsächlich ist dem Evolutionismus vorzuwerfen, die Aussagekraft materieller Kultur über die soziale Organisation vorgeschichtlicher Gesellschaften positivistisch überbewertet zu haben. Auch hat die Konzentration auf progressive Entwicklungsabläufe zu falschen ethnologischen Beobachtungen geführt^[@petermann_geschichte_2004, 464-474.]. Zuletzt ist die vorgenommene Abgrenzung zivilisatorischer Entwicklungsstufen eine Grundlage jener Rechtfertigung für Rassismus und Imperialismus, die heute als *Sozialdarwinismus* verurteilt wird^[@ShennanGenesmemeshuman2002, 11.].     
 
 *Neoevolutionismus* erweitert ...
 
-*Kulturrelativismus* und *Multilineare Evolution* sind schließlich ...
+*Kulturrelativismus* und *Multilineare Evolution* sind ebenfalls neowvolutionistische Theorien ...
+
+Karl Popper, L.L. Cavalli-Sforza, F.T. Cloak, J.M. Cullen 
 
 Eine neue Welle der Auseinandersetzung mit Kulturevolution gewinnt Mitte der 1970er Jahre an Dynamik. Sie lenkt das Interesse weg von Politik und Gesellschaftsstruktur, sondern abstrahiert auf die basalen Grundzüge menschlichen Denkens. Von entscheidender Bedeutung für die Entstehung dieser Strömungen sind Edward O. Wilsons *Sociobiology: The New Synthesis*^[@WilsonSociobiologynewsynthesis1975] und Richard Dawkins *The Selfish Gene*^[@Dawkinsselfishgene1976], auf das unten genauer eingegangen werden soll^[@SmithThreestylesevolutionary2000, 27. **Ausbauen!**].  Um die Jahrtausendwende unterscheidet Eric Aldan Smith schließlich drei große Strömungen^[ @SmithThreestylesevolutionary2000. Stephen Shennan greift diese Unterscheidung auf [@ShennanGenesmemeshuman2002, 15-18.]] in der Untersuchung menschlichen Verhaltens aus einer Evolutionsperspektive: *Evolutionary psychology*, *Human behavioural ecology* und *Dual inheritance theory*.
 
@@ -104,9 +104,14 @@ Das wirft die philosophische Frage auf, inwiefern Menschen Sklaven ihrer Gene un
 
 ### Dawkins Schüler
 
-Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes Meme erwiesen. Die Grundidee ist in den Strömungen der *Dual Inheritance theory* aufgegangen, aber auch die Memetik an sich hat sich über dieses intitiale Kapitel hinaus weiterentwickelt. Maßgeblichen Anteil daran hatten unter anderem die Psychologin Susan Blackmoore, der Philosoph Daniel Dennett und all jene Natur- und Geisteswissenschaftler, die sich im mittlerweile eingestellten Journal of Memetics zu Wort gemeldet haben.
+Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes Meme erwiesen. Die Grundidee ist in den Strömungen der *Dual Inheritance theory* aufgegangen, aber auch die Memetik an sich hat sich über dieses intitiale Kapitel hinaus weiterentwickelt. Maßgeblichen Anteil daran hatten unter anderem die Psychologin Susan Blackmoore, der Philosoph Daniel Dennett und all jene Natur- und Geisteswissenschaftler, die sich im mittlerweile eingestellten Journal of Memetics^[http://cfpm.org/jom-emit/ [06.01.2018]] zu Wort gemeldet haben.
+
+**Ausbauen!**
+
+Susan Blackmores Buch *The meme machine*^[@blackmore_meme_1999. Ich werde im folgenden aus einer mir vorliegenden, deutschen Ausgabe zitieren: @blackmore_macht_2000.]...
 
 ## Jenseits der Memetik: Cultural Evolution in der Archäologie
+
 
 Fokus Archäologie, weil eine Übersicht über alle Strömungen viel zu umfangreich wäre. Schon so nicht bewältigbar. 
 
