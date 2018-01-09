@@ -8,6 +8,7 @@ output:
     toc: true
     toc_depth: 3
 documentclass: book
+classoption: openany
 bibliography: ["references.bib"]
 link-citations: yes
 ---
