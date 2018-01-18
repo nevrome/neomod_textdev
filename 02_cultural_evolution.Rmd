@@ -114,16 +114,25 @@ Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes 
 
 Susan Blackmores Buch *The meme machine*^[@blackmore_meme_1999. Ich werde im folgenden aus einer mir vorliegenden, deutschen Ausgabe zitieren: @blackmore_macht_2000.]...
 
+### Kritik und Abgesang
+
+http://jom-emit.cfpm.org/2002/vol6/edmonds_b_letter.html
+http://jom-emit.cfpm.org/2005/vol9/edmonds_b.html
+
 ## Jenseits der Memetik: Cultural Evolution in der Archäologie
 
+Cultural Virus Theorie, Diffusion of Innovation, Cognitive Archaeology, Systemdynamik
 
-Fokus Archäologie, weil eine Übersicht über alle Strömungen viel zu umfangreich wäre. Schon so nicht bewältigbar. 
+## (Computerbasierte) Modellierung
 
-### Cultural Virus Theorie
+Cultural Evolution theory ist angelegt zur Modellbildung in Anthropologischen Wissenschaften. Edmonds definierte Memetik vor seiner oben nachvollzogenen Abkehr folgendermaßen:
 
-## Kritik
+> the application of models with an evolutionary or genetic *structure* to the *domain* of (cultural) information transmission. 
+>
+> -- @edmonds_modelling_1998
 
-## Computerbasierte Modellierung
+Im selben Artikel *On Modelling in Memetics* aus dem 2. Band des Journal of Memetics weist er aber bereits auf Risiken der Modellierung in diesem Kontext hin und formuliert Anforderungen. 
 
+### Agentenbasierte Modellierung
 
-
+### The memes’ eye view
