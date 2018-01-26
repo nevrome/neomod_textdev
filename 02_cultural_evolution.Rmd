@@ -47,7 +47,7 @@ Table: (\#tab:smiththreestyles) Three Styles of Evolutionary Explanation (nach @
 | Hypothesis-testing methods: | Survey, lab experiment | Quantitative ethnographic observartion | Mathematical modelling and simulation |
 | Favoured topics: | Mating, parenting, sex differences | Subsistence, reproductive strategies | Large-scale cooperation, maladaptation |
 
-*Dual inheritance theory* ist in der archäologischen Forschung am intensivsten reflektiert worden und ist auch die theoretische Grundlage für das Modell, das für die vorliegende Arbeit entwickelt wurde. Es soll also im folgenden genauer beleuchtet werden. Um seine Geschichte nachzuzeichnen, möchte ich zunächst auf Richard Dawkins *Memetik* eingehen. 
+*Dual inheritance theory* ist in der archäologischen Forschung am intensivsten reflektiert worden und ist auch die theoretische Grundlage für das Modell, das für die vorliegende Arbeit entwickelt wurde. Es soll also im folgenden genauer beleuchtet werden. Um seine Ursprünge nachzuzeichnen, möchte ich zunächst auf Richard Dawkins *Memetik* eingehen. 
 
 ## Memetik
 
@@ -123,7 +123,8 @@ http://jom-emit.cfpm.org/2005/vol9/edmonds_b.html
 
 ## Jenseits der Memetik: Cultural Evolution in der Archäologie
 
-Cultural Virus Theorie, Diffusion of Innovation, Cognitive Archaeology, Systemdynamik
+Cultural Evolution ist heute ein wichtige theoretische Strömung der Archäologischen Forschung. Meist dient die Perspektive der Dual inheritance Theorie als Grundlage für abstrakte Modelle, Fallstudien und theoretische Weiterentwicklung. Besonders hervorgetan haben sich hier in den vergangenen 30 Jahren unter anderem Robert Boyd, Luigi Luca Cavalli-Sforza, Ben Sandford Cullen,  Marcus William Feldmann, Oren Kolodny, Alex Mesoudi, Michael John O’Brien, Stephen Shennan, Peter James Richerson und Patrice A. Teltser.
+ 
 
 ## (Computerbasierte) Modellierung
 
