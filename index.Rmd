@@ -7,6 +7,8 @@ output:
   bookdown::pdf_book:
     toc: true
     toc_depth: 3
+    includes:
+      in_header: preamble.tex
 documentclass: book
 classoption: openany
 bibliography: ["references.bib"]
