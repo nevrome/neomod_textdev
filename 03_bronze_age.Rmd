@@ -2,9 +2,9 @@
 
 ## Wahl des Fallbeispiels
 
-Ziel dieser Arbeit ist die Formulierung eines computerbasierten Cultural Evolution Modells. Um die Sinnhaftigkeit dieses Ansatzes zu erforschen, ist es unerlässlich ein Fallbeispiel heranzuziehen, das potentiell geeignet ist durch ein solches abgebildet zu werden. Für den Kontext des Fallbeispiels sollen sich idealerweise Synergieeffekte ergeben. Das heißt, das Modell sollte geeignet sein, archäologische Fragestellungen in seinem Kontext zu beantworten oder zumindest aus einer neuen Perspektive zugänglich zu machen. Scheitert dies, so ist zwar nicht der gesamte Ansatz zu verwerfen, jedoch darf die Nützlichkeit der Methode aus archäologischer Perspektive in Zweifel gezogen werden. 
+Ziel dieser Arbeit ist die Formulierung eines computerbasierten Cultural Evolution Modells, dass .... Um die Sinnhaftigkeit dieses Ansatzes zu erforschen, ist es unerlässlich ein Fallbeispiel heranzuziehen, das potentiell geeignet ist durch ein solches abgebildet zu werden. Für den Kontext des Fallbeispiels sollen sich idealerweise Synergieeffekte ergeben. Das heißt, das Modell sollte geeignet sein, archäologische Fragestellungen in seinem Kontext zu beantworten oder zumindest aus einer neuen Perspektive zugänglich zu machen. Scheitert dies, so ist zwar nicht der gesamte Ansatz zu verwerfen, jedoch darf die Nützlichkeit der Methode aus archäologischer Perspektive in Zweifel gezogen werden. 
 
-Die Wahl des Fallbeispiels hat also wesentliche Konsequenzen für das Gesamtergebnis der Arbeit. Konkret drückt sich das etwa in der Natur der untersuchten Meme und Memeplexe aus: Unmittelbar funktional relevante Meme, die z.B. eine Veränderung der Subsistenzsstrategie hervorrufen, sind anders zu analysieren als Modememe in Keramikverzierung und Gewandschmuck. Manche Meme sind äußerst erfolgreich, breiten sich über ganze4 Kontinente aus und bleiben über Jahrhunderte verhältnismäßig stabil, andere dagegen sind nur auf eine eine Siedlung beschränkt und überdauern nicht einmal ihre Schöpfergeneration. Jedes Fallbeispiel ist über eine Auswahl archäologischer Daten zugänglich. Diese sind höchst heterogen strukturiert, mit unterschiedlichen Zielsetzungen -- meist nicht der einer Cultural Evolution Analyse -- aufgenommen und decken, ebenso wie die Meme, die sie potentiell abbilden, sehr verschiedene zeitliche und geographische Spektren und Skalenniveaus ab. Ideal wäre sicher, selbst Daten zu zu einzelnen Memen und deren Entwicklung zu sammeln. Das ist aber im Rahmen dieser Arbeit nicht möglich, ohne viel Zeit zu verlieren, die für theoretische Vorüberlegungen sowie die Modellimplementierung und -Analyse investiert werden sollte. Die Suche nach einem Fallbeispiel war aus dieser Konsequenz gleichermaßen die Suche nach einem Datensatz, bei dem Anküpfungspunkte zur Modellidee zu erwarten waren. 
+Die Wahl des Fallbeispiels hat also wesentliche Konsequenzen für das Gesamtergebnis der Arbeit. Konkret drückt sich das etwa in der Natur der untersuchten Meme und Memeplexe aus: Unmittelbar funktional relevante Meme, die z.B. eine Veränderung der Subsistenzsstrategie hervorrufen, sind anders zu analysieren als Modememe in Keramikverzierung und Gewandschmuck. Manche Meme sind äußerst erfolgreich, breiten sich über ganze Kontinente aus und bleiben über Jahrhunderte verhältnismäßig stabil, andere dagegen sind nur auf eine eine Siedlung beschränkt und überdauern nicht einmal ihre Schöpfergeneration. Jedes Fallbeispiel ist über eine Auswahl archäologischer Daten zugänglich. Diese sind höchst heterogen strukturiert, mit unterschiedlichen Zielsetzungen -- meist nicht der einer Cultural Evolution Analyse -- aufgenommen und decken, ebenso wie die Meme, die sie potentiell abbilden, sehr verschiedene zeitliche und geographische Spektren und Skalenniveaus ab. Ideal wäre sicher, selbst Daten zu zu einzelnen Memen und deren Entwicklung zu sammeln. Das ist aber im Rahmen dieser Arbeit nicht möglich, ohne viel Zeit zu verlieren, die für theoretische Vorüberlegungen sowie die Modellimplementierung und -Analyse investiert werden sollte. Die Suche nach einem Fallbeispiel war aus dieser Konsequenz gleichermaßen die Suche nach einem Datensatz, bei dem Anküpfungspunkte zur Modellidee zu erwarten waren. 
 
 Ein spezielles Subset der C14-Datenbank Radon-B^[@jutta_kneisel_radon-b_2013] erfüllt diese Bedingung. 
 
@@ -13,6 +13,27 @@ Brandbestattung und Körperbestattung sind Meme, die schon lange vor Beginn der 
 Dieses Fallbeispiel beobachtet also vier eng verknüpfte Meme (Körperbestattung, Brandbestattung, Flachgrab, Hügelgrab) über eine gewisse Phase (2500-500calBC, Bronzezeit) ihrer eigentlich wesentlich längeren Entwicklung in einem gewissen Raum (Nord-, Ost und Westeuropa), der nur einen Auschnitt ihrer eigentlichen Verbreitung darstellt.
 
 ### Datensatz Radon-B
+
+...
+
+```{r cremation-inhumation-amount-development, echo = FALSE, fig.cap = "Abbildung"}
+knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/amount_development_regions_cremation_inhumation.jpeg")
+```
+
+```{r cremation-inhumation-proportion-development, echo = FALSE, fig.cap = "Abbildung"}
+knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/proportions_development_regions_cremation_inhumation.jpeg")
+```
+
+Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die C14-Daten in RADON-B räumlich und zeitlich verteilen. Für einzelne Regionen liegen für gewisse Zeiträume verhältnismäßig viele Daten vor, für die Mehrzahl der Regionen ist die Datenmenge allerdings sehr gering. Diese Ungleichverteilung der Daten kann viele verschiedene Gründe haben: 
+
+- Schwerpunkte der Datenaufnahme für RADON-B nach Forschungsinteressen der beteiligten Wissenschaftler.
+- Regionale und zeitliche Ausrichtung von Forschungsprojekten, in deren Rahmen die C14-Daten erstellt wurden. Damit zusammen hängt die politische Rahmensituation, die C14-Datierung in größerem Umfang z.B. in den Osteuropäischen Staaten erst nach dem Zusammenbruch der Sowjetunion möglich gemacht hat. 
+- Forschungstraditionen
+- Erhaltungssituation organischer Funde
+- Dateneingabe in RADON-B (Wo sind Grabmetainformationen beigelegt?)
+- weitere mögliche Bestattungsformen, die archäologisch nicht fassbar sind
+
+### Regionengliederung
 
 ...
 
@@ -28,14 +49,19 @@ Dieses Fallbeispiel beobachtet also vier eng verknüpfte Meme (Körperbestattung
 
 Gräber spielen in der Bronzezeitforschung traditionell eine wichtige Rolle.  
 
-In der europäischen Bronzezeit sind mehrere unterschiedliche Bestattungstraditionen unterscheidbar, die zeitlich und räumlich abgrenzbar unterschiedliche Entwicklungen durchlaufen. Dabei können zwei wesentliche Dimensionen abgegrenzt werden, entlang derer sich fast alle dokumentierten Grablegungen kategorisieren lassen: 1. Körperbestattungen im Gegensatz zu Brandbestattungen sowie 2. Flachgräber gegenüber überhügelten Gräbern. In diesem Spektrum gibt es breite Variaten hinsichtlich der Grabanlage- und Vergesellschaftung (z.B. Nachnutzung neolithischer Megalithanlagen, Gräberfelder, etc.), des Grabbaus (Särge, Totenhäuser, Bootsgräber etc.) der Beigabenauswahl, der Platzierung des Leichnams oder des investierten Aufwands für Bestattungszeremonie und Architektur. Angesichts dieser Variablenvielfalt ist Generalisierung und die Reduktion des Gesamtzusammenhangs auf die Spannungsfelder Körper- vs. Brandbestattung und Flach- vs. Hügelgrab einerseits schwierig und dennoch aus archäologischer Perspektive unerlässlich.
+In der europäischen Bronzezeit sind mehrere unterschiedliche Bestattungstraditionen unterscheidbar, die zeitlich und räumlich abgrenzbar unterschiedliche Entwicklungen durchlaufen. Dabei können zwei wesentliche Dimensionen abgegrenzt werden, entlang derer sich fast alle dokumentierten Grablegungen kategorisieren lassen: 1. Körperbestattungen im Gegensatz zu Brandbestattungen sowie 2. Flachgräber gegenüber überhügelten Gräbern. In diesem Spektrum gibt es breite Variaten hinsichtlich der Grabanlage- und Vergesellschaftung (z.B. Nachnutzung neolithischer Megalithanlagen, Gräberfelder, etc.), des Grabbaus (Särge, Totenhäuser, Bootsgräber etc.) der Beigabenauswahl, der Platzierung des Leichnams oder des investierten Aufwands für Bestattungszeremonie und Architektur. Angesichts dieser Variablenvielfalt ist Generalisierung und die Reduktion des Gesamtzusammenhangs auf die Spannungsfelder Körper- vs. Brandbestattung und Flach- vs. Hügelgrab schwierig.
 
-Kurz zusammengefasst besagt das klassische Narrativ der Entwicklung bronzezeitlicher Bestattungssitten folgendes: In der frühen und mittleren Bronzezeit dominieren Körperbestattungen in verschiedenen Variationen, während Überhügelung in der mittleren Bronzezeit zumindest in West- und Mitteleuropa an Bedeutung gewinnt. In der späten Bronzezeit wird Brandbestattung zum häufigsten Bestattungsbrauch. Darauf geht die Assoziation mit der Bezeichnung *Urnenfelderzeit* zurück. In der Frühbronzezeit konzentrieren sich Hügelgräber auf Teile des Balkans sowie Ost-, West- und Nordeuropa, während In Zentral- und Südeuropa (maßgeblich Italien und Spanien) Flachgräber dominieren. Es handelt sich dabei mehrheitlich um Körperbestattungen -- Brandgräber kommen in diesem Zeitfenster nur in der Ungarischen Tiefebene verstärkt vor^[harding_european_2000, 75-76. **Eigentlich Häuler 1977/1994/1996 -> ausbauen!**].
+Kurz zusammengefasst besagt das klassische Narrativ der Entwicklung bronzezeitlicher Bestattungssitten folgendes: In der frühen und mittleren Bronzezeit dominieren Körperbestattungen in verschiedenen Variationen. Brandgräber kommen in diesem Zeitfenster nur in der Ungarischen Tiefebene verstärkt vor. Hügelgräber konzentrieren sich auf Teile des Balkans sowie Ost-, West- und Nordeuropa, während in Zentral- und Südeuropa Flachgräber -- mehrheitlich Körperbestattungen -- überwiegen. In der mittleren Bronzezeit gewinnt Überhügelung zumindest in West- und Mitteleuropa an Bedeutung. In der späten Bronzezeit wird Brandbestattung zum häufigsten Bestattungsbrauch^[@harding_european_2000, 75-76. **Eigentlich Häuler 1977/1994/1996 -> ausbauen!**].
 
 #### Körperbestattung und Brandbestattung
 
-Eine nähere Betrachtung zeigt, dass Brandbestattung zwar durchaus vor allem in der Spätbronzezeit 
+Nach verbreiter Lehrmeinung sind Brandbestattungen in erster Linie ein Phänomen der Spätbronzezeit, die deswegen mit der Bezeichnung *Urnenfelderzeit* belegt ist. Das scheint sich auch im RADON-B Datensatz abzubilden: In fast allen Untersuchungsregionen dominieren zum Ende hin Brandbestattungen (siehe Abbildung \@ref(fig:cremation-inhumation-proportion-development). Die Dominanz der      
 
 #### Flachgrab und Hügelgrab
 
 ## Fragestellungen
+
+
+
+
+
