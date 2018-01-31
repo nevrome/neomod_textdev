@@ -16,6 +16,10 @@ Dieses Fallbeispiel beobachtet also vier eng verknüpfte Meme (Körperbestattung
 
 ...
 
+```{r full-dataset-map, echo = FALSE, fig.cap = "Abbildung"}
+knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/disp_map_full.jpeg")
+```
+
 ```{r cremation-inhumation-amount-development, echo = FALSE, fig.cap = "Abbildung"}
 knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/amount_development_regions_cremation_inhumation.jpeg")
 ```
@@ -55,7 +59,10 @@ Kurz zusammengefasst besagt das klassische Narrativ der Entwicklung bronzezeitli
 
 #### Körperbestattung und Brandbestattung
 
-Nach verbreiter Lehrmeinung sind Brandbestattungen in erster Linie ein Phänomen der Spätbronzezeit, die deswegen mit der Bezeichnung *Urnenfelderzeit* belegt ist. Das scheint sich auch im RADON-B Datensatz abzubilden: In fast allen Untersuchungsregionen dominieren zum Ende hin Brandbestattungen (siehe Abbildung \@ref(fig:cremation-inhumation-proportion-development). Die Dominanz der      
+Nach verbreiter Lehrmeinung sind Brandbestattungen in erster Linie ein Phänomen der Spätbronzezeit, die deswegen mit der Bezeichnung *Urnenfelderzeit* belegt ist. Das scheint sich auch im RADON-B Datensatz abzubilden: In fast allen Untersuchungsregionen dominieren zum Ende hin Brandbestattungen (siehe Abbildung \@ref(fig:cremation-inhumation-proportion-development). In Ungarn jedoch wird die Brandbestattung schon in der Frühbronzezeit von den Nagyrév- und Kisapostag Gruppen und in der Mittelbronzezeit von der Vatya Kultur praktiziert. Diesen Umstand gibt RADON-B in Ermangelung entsprechender Daten leider nicht wieder (siehe Abbildung \@ref(fig:full-dataset-map)). Gut erfassbar dagegen ist, dass Körper- und Brandbestattung in Großbritannien schon früh und über einen langen Zeitraum parallel existieren. Schon in der Mittelbronzezeit wird die Verbrennung dort die dominante Bestattungssitte. Auch in Zentral- Nord und Südwesteuropa treten Kremationen in geringem Anteil lange vor der lokalen Spätbronzezeit auf^[@harding_european_2000, 111.]. 
+
+Grundsätzlich gilt, dass kohärente Bestattungsplätze und Gräberfelder in einer Belegungsperiode jeweils einheitlich eine Bestattungsform praktizieren. Das zeigt sich besonders in der Urnenfelderzeit, wo eine Vielzahl großer und weitreichend untersuchter Gräberfelder in Zentraleuropa, im Mediterranen Raum, in Frankreich und in Skandinavien exklusiv mit Kremationen belegt sind. Dazu gehören zum Beispiel die Gräberfelder Moravičany (Mähren) mit 1260 erfassten Bestattungen oder Vollmarshausen (Hessen). 
+Von dieser Regel weichen jedoch eine Vielzahl von Ausnahmen ab, wo verschiedene Rituale in größter räumlicher und -- soweit archäologisch erfassbar -- zeitlicher Nähe zueinander durchgeführt wurden. Beispiele dafür      
 
 #### Flachgrab und Hügelgrab
 
