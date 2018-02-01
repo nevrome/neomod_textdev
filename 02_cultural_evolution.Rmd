@@ -126,7 +126,7 @@ http://jom-emit.cfpm.org/2005/vol9/edmonds_b.html
 
 ## Themen und Konflikte der Cultural Evolution Forschung
 
-Cultural Evolution ist heute eine wichtige theoretische Strömung der anthropologischen Forschung. Die oben unterschiedenen Perspektiven Evolutionary psychology, Human behavioural ecology und Dual inheritance theory sind Grundlage für abstrakte Modelle, Fallstudien und theoretische Weiterentwicklung. Besonders hervorgetan haben sich hier in den vergangenen 30 Jahren neben Cavalli-Sforza und Feldmann auch Robert Chester Dunnell (\*1942 - \†2010), Peter James Richerson (\*1943), Robert Boyd (\*1948), Stephen Shennan (\*1949), Michael John O’Brien (\*1950), Patrice A. Teltser (\*1954), Ben Sandford Cullen (\*1964 - \†1995) und eine Vielzahl jüngerer Kollegen wie Oren Kolodny oder Alex Mesoudi. Seit 2015 konstituiert sich eine Cultural Evolution Society als interdisziplinäre Wissenschaftsvereinigung^[https://culturalevolutionsociety.org [01.02.2018]].
+Cultural Evolution ist heute eine wichtige theoretische Strömung der anthropologischen Forschung. Die oben unterschiedenen Perspektiven Evolutionary psychology, Human behavioural ecology und Dual inheritance theory sind Grundlage für abstrakte Modelle, Fallstudien und theoretische Weiterentwicklung. Besonders hervorgetan haben sich hier in den vergangenen 30 Jahren neben Cavalli-Sforza und Feldmann auch Robert Chester Dunnell (\*1942 - \†2010), Peter James Richerson (\*1943), Robert Boyd (\*1948), Stephen Shennan (\*1949), Michael John O’Brien (\*1950), Patrice A. Teltser (\*1954), Ben Sandford Cullen (\*1964 - \†1995) und eine Vielzahl jüngerer Kollegen wie Joseph Henrich, Oren Kolodny, Ken Aoki oder Alex Mesoudi. Seit 2015 konstituiert sich eine Cultural Evolution Society als interdisziplinäre Wissenschaftsvereinigung^[https://culturalevolutionsociety.org [01.02.2018]].
 
 ### Unterschiede und Gemeinsamkeiten von Kulturentwicklung und Genetik 
 
@@ -140,7 +140,13 @@ Cultural Evolution ist heute eine wichtige theoretische Strömung der anthropolo
 
 ### Populationsgröße und Subsistenzrisiko
 
-@henrich_demography_2004, @henrich_understanding_2016, @vaesen_population_2016, @collard_population_2013, and @collard_what_2011
+@henrich_demography_2004, @collard_what_2011, @KobayashiInnovativenesspopulationsize2012, @collard_population_2013, @BaldiniRevisitingEffectPopulation2015, @henrich_understanding_2016, @vaesen_population_2016
+
+### Menschliches Verhalten: Genetische Determination vs. Kulturelles Lernen
+
+@Boydculturaltransmissionacquired1983, @AokiEmergenceSocialLearning2005, and @AokiEvolutionlearningstrategies2014
+
+### Entstehung und Entwicklung von Innovationen
 
 
 
