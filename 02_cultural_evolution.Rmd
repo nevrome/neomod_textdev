@@ -124,12 +124,27 @@ Susan Blackmores Buch *The meme machine*^[@blackmore_meme_1999. Ich werde im fol
 http://jom-emit.cfpm.org/2002/vol6/edmonds_b_letter.html
 http://jom-emit.cfpm.org/2005/vol9/edmonds_b.html
 
-## Jenseits der Memetik: Cultural Evolution in der Archäologie
+## Themen und Konflikte der Cultural Evolution Forschung
 
-Cultural Evolution ist heute ein wichtige theoretische Strömung der Archäologischen Forschung. Meist dient die Perspektive der Dual inheritance Theorie als Grundlage für abstrakte Modelle, Fallstudien und theoretische Weiterentwicklung. Besonders hervorgetan haben sich hier in den vergangenen 30 Jahren unter anderem Robert Boyd, Luigi Luca Cavalli-Sforza, Ben Sandford Cullen, Marcus William Feldmann, Oren Kolodny, Alex Mesoudi, Michael John O’Brien, Stephen Shennan, Peter James Richerson und Patrice A. Teltser.
- 
+Cultural Evolution ist heute eine wichtige theoretische Strömung der anthropologischen Forschung. Die oben unterschiedenen Perspektiven Evolutionary psychology, Human behavioural ecology und Dual inheritance theory sind Grundlage für abstrakte Modelle, Fallstudien und theoretische Weiterentwicklung. Besonders hervorgetan haben sich hier in den vergangenen 30 Jahren neben Cavalli-Sforza und Feldmann auch Robert Chester Dunnell (\*1942 - \†2010), Peter James Richerson (\*1943), Robert Boyd (\*1948), Stephen Shennan (\*1949), Michael John O’Brien (\*1950), Patrice A. Teltser (\*1954), Ben Sandford Cullen (\*1964 - \†1995) und eine Vielzahl jüngerer Kollegen wie Oren Kolodny oder Alex Mesoudi. Seit 2015 konstituiert sich eine Cultural Evolution Society als interdisziplinäre Wissenschaftsvereinigung^[https://culturalevolutionsociety.org [01.02.2018]].
 
-## (Computerbasierte) Modellierung
+### Unterschiede und Gemeinsamkeiten von Kulturentwicklung und Genetik 
+
+@mesoudi_pursuing_2017
+
+### Cultural Evolution als Natur- oder Geisteswissenschaft
+
+> Here, we review the field of cultural evolutionary theory as it pertains to the extension of biology through culture.
+>
+> -- @creanza_cultural_2017
+
+### Populationsgröße und Subsistenzrisiko
+
+@henrich_demography_2004, @henrich_understanding_2016, @vaesen_population_2016, @collard_population_2013, and @collard_what_2011
+
+
+
+### (Computerbasierte) Modellierung
 
 Cultural Evolution theory ist angelegt zur Modellbildung in Anthropologischen Wissenschaften. Edmonds definierte Memetik vor seiner oben nachvollzogenen Abkehr folgendermaßen:
 
@@ -139,6 +154,6 @@ Cultural Evolution theory ist angelegt zur Modellbildung in Anthropologischen Wi
 
 Im selben Artikel *On Modelling in Memetics* aus dem 2. Band des Journal of Memetics weist er aber bereits auf Risiken der Modellierung in diesem Kontext hin und formuliert Anforderungen. 
 
-### Agentenbasierte Modellierung
+#### Agentenbasierte Modellierung
 
-### The memes’ eye view
+#### The memes’ eye view
