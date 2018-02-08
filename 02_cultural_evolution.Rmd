@@ -89,7 +89,7 @@ Wenn nun also auch im Medium Kultur die Mechanismen der Evolution wirken, dann m
 
 *copyying-fidelity* -- Kopiertreue -- scheint hier zunächst deplaziert. Ein gewisser Grad an Mutationsfähigkeit ist unerlässlich für Anpassung. Tritt allerdings bei einem Replikatortyp eine zu große Instabilität auf, so argumentiert Dawkins, könnte er seine Identität nicht aufrechterhalten und würde entweder schnell von Varianten abgelöst, die aus ihm selbst hervorgegangen sind, oder sich völlig auflösen. Bei Memen scheint gerade das häufig zu passieren: Übertragungsfehler oder bewusste Modifikation scheinen die Regel, nicht die Ausnahme zu sein. Damit muss die Qualität von Memen als Replikatoren in Frage gestellt werden. Dawkins gibt das zu -- diese Frage nach der Kopiertreue führt ihn zurück zur Definition von Memen. Welche Information enthält ein individuelles Meme bzw. -- in einem Analogieschluss -- das Gen?
 
-Auch das Gen ist keine in mikrobiologischen Begriffen eindeutig definierte Entität^[**Zitat!**]. Dawkins bezeichnet damit einen DNA-Abschnitt mit hinreichender Wirkung und Kopiertreue, um als selektionsrelevante Einheit zu wirken^[**Zitat! Kapitel 3**]. Gene schließen sich auf verschiedenen hierarchischen Ebenen zu Komplexen zusammen, die als Gruppe gegebenfalls eine Gesamtwirkung entfalten und wiederum als ganzes Selektionsrelevant wirken kann^[**Zitat! Kapitel 3 & 5**]. Ein ähnliches Strukturverhalten könnte auch für Meme angenommen werden. Eine Symphonie setzt sich beispielsweise aus einer Vielzahl einzelner, für sich wiedererkennbarer Melodieabschnitte und Figuren zusammen. Eine Religion ist die Gesamtheit vieler verknüpfter Ideen und Ritualen, die als ganzes tradiert werden, eine Kirche möglicherweise ein *stable set of mutually-assisting memes*^[@Dawkinsselfishgene40th2016, 299.]. 
+Auch das Gen ist keine in mikrobiologischen Begriffen eindeutig definierte Entität^[**Zitat!**]. Dawkins bezeichnet damit einen DNA-Abschnitt mit hinreichender Wirkung und Kopiertreue, um als selektionsrelevante Einheit zu wirken^[**Zitat! Kapitel 3**]. Gene schließen sich auf verschiedenen hierarchischen Ebenen zu Komplexen zusammen, die als Gruppe gegebenfalls eine Gesamtwirkung entfalten und wiederum als ganzes Selektionsrelevant wirken kann^[**Zitat! Kapitel 3 & 5**]. Ein ähnliches Strukturverhalten könnte auch für Meme angenommen werden. Eine Symphonie setzt sich beispielsweise aus einer Vielzahl einzelner, für sich wiedererkennbarer Melodieabschnitte und Figuren zusammen. Eine Religion ist die Gesamtheit vieler verknüpfter Ideen und Ritualen, die als ganzes tradiert werden, eine Konfession möglicherweise ein *stable set of mutually-assisting memes*^[@Dawkinsselfishgene40th2016, 299.]. 
 
 > I conjecture that co-adapted meme-complexes evolve in the same kind of way as co-adapted gene-complexes. Selection favours memes that exploit their cultural environment to their own advantage. This cultural environment consists of other memes which are also being selected. The meme pool therefore comes to have the attributes of an evolutionarily stable set, which new memes find it hard to invade. 
 > 
@@ -113,11 +113,36 @@ Das wirft die philosophische Frage auf, inwiefern Menschen Sklaven ihrer Gene un
 
 ### Dawkins Schüler
 
-Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes Meme erwiesen. Die Grundidee ist in den Strömungen der *Dual Inheritance theory* aufgegangen, aber auch die Memetik an sich hat sich über dieses intitiale Kapitel hinaus weiterentwickelt. Maßgeblichen Anteil daran hatten unter anderem die Psychologin Susan Blackmoore, der Philosoph Daniel Dennett und all jene Natur- und Geisteswissenschaftler, die sich im mittlerweile eingestellten Journal of Memetics^[http://cfpm.org/jom-emit/ [06.01.2018]] zu Wort gemeldet haben.
+Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes Meme erwiesen. Die Grundidee ist in den Strömungen der *Dual Inheritance theory* aufgegangen, aber auch die Memetik an sich hat sich über dieses intitiale Kapitel hinaus weiterentwickelt. Maßgeblichen Anteil daran hatten unter anderem der Philosoph Daniel Dennett^[siehe u.a. @dennett_brainstorms_1978, @dennett_elbow_1984, @dennett_consciousness_1991, @dennett_darwins_1995.], die Psychologin Susan Blackmoore und all jene Natur- und Geisteswissenschaftler, die sich im mittlerweile eingestellten Journal of Memetics^[http://cfpm.org/jom-emit/ [06.01.2018]] zu Wort gemeldet haben. Susan Blackmore bezieht sich unmittelbar auf Dawkins Ausgangsidee und erweitert sie um einige Aspekte. Die besondere Qualität ihres Buches *The meme machine*^[@blackmore_meme_1999. Ich werde im folgenden aus einer mir vorliegenden, deutschen Ausgabe zitieren: @blackmore_macht_2000.] liegt in der Synthese vieler Diskurse und Spannungslinien, die sich rund um die Memetik bis in die 90er Jahre herauskristallisiert hatten. Dennoch lässt sich ihre Perspektive auf eine einfache Formel reduzieren, die sie in verschiedenen Kontexten immer wieder angepasst anwendet: Sobald Meme existieren übernehmen sie die Rolle des dominanten Replikators, der das Verhalten seiner Träger wesentlich und langfristig beeinflusst. 
 
-**Ausbauen!**
+Sprache
 
-Susan Blackmores Buch *The meme machine*^[@blackmore_meme_1999. Ich werde im folgenden aus einer mir vorliegenden, deutschen Ausgabe zitieren: @blackmore_macht_2000.]...
+> Als sich die Imitationsfähigkeit erst einmal entwickelt hatte und Meme auftauchten, haben diese Meme die Umwelt verändert, in der die Gene selektiert wurden und zwangen sie so, immmer bessere memverbreitende Apparate zu schaffen. Mit anderen Worten ist die menschliche Sprachfähigkeit memgetrieben, und die Funktion der Sprache besteht darin, Meme zu verbreiten.
+> 
+> -- @blackmore_macht_2000, 159.
+
+Sexuelle Selektion
+
+> Der Memetik [...] zufolge wird die Partnerwahl nicht nur vom genetischen, sondern auch vom memetischen Vorteil beeinflusst. Eine meiner Schlüsselannahmen ist, dass die natürliche Selektion nach Entstehung der ersten Meme begann, Menschen zu favorisieren, die sich für eine Paarung mit den besten Imitatoren oder den besten Benutzern und Verbreitern von Memen entschieden.
+> 
+> -- @blackmore_macht_2000, 213.
+
+Gehirngröße
+
+Altruismus
+
+> Wenn Leute altruistisch sind, werden sie beliebt, weil sie beliebt sind, werden sie kopiert, und weil sie kopiert werden, breiten sich ihre Meme -- *einschließlich der Altruismusmeme selbst* -- weiter aus als die Meme weniger altruistischer Leute. Das liefert einen Mechanismus für die Ausbreitung altruistischen Verhaltens. 
+> 
+> -- @blackmore_macht_2000, 252.
+
+Zunächst verknüpft sie den Mechanismus der Meme-Übertragung mit Imitation
+
+Kapitel 3 
+
+Kapitel 5
+
+
+Journal of Memetics
 
 ### Kritik und Abgesang
 
