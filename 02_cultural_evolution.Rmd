@@ -117,6 +117,8 @@ Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes 
 
 Susan Blackmores Buch *The meme machine*^[@blackmore_meme_1999. Ich werde im folgenden aus einer mir vorliegenden, deutschen Ausgabe zitieren: @blackmore_macht_2000.]...
 
+The memes’ eye view
+
 ### Kritik und Abgesang
 
 http://jom-emit.cfpm.org/2002/vol6/edmonds_b_letter.html
@@ -136,7 +138,9 @@ Cultural Evolution ist heute eine wichtige theoretische Strömung der anthropolo
 >
 > -- @creanza_cultural_2017
 
-### Populationsgröße und Subsistenzrisiko
+### Cultural Complexity
+
+Populationsgröße und Subsistenzrisiko
 
 @henrich_demography_2004, @collard_what_2011, @KobayashiInnovativenesspopulationsize2012, @collard_population_2013, @BaldiniRevisitingEffectPopulation2015, @henrich_understanding_2016, @vaesen_population_2016
 
@@ -146,7 +150,7 @@ Cultural Evolution ist heute eine wichtige theoretische Strömung der anthropolo
 
 ### Entstehung und Entwicklung von Innovationen
 
-
+### Cultural Transmission
 
 ### (Computerbasierte) Modellierung
 
@@ -159,5 +163,3 @@ Cultural Evolution theory ist angelegt zur Modellbildung in Anthropologischen Wi
 Im selben Artikel *On Modelling in Memetics* aus dem 2. Band des Journal of Memetics weist er aber bereits auf Risiken der Modellierung in diesem Kontext hin und formuliert Anforderungen. 
 
 #### Agentenbasierte Modellierung
-
-#### The memes’ eye view
