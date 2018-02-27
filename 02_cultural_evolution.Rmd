@@ -173,15 +173,16 @@ Auch bei einer Dominanz sozialen Lernens und kultureller Transmission für die D
 
 Die Ausbreitung von Ideen in einer Population erfolgt im sozialen Raum durch Interaktion ihrer Mitglieder. Grundsätzlich gilt: Je häufiger eine Verhaltensweise auftritt, desto wahrscheinlicher, dass auch neue Mitglieder sie übernehmen^[@giraldeau_social_1994].  
 
-### Cultural Complexity
+### Entstehung von Innovationen und Cultural Complexity
+
+In der biologischen Evolution entstehen neue Varianten durch Mutationen im Erbgut von Individuuen. Cultural Evolution kennt dagegen eine ganze Reihe von Prozessen, die zur Entstehung von Innovationen verschiedener Größenordnungen führen können. Viele Modelle reduzieren diese Prozesse auf simple Zufallsereignisse oder die Interaktion eines Individuums mit seiner Umwelt^[@henrich_evolution_2003; @rendell_why_2010]. Andere bringen komplexere Mechanismen ins Spiel, wie die Verknüpfung bestehender Innovationen zu neuen^[@enquist_why_2008] und die Interaktion vieler Innovationen in einer schnellen, aufeinander aufbauenden Kettenreaktion von Kombination und Ableitung^[@fogarty_cultural_2015; @kolodny_evolution_2015; @kolodny_game-changing_2016]: Eine einzige Idee zieht möglicherweise viele andere nach sich. In der prähistorischen und historischen Menschheitsentwicklung gibt es viele Ereignisse, die solche Effekte nahelegen, etwa die explosionsartige Zunahme an Komplexität im Steingerätinventar am Übergang von Mittel- zu Jungpaläolithikum^[@bar-yosef_nature_1998; @roebroeks_time_2008] oder die neolithische Revolution im Vorderen Orient^[@gopher_when_2001; @veen_agricultural_2010]. 
+
+Die Veränderung der Menge und Art kultureller Eigenschaften einer Gruppe ist mit dem Begriff der Cultural Complexity Forschung verknüpft. Sie untersucht die Akkumulation und den Verlust von Innovationen (Cultural accumulation und Cultural decay) im Abgleich zu systemtheoretischen Gleichgewichtszuständen. Dabei zeigt sich, dass die Innovationsverfügbarkeit in einer Population durch die starke Verschränkung der verschiedenen Ideen starken Schwankungen unterworfen ist, bis sie einen stabilen Zustand erreicht[@kolodny_evolution_2015]. Innovationen können selbst Rückwirkungen auf die Systemdynamik ihrer Wirtpopulationen nehmen, indem sie zum Beispiel die Subsistenzbedingungen verändern und Bevölkerungswachstum oder -niedergang katalysieren^[@kolodny_game-changing_2016]. @crema_revealing_2016 eröffnen mit einer Fallstudie an neolithischer Keramik die Perspektive dafür, dass die Annahme von Gleichgewichtszustände in archäologischen Kontexten vor diesem Hintergrund hinterfragt werden muss.            
 
 Populationsgröße und Subsistenzrisiko
 
 @henrich_demography_2004, @collard_what_2011, @KobayashiInnovativenesspopulationsize2012, @collard_population_2013, @BaldiniRevisitingEffectPopulation2015, @henrich_understanding_2016, @vaesen_population_2016
 
-
-
-### Entstehung und Entwicklung von Innovationen
 
 ### (Computerbasierte) Modellierung
 
