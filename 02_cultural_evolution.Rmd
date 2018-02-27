@@ -161,11 +161,11 @@ Cultural Evolution ist heute eine wichtige theoretische Strömung der anthropolo
 
 Eine der Grundannahmen der Cultural Evolution Theorie ist die Ähnlichkeit zwischen biologischer Evolution und kultureller Entwicklung. Das schließt die Übertragung biologischer Konzepte wie Mutation, Selektion, Transmission und Drift explizit ein. Das mathematische Methodenset der Populationsgenetik können damit auf Kulturprozesse übertragen werden. Sowohl Cavalli-Sforza und Feldmann^[@cavalli-sforza_cultural_1981] als auch Robert Boyd und Peter Richerson^[@boyd_culture_1985] legten dafür in den 1980ern konkrete, umfassende Ausarbeitungen mathematisch formulierter Modelle vor. Dennoch bestehen klare Unterschiede zwischen biologischer Populationsgenetik und der Übertragung und Entwicklung von Ideen. Kulturelle Entwicklung folgt nicht den Mendelschen Regeln zu Uniformität, Spaltung und Unabhängigkeit^[@mesoudi_pursuing_2017] und große Teile der Terminologie (z.B. reinerbig vs. mischerbig, Genotyp vs. Phänotyp) sind nicht oder nur unter großen Bedeutungsverschiebungen anwendbar. Horizontaler Transmission spielt in der biologischen Vererbung eine untergeordnete Rolle und die Übertragung erfordert große Anpassungen an den vor allem vertikalen, genetischen Ausgangsmodellen^[@cavalli-sforza_cultural_1973; @feldman_cultural_1976]. 
 
-### Cultural Evolution als Natur- oder Geisteswissenschaft
+Im Gegensatz zur DNS der Genetik, ist die Identität der Informationsträger kultureller Entwicklung unbekannt **hier ggf. Diskussion dazu**. Bestimmte kulturelle Eigenschaften lassen sich binär oder diskret kategorisieren, andere lassen sich eher quantitativ bzw. proportional beschreiben. 
 
-> Here, we review the field of cultural evolutionary theory as it pertains to the extension of biology through culture.
->
-> -- @creanza_cultural_2017
+### Cultural Transmission
+
+Die Ausbreitung von Ideen in einer Population erfolgt im sozialen Raum durch Interaktion ihrer Mitglieder. Grundsätzlich gilt: Je häufiger eine Verhaltensweise auftritt, desto wahrscheinlicher, dass auch neue Mitglieder sie übernehmen^[@giraldeau_social_1994].  
 
 ### Cultural Complexity
 
@@ -178,8 +178,6 @@ Populationsgröße und Subsistenzrisiko
 @Boydculturaltransmissionacquired1983, @AokiEmergenceSocialLearning2005, and @AokiEvolutionlearningstrategies2014
 
 ### Entstehung und Entwicklung von Innovationen
-
-### Cultural Transmission
 
 ### (Computerbasierte) Modellierung
 
