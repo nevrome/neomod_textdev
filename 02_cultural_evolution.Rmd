@@ -155,13 +155,11 @@ http://jom-emit.cfpm.org/2005/vol9/edmonds_b.html
 
 Cultural Evolution ist heute eine wichtige theoretische Strömung der anthropologischen Forschung. Die oben unterschiedenen Perspektiven Evolutionary psychology, Human behavioural ecology und Dual inheritance theory sind Grundlage für abstrakte Modelle, Fallstudien und theoretische Weiterentwicklung. Besonders hervorgetan haben sich hier in den vergangenen 30 Jahren neben Cavalli-Sforza und Feldmann auch Robert Chester Dunnell (\*1942 - \†2010), Peter James Richerson (\*1943), Robert Boyd (\*1948), Stephen Shennan (\*1949), Michael John O’Brien (\*1950), Patrice A. Teltser (\*1954), Ben Sandford Cullen (\*1964 - \†1995) und eine Vielzahl jüngerer Kollegen wie Joseph Henrich, Oren Kolodny, Ken Aoki oder Alex Mesoudi. Seit 2015 konstituiert sich eine Cultural Evolution Society als interdisziplinäre Wissenschaftsvereinigung^[https://culturalevolutionsociety.org [01.02.2018]].
 
-@creanza_cultural_2017 geben einen guten Überblick über aktuelle Fragestellungen der Cultural Evolution Forschung. Ich möchte die von Ihnen erfassten Themen aus einer stärker archäologischen Perspektive nachvollziehen und besonders jene Kontexte hervorheben, die ich für die vorliegende Arbeit zu bronzezeitlichen Bestattungssitten für besonders relevant halte. 
+@creanza_cultural_2017 geben einen guten Überblick über aktuelle Fragestellungen der Cultural Evolution Forschung. Ich möchte einige der von Ihnen erfassten Themen aus einer stärker archäologischen Perspektive nachvollziehen und besonders jene Kontexte hervorheben, die ich für die vorliegende Arbeit zu bronzezeitlichen Bestattungssitten für besonders relevant halte. 
 
 ### Unterschiede und Gemeinsamkeiten von Kulturentwicklung und Genetik 
 
-
-
-@mesoudi_pursuing_2017
+Eine der Grundannahmen der Cultural Evolution Theorie ist die Ähnlichkeit zwischen biologischer Evolution und kultureller Entwicklung. Das schließt die Übertragung biologischer Konzepte wie Mutation, Selektion, Transmission und Drift explizit ein. Das mathematische Methodenset der Populationsgenetik können damit auf Kulturprozesse übertragen werden. Sowohl Cavalli-Sforza und Feldmann^[@cavalli-sforza_cultural_1981] als auch Robert Boyd und Peter Richerson^[@boyd_culture_1985] legten dafür in den 1980ern konkrete, umfassende Ausarbeitungen mathematisch formulierter Modelle vor. Dennoch bestehen klare Unterschiede zwischen biologischer Populationsgenetik und der Übertragung und Entwicklung von Ideen. Kulturelle Entwicklung folgt nicht den Mendelschen Regeln zu Uniformität, Spaltung und Unabhängigkeit^[@mesoudi_pursuing_2017] und große Teile der Terminologie (z.B. reinerbig vs. mischerbig, Genotyp vs. Phänotyp) sind nicht oder nur unter großen Bedeutungsverschiebungen anwendbar. Horizontaler Transmission spielt in der biologischen Vererbung eine untergeordnete Rolle und die Übertragung erfordert große Anpassungen an den vor allem vertikalen, genetischen Ausgangsmodellen^[@cavalli-sforza_cultural_1973; @feldman_cultural_1976]. 
 
 ### Cultural Evolution als Natur- oder Geisteswissenschaft
 
