@@ -161,7 +161,13 @@ Cultural Evolution ist heute eine wichtige theoretische Strömung der anthropolo
 
 Eine der Grundannahmen der Cultural Evolution Theorie ist die Ähnlichkeit zwischen biologischer Evolution und kultureller Entwicklung. Das schließt die Übertragung biologischer Konzepte wie Mutation, Selektion, Transmission und Drift explizit ein. Das mathematische Methodenset der Populationsgenetik können damit auf Kulturprozesse übertragen werden. Sowohl Cavalli-Sforza und Feldmann^[@cavalli-sforza_cultural_1981] als auch Robert Boyd und Peter Richerson^[@boyd_culture_1985] legten dafür in den 1980ern konkrete, umfassende Ausarbeitungen mathematisch formulierter Modelle vor. Dennoch bestehen klare Unterschiede zwischen biologischer Populationsgenetik und der Übertragung und Entwicklung von Ideen. Kulturelle Entwicklung folgt nicht den Mendelschen Regeln zu Uniformität, Spaltung und Unabhängigkeit^[@mesoudi_pursuing_2017] und große Teile der Terminologie (z.B. reinerbig vs. mischerbig, Genotyp vs. Phänotyp) sind nicht oder nur unter großen Bedeutungsverschiebungen anwendbar. Horizontaler Transmission spielt in der biologischen Vererbung eine untergeordnete Rolle und die Übertragung erfordert große Anpassungen an den vor allem vertikalen, genetischen Ausgangsmodellen^[@cavalli-sforza_cultural_1973; @feldman_cultural_1976]. 
 
-Im Gegensatz zur DNS der Genetik, ist die Identität der Informationsträger kultureller Entwicklung unbekannt **hier ggf. Diskussion dazu**. Bestimmte kulturelle Eigenschaften lassen sich binär oder diskret kategorisieren, andere lassen sich eher quantitativ bzw. proportional beschreiben. 
+Im Gegensatz zur DNS der Genetik, ist die Identität der Informationsträger kultureller Entwicklung unbekannt **hier ggf. Diskussion dazu**. Bestimmte kulturelle Eigenschaften lassen sich binär oder diskret kategorisieren, andere sich eher quantitativ bzw. proportional beschreiben. Zu ersteren gehören beispielsweise das technologische Wissen um Herstellung und Verwendung eines bestimmten Werkzeugs oder die Verwendung eines bestimmten Ritzmusters zur Keramikverzierung. Auch die in der vorliegenden Arbeit vorgenommene Untersuchung von Bestattungssitten reduziert diese auf die binäre Komponente der Ab- und Anwesenheit eines bestimmten Aspekts des Rituals. Analysen auf metrischem Skalenniveau wurden etwa zur Abbildung von Risikobereitschaft^[@bisin_economics_2001-1] in Gruppen oder einem Kompentenzniveau^[@baldini_revisiting_2015; @henrich_demography_2004; @kobayashi_innovativeness_2012] im Umgang mit einem bestimmten Werkzeug zur Anwendung gebracht.   
+
+### Menschliches Verhalten: Genetische Determination vs. Kulturelles Lernen
+
+Der von [@smith_three_2000] (s.o.) beobachtete Riss durch die Forschungslandschaft zwischen Evolutionary Psychology, Human behavioral ecology und Dual inheritance theory wird besonders an der Frage deutlich, welche Aspekte menschlichen Verhaltens genetisch determiniert und welche kulturell konstruiert sind. Unter der Annahme, dass die Transmission von Ideen Menschen eine viel höhere Anpassungsfähigkeit an widrige Subsistenzumstände ermöglicht, zeigen entsprechend konzipierte Modelle, dass genetisch transportiertes Verhalten nur in ökologisch sehr stabilen Umgebungen Relevanz entwickeln kann^[@aoki_emergence_2005; @aoki_evolution_2014; @boyd_cultural_1983]. Aus dieser Perspektive ergibt sich das klare Primat kultureller Transmission für den Menschen, der sich dank seiner Kulturfähigkeit in fast alle auf der Erde vertretenen Biome hat ausbreiten können.     
+
+Auch bei einer Dominanz sozialen Lernens und kultureller Transmission für die Determination menschlichen Verhaltens, ist der genetische Anteil nicht völlig zu vernachlässigen -- schon allein aufgrund der häufig zu beobachtenden Korrelation zwischen einem Verhaltensmuster und biologischer Verwandtschaft, die sich aus vertikalen Transmissionstrukturen ergibt. 
 
 ### Cultural Transmission
 
@@ -173,9 +179,7 @@ Populationsgröße und Subsistenzrisiko
 
 @henrich_demography_2004, @collard_what_2011, @KobayashiInnovativenesspopulationsize2012, @collard_population_2013, @BaldiniRevisitingEffectPopulation2015, @henrich_understanding_2016, @vaesen_population_2016
 
-### Menschliches Verhalten: Genetische Determination vs. Kulturelles Lernen
 
-@Boydculturaltransmissionacquired1983, @AokiEmergenceSocialLearning2005, and @AokiEvolutionlearningstrategies2014
 
 ### Entstehung und Entwicklung von Innovationen
 
