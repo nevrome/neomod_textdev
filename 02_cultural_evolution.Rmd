@@ -173,7 +173,9 @@ Die Methode der Genomweiten Assoziationsstudie (GWAS, Genome-wide association st
 
 ### Cultural Niche construction
 
-Cultural Niche construction hält ein potentes Erklärungsmodell bereit, um den wechselseitigen Selektionsdruck nachzuvollziehen, den Kultur, Gene und Umwelt aufeinander ausüben^[@laland_niche_2000; @odling-smee_niche_2003; @laland_cultural_2011; @rendell_runaway_2011]. Viel beachtete Fallbeispiele dieser Interaktion sind z.B. die Ausbreitung der Links- und Rechtshändigkeit^[@laland_gene-culture_1995] und die Entstehung der Laktose-Toleranz^[@feldman_theory_1989; @ingram_population_2012].  
+Cultural Niche construction hält ein potentes Erklärungsmodell bereit, um den wechselseitigen Selektionsdruck nachzuvollziehen, den Kultur, Gene und Umwelt aufeinander ausüben^[@laland_niche_2000; @odling-smee_niche_2003; @laland_cultural_2011; @rendell_runaway_2011]. Dabei beschreibt Niche construction in der Biologie Veränderungen der natürlichen Umwelt, die einerseits von einer Spezies selbst hervorgerufen werden und gleichermaßen die Selektionsdrücke auf diese Spezies beeinflussen^[@laland_niche_2006]. Für den Menschen ergibt sich daraus ein komplexes Geflecht von Interdependenzen zwischen Kulturverhalten, genetischer Disposition und Natur, die die schrittweise Modifikation all dieser Systembestandteile zur Folge haben^[@alberti_global_2017; @creanza_models_2012; @laland_cultural_2001].  
+
+Viel beachtete Fallbeispiele dieser Interaktion sind unter anderem anthropogen Induzierte Aussterbeereignisse von Megafauna^[@barnosky_assessing_2004], Feuernutzung für Landschaftseingriffe^[@bird_fire_2008], die Ausbreitung der Links- und Rechtshändigkeit^[@laland_gene-culture_1995], die Entstehung der Laktose-Toleranz^[@feldman_theory_1989; @ingram_population_2012] und die rückläufige, demographische Entwicklung in modernen, westlichen Gesellschaften, die einem einfachen Reproduktionsgedanken widerspricht^[@borgerhoff_mulder_demographic_1998; @fogarty_role_2013; @ihara_cultural_2004].
 
 ### Entstehung von Innovationen und Cultural Complexity
 
