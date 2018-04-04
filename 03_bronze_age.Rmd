@@ -41,9 +41,15 @@ Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die
 
 ...
 
-## Vorüberlegungen zur Archäologischen Untersuchung von Bestattungen
+## Vorüberlegungen zur archäologischen Untersuchung von Bestattungen
 
-...
+Thanatologie ist die Wissenschaft des Todes. Sie ist interdisziplinär angelegt und beschäftigt sich mit allen biologischen, sozialen, psychologischen und sonstigen Prozessen im Kontextes des biologischen und speziell menschlichen Sterbens^[**Referenz -- Lexikon?**]. Thanatoarchäologie beschäftigt sich mit dem Tod in archäologischen Kontexten, also mit dem Niederschlag, den der Tod von Menschen im archäologischen Befund hinterlassen hat^[**Referenz**]. Der wichtigste Befundtyp hierfür ist das Grab, das umgekehrt eine der wichtigsten Forschungsgegenstände der Archäologie im allgemeinen darstellt. Seiner Erforschung wird vor dem Hintergrund chronologischer und sozialer Fragestellungen viel Aufmerksamkeit gewidmet. Dennoch bleibt ein großer Teil der mit Gräbern assoziierten Bedeutungsbelegungen unbekannt, da sie sich nur aus der Wahrnehmung des Todes ihn ihrer Erzeugerkultur, der Vorstellungen pränataler- und postmortaler Zustandsformen in Abgrenzung zum bekannten irdischen Leben verstehen lassen. Archäologische Quellen geben über diese spirituellen Abstraktionen keinen oder nur sehr eingeschränkt Aufschluss. 
+
+### Der rituelle Umgang mit dem Tod
+
+Kerstin Hofmanns Dissertationsschrift *Der rituelle Umgang mit dem Tod -- Untersuchungen zu bronze- und früheisenzeitlichen Bestattungen im Elbe-Weser-Dreieck* enthält einige theoretische Vorüberlegungen zur Thanatoarchäologie, die ich hier wiedergeben und damit einer Betrachtung von Bestattungssitten aus Cultural Evolution Perspektive voranstellen möchte.    
+
+
 
 ### Eine Cultural Evolution Perspektive auf Bestattungssitten
 
@@ -53,7 +59,7 @@ Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die
 
 Gräber spielen in der Bronzezeitforschung traditionell eine wichtige Rolle.  
 
-In der europäischen Bronzezeit sind mehrere unterschiedliche Bestattungstraditionen unterscheidbar, die zeitlich und räumlich abgrenzbar unterschiedliche Entwicklungen durchlaufen. Dabei können zwei wesentliche Dimensionen abgegrenzt werden, entlang derer sich fast alle dokumentierten Grablegungen kategorisieren lassen: 1. Körperbestattungen im Gegensatz zu Brandbestattungen sowie 2. Flachgräber gegenüber überhügelten Gräbern. In diesem Spektrum gibt es breite Variaten hinsichtlich der Grabanlage- und Vergesellschaftung (z.B. Nachnutzung neolithischer Megalithanlagen, Gräberfelder, etc.), des Grabbaus (Särge, Totenhäuser, Bootsgräber etc.) der Beigabenauswahl, der Platzierung des Leichnams oder des investierten Aufwands für Bestattungszeremonie und Architektur. Angesichts dieser Variablenvielfalt ist Generalisierung und die Reduktion des Gesamtzusammenhangs auf die Spannungsfelder Körper- vs. Brandbestattung und Flach- vs. Hügelgrab schwierig.
+In der europäischen Bronzezeit sind mehrere unterschiedliche Bestattungstraditionen unterscheidbar, die zeitlich und räumlich abgrenzbar unterschiedliche Entwicklungen durchlaufen. Dabei können zwei wesentliche Dimensionen abgegrenzt werden, entlang derer sich fast alle dokumentierten Grablegungen kategorisieren lassen: 1. Körperbestattungen im Gegensatz zu Brandbestattungen sowie 2. Flachgräber gegenüber überhügelten Gräbern. In diesem Spektrum gibt es etliche Varianten hinsichtlich der Grabanlage- und Vergesellschaftung (z.B. Nachnutzung neolithischer Megalithanlagen, Gräberfelder, etc.), des Grabbaus (Särge, Totenhäuser, Bootsgräber etc.) der Beigabenauswahl, der Platzierung des Leichnams oder des investierten Aufwands für Bestattungszeremonie und Architektur. Angesichts dieser Variablenvielfalt ist Generalisierung und die Reduktion des Gesamtzusammenhangs auf die Spannungsfelder Körper- vs. Brandbestattung und Flach- vs. Hügelgrab schwierig.
 
 Kurz zusammengefasst besagt das klassische Narrativ der Entwicklung bronzezeitlicher Bestattungssitten folgendes: In der frühen und mittleren Bronzezeit dominieren Körperbestattungen in verschiedenen Variationen. Brandgräber kommen in diesem Zeitfenster nur in der Ungarischen Tiefebene verstärkt vor. Hügelgräber konzentrieren sich auf Teile des Balkans sowie Ost-, West- und Nordeuropa, während in Zentral- und Südeuropa Flachgräber -- mehrheitlich Körperbestattungen -- überwiegen. In der mittleren Bronzezeit gewinnt Überhügelung zumindest in West- und Mitteleuropa an Bedeutung. In der späten Bronzezeit wird Brandbestattung zum häufigsten Bestattungsbrauch^[@harding_european_2000, 75-76. **Eigentlich Häuler 1977/1994/1996 -> ausbauen!**].
 
