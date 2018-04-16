@@ -41,7 +41,7 @@ Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die
 
 Betrachtet man Bestattungssitten als in Raum und Zeit verbreitetes Kulturverhalten dann kann man das doch nicht gänzlich losgelöst von seiner besonderen Qualität als mit dem Tod assoziiertem Verhalten tun. Bestattungssitten sind weder funktional -- obgleich auch aus hygienischer Perspektive und hinsichtlich Materialkosten und Arbeitszeit für oder gegen bestimmte Rituale argumentiert werden kann -- noch sind sie Mode, die leichtfertig und ohne Reflexion übernommen wird. Der Tod von Angehörigen ist meist ein schwerwiegendes Ereignis, das mit einem besonderen, kulturellen und individuellen Verarbeitungsprozess einhergeht. Bestattungssitten gehören eben zu diesem Verarbeitungsverhalten und sind als solche Gegenstand ihrer Erforschung.
 
-Thanatologie ist die Wissenschaft des Todes und seiner Wirkung auf die Umwelt des Sterbenden und Verstorbenen. Sie ist interdisziplinär angelegt und beschäftigt sich mit allen biologischen, sozialen, psychologischen und sonstigen Prozessen im Kontextes des biologischen und speziell menschlichen Todes^[**Referenz -- Lexikon?**]. Thanatoarchäologie beschäftigt sich mit dem Tod in archäologischen Kontexten, also mit dem Niederschlag, den der Tod von Menschen im archäologischen Befund hinterlassen hat^[**Referenz**]. Der wichtigste Befundtyp hierfür ist das Grab, das umgekehrt eine der wichtigsten Forschungsgegenstände der Archäologie im allgemeinen darstellt. Seiner Erforschung wird vor dem Hintergrund chronologischer und sozialer Fragestellungen viel Aufmerksamkeit gewidmet. Dennoch bleibt ein großer Teil der mit Gräbern assoziierten Bedeutungsbelegung unbekannt, da Gräber sich nur aus der Wahrnehmung des Todes ihn ihrer Erzeugerkultur und deren Vorstellungen pränataler- und postmortaler Zustandsformen in Abgrenzung zum bekannten irdischen Leben verstehen lassen. Archäologische Quellen geben über diese spirituellen Abstraktionen keinen oder nur sehr eingeschränkt Aufschluss. 
+Thanatologie ist die Wissenschaft des Todes und seiner Wirkung auf die Umwelt des Sterbenden und Verstorbenen. Sie ist interdisziplinär angelegt und beschäftigt sich mit allen biologischen, sozialen, psychologischen und sonstigen Prozessen im Kontextes des biologischen und speziell menschlichen Todes^[ @hofmann_rituelle_2008, 100.]. Thanatoarchäologie beschäftigt sich mit dem Tod in archäologischen Kontexten, also mit dem Niederschlag, den der Tod von Menschen im archäologischen Befund hinterlassen hat^[@hofmann_rituelle_2008, 123.]. Der wichtigste Befundtyp hierfür ist das Grab, das umgekehrt eine der wichtigsten Forschungsgegenstände der Archäologie im allgemeinen darstellt. Seiner Erforschung wird vor dem Hintergrund chronologischer und sozialer Fragestellungen viel Aufmerksamkeit gewidmet. Dennoch bleibt ein großer Teil der mit Gräbern assoziierten Bedeutungsbelegung unbekannt, da Gräber sich nur aus der Wahrnehmung des Todes ihn ihrer Erzeugerkultur und deren Vorstellungen pränataler- und postmortaler Zustandsformen in Abgrenzung zum bekannten irdischen Leben verstehen lassen. Archäologische Quellen geben über diese spirituellen Abstraktionen keinen oder nur sehr eingeschränkt Aufschluss. 
 
 Eben daraus erwächst die große Gefahr, in Ermangelung des Wissens über das Todesverständnis prähistorischer Gesellschaften moderne, westliche Vorstellungen auf archäologisch erschlossene Grabzusammenhänge zu projizieren. Eine eurozentrisches Verhalten, das insbesondere die Postprozessuale Archäologie in Anlehnung an die Postmoderne identzifiziert hat. Stattdessen muss eine Auseinandersetzung mit dem breiten Spektrum an Weltanschauungen und Wahrnehmungen erfolgen, in die Bestattungssitten eingeordnet werden können. Vollständigkeit kann dabei nicht erreicht werden, aber zumindest eine erhebliche und wertvolle Aufweitung der Perspektive.
 
@@ -77,7 +77,11 @@ In ausnahmslos allen Kulturen gibt es ein Totenbrauchtum, das den Umgang mit Ver
 
 #### Tod in den anthropologischen Wissenschaften
 
+Hm... Das könnte ein wenig zu viel sein...
+
 #### Die archäologische Erforschung des Todes
+
+
 
 #### Quellengattung Grab
 
