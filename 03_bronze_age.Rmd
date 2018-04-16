@@ -78,12 +78,19 @@ In ausnahmslos allen Kulturen gibt es ein Totenbrauchtum, das den Umgang mit Ver
 #### Tod in den anthropologischen Wissenschaften
 
 Hm... Das könnte ein wenig zu viel sein...
+ggf. @hofmann_rituelle_2008, 100-122.
 
 #### Die archäologische Erforschung des Todes
+
+Vergangenes, menschliches Kulturverhalten lässt sich nur über das Medium archäologischer Quellen erschließen. Diese Materielle Kultur spiegelt den eigentlichen Forschunsgegenstand allerdings nur mehrfach und stark gefiltert wieder. Selbst ihre eigene Bedeutung lässt sich nur indirekt und unvollständig rekonstruieren. Dieser Problematik widmet sich ein großer Teil der theoretischen, archäologischen Forschung^[@hofmann_rituelle_2008, 123-128.]. Wie oben ausgeführt sind Handlungen, die mit dem Tod in Verbindung stehen, meist besonders bedeutungsgeladen und deswegen schwer rekonstruierbar.
+
+Die wichtigsten Befundtypen der Thanatoarchäologie sind Gräber sowie Gräberfelder und sonstige Kollektivgrabanlagen. Schrift- oder ikonographische Quellen, die Aufschluss über das Totenritual oder sogar die zugrundeliegende Vorstellungswelt geben würden, existieren in der prähistorischen Archäologie nicht oder sind äußerst selten. Im Kontext von Gräberfeldern können neben den eigentlichen Bestattungseinrichtungen auch Gruben, Steinpflaster, Ustrinen (Verbrennungsplätze, an denen Scheiterhäufen errichtet wurden) und aufgehende Strukturen wie Zäune, Grabmarkierungen oder Ritualhütten dokumentiert werden. Selbst im Fall von datierbarer Gleichzeitigkeit müssen jedoch nicht alle Befunde auf einem Gräberfeld mit dem Totenbrauchtum in Verbindung stehen. Umgekehrt müssen nicht alle Handlungen eines Bestattungsrituals in räumlicher Nähe zum Bestattungsplatz stattfinden. Auch die Anlage von Gräbern ist nicht obligatorisch: Viele Bestattungsrituale sehen keine Grabarchitektur vor und manche schließen den eigentlichen Leichnam aus der Deponierung aus. Solche Pseudogräber oder Kenotaphe sind schwer von Hortfunden unterscheidbar und werden meist nur über ihre Position auf dem Gräberfeld identifiziert. Siedlungsbestattungen sind in wenigen Kulturzusammenhängen die Regel, treten aber immer wieder auf. Sie erlauben eine besondere Kontextualisierung der Bestattung über die räumliche Verknüpfung zu Siedlungsarealen oder Haushalten.
 
 
 
 #### Quellengattung Grab
+
+Neben Siedlungen, Horten und Einzelfunden gehören Gräber zu den Hauptkategorien archäologischer Quellengattungen. Gräber und Depots heben sich von Siedlungen ab, da sie grundsätzlich eine positive Artefaktauswahl einschließen, das heißt, die eingebrachten Objekte wurden intentional in diesem Kontext platziert. Diese Intentionalität gilt auch für den Grabaufbau. 
 
 ### Eine Cultural Evolution Perspektive auf Bestattungssitten
 
@@ -91,8 +98,6 @@ Bergensen 1998, 54ff & 63 f.
 Grimes 1998, 131 ff.
 
 ## Räumliche und zeitliche Trends im Bestattungsritus der Bronzezeit 
-
-Gräber spielen in der Bronzezeitforschung traditionell eine wichtige Rolle.  
 
 In der europäischen Bronzezeit sind mehrere unterschiedliche Bestattungstraditionen unterscheidbar, die zeitlich und räumlich abgrenzbar unterschiedliche Entwicklungen durchlaufen. Dabei können zwei wesentliche Dimensionen abgegrenzt werden, entlang derer sich fast alle dokumentierten Grablegungen kategorisieren lassen: 1. Körperbestattungen im Gegensatz zu Brandbestattungen sowie 2. Flachgräber gegenüber überhügelten Gräbern. In diesem Spektrum gibt es etliche Varianten hinsichtlich der Grabanlage- und Vergesellschaftung (z.B. Nachnutzung neolithischer Megalithanlagen, Gräberfelder, etc.), des Grabbaus (Särge, Totenhäuser, Bootsgräber etc.) der Beigabenauswahl, der Platzierung des Leichnams oder des investierten Aufwands für Bestattungszeremonie und Architektur. Angesichts dieser Variablenvielfalt ist Generalisierung und die Reduktion des Gesamtzusammenhangs auf die Spannungsfelder Körper- vs. Brandbestattung und Flach- vs. Hügelgrab schwierig.
 
