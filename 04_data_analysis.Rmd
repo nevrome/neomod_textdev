@@ -35,9 +35,17 @@ Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die
 - Dateneingabe in RADON-B (Wo sind Grabmetainformationen beigelegt?)
 - weitere mögliche Bestattungsformen, die archäologisch nicht fassbar sind
 
+Das scheint sich auch im RADON-B Datensatz abzubilden: In fast allen Untersuchungsregionen dominieren zum Ende hin Brandbestattungen (siehe Abbildung \@ref(fig:cremation-inhumation-proportion-development).
+
+Diesen Umstand gibt RADON-B in Ermangelung entsprechender Daten leider nicht wieder (siehe Abbildung \@ref(fig:full-dataset-map))
+
 ### Datenvorbereitung und Gliederung
 
 ### Deskriptive Analyse
+
+### Quellenkritik
+
+Stimmt das, was der Datensatz mir sagen möchte?
 
 ## Simulation
 

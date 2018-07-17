@@ -95,7 +95,7 @@ Kurz zusammengefasst besagt das klassische Narrativ der Entwicklung bronzezeitli
 
 ### Körperbestattung und Brandbestattung
 
-Nach verbreiter Lehrmeinung sind Brandbestattungen in erster Linie ein Phänomen der Spätbronzezeit, die deswegen mit der Bezeichnung *Urnenfelderzeit* belegt ist. Das scheint sich auch im RADON-B Datensatz abzubilden: In fast allen Untersuchungsregionen dominieren zum Ende hin Brandbestattungen (siehe Abbildung \@ref(fig:cremation-inhumation-proportion-development). In Ungarn jedoch wird die Brandbestattung schon in der Frühbronzezeit von den Nagyrév- und Kisapostag Gruppen und in der Mittelbronzezeit von der Vatya Kultur praktiziert. Diesen Umstand gibt RADON-B in Ermangelung entsprechender Daten leider nicht wieder (siehe Abbildung \@ref(fig:full-dataset-map)). Gut erfassbar dagegen ist, dass Körper- und Brandbestattung in Großbritannien schon früh und über einen langen Zeitraum parallel existieren. Schon in der Mittelbronzezeit wird die Verbrennung dort die dominante Bestattungssitte. Auch in Zentral- Nord und Südwesteuropa treten Kremationen in geringem Anteil lange vor der lokalen Spätbronzezeit auf^[@harding_european_2000, 111.]. 
+Nach verbreiter Lehrmeinung sind Brandbestattungen in erster Linie ein Phänomen der Spätbronzezeit, die deswegen mit der Bezeichnung *Urnenfelderzeit* belegt ist. In Ungarn jedoch wird die Brandbestattung schon in der Frühbronzezeit von den Nagyrév- und Kisapostag Gruppen und in der Mittelbronzezeit von der Vatya Kultur praktiziert. Auch in Großbritannien treten Brandbestattungen schon früh und über einen langen Zeitraum parallel zu Körperbestattungen auf. In der Mittelbronzezeit wird die Verbrennung dort die dominante Bestattungssitte. Auch in Zentral- Nord und Südwesteuropa treten Kremationen in geringem Anteil lange vor der lokalen Spätbronzezeit auf^[@harding_european_2000, 111.]. 
 
 Grundsätzlich gilt, dass kohärente Bestattungsplätze und Gräberfelder in einer Belegungsperiode jeweils einheitlich eine Bestattungsform praktizieren. Das zeigt sich besonders in der Urnenfelderzeit, wo eine Vielzahl großer und weitreichend untersuchter Gräberfelder in Zentraleuropa, im Mediterranen Raum, in Frankreich und in Skandinavien abgesehen von verschwindend wenigen Ausnahmen exklusiv mit Kremationen belegt sind. Dazu gehören zum Beispiel die Gräberfelder Moravičany (Mähren) mit 1260 oder Vollmarshausen (Hessen) mit 252 erfassten Bestattungen. In der Frühen und Mittleren Bronzezeit ist birituelle Belegung noch erheblich häufiger: Auf dem Tumuluszeitlichen Platz Dolný Peter (Slowakei) verhalten sich Brand- zu Körperbestattungen in einem Verhältnis 5:50, in Streda nad Bodrogom (Slovakei) beträgt das Verhältnis 34:24, wobei weiterhin neun Kenotaphe erfasst wurden. Auf dem größten und archäologisch wichtigsten Gräberfeld der Mittelbronzezeit Zentraleuropas in Pitten (Niederösterreich) dominieren Kremationen mit 147:74. Ebenso gibt es aber auch in der Frühbronzezeit Gräberfelder mit großer Einheitlichkeit wie Gemeinlebarn F (Niederösterreich) wo unter den 258 erfassten Bestattungen nur eine einzige mit einem Verbrennungsritual begesetzt wurde und in der Spätbronzezeit Gräberfelder mit biritueller Belegung wie Przeczyce (Schlesien) mit einem Verhältnis von 132:727^[@harding_european_2000, 112.].
 
@@ -105,6 +105,24 @@ Sowohl für das urnenflederzeitliche Vollmarshausen als auch das frühbronzezeit
 In Kontakt- und Übergangsbereichen der Bestattungssitten kam es an verschiedenen Punkten zu überraschenden Überschneidungen der Ritualausführung. In Periode III der skandinavischen Bronzeit wurde in Dänemark Leichenbrand in Sarg- und Kistengräbern beigesetzt, die zuvor für Körperbestattungen verwendet worden waren. In der Champagnen finden sich Brandbestattungen in Grabgruben, die ausreichend Platz für einen unverbrannten Körper geboten hätten. Für ein aunjetitzerzeitliches Gräberfeld in Jeßnitz (Sachsen-Anhalt) rekonstruieren die Ausgräber ein Ritual, das sekundäre Feuereinwirkung auf schon in Särgen deponierte Körperbestattungen eingeschlossen hätte. **Ausbauen!** ^[@harding_european_2000, 113.] 
 
 ### Flachgrab und Hügelgrab
+
+### Regionaler Überblick
+
+#### Österreich und Tschechische Republik
+
+#### Polen
+
+#### Süddeutschland
+
+#### Nordostfrankreich
+
+#### Norddeutschland
+
+#### Südskandinavien
+
+#### Benelux
+
+#### England
 
 ## Fragestellungen
 
