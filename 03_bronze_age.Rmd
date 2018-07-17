@@ -12,31 +12,6 @@ Brandbestattung und Körperbestattung sind Meme, die schon lange vor Beginn der 
 
 Dieses Fallbeispiel beobachtet also vier eng verknüpfte Meme (Körperbestattung, Brandbestattung, Flachgrab, Hügelgrab) über eine gewisse Phase (2500-500calBC, Bronzezeit) ihrer eigentlich wesentlich längeren Entwicklung in einem gewissen Raum (Nord-, Ost und Westeuropa), der nur einen Auschnitt ihrer eigentlichen Verbreitung darstellt.
 
-### Datensatz Radon-B
-
-...
-
-```{r full-dataset-map, echo = FALSE, fig.cap = "Abbildung"}
-#knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/disp_map_full.jpeg")
-```
-
-```{r cremation-inhumation-amount-development, echo = FALSE, fig.cap = "Abbildung"}
-#knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/amount_development_regions_cremation_inhumation.jpeg")
-```
-
-```{r cremation-inhumation-proportion-development, echo = FALSE, fig.cap = "Abbildung"}
-#knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/proportions_development_regions_cremation_inhumation.jpeg")
-```
-
-Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die C14-Daten in RADON-B räumlich und zeitlich verteilen. Für einzelne Regionen liegen für gewisse Zeiträume verhältnismäßig viele Daten vor, für die Mehrzahl der Regionen ist die Datenmenge allerdings sehr gering. Diese Ungleichverteilung der Daten kann viele verschiedene Gründe haben: 
-
-- Schwerpunkte der Datenaufnahme für RADON-B nach Forschungsinteressen der beteiligten Wissenschaftler.
-- Regionale und zeitliche Ausrichtung von Forschungsprojekten, in deren Rahmen die C14-Daten erstellt wurden. Damit zusammen hängt die politische Rahmensituation, die C14-Datierung in größerem Umfang z.B. in den Osteuropäischen Staaten erst nach dem Zusammenbruch der Sowjetunion möglich gemacht hat. 
-- Forschungstraditionen
-- Erhaltungssituation organischer Funde
-- Dateneingabe in RADON-B (Wo sind Grabmetainformationen beigelegt?)
-- weitere mögliche Bestattungsformen, die archäologisch nicht fassbar sind
-
 ## Vorüberlegungen zur archäologischen Untersuchung von Bestattungen
 
 Betrachtet man Bestattungssitten als in Raum und Zeit verbreitetes Kulturverhalten dann kann man das doch nicht gänzlich losgelöst von seiner besonderen Qualität als mit dem Tod assoziiertem Verhalten tun. Bestattungssitten sind weder funktional -- obgleich auch aus hygienischer Perspektive und hinsichtlich Materialkosten und Arbeitszeit für oder gegen bestimmte Rituale argumentiert werden kann -- noch sind sie Mode, die leichtfertig und ohne Reflexion übernommen wird. Der Tod von Angehörigen ist meist ein schwerwiegendes Ereignis, das mit einem besonderen, kulturellen und individuellen Verarbeitungsprozess einhergeht. Bestattungssitten gehören eben zu diesem Verarbeitungsverhalten und sind als solche Gegenstand ihrer Erforschung.

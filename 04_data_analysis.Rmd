@@ -1,0 +1,58 @@
+# Datenauswertung
+
+## Technische Umsetzung
+
+Das Modell und alle Analyswerkzeuge sind als Paket für die Statistikprogrammiersprache R^[@RCoreTeamLanguageEnvironmentStatistical2016] implementiert (github/nevrome/...). Das eigentliche Modell ist mittels des Rcpp-Frameworks^[@eddelbuettel_extending_2017; @eddelbuettel_rcpp_2011; @eddelbuettel_seamless_2013] in C++^[@_iso/iec_2017] umgesetzt, um auf dessen höhere Geschwindigkeit und bessere Werkzeuge für Objektorientiertes Programmieren zurückgreifen zu können. Daneben enthält das Paket in R geschriebene Hilfsfunktionen zur Datenaufbereitung, Analyse und Visualisierung. Getrennt von diesem R Paket existiert ein zweites Repositorium (github/nevrome/...), in dem Modellrechnung und Auswertung für das bronzezeitliche Fallbeispiel ausgeführt wurden. Ein Teil der Entwicklung fand zunächst hier statt, wurde dann aber über generalisierte Funktionen in genanntes R Paket übernommen und wird hier jetzt nur noch referenziert.   
+
+Zur Implementierung von Analyse und Hilfsfunktionen in R kamen neben Funktionen aus Basispaketen auch eine große Anzahl von Community-Paketen zum Einsatz. Dazu gehören ... **Nennen und Zitieren!**. Auch bei der Umsetzung des Modells in C++ habe ich auf Erweiterungsbibliotheken zurückgegriffen. Allem voran zu nennen ist **Nennen und Zitieren!**.
+
+Code und Daten für das Modell sind öffentlich und frei zugänglich. Alle Ergebnisse können reproduziert werden. Eine Anleitung dafür findet sich auf Github ().
+
+Die wesentliche, technischen Arbeitsschritte zur Nutzung des Modell von *Datenbeschaffung und -Vorbereitung* über *Modelldurchlauf* und schließlich *Ergebnisauswertung* seien im folgenden überblicksartig beschrieben. Die innere Gliederung des Modells wurde bereits weiter oben erläutert. Eine genaue Darstellung der Funktionsweise einzelner Submodule unterbleibt im Rahmen dieser Arbeit. 
+
+## Datensatz Radon-B
+
+...
+
+```{r full-dataset-map, echo = FALSE, fig.cap = "Abbildung"}
+#knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/disp_map_full.jpeg")
+```
+
+```{r cremation-inhumation-amount-development, echo = FALSE, fig.cap = "Abbildung"}
+#knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/amount_development_regions_cremation_inhumation.jpeg")
+```
+
+```{r cremation-inhumation-proportion-development, echo = FALSE, fig.cap = "Abbildung"}
+#knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/proportions_development_regions_cremation_inhumation.jpeg")
+```
+
+Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die C14-Daten in RADON-B räumlich und zeitlich verteilen. Für einzelne Regionen liegen für gewisse Zeiträume verhältnismäßig viele Daten vor, für die Mehrzahl der Regionen ist die Datenmenge allerdings sehr gering. Diese Ungleichverteilung der Daten kann viele verschiedene Gründe haben: 
+
+- Schwerpunkte der Datenaufnahme für RADON-B nach Forschungsinteressen der beteiligten Wissenschaftler.
+- Regionale und zeitliche Ausrichtung von Forschungsprojekten, in deren Rahmen die C14-Daten erstellt wurden. Damit zusammen hängt die politische Rahmensituation, die C14-Datierung in größerem Umfang z.B. in den Osteuropäischen Staaten erst nach dem Zusammenbruch der Sowjetunion möglich gemacht hat. 
+- Forschungstraditionen
+- Erhaltungssituation organischer Funde
+- Dateneingabe in RADON-B (Wo sind Grabmetainformationen beigelegt?)
+- weitere mögliche Bestattungsformen, die archäologisch nicht fassbar sind
+
+### Datenvorbereitung und Gliederung
+
+### Deskriptive Analyse
+
+## Simulation
+
+### Funktionalität
+
+Wie werden welche Gegebenheiten der realen Welt im Modell abgebildet?
+
+### Implementierung
+
+### Simulationsparameter
+
+### Allgemeine Beobachtungen zum Simulationsverhalten
+
+## Kulturelle und Räumliche Distanz
+
+## Kausale Interaktionsbeziehungen
+
+## Simulation und reale Entwicklung
