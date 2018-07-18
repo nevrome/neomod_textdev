@@ -10,7 +10,7 @@ Code und Daten für das Modell sind öffentlich und frei zugänglich. Alle Ergeb
 
 Die wesentliche, technischen Arbeitsschritte zur Nutzung des Modell von *Datenbeschaffung und -Vorbereitung* über *Modelldurchlauf* und schließlich *Ergebnisauswertung* seien im folgenden überblicksartig beschrieben. Die innere Gliederung des Modells wurde bereits weiter oben erläutert. Eine genaue Darstellung der Funktionsweise einzelner Submodule unterbleibt im Rahmen dieser Arbeit. 
 
-## Datensatz Radon-B
+## Datensatz Radon-B {#radonb_dataset}
 
 ...
 
@@ -39,7 +39,7 @@ Das scheint sich auch im RADON-B Datensatz abzubilden: In fast allen Untersuchun
 
 Diesen Umstand gibt RADON-B in Ermangelung entsprechender Daten leider nicht wieder (siehe Abbildung \@ref(fig:full-dataset-map))
 
-### Datenvorbereitung und Gliederung
+### Datenvorbereitung und Gliederung {#data_prep_and_segmentation}
 
 ### Deskriptive Analyse
 
