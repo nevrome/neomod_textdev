@@ -6,7 +6,7 @@ output:
   #bookdown::gitbook: default
   bookdown::pdf_book:
     toc: true
-    toc_depth: 3
+    toc_depth: 4
     includes:
       in_header: preamble.tex
 documentclass: book
