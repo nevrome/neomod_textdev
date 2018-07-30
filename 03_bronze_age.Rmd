@@ -226,7 +226,11 @@ Mitte des 2. Jahrtausends vollzogen sich sowohl in Großbritannien als auch in I
 
 ## Fragestellungen
 
+...
 
+
+
+\pby[title={Literatur},segment=\therefsegment,heading=subbibintoc]
 
 
 

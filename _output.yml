@@ -1,0 +1,6 @@
+bookdown::pdf_book:
+  citation_package: biblatex
+  toc: true
+  toc_depth: 4
+  includes:
+    in_header: preamble.tex

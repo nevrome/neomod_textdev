@@ -1,17 +1,13 @@
 ---
 title: "Ein computerbasiertes Cultural Evolution Modell zur Dynamik hoch erfolgreicher Meme am Fallbeispiel europäisch-bronzezeitlicher Bestattungssitten"
 author: "Clemens Schmid"
+date: "September 2018"
 site: "bookdown::bookdown_site"
-output:
-  #bookdown::gitbook: default
-  bookdown::pdf_book:
-    toc: true
-    toc_depth: 4
-    includes:
-      in_header: preamble.tex
 documentclass: book
 classoption: openany
 bibliography: ["references.bib"]
+biblio-style: authoryear
+biblatexoptions: [refsegment=chapter]
 link-citations: yes
 ---
 

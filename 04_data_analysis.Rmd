@@ -64,3 +64,9 @@ Wie werden welche Gegebenheiten der realen Welt im Modell abgebildet?
 ## Kausale Interaktionsbeziehungen
 
 ## Simulation und reale Entwicklung
+
+...
+
+
+
+\pby[title={Literatur},segment=\therefsegment,heading=subbibintoc]

@@ -2,3 +2,6 @@
 \pagestyle{plain}
 % change language to german
 \usepackage[ngerman]{babel}
+% turn off bibliography at the end of document
+\let\pby\printbibliography
+\renewcommand{\printbibliography}{}

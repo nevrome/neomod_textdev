@@ -281,3 +281,7 @@ Cultural Evolution theory ist angelegt zur Modellbildung in Anthropologischen Wi
 > -- @edmonds_modelling_1998
 
 Im selben Artikel *On Modelling in Memetics* aus dem 2. Band des Journal of Memetics weist er aber bereits auf Risiken der Modellierung in diesem Kontext hin und formuliert Anforderungen. 
+
+
+
+\pby[title={Literatur},segment=\therefsegment,heading=subbibintoc]
