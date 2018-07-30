@@ -15,9 +15,6 @@ addons:
   apt:
     packages:
       - pandoc-citeproc
-      - texlive-bibtex-extra
-      - biber
-      - latexmk
 
 before_script:
   - chmod +x ./_build.sh
