@@ -24,6 +24,6 @@ before_script:
   - chmod +x ./_deploy.sh
 
 script:
-  - sudo ./_build.sh
+  - ./_build.sh
   - ./_deploy.sh
 
