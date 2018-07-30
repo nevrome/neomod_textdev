@@ -17,6 +17,7 @@ addons:
       - pandoc-citeproc
 
 before_script:
+  - tlmgr install biblatex
   - chmod +x ./_build.sh
   - chmod +x ./_deploy.sh
 
