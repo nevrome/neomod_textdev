@@ -3495,7 +3495,7 @@ Projekt & Beschreibung\\
 \centering
 \begin{tabular}[t]{>{\raggedright\arraybackslash}p{20em}>{\raggedright\arraybackslash}p{25em}}
 \toprule
-Projekt & Beschreibung\\
+Bibliothek & Beschreibung\\
 \midrule
 \textbf{cultural\_evolution}\newline \href{https://www.zotero.org/groups/2086516/cultural\_evolution}{zotero/cultural\_evolution} & Cultural Evolution. Literatursammlung zu Cultural Evolution und ihren vielen Subthemen wie Memetik, Cultural Transmission oder Sozial Learning. Geht weit über eine rein archäologische Perspektive hinaus, umfasst aber gleichzeitig archäologische Fallstudien ohne großen theoretischen Selbstanspruch.\\
 \textbf{bronze\_age\_burials}\newline \href{https://www.zotero.org/groups/2199051/bronze\_age\_burials}{zotero/bronze\_age\_burials} & Bestattungssitten in der Bronzezeit. Archäologische Literatur zur Theorie der Thanatoarchäologie und zur kulturhistorischen Entwicklung in der Bronzezeit.\\
@@ -3504,39 +3504,18 @@ Projekt & Beschreibung\\
 \end{tabular}
 \end{table}
 
-Das Modell und alle Analyswerkzeuge sind als Paket für die
-Statistikprogrammiersprache R\footnote{\textcite{RCoreTeamLanguageEnvironmentStatistical2016}}
-implementiert. Das eigentliche Modell ist mittels des
-Rcpp-Frameworks\footnote{\textcite{eddelbuettel_extending_2017};
-  \textcite{eddelbuettel_rcpp_2011};
-  \textcite{eddelbuettel_seamless_2013}} in C++\footnote{\textcite{_iso/iec_2017}}
-umgesetzt, um auf dessen höhere Geschwindigkeit und bessere Werkzeuge
-für Objektorientiertes Programmieren zurückgreifen zu können. Daneben
-enthält das Paket in R geschriebene Hilfsfunktionen zur
-Datenaufbereitung, Analyse und Visualisierung. Getrennt von diesem R
-Paket existiert ein zweites Repositorium (github/nevrome/\ldots{}), in
-dem Modellrechnung und Auswertung für das bronzezeitliche Fallbeispiel
-ausgeführt wurden. Ein Teil der Entwicklung fand zunächst hier statt,
-wurde dann aber über generalisierte Funktionen in genanntes R Paket
-übernommen und wird hier jetzt nur noch referenziert.
+Die gesamte Datenanalyse wurde in der Statistikprogrammiersprache
+R\footnote{\textcite{RCoreTeamLanguageEnvironmentStatistical2016}}
+implementiert. Dabei kam neben Funktionen aus Basispaketen auch eine
+große Anzahl von Community-Paketen zum Einsatz, inklusiver mehrerer
+selbst entwickelter. Dazu gehören \ldots{} \textbf{Themengruppiert
+Nennen und Zitieren!}.
 
-Zur Implementierung von Analyse und Hilfsfunktionen in R kamen neben
-Funktionen aus Basispaketen auch eine große Anzahl von Community-Paketen
-zum Einsatz. Dazu gehören \ldots{} \textbf{Nennen und Zitieren!}. Auch
-bei der Umsetzung des Modells in C++ habe ich auf
-Erweiterungsbibliotheken zurückgegriffen. Allem voran zu nennen ist
-\textbf{Nennen und Zitieren!}.
-
-Code und Daten für das Modell sind öffentlich und frei zugänglich. Alle
-Ergebnisse können reproduziert werden. Eine Anleitung dafür findet sich
-auf Github ().
-
-Die wesentliche, technischen Arbeitsschritte zur Nutzung des Modell von
-\emph{Datenbeschaffung und -Vorbereitung} über \emph{Modelldurchlauf}
-und schließlich \emph{Ergebnisauswertung} seien im folgenden
-überblicksartig beschrieben. Die innere Gliederung des Modells wurde
-bereits weiter oben erläutert. Eine genaue Darstellung der
-Funktionsweise einzelner Submodule unterbleibt im Rahmen dieser Arbeit.
+Die Expansionssimultion gluesless ist in C++ umgesetzt, um auf dessen
+höhere Geschwindigkeit und bessere Werkzeuge für Objektorientiertes
+Programmieren zurückgreifen zu können. Auch dabei habe ich auf
+Erweiterungsbibliotheken zurückgegriffen. Zu nennen sind \ldots{}
+\textbf{Themengruppiert Nennen und Zitieren!}.
 
 \hypertarget{radonb_dataset}{%
 \section{Datensatz Radon-B}\label{radonb_dataset}}
