@@ -9,7 +9,9 @@ editor_options:
 
 Die vorliegende Arbeit wurde in sechs verschiedenen Teilprojekten entwickelt und hat mindestens drei Hilfsprojekte hervorgebracht oder inspiriert (siehe Tabelle \@ref(tab:neomod_projects)).
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, asis=TRUE}
+library(magrittr)
+
 tibble::tibble(
   name = c(
     "neomod_textdev",

@@ -7,5 +7,6 @@ Imports:
   dplyr,
   knitr,
   kableExtra,
+  magrittr,
   tibble
 Remotes: rstudio/bookdown
