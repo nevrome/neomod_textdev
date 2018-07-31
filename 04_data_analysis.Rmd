@@ -7,9 +7,9 @@ editor_options:
 
 ## Technische Umsetzung
 
-Die vorliegende Arbeit wurde in sechs verschiedenen Teilprojekten entwickelt und hat mindestens drei Hilfsprojekte hervorgebracht oder inspiriert (siehe Tabelle \@ref(tab:neomod_projects)).
+Die vorliegende Arbeit wurde in sechs verschiedenen Teilprojekten entwickelt und hat mindestens drei Hilfsprojekte hervorgebracht oder inspiriert (siehe Tabelle \@ref(tab:projects)).
 
-```{r, echo=FALSE, asis=TRUE}
+```{r projects, echo=FALSE, tidy=FALSE}
 library(magrittr)
 
 tibble::tibble(
@@ -55,7 +55,7 @@ tibble::tibble(
     kableExtra::linebreak
   ) %>%
   knitr::kable(
-    # caption = "Table: (\\#tab:neomod_projects) Die Teil- und Hilfsprojekte, die für die Entwicklung dieser Arbeit angelegt wurden.",
+    caption = "Die Projekte, die im Kontext der Entwicklung dieser Arbeit angelegt wurden.",
     format = "latex",
     booktabs = T,
     escape = F
