@@ -32,6 +32,7 @@
 \usepackage[style=authoryear]{biblatex}
 \ExecuteBibliographyOptions{refsegment=chapter}
 \addbibresource{references.bib}
+\addbibresource{r-references.bib}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -97,6 +98,8 @@ Bestattungssitten}
 % turn off bibliography at the end of document
 \let\pby\printbibliography
 \renewcommand{\printbibliography}{}
+% footnotes in tables
+\usepackage{tablefootnote}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -3460,7 +3463,7 @@ inspiriert (siehe Tabelle \ref{tab:projects}).
 \toprule
 Projekt & Beschreibung\\
 \midrule
-\textbf{neomod\_textdev}\newline \href{https://www.github.com/nevrome/neomod\_textdev}{github/nevrome/neomod\_textdev} & Textproduktion. Der Text der Masterarbeit wurde in R Markdown mit im bookdown Framework verfasst. Da ausschließlich das Rendern mittels Pandoc in LaTeX zu PDF vorgesehen war, enthält die Textvorlage auch vereinzelt LaTeX Ausdrücke. Jeder Commit löst dank Continous Integration mit Travis ein automatisches Rendern des Texts aus.\\
+\textbf{neomod\_textdev}\newline \href{https://www.github.com/nevrome/neomod\_textdev}{github/nevrome/neomod\_textdev} & Textproduktion. Der Text der Masterarbeit wurde in R Markdown mit im bookdown Framework\tablefootnote{\textcite{xie_bookdown_2016}; \textcite{xie_bookdown_2018}} verfasst. Da ausschließlich das Rendern mittels Pandoc in LaTeX zu PDF vorgesehen war, enthält die Textvorlage auch vereinzelt LaTeX Ausdrücke. Jeder Commit löst dank Continous Integration mit Travis ein automatisches Rendern des Texts aus.\\
 \textbf{neomod\_prepresentation}\newline \href{https://www.github.com/nevrome/neomod\_prepresentation}{github/nevrome/neomod\_prepresentation} & Präsentationen über die Inhalte der Masterarbeit. Vor- während und nach der Arbeit wurden mehrere Präsentation über Planung, Arbeitsfortschritt und Ergebnisse zusammengestellt. Die Präsentationen sind jeweils in R Markdown konstruiert, unterscheiden sich aber je nachdem, ob ein Rendern in HTML oder PDF vorgesehen war.\\
 \textbf{neomod\_analysis}\newline \href{https://www.github.com/nevrome/neomod\_analysis}{github/nevrome/neomod\_analysis} & Datenanalyse. Sowohl die Realweltdaten als auch die Daten aus der Simulation wurden mit R ausgewertet. Dieses Projekt hat bewusst nicht die Form eines R Pakets, sondern setzt sich aus vielen einzelnen, teilweise redundanten R Skripten zusammen.\\
 \textbf{neomod\_datapool}\newline  & Datenhaltung. Dieses Projekt speichert Eingangs- und Ergebnisdaten. Es unterliegt aufgrund der Datenmenge keiner Versionskontrolle. Das Repository enthält nur ein Skript, um das Verzeichnisskelett zu konstruieren und Geodaten herunterzuladen. Alle weiteren Inhalte werden in neomod\_analysis generiert.\\
