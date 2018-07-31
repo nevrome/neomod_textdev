@@ -10,7 +10,3 @@ biblio-style: authoryear
 biblatexoptions: [refsegment=chapter]
 link-citations: yes
 ---
-
-# Abstract {-}
-
-...
