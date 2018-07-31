@@ -1,8 +1,67 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Datenauswertung
 
 ## Technische Umsetzung
 
-Das Modell und alle Analyswerkzeuge sind als Paket für die Statistikprogrammiersprache R^[@RCoreTeamLanguageEnvironmentStatistical2016] implementiert (github/nevrome/...). Das eigentliche Modell ist mittels des Rcpp-Frameworks^[@eddelbuettel_extending_2017; @eddelbuettel_rcpp_2011; @eddelbuettel_seamless_2013] in C++^[@_iso/iec_2017] umgesetzt, um auf dessen höhere Geschwindigkeit und bessere Werkzeuge für Objektorientiertes Programmieren zurückgreifen zu können. Daneben enthält das Paket in R geschriebene Hilfsfunktionen zur Datenaufbereitung, Analyse und Visualisierung. Getrennt von diesem R Paket existiert ein zweites Repositorium (github/nevrome/...), in dem Modellrechnung und Auswertung für das bronzezeitliche Fallbeispiel ausgeführt wurden. Ein Teil der Entwicklung fand zunächst hier statt, wurde dann aber über generalisierte Funktionen in genanntes R Paket übernommen und wird hier jetzt nur noch referenziert.   
+Die vorliegende Arbeit wurde in sechs verschiedenen Teilprojekten entwickelt und hat mindestens drei Hilfsprojekte hervorgebracht oder inspiriert (siehe Tabelle \@ref(tab:neomod_projects)).
+
+```{r, echo=FALSE}
+tibble::tibble(
+  name = c(
+    "neomod_textdev",
+    "neomod_prepresentation",
+    "neomod_analysis",
+    "neomod_datapool",
+    "popgenerator",
+    "gluesless",
+    "c14bazAAR",
+    "neimann1995",
+    "rdoxygen"
+  ),
+  # link = c(
+  #   "[nevrome/neomod_textdev](https://github.com/nevrome/neomod_textdev)",
+  #   "[nevrome/neomod_prepresentation](https://github.com/nevrome/neomod_prepresentation)",
+  #   "[nevrome/neomod_analysis](https://github.com/nevrome/neomod_analysis)",
+  #   "",
+  #   "[nevrome/popgenerator](https://github.com/nevrome/popgenerator)",
+  #   "[nevrome/popgenerator](https://github.com/nevrome/gluesless)",
+  #   "[nevrome/c14bazAAR](https://github.com/nevrome/c14bazAAR)",
+  #   "[nevrome/neimann1995](https://github.com/nevrome/neimann1995)",
+  #   "[nevrome/rdoxygen](https://github.com/nevrome/rdoxygen)"
+  # ),
+  description = c(
+    "Textproduktion. Der Text der Masterarbeit wurde in R Markdown mit im bookdown Framework verfasst. Da ausschließlich das Rendern mittels Pandoc in LaTeX zu PDF vorgesehen war, enthält die Textvorlage auch vereinzelt LaTeX Ausdrücke. Jeder Commit löst dank Continous Integration mit Travis ein automatisches Rendern des Texts aus.",
+    "Präsentationen über die Inhalte der Masterarbeit. Vor- während und nach der Arbeit wurden mehrere Präsentation über Planung, Arbeitsfortschritt und Ergebnisse zusammengestellt. Die Präsentationen sind jeweils in R Markdown konstruiert, unterscheiden sich aber je nachdem, ob ein Rendern in HTML oder PDF vorgesehen war.",
+    "Datenanalyse. Sowohl die Realweltdaten als auch die Daten aus der Simulation wurden mit R ausgewertet. Dieses Projekt hat bewusst nicht die Form eines R Pakets, sondern setzt sich aus vielen einzelnen, teilweise redundanten R Skripten zusammen.",
+    "Datenhaltung. Dieses Projekt speichert Eingangs- und Ergebnisdaten. Es unterliegt aufgrund der Datenmenge keiner Versionskontrolle. Das Repository enthält nur ein Skript, um das Verzeichnisskelett zu konstruieren und Geodaten herunterzuladen. Alle weiteren Inhalte werden in neomod_analysis generiert.",
+    "Populationsgenerator. R Paket zur Konstruktion von Populationsgraphen.",
+    "Expansionsmodell. C++ Programm zur Simulation der Ausbreitung von Ideen in einem Populationsgraphen, wie er von popgenerator erzeugt wird.",
+    "^14^C-Datenbeschaffung. R Paket zum strukturierten Download von ^14^C-Daten aus verschiedenen Quelldatenbanken -- unter anderem der hier verarbeiteten Radon-B Datenbank.",
+    "Reproduktion eines Artikels. Verständnisübung entlang eines der wesentlichen Artikel in der theoretischen Vorbereitung dieser Arbeit.",
+    "Doxygen Dokumentation. R Paket um Doxygen Dokumentation für Source Code in R Paketen zu erstellen."
+  ) 
+) %>%
+  # dplyr::mutate(
+  #   first = paste0(name, "\n", link)
+  # ) %>%
+  # dplyr::mutate_all(
+  #   kableExtra::linebreak
+  # ) %>%
+  knitr::kable(
+    caption = "Table: (\\#tab:neomod_projects) Die Teil- und Hilfsprojekte, die für die Entwicklung dieser Arbeit angelegt wurden.",
+    booktabs = T
+  ) %>%
+  kableExtra::kable_styling(full_width = F) %>%
+  kableExtra::column_spec(1, bold = T) %>%
+  kableExtra::column_spec(2, width = "20em") %>%
+  kableExtra::column_spec(2, width = "30em")
+```
+
+Das Modell und alle Analyswerkzeuge sind als Paket für die Statistikprogrammiersprache R^[@RCoreTeamLanguageEnvironmentStatistical2016] implementiert. Das eigentliche Modell ist mittels des Rcpp-Frameworks^[@eddelbuettel_extending_2017; @eddelbuettel_rcpp_2011; @eddelbuettel_seamless_2013] in C++^[@_iso/iec_2017] umgesetzt, um auf dessen höhere Geschwindigkeit und bessere Werkzeuge für Objektorientiertes Programmieren zurückgreifen zu können. Daneben enthält das Paket in R geschriebene Hilfsfunktionen zur Datenaufbereitung, Analyse und Visualisierung. Getrennt von diesem R Paket existiert ein zweites Repositorium (github/nevrome/...), in dem Modellrechnung und Auswertung für das bronzezeitliche Fallbeispiel ausgeführt wurden. Ein Teil der Entwicklung fand zunächst hier statt, wurde dann aber über generalisierte Funktionen in genanntes R Paket übernommen und wird hier jetzt nur noch referenziert.   
 
 Zur Implementierung von Analyse und Hilfsfunktionen in R kamen neben Funktionen aus Basispaketen auch eine große Anzahl von Community-Paketen zum Einsatz. Dazu gehören ... **Nennen und Zitieren!**. Auch bei der Umsetzung des Modells in C++ habe ich auf Erweiterungsbibliotheken zurückgegriffen. Allem voran zu nennen ist **Nennen und Zitieren!**.
 
@@ -49,9 +108,9 @@ Stimmt das, was der Datensatz mir sagen möchte?
 
 ## Simulation
 
-### Funktionalität
+### Theoretische Grundlage und Funktionalität
 
-Wie werden welche Gegebenheiten der realen Welt im Modell abgebildet?
+Wie werden warum welche Gegebenheiten der realen Welt im Modell abgebildet?
 
 ### Implementierung
 
