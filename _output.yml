@@ -1,4 +1,5 @@
 bookdown::pdf_book:
+  keep_tex: true
   citation_package: biblatex
   toc: true
   toc_depth: 4
