@@ -3453,17 +3453,29 @@ verbrannter menschlicher Knochen, die in Siedlungen, Gräben oder auf
 
 Die vorliegende Arbeit wurde in sechs verschiedenen Teilprojekten
 entwickelt und hat mindestens drei Hilfsprojekte hervorgebracht oder
-inspiriert (siehe Tabelle \ref{tab:projects}).
+inspiriert (siehe Tabelle \ref{tab:projects}). Alle diese Projekte
+wurden und werden unabhängig voneinander mit der
+Versionskontrollsoftware Git\footnote{\url{https://git-scm.com/}
+  {[}31.07.2018{]}} überwacht, die den Arbeitsfortschritt in vielen
+hundert einzeln kommentierten Veränderungspaketen -- ``Commits'' --
+dokumentiert. Der Entstehungsprozess ist damit weitreichend
+nachvollziehbar, sieht man von Vorüberlegungen und Gesprächen ab, die
+keine konkreten Ergebnisse gezeitigt haben. Nach Abschluss von Korrektur
+und Revision der Arbeit, werden alle Projekte über die Cloud Plattform
+Github \footnote{\url{https://github.com/} {[}31.07.2018{]}} zugänglich
+gemacht werden. Die im Text verarbeitete und darüber hinaus gesammelte
+Literatur ist in drei thematisch getrennte Sammlungen gegliedert (siehe
+Tabelle \ref{tab:libraries}) und über das zotero Webportal einsehbar.
 
 \begin{table}
 
-\caption{\label{tab:projects}Die Projekte, die im Kontext der Entwicklung dieser Arbeit angelegt wurden.}
+\caption{\label{tab:projects}Projekte, die im Kontext der Entwicklung dieser Arbeit angelegt wurden.}
 \centering
 \begin{tabular}[t]{>{\raggedright\arraybackslash}p{20em}>{\raggedright\arraybackslash}p{25em}}
 \toprule
 Projekt & Beschreibung\\
 \midrule
-\textbf{neomod\_textdev}\newline \href{https://www.github.com/nevrome/neomod\_textdev}{github/nevrome/neomod\_textdev} & Textproduktion. Der Text der Masterarbeit wurde in R Markdown mit im bookdown Framework\tablefootnote{\textcite{xie_bookdown_2016}; \textcite{xie_bookdown_2018}} verfasst. Da ausschließlich das Rendern mittels Pandoc in LaTeX zu PDF vorgesehen war, enthält die Textvorlage auch vereinzelt LaTeX Ausdrücke. Jeder Commit löst dank Continous Integration mit Travis ein automatisches Rendern des Texts aus.\\
+\textbf{neomod\_textdev}\newline \href{https://www.github.com/nevrome/neomod\_textdev}{github/nevrome/neomod\_textdev} & Textproduktion. Der Text der Masterarbeit wurde in R Markdown\tablefootnote{\url{https://rmarkdown.rstudio.com/ [31.07.2018]}} mit im bookdown Framework\tablefootnote{\url{\textcite{xie_bookdown_2016}; \textcite{xie_bookdown_2018}; https://bookdown.org/ [31.07.2018]}} verfasst. Da ausschließlich das Rendern mittels Pandoc\tablefootnote{\url{https://pandoc.org/ [31.07.2018]}} in LaTeX\tablefootnote{\url{https://www.latex-project.org/ [31.07.2018]}} ins PDF Format vorgesehen war, enthält die Textvorlage auch vereinzelt LaTeX Ausdrücke. Jeder Commit löst dank Continous Integration mit Travis\tablefootnote{\url{https://travis-ci.com/ [31.07.2018]}} ein automatisches Rendern des Texts aus.\\
 \textbf{neomod\_prepresentation}\newline \href{https://www.github.com/nevrome/neomod\_prepresentation}{github/nevrome/neomod\_prepresentation} & Präsentationen über die Inhalte der Masterarbeit. Vor- während und nach der Arbeit wurden mehrere Präsentation über Planung, Arbeitsfortschritt und Ergebnisse zusammengestellt. Die Präsentationen sind jeweils in R Markdown konstruiert, unterscheiden sich aber je nachdem, ob ein Rendern in HTML oder PDF vorgesehen war.\\
 \textbf{neomod\_analysis}\newline \href{https://www.github.com/nevrome/neomod\_analysis}{github/nevrome/neomod\_analysis} & Datenanalyse. Sowohl die Realweltdaten als auch die Daten aus der Simulation wurden mit R ausgewertet. Dieses Projekt hat bewusst nicht die Form eines R Pakets, sondern setzt sich aus vielen einzelnen, teilweise redundanten R Skripten zusammen.\\
 \textbf{neomod\_datapool}\newline  & Datenhaltung. Dieses Projekt speichert Eingangs- und Ergebnisdaten. Es unterliegt aufgrund der Datenmenge keiner Versionskontrolle. Das Repository enthält nur ein Skript, um das Verzeichnisskelett zu konstruieren und Geodaten herunterzuladen. Alle weiteren Inhalte werden in neomod\_analysis generiert.\\
@@ -3473,6 +3485,21 @@ Projekt & Beschreibung\\
 \textbf{c14bazAAR}\newline \href{https://www.github.com/nevrome/c14bazAAR}{github/nevrome/c14bazAAR} & \textsuperscript{14}C-Datenbeschaffung. R Paket zum strukturierten Download von \textsuperscript{14}C-Daten aus verschiedenen Quelldatenbanken -- unter anderem der hier verarbeiteten Radon-B Datenbank.\\
 \textbf{neimann1995}\newline \href{https://www.github.com/nevrome/neimann1995}{github/nevrome/neimann1995} & Reproduktion eines Artikels. Verständnisübung entlang eines der wesentlichen Artikel in der theoretischen Vorbereitung dieser Arbeit.\\
 \textbf{rdoxygen}\newline \href{https://www.github.com/nevrome/rdoxygen}{github/nevrome/rdoxygen} & Doxygen Dokumentation. R Paket um Doxygen Dokumentation für Source Code in R Paketen zu erstellen.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:libraries}Literatursammlungen, die im Kontext der Entwicklung dieser Arbeit angelegt wurden.}
+\centering
+\begin{tabular}[t]{>{\raggedright\arraybackslash}p{20em}>{\raggedright\arraybackslash}p{25em}}
+\toprule
+Projekt & Beschreibung\\
+\midrule
+\textbf{cultural\_evolution}\newline \href{https://www.zotero.org/groups/2086516/cultural\_evolution}{zotero/cultural\_evolution} & Cultural Evolution. Literatursammlung zu Cultural Evolution und ihren vielen Subthemen wie Memetik, Cultural Transmission oder Sozial Learning. Geht weit über eine rein archäologische Perspektive hinaus, umfasst aber gleichzeitig archäologische Fallstudien ohne großen theoretischen Selbstanspruch.\\
+\textbf{bronze\_age\_burials}\newline \href{https://www.zotero.org/groups/2199051/bronze\_age\_burials}{zotero/bronze\_age\_burials} & Bestattungssitten in der Bronzezeit. Archäologische Literatur zur Theorie der Thanatoarchäologie und zur kulturhistorischen Entwicklung in der Bronzezeit.\\
+\textbf{software\_packages}\newline \href{https://www.zotero.org/groups/2211203/software\_packages}{zotero/software\_packages} & Software. Referenzen von wissenschaftlicher Software, die für Datenverarbeitung sowie Text- und Abbildungsvorbereitung zum Einsatz gekommen ist. Vor allem R Pakete und C++ Bibliotheken.\\
 \bottomrule
 \end{tabular}
 \end{table}
