@@ -86,7 +86,7 @@ tibble::tibble(
   ) 
 ) %>%
   dplyr::transmute(
-    Projekt = paste0("\\textbf{", name, "}", "\n", link),
+    Bibliothek = paste0("\\textbf{", name, "}", "\n", link),
     Beschreibung = description
   ) %>%
   dplyr::mutate_all(
@@ -103,13 +103,9 @@ tibble::tibble(
   kableExtra::column_spec(2, width = "25em")
 ```
 
-Das Modell und alle Analyswerkzeuge sind als Paket für die Statistikprogrammiersprache R^[@RCoreTeamLanguageEnvironmentStatistical2016] implementiert. Das eigentliche Modell ist mittels des Rcpp-Frameworks^[@eddelbuettel_extending_2017; @eddelbuettel_rcpp_2011; @eddelbuettel_seamless_2013] in C++^[@_iso/iec_2017] umgesetzt, um auf dessen höhere Geschwindigkeit und bessere Werkzeuge für Objektorientiertes Programmieren zurückgreifen zu können. Daneben enthält das Paket in R geschriebene Hilfsfunktionen zur Datenaufbereitung, Analyse und Visualisierung. Getrennt von diesem R Paket existiert ein zweites Repositorium (github/nevrome/...), in dem Modellrechnung und Auswertung für das bronzezeitliche Fallbeispiel ausgeführt wurden. Ein Teil der Entwicklung fand zunächst hier statt, wurde dann aber über generalisierte Funktionen in genanntes R Paket übernommen und wird hier jetzt nur noch referenziert.   
+Die gesamte Datenanalyse wurde in der Statistikprogrammiersprache R^[@RCoreTeamLanguageEnvironmentStatistical2016] implementiert. Dabei kam neben Funktionen aus Basispaketen auch eine große Anzahl von Community-Paketen zum Einsatz, inklusiver mehrerer selbst entwickelter. Dazu gehören ... **Themengruppiert Nennen und Zitieren!**.
 
-Zur Implementierung von Analyse und Hilfsfunktionen in R kamen neben Funktionen aus Basispaketen auch eine große Anzahl von Community-Paketen zum Einsatz. Dazu gehören ... **Nennen und Zitieren!**. Auch bei der Umsetzung des Modells in C++ habe ich auf Erweiterungsbibliotheken zurückgegriffen. Allem voran zu nennen ist **Nennen und Zitieren!**.
-
-Code und Daten für das Modell sind öffentlich und frei zugänglich. Alle Ergebnisse können reproduziert werden. Eine Anleitung dafür findet sich auf Github ().
-
-Die wesentliche, technischen Arbeitsschritte zur Nutzung des Modell von *Datenbeschaffung und -Vorbereitung* über *Modelldurchlauf* und schließlich *Ergebnisauswertung* seien im folgenden überblicksartig beschrieben. Die innere Gliederung des Modells wurde bereits weiter oben erläutert. Eine genaue Darstellung der Funktionsweise einzelner Submodule unterbleibt im Rahmen dieser Arbeit. 
+Die Expansionssimultion gluesless ist in C++ umgesetzt, um auf dessen höhere Geschwindigkeit und bessere Werkzeuge für Objektorientiertes Programmieren zurückgreifen zu können. Auch dabei habe ich auf Erweiterungsbibliotheken zurückgegriffen. Zu nennen sind ... **Themengruppiert Nennen und Zitieren!**.
 
 ## Datensatz Radon-B {#radonb_dataset}
 
