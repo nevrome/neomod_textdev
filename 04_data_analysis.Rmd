@@ -55,7 +55,45 @@ tibble::tibble(
     kableExtra::linebreak
   ) %>%
   knitr::kable(
-    caption = "Die Projekte, die im Kontext der Entwicklung dieser Arbeit angelegt wurden.",
+    caption = "Projekte, die im Kontext der Entwicklung dieser Arbeit angelegt wurden.",
+    format = "latex",
+    booktabs = T,
+    escape = F
+  ) %>%
+  kableExtra::kable_styling(full_width = F) %>%
+  kableExtra::column_spec(1, width = "20em") %>%
+  kableExtra::column_spec(2, width = "25em")
+```
+
+```{r libraries, echo=FALSE, tidy=FALSE}
+library(magrittr)
+
+tibble::tibble(
+  name = c(
+    "cultural\\_evolution",
+    "bronze\\_age\\_burials",
+    "software\\_packages"
+  ),
+  link = c(
+    "\\href{https://www.zotero.org/groups/2086516/cultural\\_evolution}{zotero/cultural\\_evolution}",
+    "\\href{https://www.zotero.org/groups/2199051/bronze\\_age\\_burials}{zotero/bronze\\_age\\_burials}",
+    "\\href{https://www.zotero.org/groups/2211203/software\\_packages}{zotero/software\\_packages}"
+  ),
+  description = c(
+    "Cultural Evolution. Literatursammlung zu Cultural Evolution und ihren vielen Subthemen wie Memetik, Cultural Transmission oder Sozial Learning. Geht weit über eine rein archäologische Perspektive hinaus, umfasst aber gleichzeitig archäologische Fallstudien ohne großen theoretischen Selbstanspruch.",
+    "Bestattungssitten in der Bronzezeit. Archäologische Literatur zur Theorie der Thanatoarchäologie und zur kulturhistorischen Entwicklung in der Bronzezeit.",
+    "Software. Referenzen von wissenschaftlicher Software, die für Datenverarbeitung sowie Text- und Abbildungsvorbereitung zum Einsatz gekommen ist. Vor allem R Pakete und C++ Bibliotheken."
+  ) 
+) %>%
+  dplyr::transmute(
+    Projekt = paste0("\\textbf{", name, "}", "\n", link),
+    Beschreibung = description
+  ) %>%
+  dplyr::mutate_all(
+    kableExtra::linebreak
+  ) %>%
+  knitr::kable(
+    caption = "Literatursammlungen, die im Kontext der Entwicklung dieser Arbeit angelegt wurden.",
     format = "latex",
     booktabs = T,
     escape = F
