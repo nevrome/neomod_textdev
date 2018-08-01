@@ -107,7 +107,7 @@ Die Expansionssimultion gluesless ist in C++ umgesetzt, um auf dessen höhere Ge
 
 ## Datensatz Radon-B {#radonb_dataset}
 
-Radon-B^[@kneisel_radon-b_2013] ist eine öffentlich verfügbare Datenbank, die einzelne Radiokohlenstoffdatierungen -- ^14^C-Daten -- aus der Bronze- und Frühen Eisenzeit in Europa sammelt. Sie konzentriert sich auf ein Zeitfenster zwischen 2300 bis 500calBC ab, enthält jedoch auch Daten jenseits dieses Limits. Jedes Datum ist mit Kerndaten und Metainformationen verknüpft (siehe Tabelle \@ref(tab:radonbparams)).
+Radon-B^[@kneisel_radon-b_2013] ist eine öffentlich verfügbare Datenbank, die einzelne Radiokohlenstoffdatierungen -- ^14^C-Daten -- aus der Bronze- und Frühen Eisenzeit in Europa sammelt. Sie konzentriert sich auf ein Zeitfenster zwischen 2300 bis 500calBC ab, enthält jedoch auch Daten jenseits dieses Limits. Neben Radon-B steht mit ihrer Schwesterdatenbank Radon[@martin_hinz_radon_2012] eine strukturell äquivalente Sammlung mit einem Schwerpunkt auf neolithischen Daten zur Verfügung. Jedes Datum ist mit Kerndaten und Metainformationen verknüpft (siehe Tabelle \@ref(tab:radonbparams)). Die Informationen wurden aus einzelnen Publikationen zusammengetragen und sind teilweise unvollständig, inkonsistent oder fehlerhaft (siehe Kapitel \@ref(source_criticism)).
 
 ```{r radonbparams, echo=FALSE, tidy=FALSE}
 tibble::tibble(
@@ -186,10 +186,6 @@ tibble::tibble(
   kableExtra::column_spec(1, width = "20em") %>%
   kableExtra::column_spec(2, width = "25em")
 ```
-
-The database can be searched by geographic or chronological factors, but also according to the nature of the sample material, the sites or features. The data and related information were taken from the literature cited in each case, and due to the timing of phases and culture assignment, are subject to change. We therefore assume no responsibility for the accuracy of source data.
-
-The aforementioned authors hope through RADON-B to ensure a current overview of the absolute chronological dates in Europe and thus provide an important contribution to European chronological discussion. The database has been designed to allow users to enter their own data; this feature will soon be available. Additionally the data can also be sent to us so we can add them into the dataset. Help us keep the database up to date. To improve the service we would be grateful if you could report errors or proposals for improvement to radon@ufg.uni-kiel.de.
 
 ### Datenvorbereitung und Gliederung {#data_prep_and_segmentation}
 
