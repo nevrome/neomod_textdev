@@ -3525,17 +3525,19 @@ Folgende Pakete kamen zum Einsatz zur Text- und Literaturverarbeitung
   \textcite{xie_bookdown_2018}}, citr\footnote{\textcite{aust_citr_2017}},
 knitr\footnote{\textcite{xie_dynamic_2015}; \textcite{xie_knitr_2014};
   \textcite{xie_knitr_2018}}, markdown\footnote{\textcite{allaire_markdown_2017}},
-rmarkdown\footnote{\textcite{allaire_rmarkdown_2018}}), zur allgemeinen
-Datenmanipulation (broom\footnote{\textcite{robinson_broom_2018}},
-dplyr\footnote{\textcite{wickham_dplyr_2018}}, forcats,
-kableExtra\footnote{\textcite{zhu_kableextra_2018}}, purrr\footnote{\textcite{henry_purrr_2018}},
-readr\footnote{\textcite{wickham_readr_2017}}, stringi\footnote{\textcite{gagolewski_r_2018}},
-stringr\footnote{\textcite{wickham_stringr_2018}}, tibble\footnote{\textcite{muller_tibble_2018}},
-tidyr\footnote{\textcite{wickham_tidyr_2018}}, reshape, reshape2), zur
-Graphikerstellung (ggplot2), für geographische Analysen (sp, sf), für
-statistische Analysen (), zur Erstellung von WebApps und Interaktiven
-Präsentationen im Shiny Framework (shiny\footnote{\textcite{chang_shiny_2018}})
-und zur allgemeinen Arbeit und Paketentwicklung in R (devtools\footnote{\textcite{wickham_devtools_2018}},
+rmarkdown\footnote{\textcite{allaire_rmarkdown_2018}}), zur
+Datenbeschaffung (c14bazAAR), zur allgemeinen Datenmanipulation
+(broom\footnote{\textcite{robinson_broom_2018}}, dplyr\footnote{\textcite{wickham_dplyr_2018}},
+forcats, kableExtra\footnote{\textcite{zhu_kableextra_2018}},
+purrr\footnote{\textcite{henry_purrr_2018}}, readr\footnote{\textcite{wickham_readr_2017}},
+stringi\footnote{\textcite{gagolewski_r_2018}}, stringr\footnote{\textcite{wickham_stringr_2018}},
+tibble\footnote{\textcite{muller_tibble_2018}}, tidyr\footnote{\textcite{wickham_tidyr_2018}},
+reshape, reshape2), zur Graphikerstellung (ggplot2), für geographische
+Analysen (sp, sf), für statistische Analysen und
+Spezialdatenverarbeitung (Bchron\footnote{\textcite{haslett_simple_2008}}),
+zur Erstellung von WebApps und Interaktiven Präsentationen im Shiny
+Framework (shiny\footnote{\textcite{chang_shiny_2018}}) und zur
+allgemeinen Arbeit und Paketentwicklung in R (devtools\footnote{\textcite{wickham_devtools_2018}},
 magrittr\footnote{\textcite{bache_magrittr_2014}}, Rcpp\footnote{\textcite{eddelbuettel_extending_2017};
   \textcite{eddelbuettel_rcpp_2011};
   \textcite{eddelbuettel_seamless_2013}}, rlang\footnote{\textcite{henry_rlang_2018}},
@@ -3602,6 +3604,15 @@ Parameter & Beschreibung\\
 \hypertarget{data_prep_and_segmentation}{%
 \subsection{Datenvorbereitung und
 Gliederung}\label{data_prep_and_segmentation}}
+
+Eine inhaltlich etwas reduzierte\footnote{Für einen Überblick, welche
+  Variablen heruntergeladen und wie umbenannt werden:
+  \url{https://github.com/ISAAKiel/c14bazAAR/blob/master/data-raw/variable_reference.csv}},
+aber hier ausreichende Version von Radon-B wurde mittels des R Pakets
+c14bazAAR direkt in R bezogen. Der erste Schritt der Datenverarbeitung
+war die Kalibration der \textsuperscript{14}C-Daten. Dafür kam das R
+Paket Bchron\footnote{\textcite{haslett_simple_2008}} zum Einsatz.
+\ldots{}
 
 \hypertarget{deskriptive-analyse}{%
 \subsection{Deskriptive Analyse}\label{deskriptive-analyse}}
