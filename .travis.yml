@@ -15,6 +15,7 @@ addons:
   apt:
     packages:
       - pandoc-citeproc
+      - texlive-lang-greek
 
 before_script:
   - tlmgr update biblatex
