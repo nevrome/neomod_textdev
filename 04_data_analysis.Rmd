@@ -156,7 +156,7 @@ tibble::tibble(
     "Die allgemeine, individuelle Kennnummer, die sich aus einem Kürzel des Labors, das die Messung durchgeführt hat, und einer fortlaufenden, laborspezifischen Prozessnummer zusammensetzt.",
     "Das \\textsuperscript{14}C-Alter, das mit der Messung ermittelt wurde in Jahren vor 1950 nach Christus [uncalBP].",
     "Die messbedingte Standardabweichung des \\textsuperscript{14}C-Alters.",
-    "Ein Maß für das Isotopenverhältnis des stabilen Isotops \\textsuperscript{13}C / \\textsuperscript{12}C zwischen der Probe und einem Standard in Promille [\\permil].",
+    "Ein Maß für das Isotopenverhältnis des stabilen Isotops \\textsuperscript{13}C / \\textsuperscript{12}C zwischen der Probe und einem Standard in Promille [\\textperthousand].",
     "Die Standardabweichung des \\textdelta\\textsuperscript{13}C-Werts.",
     "Oberkategorie des Probenmaterials.",
     "Nähere Kategorisierung und Artenzuordnung des Probenmaterials.",
