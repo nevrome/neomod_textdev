@@ -111,6 +111,16 @@ Die Expansionssimultion gluesless ist in C++ umgesetzt, um auf dessen höhere Ge
 
 ...
 
+Das scheint sich auch im RADON-B Datensatz abzubilden: In fast allen Untersuchungsregionen dominieren zum Ende hin Brandbestattungen (siehe Abbildung \@ref(fig:cremation-inhumation-proportion-development).
+
+Diesen Umstand gibt RADON-B in Ermangelung entsprechender Daten leider nicht wieder (siehe Abbildung \@ref(fig:full-dataset-map))
+
+### Datenvorbereitung und Gliederung {#data_prep_and_segmentation}
+
+### Deskriptive Analyse
+
+...
+
 ```{r full-dataset-map, echo = FALSE, fig.cap = "Abbildung"}
 #knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/disp_map_full.jpeg")
 ```
@@ -123,7 +133,11 @@ Die Expansionssimultion gluesless ist in C++ umgesetzt, um auf dessen höhere Ge
 #knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/proportions_development_regions_cremation_inhumation.jpeg")
 ```
 
-Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die C14-Daten in RADON-B räumlich und zeitlich verteilen. Für einzelne Regionen liegen für gewisse Zeiträume verhältnismäßig viele Daten vor, für die Mehrzahl der Regionen ist die Datenmenge allerdings sehr gering. Diese Ungleichverteilung der Daten kann viele verschiedene Gründe haben: 
+Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die C14-Daten in RADON-B räumlich und zeitlich verteilen.
+
+### Quellenkritik
+
+Für einzelne Regionen liegen für gewisse Zeiträume verhältnismäßig viele Daten vor, für die Mehrzahl der Regionen ist die Datenmenge allerdings sehr gering. Diese Ungleichverteilung der Daten kann viele verschiedene Gründe haben: 
 
 - Schwerpunkte der Datenaufnahme für RADON-B nach Forschungsinteressen der beteiligten Wissenschaftler.
 - Regionale und zeitliche Ausrichtung von Forschungsprojekten, in deren Rahmen die C14-Daten erstellt wurden. Damit zusammen hängt die politische Rahmensituation, die C14-Datierung in größerem Umfang z.B. in den Osteuropäischen Staaten erst nach dem Zusammenbruch der Sowjetunion möglich gemacht hat. 
@@ -131,18 +145,6 @@ Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die
 - Erhaltungssituation organischer Funde
 - Dateneingabe in RADON-B (Wo sind Grabmetainformationen beigelegt?)
 - weitere mögliche Bestattungsformen, die archäologisch nicht fassbar sind
-
-Das scheint sich auch im RADON-B Datensatz abzubilden: In fast allen Untersuchungsregionen dominieren zum Ende hin Brandbestattungen (siehe Abbildung \@ref(fig:cremation-inhumation-proportion-development).
-
-Diesen Umstand gibt RADON-B in Ermangelung entsprechender Daten leider nicht wieder (siehe Abbildung \@ref(fig:full-dataset-map))
-
-### Datenvorbereitung und Gliederung {#data_prep_and_segmentation}
-
-### Deskriptive Analyse
-
-### Quellenkritik
-
-Stimmt das, was der Datensatz mir sagen möchte?
 
 ## Simulation
 
