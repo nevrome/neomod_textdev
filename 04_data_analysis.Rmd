@@ -130,6 +130,25 @@ tibble::tibble(
     "Literature",
     "Comment"
   ),
+  examples = c(
+    "",
+    "z.B. Ua-25144, OxA-1602, HAR-4341",
+    "",
+    "",
+    "",
+    "",
+    "z.B. charcoal, bone, seed",
+    "z.B. hazel, oak, barley, boar",
+    "z.B. settlement (house), rockshelter, 	Grave (cremation)",
+    "z.B. House I, from a mass of burnt debris...",
+    "z.B. Late Bronze Age, Únětice, Nordic Bronze Age",
+    "z.B. Nagyrév Group, Mierzanowice, Period III",
+    "z.B. La Croix-Saint-Ouen, Stedten, Byneset",
+    "z.B. Germany, France, Poland",
+    "z.B. Baden-Württemberg, Surrey, Greater Poland",
+    "",
+    ""
+  ),
   description = c(
     "Eine datenbankspezifische, individuelle Kennnummer.",
     "Die allgemeine, individuelle Kennnummer, die sich aus einem Kürzel des Labors, das die Messung durchgeführt hat, und einer fortlaufenden, laborspezifischen Prozessnummer zusammensetzt.",
@@ -137,22 +156,25 @@ tibble::tibble(
     "Die messbedingte Standardabweichung des \\textsuperscript{14}C-Alters.",
     "Ein Maß für das Isotopenverhältnis des stabilen Isotops \\textsuperscript{13}C / \\textsuperscript{12}C zwischen der Probe und einem Standard in Promille [\\permil].",
     "Die Standardabweichung des \\textdelta\\textsuperscript{13}C-Werts.",
-    "Oberkategorie des Probenmaterials. z.B. charcoal, bone, seed",
-    "Nähere Kategorisierung und Artenzuordnung des Probenmaterials. z.B. hazel, oak, barley, boar",
-    "Befund bzw. Fundplatzkategorie, aus dem das Probenmaterial stammt. z.B. settlement (house), rockshelter, 	Grave (cremation)",
-    "Bezeichnung des Befunds in der Grabungsdokumentations des Fundplatzes. z.B. House I, from a mass of burnt debris...",
-    "Allgemeine, archäologische Kultur- oder Phasenzuordnung des Probenkontexts. z.B. Late Bronze Age, Únětice, Corded Ware",
-    "Präzisere Kultur- oder Kontextansprache. z.B. Nagyrév Group, Mierzanowice, Period III",
-    "Bezeichnung des Fundplatzes, aus dem die Probe stammt. z.B. 	La Croix-Saint-Ouen, Stedten, Byneset",
-    "Land in dem der Fundplatz liegt. z.B. Germany, France, Poland",
-    "Zugehörige administrative Region innerhalb des Landes. z.B. Baden-Württemberg, Surrey, Greater Poland",
+    "Oberkategorie des Probenmaterials.",
+    "Nähere Kategorisierung und Artenzuordnung des Probenmaterials.",
+    "Befund bzw. Fundplatzkategorie, aus dem das Probenmaterial stammt.",
+    "Bezeichnung des Befunds in der Grabungsdokumentations des Fundplatzes.",
+    "Allgemeine, archäologische Kultur- oder Phasenzuordnung des Probenkontexts.",
+    "Präzisere Kultur- oder Kontextansprache.",
+    "Bezeichnung des Fundplatzes, aus dem die Probe stammt.",
+    "Land in dem der Fundplatz liegt.",
+    "Zugehörige administrative Region innerhalb des Landes.",
     "Literaturreferenz auf die Publikation aus der die Informationen über das Datum entnommen wurden.",
     "Freitextkommentarfeld mit Zusatzinformationen zu dem einzelen Datum."
   ) 
 ) %>%
   dplyr::transmute(
-    Parameter = paste0("\\textbf{", param, "}"),
+    Parameter = paste0("\\textbf{", param, "}", "\n", examples),
     Beschreibung = description
+  ) %>%
+  dplyr::mutate_all(
+    kableExtra::linebreak
   ) %>%
   knitr::kable(
     caption = "Parameter, die in Radon-B für jedes Datum vorliegen.",
