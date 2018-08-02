@@ -3451,8 +3451,9 @@ verbrannter menschlicher Knochen, die in Siedlungen, Gräben oder auf
 \hypertarget{datenauswertung}{%
 \chapter{Datenauswertung}\label{datenauswertung}}
 
-\hypertarget{technische-umsetzung}{%
-\section{Technische Umsetzung}\label{technische-umsetzung}}
+\hypertarget{technische-umsetzung-und-datenquellen}{%
+\section{Technische Umsetzung und
+Datenquellen}\label{technische-umsetzung-und-datenquellen}}
 
 Die vorliegende Arbeit wurde in sechs verschiedenen Teilprojekten
 entwickelt und hat mindestens drei Hilfsprojekte hervorgebracht oder
@@ -3554,6 +3555,13 @@ dann aber aufgrund von Performance-Problemen durch die C++ Bibliothek
 des Stanford Network Analysis Project\footnote{\url{https://snap.stanford.edu/}
   {[}01.08.2018{]}; \textcite{leskovec2016snap}} (SNAP) abgelöst.
 
+Die für die Kartengestaltung benötigten Raumdaten, also
+Landmasse-Außengrenzen, Administrative Ländergrenzen sowie Flüsse und
+Seen, stammen aus dem Natural Earth Projekt\footnote{\url{https://www.naturalearthdata.com}
+  {[}02.08.2018{]}}. Verwendet wurden Daten des mittleren
+Auflösungssniveaus, das eine Maßstabsperspektive von 1:50.000.000
+wiedergeben soll.
+
 \hypertarget{radonb_dataset}{%
 \section{Datensatz Radon-B}\label{radonb_dataset}}
 
@@ -3644,7 +3652,21 @@ zwei neue Parameter mit jeweils drei Werten geschaffen:
 \emph{cremation} und \emph{unknown} sowie \emph{burial\_construction}
 mit den Kategorien \emph{mound}, \emph{flat} und \emph{unknown}. Nach
 diesem Arbeitsschritt lässt sich der Hauptausgangsdatensatz als Tabelle
-mit \ldots{}
+mit \ldots{} Abbildung X zeigt eine Kartierung \ldots{}
+
+Das Forschungsareal dieser Arbeit folgt keinen natürlichen oder
+kulturellen Grenzen, sondern wurde rein künstlich auf Grundlage der
+räumlichen Verteilung der zusammengestellten \textsuperscript{14}C-Daten
+festgelegt. Auf Grundlage visueller Analyse der Punktdichte wurde ein
+Rechteck aufgespannt (siehe Abbildung Y). Die Projektion, die dieser
+Festlegung, allen Kartierungen und auch der Regionengliederung zugrunde
+liegt ist bewusst mit EPSG:102013 -- Europe Albers Equal Area Conics
+gewählt, da diese auch auf kontinentalem Maßstab und bei Landmassen in
+betonter Ost-West Ausdehnung ein hohes Maß an Flächentreue
+gewährleistet\footnote{\textcite{snyder_map_1987}, 98-99.}. Das ist eine
+wichtige Eigenschaft für die Definition von vergleichbaren, räumlichen
+Untersuchungseinheiten.\\
+\ldots{}
 
 \hypertarget{deskriptive-analyse}{%
 \subsection{Deskriptive Analyse}\label{deskriptive-analyse}}
