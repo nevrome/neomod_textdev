@@ -3613,19 +3613,38 @@ aber hier ausreichende Version von Radon-B wurde mittels des R Pakets
 c14bazAAR\footnote{} direkt in R bezogen. Der erste
 Datenverarbeitungsschritt war das Entfernen aller Daten ohne
 Altersinformation und aller Daten außerhalb der theoretischen Reichweite
-der Kalibrationskurve. Die Reichweite der im R Paket Bchron\footnote{\textcite{haslett_simple_2008}}
-enthaltenen Version es IntCal13 Datensatzes\footnote{\textcite{reimer_intcal13_2013}},
-die auch für die eigentliche Kalibration verwendet wurde beträgt
-71-46401calBP. Bchron berechnet das kalibrierte Alter mittels
-Numerischer Integration\footnote{\url{https://github.com/andrewcparnell/Bchron/blob/master/R/BchronCalibrate.R}
+der Kalibrationskurve (71-46401calBP). Zur Kalibration wurde das R Paket
+Bchron\footnote{\textcite{haslett_simple_2008}} und die darin
+enthaltenen Version es IntCal13 Datensatzes\footnote{\textcite{reimer_intcal13_2013}}
+verwendet. Bchron berechnet das kalibrierte Alter mittels Numerischer
+Integration\footnote{\url{https://github.com/andrewcparnell/Bchron/blob/master/R/BchronCalibrate.R}
   {[}02.08.2018{]}} und liefert für jedes Datum eine normierte
 Wahrscheinlichkeitskurve. Alter mit Wahrscheinlichkeiten unterhalb eines
 Schwellwerts von \(1\mathrm{e}{-6}\) wurden abgeschnitten und Alter
 innerhalb des \(2\sigma\) Wahrscheinlichkeitsbereichs gesondert
-markiert. Die so erhaltenen, unterschiedlich wahrscheinlichen Alter für
-jedes einzelne Datum wurden ab hier von calBP in calBC umgerechnet, um
-üblichen archäologischen Konventionen und dem allgemeinen Sprachgebrauch
-zu entsprechen.
+markiert. Die so erhaltenen, unterschiedlich wahrscheinlichen,
+kalibrierten Alter für jedes einzelne Datum wurden ab hier von calBP in
+calBC umgerechnet, um üblichen archäologischen Konventionen und dem
+allgemeinen Sprachgebrauch zu entsprechen. Um ein Subset des so
+vorbereiteten Gesamtdatensatzes zu erzeugen, das die Anforderungen der
+Fragestellung erfüllt, wurde er auf all jene Daten reduziert, die in
+ihrem \(2\sigma\) Bereich mindestens ein Alter im Zeitfenster
+800-2200calBC (1401 Jahre) vorweisen können. Die Fragestellung erfordert
+es auch, alle Daten ohne Raumbezug, also ohne Koordinateninformation, zu
+entfernen. Radon-B stellt im Paramter \emph{Feature Type}
+(\emph{sitetype} in c14bazAAR) teilweise kategorisierte Informationen
+zum Befundkontext jedes Datums zur Verfügung: Fragestellungsrelevant
+sind die Kategorien \emph{cemetery}, \emph{Grave}, \emph{Grave (mound)},
+\emph{Grave (mound) inhumation}, \emph{Grave (mound) cremation},
+\emph{Grave (flat)}, \emph{Grave (flat) inhumation}, \emph{Grave (flat)
+cremation}, \emph{Grave (cremation)} und \emph{Grave (inhumation)}.
+Statt des Parameters \emph{Feature Type} wurden mittels Pattern Matching
+zwei neue Parameter mit jeweils drei Werten geschaffen:
+\emph{burial\_type} mit den Kategorien \emph{inhumation},
+\emph{cremation} und \emph{unknown} sowie \emph{burial\_construction}
+mit den Kategorien \emph{mound}, \emph{flat} und \emph{unknown}. Nach
+diesem Arbeitsschritt lässt sich der Hauptausgangsdatensatz als Tabelle
+mit \ldots{}
 
 \hypertarget{deskriptive-analyse}{%
 \subsection{Deskriptive Analyse}\label{deskriptive-analyse}}
