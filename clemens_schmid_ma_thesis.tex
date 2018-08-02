@@ -31,8 +31,9 @@
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage[style=authoryear]{biblatex}
 \ExecuteBibliographyOptions{refsegment=chapter}
-\addbibresource{references.bib}
-\addbibresource{r-references.bib}
+\addbibresource{references-cultural-evolution.bib}
+\addbibresource{references-bronze-age-burials.bib}
+\addbibresource{references-software-and-data-analysis.bib}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -3609,10 +3610,22 @@ Eine inhaltlich etwas reduzierte\footnote{Für einen Überblick, welche
   Variablen heruntergeladen und wie umbenannt werden:
   \url{https://github.com/ISAAKiel/c14bazAAR/blob/master/data-raw/variable_reference.csv}},
 aber hier ausreichende Version von Radon-B wurde mittels des R Pakets
-c14bazAAR direkt in R bezogen. Der erste Schritt der Datenverarbeitung
-war die Kalibration der \textsuperscript{14}C-Daten. Dafür kam das R
-Paket Bchron\footnote{\textcite{haslett_simple_2008}} zum Einsatz.
-\ldots{}
+c14bazAAR\footnote{} direkt in R bezogen. Der erste
+Datenverarbeitungsschritt war das Entfernen aller Daten ohne
+Altersinformation und aller Daten außerhalb der theoretischen Reichweite
+der Kalibrationskurve. Die Reichweite der im R Paket Bchron\footnote{\textcite{haslett_simple_2008}}
+enthaltenen Version es IntCal13 Datensatzes\footnote{\textcite{reimer_intcal13_2013}},
+die auch für die eigentliche Kalibration verwendet wurde beträgt
+71-46401calBP. Bchron berechnet das kalibrierte Alter mittels
+Numerischer Integration\footnote{\url{https://github.com/andrewcparnell/Bchron/blob/master/R/BchronCalibrate.R}
+  {[}02.08.2018{]}} und liefert für jedes Datum eine normierte
+Wahrscheinlichkeitskurve. Alter mit Wahrscheinlichkeiten unterhalb eines
+Schwellwerts von \(1\mathrm{e}{-6}\) wurden abgeschnitten und Alter
+innerhalb des \(2\sigma\) Wahrscheinlichkeitsbereichs gesondert
+markiert. Die so erhaltenen, unterschiedlich wahrscheinlichen Alter für
+jedes einzelne Datum wurden ab hier von calBP in calBC umgerechnet, um
+üblichen archäologischen Konventionen und dem allgemeinen Sprachgebrauch
+zu entsprechen.
 
 \hypertarget{deskriptive-analyse}{%
 \subsection{Deskriptive Analyse}\label{deskriptive-analyse}}
