@@ -4,3 +4,7 @@
 .Ruserdata
 
 _book
+
+# latex auxiliary files (https://tex.stackexchange.com/questions/17845/which-auxiliary-latex-files-should-be-ignored-by-version-control-software/17852)
+# endfloat
+*.fff
