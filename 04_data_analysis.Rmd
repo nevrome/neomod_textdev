@@ -191,7 +191,7 @@ tibble::tibble(
 
 ### Datenvorbereitung und Gliederung {#data_prep_and_segmentation}
 
-Eine inhaltlich etwas reduzierte^[Für einen Überblick, welche Variablen heruntergeladen und wie umbenannt werden: https://github.com/ISAAKiel/c14bazAAR/blob/master/data-raw/variable_reference.csv], aber hier ausreichende Version von Radon-B wurde mittels des R Pakets c14bazAAR direkt in R bezogen. Der erste Schritt der Datenverarbeitung war die Kalibration der ^14^C-Daten. Dafür kam das R Paket Bchron^[@haslett_simple_2008] zum Einsatz. ... 
+Eine inhaltlich etwas reduzierte^[Für einen Überblick, welche Variablen heruntergeladen und wie umbenannt werden: https://github.com/ISAAKiel/c14bazAAR/blob/master/data-raw/variable_reference.csv], aber hier ausreichende Version von Radon-B wurde mittels des R Pakets c14bazAAR^[] direkt in R bezogen. Der erste Datenverarbeitungsschritt war das Entfernen aller Daten ohne Altersinformation und aller Daten außerhalb der theoretischen Reichweite der Kalibrationskurve. Die Reichweite der im R Paket Bchron^[@haslett_simple_2008] enthaltenen Version es IntCal13 Datensatzes^[@reimer_intcal13_2013], die auch für die eigentliche Kalibration verwendet wurde beträgt 71-46401calBP. 
 
 ### Deskriptive Analyse
 
