@@ -5,7 +5,7 @@ date: "September 2018"
 site: "bookdown::bookdown_site"
 documentclass: book
 classoption: openany
-bibliography: ["references.bib", "r-references.bib"]
+bibliography: ["references_cultural_evolution.bib", "references_bronze_age_burials.bib", "references_software.bib"]
 biblio-style: authoryear
 biblatexoptions: [refsegment=chapter]
 link-citations: yes
