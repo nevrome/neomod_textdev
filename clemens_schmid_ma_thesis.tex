@@ -103,6 +103,9 @@ Bestattungssitten}
 \usepackage{tablefootnote}
 % promille symbol
 \usepackage{textcomp}
+% double column footnote
+\usepackage{dblfnote}
+\DFNalwaysdouble
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -3530,17 +3533,23 @@ knitr\footnote{\textcite{xie_dynamic_2015}; \textcite{xie_knitr_2014};
 rmarkdown\footnote{\textcite{allaire_rmarkdown_2018}}), zur
 Datenbeschaffung (c14bazAAR), zur allgemeinen Datenmanipulation
 (broom\footnote{\textcite{robinson_broom_2018}}, dplyr\footnote{\textcite{wickham_dplyr_2018}},
-forcats, kableExtra\footnote{\textcite{zhu_kableextra_2018}},
+forcats\footnote{\textcite{wickham_forcats_2018}}, kableExtra\footnote{\textcite{zhu_kableextra_2018}},
+pbapply\footnote{\textcite{solymos_pbapply_2018}}, plyr\footnote{\textcite{wickham_split-apply-combine_2011}},
 purrr\footnote{\textcite{henry_purrr_2018}}, readr\footnote{\textcite{wickham_readr_2017}},
 stringi\footnote{\textcite{gagolewski_r_2018}}, stringr\footnote{\textcite{wickham_stringr_2018}},
 tibble\footnote{\textcite{muller_tibble_2018}}, tidyr\footnote{\textcite{wickham_tidyr_2018}},
-reshape, reshape2), zur Graphikerstellung (ggplot2), für geographische
-Analysen (sp, sf), für statistische Analysen und
-Spezialdatenverarbeitung (Bchron\footnote{\textcite{haslett_simple_2008}}),
-zur Erstellung von WebApps und Interaktiven Präsentationen im Shiny
-Framework (shiny\footnote{\textcite{chang_shiny_2018}}) und zur
-allgemeinen Arbeit und Paketentwicklung in R (devtools\footnote{\textcite{wickham_devtools_2018}},
-magrittr\footnote{\textcite{bache_magrittr_2014}}, Rcpp\footnote{\textcite{eddelbuettel_extending_2017};
+reshape, reshape2), zur Graphikerstellung (cowplot\footnote{\textcite{wilke_cowplot_2018}},
+ggplot2\footnote{\textcite{wickham_ggplot2_2016}}, gridExtra\footnote{\textcite{auguie_gridextra_2017}},
+png\footnote{\textcite{urbanek_png_2013}}), für geographische Analysen
+(raster\footnote{\textcite{hijmans_raster_2017}}, sf\footnote{\textcite{pebesma_sf_2018}},
+sp), für statistische Analysen und Spezialdatenverarbeitung
+(Bchron\footnote{\textcite{haslett_simple_2008}}, car\footnote{\textcite{fox_r_2011}},
+vegan\footnote{\textcite{oksanen_vegan_2018}}), zur Erstellung von
+WebApps und Interaktiven Präsentationen im Shiny Framework
+(shiny\footnote{\textcite{chang_shiny_2018}}) und zur allgemeinen Arbeit
+und Paketentwicklung in R (devtools\footnote{\textcite{wickham_devtools_2018}},
+magrittr\footnote{\textcite{bache_magrittr_2014}}, pryr\footnote{\textcite{wickham_pryr_2018}},
+Rcpp\footnote{\textcite{eddelbuettel_extending_2017};
   \textcite{eddelbuettel_rcpp_2011};
   \textcite{eddelbuettel_seamless_2013}}, rlang\footnote{\textcite{henry_rlang_2018}},
 roxygen2\footnote{\textcite{wickham_roxygen2_2017}}, testthat\footnote{\textcite{wickham_testthat_2011}}).
@@ -3660,12 +3669,12 @@ räumlichen Verteilung der zusammengestellten \textsuperscript{14}C-Daten
 festgelegt. Auf Grundlage visueller Analyse der Punktdichte wurde ein
 Rechteck aufgespannt (siehe Abbildung Y). Die Projektion, die dieser
 Festlegung, allen Kartierungen und auch der Regionengliederung zugrunde
-liegt ist bewusst mit EPSG:102013 -- Europe Albers Equal Area Conics
-gewählt, da diese auch auf kontinentalem Maßstab und bei Landmassen in
-betonter Ost-West Ausdehnung ein hohes Maß an Flächentreue
-gewährleistet\footnote{\textcite{snyder_map_1987}, 98-99.}. Das ist eine
-wichtige Eigenschaft für die Definition von vergleichbaren, räumlichen
-Untersuchungseinheiten.\\
+liegt ist bewusst mit EPSG:102013\footnote{\url{https://epsg.io/102013}
+  {[}02.08.2018{]}} -- Europe Albers Equal Area Conics gewählt, da diese
+auch auf kontinentalem Maßstab und bei Landmassen in betonter Ost-West
+Ausdehnung ein hohes Maß an Flächentreue gewährleistet\footnote{\textcite{snyder_map_1987},
+  98-99.}. Das ist eine wichtige Eigenschaft für die Definition von
+vergleichbaren, räumlichen Untersuchungseinheiten.\\
 \ldots{}
 
 \hypertarget{deskriptive-analyse}{%
