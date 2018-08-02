@@ -18,6 +18,10 @@ addons:
 
 before_script:
   - tlmgr update biblatex
+  - git config --global user.email "clemens@nevrome.de"
+  - git config --global user.name "Clemens Schmid"
+  - chmod +x ./_clone_neomod_analysis.sh
+  - ./_clone_neomod_analysis.sh
   - chmod +x ./_build.sh
   - chmod +x ./_deploy.sh
 
