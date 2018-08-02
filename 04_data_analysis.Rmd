@@ -109,9 +109,9 @@ Die Expansionssimultion gluesless ist in C++^[@standard-cpp-foundation_internati
 
 Die für die Kartengestaltung benötigten Raumdaten, also Landmasse-Außengrenzen, Administrative Ländergrenzen sowie Flüsse und Seen, stammen aus dem Natural Earth Projekt^[https://www.naturalearthdata.com [02.08.2018]]. Verwendet wurden Daten des mittleren Auflösungssniveaus, das eine Maßstabsperspektive von 1:50.000.000 wiedergeben soll.
 
-## Datensatz Radon-B {#radonb_dataset}
+## Datensatz Radon-B {#radonb-dataset}
 
-Radon-B^[@kneisel_radon-b_2013] ist eine öffentlich verfügbare Datenbank, die einzelne Radiokohlenstoffdatierungen -- ^14^C-Daten -- aus der Bronze- und Frühen Eisenzeit in Europa sammelt. Sie konzentriert sich auf ein Zeitfenster zwischen 2300 bis 500calBC ab, enthält jedoch auch Daten jenseits dieses Limits. Neben Radon-B steht mit ihrer Schwesterdatenbank Radon[@martin_hinz_radon_2012] eine strukturell äquivalente Sammlung mit einem Schwerpunkt auf neolithischen Daten zur Verfügung. Jedes Datum ist mit Kerndaten und Metainformationen verknüpft (siehe Tabelle \@ref(tab:radonbparams)). Die Informationen wurden aus einzelnen Publikationen zusammengetragen und sind teilweise unvollständig, inkonsistent oder fehlerhaft (siehe Kapitel \@ref(source_criticism)).
+Radon-B^[@kneisel_radon-b_2013] ist eine öffentlich verfügbare Datenbank, die einzelne Radiokohlenstoffdatierungen -- ^14^C-Daten -- aus der Bronze- und Frühen Eisenzeit in Europa sammelt. Sie konzentriert sich auf ein Zeitfenster zwischen 2300 bis 500calBC ab, enthält jedoch auch Daten jenseits dieses Limits. Neben Radon-B steht mit ihrer Schwesterdatenbank Radon[@martin_hinz_radon_2012] eine strukturell äquivalente Sammlung mit einem Schwerpunkt auf neolithischen Daten zur Verfügung. Jedes Datum ist mit Kerndaten und Metainformationen verknüpft (siehe Tabelle \@ref(tab:radonbparams)). Die Informationen wurden aus einzelnen Publikationen zusammengetragen und sind teilweise unvollständig, inkonsistent oder fehlerhaft (siehe Kapitel \@ref(source-criticism)).
 
 ```{r radonbparams, echo=FALSE, tidy=FALSE}
 tibble::tibble(
@@ -191,10 +191,14 @@ tibble::tibble(
   kableExtra::column_spec(2, width = "25em")
 ```
 
-### Datenvorbereitung und Gliederung {#data_prep_and_segmentation}
+### Datenvorbereitung und Gliederung {#data-prep-and-segmentation}
 
 Eine inhaltlich etwas reduzierte^[Für einen Überblick, welche Variablen heruntergeladen und wie umbenannt werden: https://github.com/ISAAKiel/c14bazAAR/blob/master/data-raw/variable_reference.csv], aber hier ausreichende Version von Radon-B wurde mittels des R Pakets c14bazAAR^[] direkt in R bezogen. Der erste Datenverarbeitungsschritt war das Entfernen aller Daten ohne Altersinformation und aller Daten außerhalb der theoretischen Reichweite der Kalibrationskurve (71-46401calBP). Zur Kalibration wurde das R Paket Bchron^[@haslett_simple_2008] und die darin enthaltenen Version es IntCal13 Datensatzes^[@reimer_intcal13_2013] verwendet. Bchron berechnet das kalibrierte Alter mittels Numerischer Integration^[https://github.com/andrewcparnell/Bchron/blob/master/R/BchronCalibrate.R [02.08.2018]] und liefert für jedes Datum eine normierte Wahrscheinlichkeitskurve. Alter mit Wahrscheinlichkeiten unterhalb eines Schwellwerts von $1\mathrm{e}{-6}$ wurden abgeschnitten und Alter innerhalb des $2\sigma$ Wahrscheinlichkeitsbereichs gesondert markiert. Die so erhaltenen, unterschiedlich wahrscheinlichen, kalibrierten Alter für jedes einzelne Datum wurden ab hier von calBP in calBC umgerechnet, um üblichen archäologischen Konventionen und dem allgemeinen Sprachgebrauch zu entsprechen. Um ein Subset des so vorbereiteten Gesamtdatensatzes zu erzeugen, das die Anforderungen der Fragestellung erfüllt, wurde er auf all jene Daten reduziert, die in ihrem $2\sigma$ Bereich mindestens ein Alter im Zeitfenster 800-2200calBC (1401 Jahre) vorweisen können. Die Fragestellung erfordert es auch, alle Daten ohne Raumbezug, also ohne Koordinateninformation, zu entfernen. Radon-B stellt in der Variable *Feature Type* (*sitetype* in c14bazAAR) teilweise kategorisierte Informationen zum Befundkontext jedes Datums zur Verfügung: Fragestellungsrelevant sind die Kategorien *cemetery*, *Grave*, *Grave (mound)*, *Grave (mound) inhumation*, *Grave (mound) cremation*, *Grave (flat)*,  *Grave (flat) inhumation*, *Grave (flat) cremation*, *Grave (cremation)* und *Grave (inhumation)*. Statt der Variablen *Feature Type* wurden mittels Pattern Matching zwei neue Variablen mit jeweils drei Werten geschaffen: *burial_type* mit den Kategorien *inhumation*, *cremation* und *unknown* sowie *burial_construction* mit den Kategorien *mound*, *flat* und *unknown*. Nach diesem Arbeitsschritt lässt sich der Hauptausgangsdatensatz als Tabelle mit ... 
-Abbildung X zeigt eine Kartierung ...
+Abbildung \@ref(fig:general-map-research-area-unzoomed) zeigt eine Kartierung ...
+
+```{r general-map-research-area-unzoomed, echo = FALSE, fig.cap = "Abbildung"}
+knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_map_research_area_unzoomed.jpeg")
+```
 
 Das Untersuchungsareal dieser Arbeit folgt keinen natürlichen oder kulturellen Grenzen, sondern wurde rein künstlich auf Grundlage der räumlichen Verteilung der zusammengestellten ^14^C-Daten festgelegt. Auf Grundlage visueller Analyse der Punktdichte wurde ein Rechteck aufgespannt (siehe Abbildung Y). Die Projektion, die dieser Festlegung, allen Kartierungen und auch der Regionengliederung zugrunde liegt ist bewusst mit EPSG:102013^[https://epsg.io/102013 [02.08.2018]] -- Europe Albers Equal Area Conics gewählt, da diese auch auf kontinentalem Maßstab und bei Landmassen in betonter Ost-West Ausdehnung ein hohes Maß an Flächentreue gewährleistet^[@snyder_map_1987, 98-99.]. Das ist eine wichtige Eigenschaft für die Definition von vergleichbaren, räumlichen Untersuchungseinheiten.   
 
@@ -203,10 +207,6 @@ Innerhalb des Untersuchungsareals wurden künstliche Regionen abgegrenzt, um die
 ### Deskriptive Analyse
 
 ...
-
-```{r full-dataset-map, echo = FALSE, fig.cap = "Abbildung"}
-#knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/disp_map_full.jpeg")
-```
 
 ```{r cremation-inhumation-amount-development, echo = FALSE, fig.cap = "Abbildung"}
 #knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/amount_development_regions_cremation_inhumation.jpeg")
@@ -218,7 +218,7 @@ Innerhalb des Untersuchungsareals wurden künstliche Regionen abgegrenzt, um die
 
 Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die C14-Daten in RADON-B räumlich und zeitlich verteilen.
 
-### Quellenkritik {#source_criticism}
+### Quellenkritik {#source-criticism}
 
 Für einzelne Regionen liegen für gewisse Zeiträume verhältnismäßig viele Daten vor, für die Mehrzahl der Regionen ist die Datenmenge allerdings sehr gering. Diese Ungleichverteilung der Daten kann viele verschiedene Gründe haben: 
 
