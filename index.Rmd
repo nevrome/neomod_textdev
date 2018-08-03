@@ -5,7 +5,7 @@ date: "September 2018"
 site: "bookdown::bookdown_site"
 documentclass: book
 classoption: openany,twoside,twocolumn
-geometry: "left=3cm, right=2cm, top=2cm, bottom=2cm"
+geometry: "left=2.5cm, right=2cm, top=2cm, bottom=2cm"
 bibliography: ["references-cultural-evolution.bib", "references-bronze-age-burials.bib", "references-software-and-data-analysis.bib"]
 biblio-style: authoryear
 biblatexoptions: [refsegment=chapter]

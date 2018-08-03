@@ -9,9 +9,6 @@
 \usepackage{tablefootnote}
 % promille symbol
 \usepackage{textcomp}
-% double column footnote
-\usepackage{dblfnote}
-\DFNalwaysdouble
 % move all figures and tables to the end of the document
 \usepackage[nomarkers,nolists,tablesfirst]{endfloat}
 \renewcommand{\tablesection}{Tabellen}
@@ -20,3 +17,6 @@
 \renewcommand{\figuresection}{Abbildungen}
 \AtBeginFigures{\addcontentsline{toc}{section}{Abbildungen}}
 \AtBeginTables{\setcounter{chapter}{0}}
+% fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
