@@ -44,6 +44,8 @@ Der *Evolutionary psychology* wird vorgeworfen, die unangemessen vereinfachende 
 Smith legt seinem Artikel Tabelle \@ref(tab:smiththreestyles) bei, die die Unterschiede zwischen *Evolutionary psychology*, *Human behavioural ecology* und *Dual inheritance theory*. übersichtlich darstellt.
 
 ```{r smiththreestyles, echo=FALSE, tidy=FALSE}
+library(magrittr)
+
 tibble::tribble(
                                                   ~X1,             ~`Evolutionary psychology`,                     ~`Behavioural ecology`,                 ~`Dual.inheritance theory`,
                            "What is being explained:",           "Psychological mechanisms",                 "Behavioural strategies",                     "Cultural evolution",
