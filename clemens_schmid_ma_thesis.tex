@@ -107,7 +107,10 @@ Bestattungssitten}
 \usepackage{dblfnote}
 \DFNalwaysdouble
 % move all figures to the end of the document
-\usepackage[nomarkers,figuresonly]{endfloat}
+\usepackage[nomarkers,figuresonly,nofighead,nolists]{endfloat}
+% \renewcommand{\figuresection}{Abbildungen}
+% \AtBeginFigures{\addcontentsline{toc}{chapter}{Abbildungen}}
+\AtBeginFigures{\setcounter{chapter}{0}}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -130,6 +133,8 @@ Bestattungssitten}
 \setcounter{tocdepth}{3}
 \tableofcontents
 }
+\listoffigures
+
 \hypertarget{intro}{%
 \chapter{Einführung}\label{intro}}
 
@@ -3803,6 +3808,9 @@ Entwicklung}\label{simulation-und-reale-entwicklung}}
 \hypertarget{zusammenfassung-und-abschlieende-gedanken}{%
 \chapter{Zusammenfassung und Abschließende
 Gedanken}\label{zusammenfassung-und-abschlieende-gedanken}}
+
+\hypertarget{abbildungen}{%
+\chapter{Abbildungen}\label{abbildungen}}
 
 \printbibliography
 
