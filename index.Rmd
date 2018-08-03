@@ -4,7 +4,8 @@ author: "Clemens Schmid"
 date: "September 2018"
 site: "bookdown::bookdown_site"
 documentclass: book
-classoption: openany
+classoption: openany,twoside,twocolumn
+geometry: "left=3cm, right=2cm, top=2cm, bottom=2cm"
 bibliography: ["references-cultural-evolution.bib", "references-bronze-age-burials.bib", "references-software-and-data-analysis.bib"]
 biblio-style: authoryear
 biblatexoptions: [refsegment=chapter]
