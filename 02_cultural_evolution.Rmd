@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Cultural Evolution
 
 ## Definition und Forschungsgeschichte
@@ -38,17 +43,29 @@ Der *Evolutionary psychology* wird vorgeworfen, die unangemessen vereinfachende 
 
 Smith legt seinem Artikel Tabelle \@ref(tab:smiththreestyles) bei, die die Unterschiede zwischen *Evolutionary psychology*, *Human behavioural ecology* und *Dual inheritance theory*. übersichtlich darstellt.
 
-Table: (\#tab:smiththreestyles) Three Styles of Evolutionary Explanation (nach @SmithThreestylesevolutionary2000).
-
-|   | Evolutionary psychology | Behavioural ecology | Dual inheritance theory |
-|---------------------|---------------------|---------------------|---------------------|
-| What is being explained: | Psychological mechanisms | Behavioural strategies | Cultural evolution |
-| Key constraints: | Cognitive, genetic | Ecological, material | Structural, information |
-| Temporal scale of adaptive change: | Long-term (genetic) | Short-term (phenotypic) | Medium-term (cultural) |
-| Expected current adaptiveness: | Lowest | Highest | Intermediate |
-| Hypothesis generation: | Informal inference | Optimality models | Population-level models |
-| Hypothesis-testing methods: | Survey, lab experiment | Quantitative ethnographic observartion | Mathematical modelling and simulation |
-| Favoured topics: | Mating, parenting, sex differences | Subsistence, reproductive strategies | Large-scale cooperation, maladaptation |
+```{r smiththreestyles, echo=FALSE, tidy=FALSE}
+tibble::tribble(
+                                                  ~X1,             ~`Evolutionary psychology`,                     ~`Behavioural ecology`,                 ~`Dual.inheritance theory`,
+                           "What is being explained:",           "Psychological mechanisms",                 "Behavioural strategies",                     "Cultural evolution",
+                                   "Key constraints:",                 "Cognitive, genetic",                   "Ecological, material",                "Structural, information",
+                 "Temporal scale of adaptive change:",                "Long-term (genetic)",                "Short-term (phenotypic)",                 "Medium-term (cultural)",
+                     "Expected current adaptiveness:",                             "Lowest",                                "Highest",                           "Intermediate",
+                             "Hypothesis generation:",                 "Informal inference",                      "Optimality models",                "Population-level models",
+                        "Hypothesis-testing methods:",             "Survey, lab experiment", "Quantitative ethnographic observartion",  "Mathematical modelling and simulation",
+                                   "Favoured topics:", "Mating, parenting, sex differences",   "Subsistence, reproductive strategies", "Large-scale cooperation, maladaptation"
+                 ) %>%
+  knitr::kable(
+    caption = "Three Styles of Evolutionary Explanation (nach \\textcite{SmithThreestylesevolutionary2000})",
+    format = "latex",
+    booktabs = T,
+    escape = F
+  ) %>%
+  kableExtra::kable_styling(full_width = F) %>%
+  kableExtra::column_spec(1, width = "15em") %>%
+  kableExtra::column_spec(2, width = "10em") %>%
+  kableExtra::column_spec(3, width = "10em") %>%
+  kableExtra::column_spec(4, width = "10em")
+```
 
 *Dual inheritance theory* ist in der archäologischen Forschung am intensivsten reflektiert worden und ist auch die theoretische Grundlage für das Modell, das für die vorliegende Arbeit entwickelt wurde. Sie soll also im folgenden genauer beleuchtet werden. Um ihre Ursprünge nachzuzeichnen, möchte ich zunächst auf Richard Dawkins *Memetik* eingehen. Memetik wurde mehrfach als populärwissenschaftliche oder sogar pseudowissenschaftlich kritisiert. Grund dafür ist unter anderem ihr niederschwelliger Zugang zu Cultural evolution Theorie, der es jedoch erlaubt grundlegende Konzepte anschaulich zu illustrieren.
 
