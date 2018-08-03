@@ -12,8 +12,11 @@
 % double column footnote
 \usepackage{dblfnote}
 \DFNalwaysdouble
-% move all figures to the end of the document
-\usepackage[nomarkers,figuresonly,nofighead,nolists]{endfloat}
-% \renewcommand{\figuresection}{Abbildungen}
-% \AtBeginFigures{\addcontentsline{toc}{chapter}{Abbildungen}}
+% move all figures and tables to the end of the document
+\usepackage[nomarkers,nolists,tablesfirst]{endfloat}
+\renewcommand{\tablesection}{Tabellen}
+\AtBeginTables{\addcontentsline{toc}{section}{Tabellen}}
 \AtBeginFigures{\setcounter{chapter}{0}}
+\renewcommand{\figuresection}{Abbildungen}
+\AtBeginFigures{\addcontentsline{toc}{section}{Abbildungen}}
+\AtBeginTables{\setcounter{chapter}{0}}

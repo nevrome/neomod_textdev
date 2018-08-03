@@ -1,3 +1,5 @@
+\listoftables
+
 \listoffigures
 
 # Einführung {#intro}
