@@ -1,18 +1,20 @@
-<!-- list of tables + list of figures -->
-\listoftables
-\listoffigures
-
 <!-- header and footer -->
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 \fancyhf{}
 \fancyhead[LE,RO]{\textbf{\thepage}}
-\fancyhead[LO]{\textbf{\rightmark}}
-\fancyhead[RE]{\textbf{\leftmark}}
+\fancyhead[LO]{\textbf{\nouppercase{\rightmark}}}
+\fancyhead[RE]{\textbf{\nouppercase{\leftmark}}}
 \fancypagestyle{plain}{%
   \fancyhead{} % get rid of headers
   \renewcommand{\headrulewidth}{0pt} % and the line
 }
+
+<!-- list of tables + list of figures -->
+\setcounter{tocdepth}{3}
+\tableofcontents
+\listoftables
+\listoffigures
 
 <!-- controle space in between paragraphs, figures and tables -->
 \parskip 4pt
