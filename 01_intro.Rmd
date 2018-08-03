@@ -1,3 +1,5 @@
+\listoffigures
+
 # Einführung {#intro}
 
 Die vorliegende Master-Arbeit entstand 2017-2018 am Institut für Ur- und Frühgeschichte der Christian-Albrechts-Universität zu Kiel unter Betreuung von Priv.-Doz. Dr. Oliver Nakoinz und Dr. Martin Hinz. Sie ist open source und voll reproduzierbar. 

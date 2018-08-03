@@ -13,4 +13,7 @@
 \usepackage{dblfnote}
 \DFNalwaysdouble
 % move all figures to the end of the document
-\usepackage[nomarkers,figuresonly]{endfloat}
+\usepackage[nomarkers,figuresonly,nofighead,nolists]{endfloat}
+% \renewcommand{\figuresection}{Abbildungen}
+% \AtBeginFigures{\addcontentsline{toc}{chapter}{Abbildungen}}
+\AtBeginFigures{\setcounter{chapter}{0}}
