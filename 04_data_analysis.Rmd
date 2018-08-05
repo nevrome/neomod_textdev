@@ -214,17 +214,11 @@ knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_m
 
 ### Deskriptive Analyse
 
-...
-
-```{r cremation-inhumation-amount-development, echo = FALSE, fig.cap = "Abbildung"}
-#knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/amount_development_regions_cremation_inhumation.jpeg")
+\begin{landscape}
+```{r general-map-research-area-timeslices, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_map_research_area_timeslices.jpeg")
 ```
-
-```{r cremation-inhumation-proportion-development, echo = FALSE, fig.cap = "Abbildung"}
-#knitr::include_graphics("/home/clemens/neomod/neomod_datapool/bronze_age/proportions_development_regions_cremation_inhumation.jpeg")
-```
-
-Abbildung \@ref(fig:cremation-inhumation-amount-development) zeigt, wie sich die C14-Daten in RADON-B räumlich und zeitlich verteilen.
+\end{landscape}
 
 ### Quellenkritik {#source-criticism}
 
