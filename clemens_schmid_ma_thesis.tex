@@ -3644,6 +3644,51 @@ ausgewählten Daten stammen aus dem Rechteckareal.
 \includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area} \caption[Karte mit \textsuperscript{14}C Daten und Grenzen des Untersuchungsareals]{Wie Abbildung \ref{fig:general-map}, jedoch mit Fokus auf das rot markierte Untersuchungsareal.}\label{fig:general-map-research-area}
 \end{figure}
 
+Der Arbeitsdatensatz, der nach oben beschriebenem Vorgehen
+zusammengestellt wurde, umfasst also 1.894 Einträge aus der Radon-B
+Datenbank. Die effektive Anzahl an \textsuperscript{14}C Daten, die
+diese Einträge wiedergeben, ist geringer: Eine Zählung der Labornummern
+ergibt XXX individuelle Werte. Diese Diskrepanz ergibt sich aus
+Einträgen mit keiner (\emph{n/a-n/a}) oder unvollständiger (z.B.
+\emph{MAMS-n/a}, \emph{Gd-n/a}, \emph{Ke-n/a}) Labornummer sowie Daten
+die mehrfach in die Datenbank eingegeben wurden (z.B. \emph{OxA-29003},
+\emph{GrN-10754}, \emph{BRAMS-1217}). Letzteres betrifft XXX Einträge,
+die ein und dasselbe \textsuperscript{14}C Datum zwei- oder mehrfach
+repräsentieren. Die Anzahl an Gräbern, die durch die Einträge
+repräsentiert werden ist noch geringer: Für XXX Einträge gilt, dass die
+ihnen zugehörige Kombination aus Fundplatz und Befund von mindestens
+einem weiteren Eintrag abgedeckt wird. Der wichtigste Grund dafür ist,
+dass für ein Grab häufig mehrere \textsuperscript{14}C Daten in Auftrag
+gegeben werden.
+
+Die Abweichungen zwischen Eintrag und \textsuperscript{14}C Daten sowie
+\textsuperscript{14}C Daten und Gräbern sind schwerwiegend und sollten
+korrigiert werden. Davon wurde für diese Arbeit jedoch aus verschiedenen
+Gründen abgesehen. Erstere Abweichung ist durch unvollständige
+Datenpublikation und Fehleingabe bedingt und kann mit der stückweisen
+Verbesserung des Radon-B Datensatzes gelöst werden. Eine systematische
+Lösung im Analysecode, etwa das schlichte Zusammenführen der doppelten
+Einträge, ist nicht einfach möglich, da die Einträge sich in den
+Variablen jenseits der Labornummer häufig unterscheiden. Hier wäre also
+eine Prüfung auf Korrektheit erforderlich, um den besseren der Einträge
+zu finden. Von einer Einzellfalldiskussion wird jedoch bewusst abgesehen
+um die reproduzierbare Natur dieser Arbeit nicht in Frage zu stellen. Es
+ist außerdem davon auszugehen, dass der Einfluss dieser Abweichung auf
+das Gesamtergebnis angesichts der ohnehin approximativen Ergebnisse
+gering ausfällt. Die zweite Abweichung ist schwerwiegender, da sie
+immerhin nahezu ein Drittel der Einträge betrifft und keine Aussicht
+besteht, dass sich dieses Problem mit einer Verbesserung der Datenlage
+lösen wird. Von einer Korrektur wurde an dieser Stelle aus zwei Gründen
+abgesehen: Zunächst ist die Befundangabe für manche Einträge sehr
+unpräzise (\emph{Kollektivgrab}, \emph{Einzelgrab}, \emph{from ring
+ditch}) und es ist nicht ersichtlich, ob die Daten tatsächlich von einer
+einzelnen Bestattung stammen. Weiterhin lässt die Verteilung dieser 514
+Einträge hinsichtlich der wesentlichen Variablen \emph{burial type}
+(cremation: XXX, inhumation: XXX, unknown: XXX) und \emph{burial
+construction} (flat: XXX, mound: XXX, unknown: XXX) keine starken
+systematischen Tendenzen erkennen. Es kann angenommen werden, dass
+dieses Problem für die Fragestellung dieser Arbeit vernachlässigbar ist.
+
 Innerhalb des Untersuchungsareals wurden künstliche Regionen abgegrenzt,
 um die zeitliche und räumliche Entwicklung der Variablen
 \emph{burial\_type} und \emph{burial\_construction} in sinnvollen und
@@ -3694,51 +3739,6 @@ weiter. Von den 1.894 Daten im Rechteckareal verblieben 1.749.
 
 \hypertarget{deskriptive-analyse}{%
 \subsection{Deskriptive Analyse}\label{deskriptive-analyse}}
-
-Der effektive Arbeitsdatensatz, der nach oben beschriebenem Vorgehen
-zusammengestellt wurden, umfasst 1.749 Einträge aus der Radon-B
-Datenbank. Die effektive Anzahl an \textsuperscript{14}C Daten ist
-geringer: Eine Zählung der Labornummern ergibt 1650 individuelle Werte.
-Diese Diskrepanz ergibt sich aus Einträgen mit keiner (\emph{n/a-n/a})
-oder unvollständiger (z.B. \emph{MAMS-n/a}, \emph{Gd-n/a},
-\emph{Ke-n/a}) Labornummer sowie Daten die mehrfach in die Datenbank
-eingegeben wurden (z.B. \emph{OxA-29003}, \emph{GrN-10754},
-\emph{BRAMS-1217}). Letzteres betrifft 110 Einträge, die ein und
-dasselbe \textsuperscript{14}C Datum zwei- oder mehrfach repräsentieren.
-Die Anzahl an Gräbern, die durch die Einträge repräsentiert werden ist
-noch geringer: Für 514 Einträge gilt, dass die ihnen zugehörige
-Kombination aus Fundplatz und Befund von mindestens einem weiteren
-Eintrag abgedeckt wird. Der wichtigste Grund dafür ist, dass für ein
-Grab häufig mehrere \textsuperscript{14}C Daten in Auftrag gegeben
-werden.
-
-Die Abweichungen zwischen Eintrag und \textsuperscript{14}C Daten sowie
-\textsuperscript{14}C Daten und Gräbern sind schwerwiegend und sollten
-korrigiert werden. Davon wurde für diese Arbeit jedoch aus verschiedenen
-Gründen abgesehen. Erstere Abweichung ist durch unvollständige
-Datenpublikation und Fehleingabe bedingt und kann mit der stückweisen
-Verbesserung des Radon-B Datensatzes gelöst werden. Eine systematische
-Lösung im Analysecode, etwa das schlichte Zusammenführen der doppelten
-Einträge, ist nicht einfach möglich, da die Einträge sich in den
-Variablen jenseits der Labornummer häufig unterscheiden. Hier wäre also
-eine Prüfung auf Korrektheit erforderlich, um den besseren der Einträge
-zu finden. Von einer Einzellfalldiskussion wird jedoch bewusst abgesehen
-um die reproduzierbare Natur dieser Arbeit nicht in Frage zu stellen. Es
-ist außerdem davon auszugehen, dass der Einfluss dieser Abweichung auf
-das Gesamtergebnis angesichts der ohnehin approximativen Ergebnisse
-gering ausfällt. Die zweite Abweichung ist schwerwiegender, da sie
-immerhin nahezu ein Drittel der Einträge betrifft und keine Aussicht
-besteht, dass sich dieses Problem mit einer Verbesserung der Datenlage
-lösen wird. Von einer Korrektur wurde an dieser Stelle aus zwei Gründen
-abgesehen: Zunächst ist die Befundangabe für manche Einträge sehr
-unpräzise (\emph{Kollektivgrab}, \emph{Einzelgrab}, \emph{from ring
-ditch}) und es ist nicht ersichtlich, ob die Daten tatsächlich von einer
-einzelnen Bestattung stammen. Weiterhin lässt die Verteilung dieser 514
-Einträge hinsichtlich der wesentlichen Variablen \emph{burial type}
-(cremation: 161, inhumation: 108, unknown: 245) und \emph{burial
-construction} (flat: 85, mound: 84, unknown: 345) keine starken
-systematischen Tendenzen erkennen. Es kann angenommen werden, dass
-dieses Problem für die Fragestellung dieser Arbeit vernachlässigbar ist.
 
 \begin{landscape}
 \begin{figure}
