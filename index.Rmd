@@ -10,4 +10,5 @@ bibliography: ["references-cultural-evolution.bib", "references-bronze-age-buria
 biblio-style: authoryear
 biblatexoptions: [refsegment=chapter]
 link-citations: yes
+subparagraph: yes
 ---

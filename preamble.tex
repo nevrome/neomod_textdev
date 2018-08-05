@@ -20,3 +20,11 @@
 % fancy headers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+% section header formatting
+\usepackage{titlesec}
+\titleformat{\section}[display]{\normalfont\Large\bfseries}{\thesection}{0pt}{}
+\titleformat{\subsection}[display]{\normalfont\large\bfseries}{\thesubsection}{0pt}{}
+\titleformat{\subsubsection}[display]{\normalfont\normalsize\bfseries}{\thesubsubsection}{0pt}{}
+\titleformat{\paragraph}[display]{\normalfont\normalsize\bfseries}{\theparagraph}{0pt}{}
+\titleformat{\subparagraph}[display]{\normalfont\normalsize\bfseries}{\thesubparagraph}{0pt}{}
+
