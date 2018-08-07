@@ -55,7 +55,7 @@ tibble::tibble(
     kableExtra::linebreak
   ) %>%
   knitr::kable(
-    caption = "Parameter, die in Radon-B für jedes Datum vorliegen.",
+    caption = "Projekte und Pakete für diese Arbeit.",
     format = "latex",
     booktabs = T,
     escape = F,
@@ -93,7 +93,7 @@ tibble::tibble(
     kableExtra::linebreak
   ) %>%
   knitr::kable(
-    caption = "Parameter, die in Radon-B für jedes Datum vorliegen.",
+    caption = "Literatursammlungen für diese Arbeit.",
     format = "latex",
     booktabs = T,
     escape = F,
