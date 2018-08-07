@@ -220,11 +220,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_m
 
 ### Deskriptive Analyse
 
-
-
-Aus dem Areal der kreisförmigen, artifiziellen Großregionen, die für diese Arbeit festgelegt wurden (siehe Abbildung \@ref(fig:general-map-research-area-regions)) liegen in Radon-B Informationen zu mindestens 1.562 Gräbern auf Grundlage von vor (zur Datenauswahl und -vorbereitung siehe Kapitel \@ref(data-prep-and-segmentation)). Dieser Datensatz bezieht sich also auf einen Arbeitsstand in dem mitunter zur Erzeugung eines Eintrags mehrere ^14^C Daten zusammengeführt wurden.
-
-
+Aus dem Areal der kreisförmigen, artifiziellen Großregionen, die für diese Arbeit festgelegt wurden (siehe Abbildung \@ref(fig:general-map-research-area-regions)) liegen in Radon-B Informationen zu mindestens 1.562 Gräbern auf Grundlage von 1.701 ^14^C Daten vor (zur Datenauswahl und -vorbereitung siehe Kapitel \@ref(data-prep-and-segmentation)). Geht man davon aus, dass die Eingaben in Radon-B korrekt sind, dann stammen die ^14^C Daten von 454 Fundplätzen. Zu den Daten sind 41 verschiedene Periodenbegriffe und 25 archäologische Kulturen dokumentiert, diese Information ist jedoch aufgrund der Datensituation sinnvoll auswertbar (siehe Kapitel \@ref(source-criticism)). 1160 Daten wurden an Probenmaterial von Knochen und Zähnen (169 davon verbrannt), 367 von Holz und Holzkohle, ein kleiner Teil (20) von sonstigen Materialien wie Nüssen, Harz oder Pech gemessen. Für die restlichen 154 Daten ist keine Materialangabe hinterlegt. Hinsichtlich der Variablen *burial_type* und *burial_construction* gelten die in Tabelle X dargestellte Verhältnisse.
 
 \begin{landscape}
 ```{r general-map-research-area-timeslices, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
