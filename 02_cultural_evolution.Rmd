@@ -43,7 +43,7 @@ Der *Evolutionary psychology* wird vorgeworfen, die unangemessen vereinfachende 
 
 Smith legt seinem Artikel Tabelle \@ref(tab:smiththreestyles) bei, die die Unterschiede zwischen *Evolutionary psychology*, *Human behavioural ecology* und *Dual inheritance theory*. übersichtlich darstellt.
 
-```{r smiththreestyles, echo=FALSE, tidy=FALSE}
+```{r smiththreestyles, echo=FALSE, tidy=FALSE, results = "asis"}
 library(magrittr)
 
 tibble::tribble(
@@ -60,14 +60,14 @@ tibble::tribble(
     caption = "Three Styles of Evolutionary Explanation (nach \\textcite{SmithThreestylesevolutionary2000})",
     format = "latex",
     booktabs = T,
-    escape = F
+    escape = F,
+    col.names = c("", "Evolutionary psychology", "Behavioural ecology", "Dual.inheritance theory")
   ) %>%
   kableExtra::kable_styling(full_width = T) %>%
   kableExtra::column_spec(1, width = "15em") %>%
   kableExtra::column_spec(2, width = "10em") %>%
   kableExtra::column_spec(3, width = "10em") %>%
   kableExtra::column_spec(4, width = "10em") %>%
-  as.character() %>%
   gsub("table", "table*", .)
 ```
 
