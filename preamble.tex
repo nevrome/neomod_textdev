@@ -10,13 +10,10 @@
 % promille symbol
 \usepackage{textcomp}
 % move all figures and tables to the end of the document
-\usepackage[nomarkers,nolists,tablesfirst]{endfloat}
-\renewcommand{\tablesection}{Tabellen}
-\AtBeginTables{\addcontentsline{toc}{section}{Tabellen}}
+\usepackage[nomarkers,nolists,notables]{endfloat}
 \AtBeginFigures{\setcounter{chapter}{0}}
 \renewcommand{\figuresection}{Abbildungen}
 \AtBeginFigures{\addcontentsline{toc}{section}{Abbildungen}}
-\AtBeginTables{\setcounter{chapter}{0}}
 % fancy headers
 \usepackage{fancyhdr}
 \pagestyle{fancy}

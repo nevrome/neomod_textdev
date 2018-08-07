@@ -62,11 +62,13 @@ tibble::tribble(
     booktabs = T,
     escape = F
   ) %>%
-  kableExtra::kable_styling(full_width = F) %>%
+  kableExtra::kable_styling(full_width = T) %>%
   kableExtra::column_spec(1, width = "15em") %>%
   kableExtra::column_spec(2, width = "10em") %>%
   kableExtra::column_spec(3, width = "10em") %>%
-  kableExtra::column_spec(4, width = "10em")
+  kableExtra::column_spec(4, width = "10em") %>%
+  as.character() %>%
+  gsub("table", "table*", .)
 ```
 
 *Dual inheritance theory* ist in der archäologischen Forschung am intensivsten reflektiert worden und ist auch die theoretische Grundlage für das Modell, das für die vorliegende Arbeit entwickelt wurde. Sie soll also im folgenden genauer beleuchtet werden. Um ihre Ursprünge nachzuzeichnen, möchte ich zunächst auf Richard Dawkins *Memetik* eingehen. Memetik wurde mehrfach als populärwissenschaftliche oder sogar pseudowissenschaftlich kritisiert. Grund dafür ist unter anderem ihr niederschwelliger Zugang zu Cultural evolution Theorie, der es jedoch erlaubt grundlegende Konzepte anschaulich zu illustrieren.

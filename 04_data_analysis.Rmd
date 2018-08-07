@@ -48,20 +48,22 @@ tibble::tibble(
   ) 
 ) %>%
   dplyr::transmute(
-    Projekt = paste0("\\textbf{", name, "}", "\n", link),
-    Beschreibung = description
+    number = 1:nrow(.),
+    Projekt = paste0("\\textbf{", name, "}", "\n", ifelse(!is.na(link), paste0("\\textit{", link, "}", "\n"), ""), description)
   ) %>%
   dplyr::mutate_all(
     kableExtra::linebreak
   ) %>%
   knitr::kable(
-    caption = "Projekte, die im Kontext der Entwicklung dieser Arbeit angelegt wurden.",
+    caption = "Parameter, die in Radon-B für jedes Datum vorliegen.",
     format = "latex",
     booktabs = T,
-    escape = F
+    escape = F,
+    col.names = c("", "Projekt"),
+    linesep = "\\addlinespace"
   ) %>%
-  kableExtra::kable_styling(full_width = F) %>%
-  kableExtra::column_spec(1, width = "20em") %>%
+  kableExtra::kable_styling(full_width = T, font_size = 8) %>%
+  kableExtra::column_spec(1, bold = TRUE,  width = "0.5em") %>%
   kableExtra::column_spec(2, width = "25em")
 ```
 
@@ -84,20 +86,22 @@ tibble::tibble(
   ) 
 ) %>%
   dplyr::transmute(
-    Bibliothek = paste0("\\textbf{", name, "}", "\n", link),
-    Beschreibung = description
+    number = 1:nrow(.),
+    Bibliothek = paste0("\\textbf{", name, "}", "\n", ifelse(!is.na(link), paste0("\\textit{", link, "}", "\n"), ""), description)
   ) %>%
   dplyr::mutate_all(
     kableExtra::linebreak
   ) %>%
   knitr::kable(
-    caption = "Literatursammlungen, die im Kontext der Entwicklung dieser Arbeit angelegt wurden.",
+    caption = "Parameter, die in Radon-B für jedes Datum vorliegen.",
     format = "latex",
     booktabs = T,
-    escape = F
+    escape = F,
+    col.names = c("", "Bibliothek"),
+    linesep = "\\addlinespace"
   ) %>%
-  kableExtra::kable_styling(full_width = F) %>%
-  kableExtra::column_spec(1, width = "20em") %>%
+  kableExtra::kable_styling(full_width = T, font_size = 8) %>%
+  kableExtra::column_spec(1, bold = TRUE,  width = "0.5em") %>%
   kableExtra::column_spec(2, width = "25em")
 ```
 
@@ -135,12 +139,12 @@ tibble::tibble(
     "Comment"
   ),
   examples = c(
-    "",
+    NA,
     "z.B. Ua-25144, OxA-1602, HAR-4341",
-    "",
-    "",
-    "",
-    "",
+    NA,
+    NA,
+    NA,
+    NA,
     "z.B. charcoal, bone, seed",
     "z.B. hazel, oak, barley, boar",
     "z.B. settlement (house), rockshelter, 	Grave (cremation)",
@@ -150,8 +154,8 @@ tibble::tibble(
     "z.B. La Croix-Saint-Ouen, Stedten, Byneset",
     "z.B. Germany, France, Poland",
     "z.B. Baden-Württemberg, Surrey, Greater Poland",
-    "",
-    ""
+    NA,
+    NA
   ),
   description = c(
     "Eine datenbankspezifische, individuelle Kennnummer.",
@@ -174,8 +178,8 @@ tibble::tibble(
   ) 
 ) %>%
   dplyr::transmute(
-    Parameter = paste0("\\textbf{", param, "}", "\n", examples),
-    Beschreibung = description
+    number = 1:nrow(.),
+    Parameter = paste0("\\textbf{", param, "}", "\n", ifelse(!is.na(examples), paste0("\\textit{", examples, "}", "\n"), ""), description)
   ) %>%
   dplyr::mutate_all(
     kableExtra::linebreak
@@ -184,10 +188,12 @@ tibble::tibble(
     caption = "Parameter, die in Radon-B für jedes Datum vorliegen.",
     format = "latex",
     booktabs = T,
-    escape = F
+    escape = F,
+    col.names = c("", "Parameter"),
+    linesep = "\\addlinespace"
   ) %>%
-  kableExtra::kable_styling(full_width = F) %>%
-  kableExtra::column_spec(1, width = "20em") %>%
+  kableExtra::kable_styling(full_width = T, font_size = 8) %>%
+  kableExtra::column_spec(1, bold = TRUE,  width = "0.5em") %>%
   kableExtra::column_spec(2, width = "25em")
 ```
 
