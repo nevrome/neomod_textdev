@@ -43,7 +43,7 @@ Der *Evolutionary psychology* wird vorgeworfen, die unangemessen vereinfachende 
 
 Smith legt seinem Artikel Tabelle \@ref(tab:smiththreestyles) bei, die die Unterschiede zwischen *Evolutionary psychology*, *Human behavioural ecology* und *Dual inheritance theory*. übersichtlich darstellt.
 
-```{r smiththreestyles, echo=FALSE, tidy=FALSE}
+```{r smiththreestyles, echo=FALSE, tidy=FALSE, results = "asis"}
 library(magrittr)
 
 tibble::tribble(
@@ -60,13 +60,15 @@ tibble::tribble(
     caption = "Three Styles of Evolutionary Explanation (nach \\textcite{SmithThreestylesevolutionary2000})",
     format = "latex",
     booktabs = T,
-    escape = F
+    escape = F,
+    col.names = c("", "Evolutionary psychology", "Behavioural ecology", "Dual.inheritance theory")
   ) %>%
-  kableExtra::kable_styling(full_width = F) %>%
+  kableExtra::kable_styling(full_width = T) %>%
   kableExtra::column_spec(1, width = "15em") %>%
   kableExtra::column_spec(2, width = "10em") %>%
   kableExtra::column_spec(3, width = "10em") %>%
-  kableExtra::column_spec(4, width = "10em")
+  kableExtra::column_spec(4, width = "10em") %>%
+  gsub("table", "table*", .)
 ```
 
 *Dual inheritance theory* ist in der archäologischen Forschung am intensivsten reflektiert worden und ist auch die theoretische Grundlage für das Modell, das für die vorliegende Arbeit entwickelt wurde. Sie soll also im folgenden genauer beleuchtet werden. Um ihre Ursprünge nachzuzeichnen, möchte ich zunächst auf Richard Dawkins *Memetik* eingehen. Memetik wurde mehrfach als populärwissenschaftliche oder sogar pseudowissenschaftlich kritisiert. Grund dafür ist unter anderem ihr niederschwelliger Zugang zu Cultural evolution Theorie, der es jedoch erlaubt grundlegende Konzepte anschaulich zu illustrieren.
