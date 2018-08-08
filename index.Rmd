@@ -1,5 +1,5 @@
 ---
-title: "Ein computerbasiertes Cultural Evolution Modell zur Dynamik hoch erfolgreicher Meme am Fallbeispiel europäisch-bronzezeitlicher Bestattungssitten"
+title: "Ein computerbasiertes Cultural Evolution Modell zur Ausbreitungsdynamik europäisch-bronzezeitlicher Bestattungssitten"
 author: "Clemens Schmid"
 date: "September 2018"
 site: "bookdown::bookdown_site"
