@@ -8,5 +8,6 @@ Imports:
   knitr,
   kableExtra,
   magrittr,
-  tibble
-Remotes: rstudio/bookdown
+  tibble,
+  txtstorage
+Remotes: rstudio/bookdown, nevrome/txtstorage
