@@ -1,7 +1,4 @@
 ---
-title: "Ein computerbasiertes Cultural Evolution Modell zur Ausbreitungsdynamik europäisch-bronzezeitlicher Bestattungssitten"
-author: "Clemens Schmid"
-date: "September 2018"
 site: "bookdown::bookdown_site"
 documentclass: book
 classoption: openany,twoside,twocolumn
