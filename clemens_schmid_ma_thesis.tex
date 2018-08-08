@@ -3468,7 +3468,8 @@ verbrannter menschlicher Knochen, die in Siedlungen, Gräben oder auf
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{# allow easy dynamic value integration}
-\NormalTok{sf_desc <-}\StringTok{ "../neomod_analysis/data_analysis/desc_storage.txt"}
+\NormalTok{sf_prep <-}\StringTok{ "../neomod_analysis/data_text_elements/sf_prep.txt"}
+\NormalTok{sf_desc <-}\StringTok{ "../neomod_analysis/data_text_elements/sf_desc.txt"}
 \NormalTok{r <-}\StringTok{ }\NormalTok{txtstorage}\OperatorTok{::}\NormalTok{read}
 \end{Highlighting}
 \end{Shaded}
@@ -3910,7 +3911,25 @@ wurden an Probenmaterial von Knochen und Zähnen (169 davon verbrannt),
 Materialien wie Nüssen, Harz oder Pech gemessen. Für die restlichen 154
 Daten ist keine Materialangabe hinterlegt. Hinsichtlich der Variablen
 \emph{burial\_type} und \emph{burial\_construction} gelten die in
-Tabelle X dargestellte Verhältnisse.
+Tabelle \ref{tab:dprcrosstab} dargestellte Verhältnisse.
+
+\begin{table}[!h]
+
+\caption{\label{tab:dprcrosstab}Kreuztabelle}
+\centering
+\fontsize{8}{10}\selectfont
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+  & flat & mound & unknown\\
+\midrule
+cremation & 66 & 96 & 241\\
+\addlinespace
+inhumation & 291 & 95 & 224\\
+\addlinespace
+unknown & 12 & 117 & 559\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 \begin{landscape}
 \begin{figure}
