@@ -254,7 +254,7 @@ dprcrosstab %>%
   )
 ```
 
-Von besonderem Interesse für die vorliegende Arbeit ist eine diachrone Perspektive in der Bestattungssittenentwicklung. Schon eine Kartierung der Gräber getrennt nach Zeitscheiben von 200 Jahren (siehe Abbildung \@ref{fig:general-map-research-area-timeslices}) offenbart generelle Trends hinsichtlich *burial_type* und *burial_construction* in Früh-, Mittel- und Spätbronzezeit: Flachgrab -- Hügelgrab -- Flachgrab und Körpergrab -- Brandgrab. Diese Beobachtung kann mittels des erstellten Datensatzes erheblich präzisiert sowie räumlich- und zeitlich explizit gemacht werden. 
+Von besonderem Interesse für die vorliegende Arbeit ist eine diachrone Perspektive in der Bestattungssittenentwicklung. Schon eine Kartierung der Gräber in Zeitschritten von 200 Jahren (siehe Abbildung \@ref{fig:general-map-research-area-timeslices}) offenbart generelle Trends hinsichtlich *burial_type* und *burial_construction* in Früh-, Mittel- und Spätbronzezeit: Flachgrab -- Hügelgrab -- Flachgrab und Körpergrab -- Brandgrab. Diese Beobachtung kann mittels des erstellten Datensatzes erheblich präzisiert sowie räumlich- und zeitlich explizit gemacht werden. 
 
 \begin{landscape}
 ```{r general-map-research-area-timeslices, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
@@ -262,11 +262,25 @@ knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_m
 ```
 \end{landscape}
 
-Entscheidend ist dabei hier nicht unbedingt, wann exakt wo welche Art Grab angelegt wurde. Stattdessen soll aus dieser Information eine quantitative Beschreibung zur Verbreitung und Dominanz von Ideen extrahiert werden. Zur Erstellung dieses Proxies wurde die Annahme getroffen, dass eine Idee zu einem bestimmten Zeitpunkt in einer Region dann als anwesend gewertet werden muss, wenn ein Grab in dieser Region existiert, dessen $2\sigma$ Wahrscheinlichkeitsbereich ermittelt aus einem oder mehreren ^14^C Daten diesen Zeitpunkt umfasst. Ein Beispiel: Die Idee "Körperbestattung" muss 1447calBC anwesend gewesen sein, da dieses Jahr im $2\sigma$ Bereich des ^14^C Datums NZA-32497 liegt, das für die Körperbestattung I2639/25217 vom Fundplatz Amesbury Down angefertigt wurde. Liegen mehrere Daten aus einer Region für ein Jahr vor, dann kann das Auftreten der verschiedenen Ausprägungen von *burial_type* und *burial_construction* gezählt werden. Tut man das für alle Jahre in allen Regionen mit allen Ausprägungen tut, dann ergeben sich sechs aufschlussreiche Zeitreihen, die sich jahrweise sinnvoll zur Gesamtzahl der Beobachtungen addieren (siehe Abbildung \@ref(fig:development-amount-regions-burial-type)).  
+Entscheidend ist dabei hier nicht unbedingt, wann exakt wo welche Art Grab angelegt wurde. Stattdessen soll aus dieser Information eine quantitative Beschreibung zur Verbreitung und Dominanz von Ideen extrahiert werden. Zur Erstellung dieses Proxies wurde die Annahme getroffen, dass eine Idee zu einem bestimmten Zeitpunkt in einer Region dann als anwesend gewertet werden muss, wenn ein Grab in dieser Region existiert, dessen $2\sigma$ Wahrscheinlichkeitsbereich ermittelt aus einem oder mehreren ^14^C Daten diesen Zeitpunkt umfasst. Ein Beispiel: Die Idee "Körperbestattung" muss 1447calBC anwesend gewesen sein, da dieses Jahr im $2\sigma$ Bereich des ^14^C Datums NZA-32497 liegt, das für die Körperbestattung I2639/25217 vom Fundplatz Amesbury Down angefertigt wurde. Liegen mehrere Daten aus einer Region für ein Jahr vor, dann kann das Auftreten der verschiedenen Ausprägungen von *burial_type* und *burial_construction* gezählt werden. Tut man das für alle Jahre in allen Regionen mit allen Ausprägungen tut, dann ergeben sich sechs aufschlussreiche Zeitreihen, die sich jahrweise sinnvoll zur Gesamtzahl der Beobachtungen addieren (für *burial_type* siehe Abbildung \@ref(fig:development-amount-regions-burial-type)), für *burial_construction* Abbildung \@ref(fig:development-amount-regions-burial-construction)). Aus den Ausprägungsmengen lässt sich auch das jeweilige Verhältnis der Ideen in jedem Jahr in jeder Region berechnen (für *burial_type* Abbildung \@ref(fig:development-proportions-regions-burial-type)), für *burial_construction* Abbildung \@ref(fig:development-proportions-regions-burial-construction)). Dabei wurden die Gräber, für die keine Information zu den Primärvariablen vorliegt (*unknown*) ignoriert. Die Entwicklung der Verhältnisse ist die für die Fragestellung dieser Arbeit interessantere Perspektive. Eine Betrachtung der Stichprobengröße aus der die Proportionen abgeleitet wurden, ist aber unumgänglich um die Aussagekraft in einer Region und in einem Zeitfenster beurteilen zu können. Für manche Regionen und Zeiträume liegen sehr wenige Gräber vor. Die Ergebnisse aller folgenden Analysen müssen entsprechend mit Vorsicht gelesen werden. Sie könnten sich bei zunehmender Datenmenge verändern (siehe dazu auch die Quellenkritik in Kapitel \@ref(source-criticism)). 
 
 ```{r development-amount-regions-burial-type, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/development/development_amount_regions_burial_type.jpeg")
 ```
+
+```{r development-amount-regions-burial-construction, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/development/development_amount_regions_burial_construction.jpeg")
+```
+
+```{r development-proportions-regions-burial-type, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/development/development_proportions_regions_burial_type.jpeg")
+```
+
+```{r development-proportions-regions-burial-construction, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/development/development_proportions_regions_burial_construction.jpeg")
+```
+
+Nichtsdestoweniger...
 
 ### Quellenkritik {#source-criticism}
 
