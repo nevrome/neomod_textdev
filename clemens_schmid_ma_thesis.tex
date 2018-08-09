@@ -32,46 +32,6 @@
 \addbibresource{references-cultural-evolution.bib}
 \addbibresource{references-bronze-age-burials.bib}
 \addbibresource{references-software-and-data-analysis.bib}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -3465,15 +3425,6 @@ verbrannter menschlicher Knochen, die in Siedlungen, Gräben oder auf
 
 \pby[title={Literatur},segment=\therefsegment,heading=subbibintoc]
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{# allow easy dynamic value integration}
-\NormalTok{sf_prep <-}\StringTok{ "../neomod_analysis/data_text_elements/sf_prep.txt"}
-\NormalTok{sf_desc <-}\StringTok{ "../neomod_analysis/data_text_elements/sf_desc.txt"}
-\NormalTok{r <-}\StringTok{ }\NormalTok{txtstorage}\OperatorTok{::}\NormalTok{read}
-\end{Highlighting}
-\end{Shaded}
-
 \hypertarget{datenauswertung}{%
 \chapter{Datenauswertung}\label{datenauswertung}}
 
@@ -3930,11 +3881,45 @@ unknown & 12 & 117 & 559\\
 \end{tabu}
 \end{table}
 
+Von besonderem Interesse für die vorliegende Arbeit ist eine diachrone
+Perspektive in der Bestattungssittenentwicklung. Schon eine Kartierung
+der Gräber getrennt nach Zeitscheiben von 200 Jahren (siehe Abbildung
+@ref\{fig:general-map-research-area-timeslices\}) offenbart generelle
+Trends hinsichtlich \emph{burial\_type} und \emph{burial\_construction}
+in Früh-, Mittel- und Spätbronzezeit: Flachgrab -- Hügelgrab --
+Flachgrab und Körpergrab -- Brandgrab. Diese Beobachtung kann mittels
+des erstellten Datensatzes erheblich präzisiert sowie räumlich- und
+zeitlich explizit gemacht werden.
+
 \begin{landscape}
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area_timeslices} \caption[huhu]{huhu}\label{fig:general-map-research-area-timeslices}
 \end{figure}
 \end{landscape}
+
+Entscheidend ist dabei hier nicht unbedingt, wann exakt wo welche Art
+Grab angelegt wurde. Stattdessen soll aus dieser Information eine
+quantitative Beschreibung zur Verbreitung und Dominanz von Ideen
+extrahiert werden. Zur Erstellung dieses Proxies wurde die Annahme
+getroffen, dass eine Idee zu einem bestimmten Zeitpunkt in einer Region
+dann als anwesend gewertet werden muss, wenn ein Grab in dieser Region
+existiert, dessen \(2\sigma\) Wahrscheinlichkeitsbereich ermittelt aus
+einem oder mehreren \textsuperscript{14}C Daten diesen Zeitpunkt
+umfasst. Ein Beispiel: Die Idee ``Körperbestattung'' muss 1447calBC
+anwesend gewesen sein, da dieses Jahr im \(2\sigma\) Bereich des
+\textsuperscript{14}C Datums NZA-32497 liegt, das für die
+Körperbestattung I2639/25217 vom Fundplatz Amesbury Down angefertigt
+wurde. Liegen mehrere Daten aus einer Region für ein Jahr vor, dann kann
+das Auftreten der verschiedenen Ausprägungen von \emph{burial\_type} und
+\emph{burial\_construction} gezählt werden. Tut man das für alle Jahre
+in allen Regionen mit allen Ausprägungen tut, dann ergeben sich sechs
+aufschlussreiche Zeitreihen, die sich jahrweise sinnvoll zur Gesamtzahl
+der Beobachtungen addieren (siehe Abbildung
+\ref{fig:development-amount-regions-burial-type}).
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/development/development_amount_regions_burial_type} \caption[huhu]{huhu}\label{fig:development-amount-regions-burial-type}
+\end{figure}
 
 \hypertarget{source-criticism}{%
 \subsection{Quellenkritik}\label{source-criticism}}
