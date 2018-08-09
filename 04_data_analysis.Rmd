@@ -280,7 +280,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/development/developmen
 knitr::include_graphics("../neomod_analysis/figures_plots/development/development_proportions_regions_burial_construction.jpeg")
 ```
 
-Nichtsdestoweniger...
+Nichtsdestoweniger erlauben die Abbildungen \@ref(fig:development-proportions-regions-burial-type)) und \@ref(fig:development-proportions-regions-burial-construction) schon jetzt bemerkenswerte Interpretationen (für eine Kontextualisierung siehe \@ref(representativity)): Definitiv gab es im Laufe der Bronzezeit in Europa einen Trend weg von der Körperbestattung hin zur Brandbestattung. Um 2200 waren Brandbestattungen in Polen, Süddeutschland, Nordostfrankreich und Norddeutschland nahezu unbekannt. Im Nordwesten, in Großbritannien und im Benelux Raum, und im Südosten, in Österreich und Tschechien, gab es jedoch frühe Brandbestattungstraditionen. Diese Kontexte könnten als Ursprungsgebiete des später omnipräsenten Phänomens diskutiert werden. Während Brandbestattungen sowohl in Österreich und Tschechien als auch im Benelux Gebiet im Laufe der Frühbronzezeit an Bedeutung verloren und erst in der Mittelbronzezeit wieder gewannen, stieg ihr Anteil in England stetig. Körper- und Brandbestattung hielten sich hier lange die Waage. Ähnlich verhielt es sich in Südskandinavien, wo der Anteil an Brandbestattungen bis zur Spätbronzezeit allerdings wesentlich geringer ausfiel. In Polen und Norddeutschland setzte sich Brandbestattung mit dem Beginn er Spätbronzezeit relativ plötzlich und vollständig durch. In Nordostfrankreich und Norddeutschland vollzieht sich dieser Wandel schon in der Mittelbronzezeit. In beiden Kontexten spielten Körperbestattungen auch danach eine wesentliche Rolle.
 
 ### Quellenkritik {#source-criticism}
 
@@ -292,7 +292,7 @@ Die Radon-B Datenbank hat inhaltliche Unzulänglichkeiten, die sich vor allem au
 
 - Die Einträge sind mehrsprachig -- vor allem Englisch und Deutsch -- wobei in ein und dem selben Datensatz mitunter mehrere Sprachen für einzelne Felder auftreten. 
 
-#### Repräsentativität
+#### Repräsentativität {#representativity}
 
 Die Abbildungen \@ref(fig:general-map, X und Z zeigen, dass der Datensatz für einzelne Regionen und Zeiträume verhältnismäßig viele Daten, für die Mehrzahl der Regionen jedoch sehr wenige Daten enthält. Diese Ungleichverteilung der Daten hat sicher viele verschiedene Gründe.  
 
