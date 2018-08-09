@@ -91,8 +91,8 @@
 % move all figures and tables to the end of the document
 \usepackage[nomarkers,nolists,notables]{endfloat}
 \AtBeginFigures{\setcounter{chapter}{0}}
-\renewcommand{\figuresection}{Abbildungen}
-\AtBeginFigures{\addcontentsline{toc}{section}{Abbildungen}}
+% \renewcommand{\figuresection}{Abbildungen}
+% \AtBeginFigures{\addcontentsline{toc}{section}{Abbildungen}}
 % fancy headers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -174,6 +174,10 @@
 \listoffigures
 
 \parskip 4pt \setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
+
+\AtEndDocument{
+  \input{declaration.tex}
+}
 
 \hypertarget{intro}{%
 \chapter{Einführung}\label{intro}}
@@ -3883,7 +3887,7 @@ unknown & 12 & 117 & 559\\
 
 Von besonderem Interesse für die vorliegende Arbeit ist eine diachrone
 Perspektive in der Bestattungssittenentwicklung. Schon eine Kartierung
-der Gräber getrennt nach Zeitscheiben von 200 Jahren (siehe Abbildung
+der Gräber in Zeitschritten von 200 Jahren (siehe Abbildung
 @ref\{fig:general-map-research-area-timeslices\}) offenbart generelle
 Trends hinsichtlich \emph{burial\_type} und \emph{burial\_construction}
 in Früh-, Mittel- und Spätbronzezeit: Flachgrab -- Hügelgrab --
@@ -3914,12 +3918,43 @@ das Auftreten der verschiedenen Ausprägungen von \emph{burial\_type} und
 \emph{burial\_construction} gezählt werden. Tut man das für alle Jahre
 in allen Regionen mit allen Ausprägungen tut, dann ergeben sich sechs
 aufschlussreiche Zeitreihen, die sich jahrweise sinnvoll zur Gesamtzahl
-der Beobachtungen addieren (siehe Abbildung
-\ref{fig:development-amount-regions-burial-type}).
+der Beobachtungen addieren (für \emph{burial\_type} siehe Abbildung
+\ref{fig:development-amount-regions-burial-type}), für
+\emph{burial\_construction} Abbildung
+\ref{fig:development-amount-regions-burial-construction}). Aus den
+Ausprägungsmengen lässt sich auch das jeweilige Verhältnis der Ideen in
+jedem Jahr in jeder Region berechnen (für \emph{burial\_type} Abbildung
+\ref{fig:development-proportions-regions-burial-type}), für
+\emph{burial\_construction} Abbildung
+\ref{fig:development-proportions-regions-burial-construction}). Dabei
+wurden die Gräber, für die keine Information zu den Primärvariablen
+vorliegt (\emph{unknown}) ignoriert. Die Entwicklung der Verhältnisse
+ist die für die Fragestellung dieser Arbeit interessantere Perspektive.
+Eine Betrachtung der Stichprobengröße aus der die Proportionen
+abgeleitet wurden, ist aber unumgänglich um die Aussagekraft in einer
+Region und in einem Zeitfenster beurteilen zu können. Für manche
+Regionen und Zeiträume liegen sehr wenige Gräber vor. Die Ergebnisse
+aller folgenden Analysen müssen entsprechend mit Vorsicht gelesen
+werden. Sie könnten sich bei zunehmender Datenmenge verändern (siehe
+dazu auch die Quellenkritik in Kapitel \ref{source-criticism}).
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/development/development_amount_regions_burial_type} \caption[huhu]{huhu}\label{fig:development-amount-regions-burial-type}
 \end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/development/development_amount_regions_burial_construction} \caption[huhu]{huhu}\label{fig:development-amount-regions-burial-construction}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/development/development_proportions_regions_burial_type} \caption[huhu]{huhu}\label{fig:development-proportions-regions-burial-type}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/development/development_proportions_regions_burial_construction} \caption[huhu]{huhu}\label{fig:development-proportions-regions-burial-construction}
+\end{figure}
+
+Nichtsdestoweniger\ldots{}
 
 \hypertarget{source-criticism}{%
 \subsection{Quellenkritik}\label{source-criticism}}
@@ -4045,32 +4080,10 @@ Entwicklung}\label{simulation-und-reale-entwicklung}}
 \chapter{Zusammenfassung und Abschließende
 Gedanken}\label{zusammenfassung-und-abschlieende-gedanken}}
 
-\hypertarget{anhang}{%
-\chapter{Anhang}\label{anhang}}
+\hypertarget{abbildungen}{%
+\chapter{Abbildungen}\label{abbildungen}}
 
 \printbibliography
-
-\begin{titlepage}
-
-  \huge \textbf{Erklärung}
-
-  \vspace{1.5cm}
-
-  \large Hiermit erkläre ich, dass ich die vorliegende Arbeit selbstständig und ohne fremde Hilfe angefertigt und keine anderen als die angegebenen Quellen und Hilfsmittel verwendet habe.
-
-  \vspace{1cm}
-
-  \large Die eingereichte schriftliche Fassung der Arbeit entspricht der auf dem elektronischen Speichermedium.
-
-  \vspace{1cm}
-
-  \large Weiterhin versichere ich, dass diese Arbeit noch nicht als Abschlussarbeit an anderer Stelle vorgelegen hat.
-
-  \vspace{2cm}
-
-  \noindent\rule{8cm}{0.4pt}
-
-\end{titlepage}
 
 
 \end{document}
