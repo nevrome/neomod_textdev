@@ -288,7 +288,7 @@ Hinsichtlich der Frage nach Grabüberhügelung ist das Bild erheblich heterogene
 
 Die Verwendung des Radon-B Datensatzes im Kontext von Methode und Fragestellungen dieser Arbeit ist aus mehreren Gründen problematisch. Eine Quellenkritik muss dabei auf verschiedenen Ebenen ansetzen: Bei der technischen und inhaltlichen Umsetzung der Datenbank, bei der Repräsentativität der im Datensatz vertretenen Stichprobe und schließlich bei der Frage, ob diese Art Daten für eine Betrachtung von Kulturvorgängen im Allgemeinen und im Rahmen der Cultural Evolution Theorie und Terminologie geeignet ist.
 
-#### Radon-B
+#### Dateneingabe
 
 Die Radon-B Datenbank hat inhaltliche Unzulänglichkeiten, die sich vor allem aus inkonsistenter Dateneingabe infolge mangelnder Vorgaben in Freitextfeldern ergeben. Eine systematische Lösung dieser Probleme wäre sehr aufwändig, da sie die individuelle, nicht automatisierbare Reevaluation eines großen Teils der Einträge erfordern würde.      
 
