@@ -298,7 +298,7 @@ Die Radon-B Datenbank hat inhaltliche Unzulänglichkeiten, die sich vor allem au
 
 #### Repräsentativität {#representativity}
 
-Die Abbildungen \@ref(fig:general-map, \@ref(fig:development-amount-regions-burial-type) und \@ref(fig:development-amount-regions-burial-construction) zeigen, dass der Datensatz für einzelne Regionen und Zeiträume verhältnismäßig viele, für die Mehrzahl jedoch sehr wenige Daten enthält. Diese Ungleichverteilung der Daten hat viele verschiedene Gründe.  
+Die Abbildungen \@ref(fig:general-map), \@ref(fig:development-amount-regions-burial-type) und \@ref(fig:development-amount-regions-burial-construction) zeigen, dass der Datensatz für einzelne Regionen und Zeiträume verhältnismäßig viele, für die Mehrzahl jedoch sehr wenige Daten enthält. Diese Ungleichverteilung der Daten hat viele verschiedene Gründe.  
 
 - Die Datenaufnahme in Radon-B ist von Schwerpunkten, Forschungsinteressen und Projektfinanzierung der beteiligten Wissenschaftler abhängig. Daten wurden zeitlich und räumlich bedarfsweise aus der Literatur gesammelt. 
 - Die Verfügbarkeit von ^14^C Daten in der Literatur ist wiederrum stark daran gebunden, ob ein modernes Forschungsprojekt mit Konzentration auf eine Region und ein Zeitfenster durchgeführt wurde. Neben der zufälligen Verteilung der Interessensgebiete der Forschenden spielt hier auch die politische Rahmensituation -- etwa die lang andauernde Trennung Europas in West und Ost -- eine entscheidende Rolle, die die Arbeit in manchen Räumen erleichtert oder kompliziert.
