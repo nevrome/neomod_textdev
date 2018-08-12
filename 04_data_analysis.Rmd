@@ -391,7 +391,7 @@ tibble::tibble(
   datatype = c(
     "integer vector",
     "integer",
-    "list of factors",
+    "list of characters or factors",
     "list of functions",
     "function",
     "integer vector",
@@ -408,7 +408,7 @@ tibble::tibble(
   description = c(
     "Eine Liste der Kalenderjahre über die sich die Simulation erstrecken soll. Das kann eine künstliche Sequenz sein, oder sich an dem Realweltphänomen orientieren, das mit der Simulation erforscht werden soll.",
     "Anzahl der Gruppen, in die die Population untergliedert sein soll.",
-    "Eine Liste der Gruppennamen mit einer Definition ihrer inneren Reihenfolge.",
+    "Eine Liste der Gruppennamen, wahlweise mit einer Definition ihrer inneren Reihenfolge.",
     "Funktionen, die die Populationsgröße für jede Gruppe in Abhängigkeit von der Simulationszeit definieren.",
     "Funktion, die die durchschnittliche Altersverteilung der Menschen in der Population beschreibt.",
     "Altersfenster, auf das die Altersverteilungsfunktion angewandt wird.",
@@ -425,13 +425,20 @@ tibble::tibble(
   values = c(
     "Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten:
     \\texttt{-2200:-800}, \\texttt{0:500}, \\texttt{seq(-1000, 1000)}",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+    "Beliebiger positiver Integerwert.
+    \\texttt{1}, \\texttt{8}, \\texttt{100}",
+    "Liste mit Namen. Die Anzahl muss \\textit{unit\\_amount} entsprechen.
+    \\texttt{list(factor(\"regionA\", levels = regionen), factor(\"regionB\", levels = regionen))}",
+    "Liste mit Funktionen. Die Anzahl muss \\textit{unit\\_amount} entsprechen.
+    \\texttt{list('regionA' = function(t) \\{100\\}, 'regionB' = function(t) \\{100 + 10 * cos(t * 0.1)\\})}",
+    "Eine Funktion.
+    \\texttt{function(x) \{1 / (1 + 0.0004 * 0.7^(-7 * log(x)))\}}",
+    "Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten im Bereich der menschlichen Lebenserwartung:
+    \\texttt{1:70}, \\texttt{1:120}",
+    "Beliebiger positiver Integerwert oder Null.
+    \\texttt{0}, \\texttt{5}, \\texttt{100}",
+    "Kreuztabelle in einer Integermatrix.
+    \\texttt{matrix(c(0, 1, 1, 0), nrow = 2, ncol = 2)}",
     "",
     "",
     "",
