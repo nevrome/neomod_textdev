@@ -431,21 +431,28 @@ tibble::tibble(
     \\texttt{list(factor(\"regionA\", levels = regionen), factor(\"regionB\", levels = regionen))}",
     "Liste mit Funktionen. Die Anzahl muss \\textit{unit\\_amount} entsprechen.
     \\texttt{list('regionA' = function(t) \\{100\\}, 'regionB' = function(t) \\{100 + 10 * cos(t * 0.1)\\})}",
-    "Eine Funktion.
-    \\texttt{function(x) \{1 / (1 + 0.0004 * 0.7^(-7 * log(x)))\}}",
+    "Eine Funktion, die einen Wert für jeden Eingabewert aus \\textit{age\\_range} zurückgibt.
+    \\texttt{function(x) \\{1 / (1 + 0.0004 * 0.7\\^\\ (-7 * log(x)))\\}}",
     "Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten im Bereich der menschlichen Lebenserwartung:
     \\texttt{1:70}, \\texttt{1:120}",
-    "Beliebiger positiver Integerwert oder Null.
+    "Beliebiger positiver Integerwert oder 0.
     \\texttt{0}, \\texttt{5}, \\texttt{100}",
-    "Kreuztabelle in einer Integermatrix.
+    "Kreuztabelle in Form einer Integermatrix. Die Werte können beliebige positive Integerwert oder 0 sein.
     \\texttt{matrix(c(0, 1, 1, 0), nrow = 2, ncol = 2)}",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
+    "Double Wert zwischen 0 und 1.
+    \\texttt{0}, \\texttt{0.02}, \\texttt{0.7}",
+    "Doublewert zwischen 0 und 1.
+    \\texttt{0}, \\texttt{0.02}, \\texttt{0.7}",
+    "Beliebiger positiver Integerwert oder 0.
+    \\texttt{0}, \\texttt{5}, \\texttt{100}",
+    "Beliebiger positiver Integerwert oder 0.
+    \\texttt{0}, \\texttt{5}, \\texttt{100}",
+    "Vektor mit Namen.
+    \\texttt{c('ideaA', 'ideaB')}",
+    "\\textit{data.frame} mit Proportionen pro Gruppe und Idee. Eine Tabelle mit einer Zeile für jede Gruppe und einer Spalte für jede Idee. In den Zellen ist der Anteil der Idee in dieser Gruppe als Doublewert zwischen 0 und 1 angegeben. Die Zeilensumme muss 1 ergeben.
+    \\texttt{data.frame(ideaA = c(0.2, 0.5), ideaB = c(0.8, 0.5))}",
+    "Integervektor mit Werten zwischen ...
+    \\texttt{c(1,1)}"
   )
 ) %>%
   dplyr::transmute(
@@ -469,9 +476,9 @@ tibble::tibble(
     linesep = "\\addlinespace \\hline \\addlinespace"
   ) %>%
   kableExtra::kable_styling(full_width = T, font_size = 8) %>%
-  kableExtra::column_spec(1, width = "18em") %>%
-  kableExtra::column_spec(2, width = "18em") %>%
-  kableExtra::column_spec(3, width = "18em") %>%
+  kableExtra::column_spec(1, width = "17em") %>%
+  kableExtra::column_spec(2, width = "17em") %>%
+  kableExtra::column_spec(3, width = "20em") %>%
   gsub("table", "table*", .)
 ```
 
