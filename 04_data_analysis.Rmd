@@ -353,7 +353,7 @@ Die Simulationssoftware besteht aus zwei speziell für diese Anwendung entwickel
 
 #### Populationsgenerator
 
-Für den Aufbau des
+Der Populationsgenerator ist in drei Submodule gegliedert: `init_population_settings`, `init_relations_settings` und `init_ideas_settings`, die nacheinander aufgerufen werden können -- die Interfacefunktion `prepare_pops_rels_ideas` automatisiert das. Jedes dieser Module erweitert einen Eingabedatensatz sukzessive um generierte Daten hinsichtlich der zeitübergreifenden Gesamtpopulation, der Beziehungen innerhalb dieser Population und der Verteilung zweier Ideen zu einem hypothetischen Nullzeitpunkt.
 
 #### Expansionssimulation
 
