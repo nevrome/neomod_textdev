@@ -350,7 +350,7 @@ Die Simulationssoftware besteht aus zwei speziell für diese Anwendung entwickel
 
 #### Populationsgenerator
 
-Der Populationsgenerator ist als R Paket implementiert. Er ist in drei Submodule gegliedert: `init_population_settings`, `init_relations_settings` und `init_ideas_settings`, die nacheinander aufgerufen werden können -- die Interfacefunktion `prepare_pops_rels_ideas` automatisiert das. Jedes dieser Module erweitert einen Eingabedatensatz sukzessive um generierte Daten hinsichtlich der zeitübergreifenden Gesamtpopulation, der Beziehungen innerhalb dieser Population und der Verteilung zweier Ideen darin zu einem hypothetischen Nullzeitpunkt. Der Eingabedatensatz muss in Form eines `data.frames`, also der in R üblichen Datenstruktur für tabellierte Daten unterschiedlicher Typen, vorliegen. Jede Zeile in diesem Datensatz enthält zunächst die Parameter -- später auch die Ausgabedaten -- für eine Population, ihre Relationen und Ideen. Komplexe Parameter sind dabei in `list columns` gespeichert. Diese erlauben es, fast beliebige Datenstrukturen in den Zellen eines `data.frames` zu schachteln. Tabelle \@ref(param-popgenerator) beschreibt alle Parameter kurz und umreißt ihren theoretischen Wertebereich.
+Der Populationsgenerator ist als R Paket implementiert. Er ist in drei Submodule gegliedert: `init_population_settings`, `init_relations_settings` und `init_ideas_settings`, die nacheinander aufgerufen werden können -- die Interfacefunktion `prepare_pops_rels_ideas` automatisiert das. Jedes dieser Module erweitert einen Eingabedatensatz sukzessive um generierte Daten hinsichtlich der zeitübergreifenden Gesamtpopulation, der Beziehungen innerhalb dieser Population und der Verteilung zweier Ideen darin zu einem hypothetischen Nullzeitpunkt. Der Eingabedatensatz muss in Form eines `data.frames`, also der in R üblichen Datenstruktur für tabellierte Daten unterschiedlicher Typen, vorliegen. Jede Zeile in diesem Datensatz enthält zunächst die Parameter -- später auch die Ausgabedaten -- für eine Population, ihre Relationen und Ideen. Komplexe Parameter sind dabei in `list columns` gespeichert. Diese erlauben es, fast beliebige Datenstrukturen in den Zellen eines `data.frames` zu schachteln. Tabelle \@ref(tab:param-popgenerator) beschreibt alle Parameter kurz und umreißt ihren theoretischen Wertebereich.
 
 ```{r param-popgenerator, echo=FALSE, tidy=FALSE, results = "asis"}
 tibble::tibble(
@@ -419,7 +419,7 @@ tibble::tibble(
     "Stärke einer vertikalen Beziehung. Die Beziehungsstärke hat Einfluss darauf, ob eine Idee beim Versuch von einem Individuum zum anderen zu springen Erfolg hat.",
     "Stärke einer horizontalen Beziehung.",
     "Namen der Ideen.",
-    "Proportionaler Anteil der Ideen in jeder Region zum Startzeitpunkt der Simulation.",
+    "Proportionaler Anteil der Ideen in jeder Region zum Startzeitpunkt der Simulation. Eine Tabelle mit einer Zeile für jede Gruppe und einer Spalte für jede Idee.",
     "Stärke der Ideen."
   ),
   values = c(
@@ -449,7 +449,7 @@ tibble::tibble(
     \\texttt{0}, \\texttt{5}, \\texttt{100}",
     "Vektor mit Namen.
     \\texttt{c('ideaA', 'ideaB')}",
-    "\\textit{data.frame} mit Proportionen pro Gruppe und Idee. Eine Tabelle mit einer Zeile für jede Gruppe und einer Spalte für jede Idee. In den Zellen ist der Anteil der Idee in dieser Gruppe als Doublewert zwischen 0 und 1 angegeben. Die Zeilensumme muss 1 ergeben.
+    "\\textit{data.frame} mit Proportionen pro Gruppe und Idee. In den Zellen ist der Anteil der Idee in dieser Gruppe als Doublewert zwischen 0 und 1 angegeben. Die Zeilensumme muss 1 sein.
     \\texttt{data.frame(ideaA = c(0.2, 0.5), ideaB = c(0.8, 0.5))}",
     "Integervektor mit Werten zwischen ...
     \\texttt{c(1,1)}"
@@ -476,8 +476,8 @@ tibble::tibble(
     linesep = "\\addlinespace \\hline \\addlinespace"
   ) %>%
   kableExtra::kable_styling(full_width = T, font_size = 8) %>%
-  kableExtra::column_spec(1, width = "17em") %>%
-  kableExtra::column_spec(2, width = "17em") %>%
+  kableExtra::column_spec(1, width = "14em") %>%
+  kableExtra::column_spec(2, width = "20em") %>%
   kableExtra::column_spec(3, width = "20em") %>%
   gsub("table", "table*", .)
 ```
