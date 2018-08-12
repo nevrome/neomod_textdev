@@ -340,7 +340,7 @@ England
 
 ## Simulation
 
-### Theoretische Grundlagen und Funktionalität
+### Theoretische Grundlagen und Funktionalität {#simulation-theorie}
 
 Wie werden warum welche Gegebenheiten der realen Welt im Modell abgebildet?
 
@@ -481,6 +481,8 @@ tibble::tibble(
   kableExtra::column_spec(3, width = "20em") %>%
   gsub("table", "table*", .)
 ```
+
+`init_population_settings` dient dazu, eine Abfolge von Individuen zu generieren, die nur durch ihre Lebenszeit und ihre Gruppenzugehörigkeit definiert sind. Menschen sind -- wie in Kapitel \@ref{simulation-theorie} beschrieben -- sehr einfach modelliert.
 
 #### Expansionssimulation
 
