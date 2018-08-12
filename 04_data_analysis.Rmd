@@ -357,15 +357,91 @@ Der Populationsgenerator ist als R Paket implementiert. Er ist in drei Submodule
 
 ```{r param-popgenerator, echo=FALSE, tidy=FALSE, results = "asis"}
 tibble::tibble(
-  category = c("Allgemeine Parameter"),
-  parameter = c("timeframe"),
-  datatype = c("numeric vector"),
+  category = c(
+    "Allgemeine Parameter",
+    "Populationsparamter",
+    "Populationsparamter",
+    "Populationsparamter",
+    "Populationsparamter",
+    "Populationsparamter",
+    "Beziehungsparameter",
+    "Beziehungsparameter",
+    "Beziehungsparameter",
+    "Beziehungsparameter",
+    "Beziehungsparameter",
+    "Beziehungsparameter",
+    "Ideenparameter",
+    "Ideenparameter",
+    "Ideenparameter"
+  ),
+  parameter = c(
+    "timeframe",
+    "unit\\_amount",
+    "unit\\_names",
+    "unit\\_size\\_functions",
+    "age\\_distribution\\_function",
+    "age\\_range",
+    "amount\\_friends",
+    "unit\\_interaction\\_matrix",
+    "cross\\_unit\\_proportion\\_child\\_of",
+    "cross\\_unit\\_proportion\\_friend",
+    "weight\\_child\\_of",
+    "weight\\_friend",
+    "names",
+    "start\\_distribution",
+    "strength"
+  ),
+  datatype = c(
+    "integer vector",
+    "integer",
+    "list of factors",
+    "list of functions",
+    "function",
+    "integer vector",
+    "integer",
+    "integer matrix",
+    "double",
+    "double",
+    "integer",
+    "integer",
+    "character vector",
+    "data.frame",
+    "double vector"
+  ),
   description = c(
-    "Huhu"
+    "Eine Liste der Kalenderjahre über die sich die Simulation erstrecken soll. Das kann eine künstliche Sequenz sein, oder sich an dem Realweltphänomen orientieren, das mit der Simulation erforscht werden soll.",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
   ),
   values = c(
-    "Beliebige, unterbrechungslose Sequenz von sukzessive aufeinander folgenden Integerwerten:
-    \\texttt{-2200:-800}"
+    "Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten:
+    \\texttt{-2200:-800}, \\texttt{0:500}, \\texttt{seq(-1000, 1000)}",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
   )
 ) %>%
   dplyr::transmute(
@@ -388,8 +464,8 @@ tibble::tibble(
     col.names = c("Paramter", "Beschreibung", "Theoretischer Wertebereich"),
     linesep = "\\addlinespace"
   ) %>%
-  kableExtra::kable_styling(full_width = T) %>%
-  kableExtra::column_spec(1, width = "10em") %>%
+  kableExtra::kable_styling(full_width = T, font_size = 8) %>%
+  kableExtra::column_spec(1, width = "18em") %>%
   kableExtra::column_spec(2, width = "20em") %>%
   kableExtra::column_spec(3, width = "15em") %>%
   gsub("table", "table*", .)
