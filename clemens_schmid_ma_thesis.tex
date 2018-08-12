@@ -3465,11 +3465,11 @@ Tabelle \ref{tab:libraries}) und über das zotero Webportal einsehbar.
 \addlinespace
 3 & \textbf{neomod\_analysis}\newline \textit{\href{https://www.github.com/nevrome/neomod\_analysis}{github/nevrome/neomod\_analysis}}\newline Datenanalyse. Sowohl die Realweltdaten als auch die Daten aus der Simulation wurden mit R ausgewertet. Dieses Projekt hat bewusst nicht die Form eines R Pakets, sondern setzt sich aus vielen einzelnen, teilweise redundanten R Skripten zusammen. Hier werden auch Ergebnisdaten und Abbildungen gespeichert. Erstere wurden aufgrund ihres Volumens weitestgehend  nicht mit Versionskontrolle dokumentiert und liegen entsprechend nur in den lokalen Systemen vor, in denen sie erzeugt wurden. Sie müssen bei Bedarf generiert oder -- im  Fall von Quelldaten -- heruntergeladen werden.\\
 \addlinespace
-4 & \textbf{popgenerator}\newline \textit{\href{https://www.github.com/nevrome/popgenerator}{github/nevrome/popgenerator}}\newline Populationsgenerator. R Paket zur Konstruktion von Populationsgraphen.\\
+4 & \textbf{popgenerator\textcite{schmid_popgenerator_2018}}\newline \textit{\href{https://www.github.com/nevrome/popgenerator}{github/nevrome/popgenerator}}\newline Populationsgenerator. R Paket zur Konstruktion von Populationsgraphen.\\
 \addlinespace
-5 & \textbf{gluesless}\newline \textit{\href{https://www.github.com/nevrome/gluesless}{github/nevrome/gluesless}}\newline Expansionsmodell. C++ Programm zur Simulation der Ausbreitung von Ideen in einem Populationsgraphen, wie er von popgenerator erzeugt wird.\\
+5 & \textbf{gluesless\textcite{clemens_schmid_gluesless_2018}}\newline \textit{\href{https://www.github.com/nevrome/gluesless}{github/nevrome/gluesless}}\newline Expansionsmodell. C++ Programm zur Simulation der Ausbreitung von Ideen in einem Populationsgraphen, wie er von popgenerator erzeugt wird.\\
 \addlinespace
-6 & \textbf{c14bazAAR}\newline \textit{\href{https://www.github.com/nevrome/c14bazAAR}{github/nevrome/c14bazAAR}}\newline \textsuperscript{14}C-Datenbeschaffung. R Paket zum strukturierten Download von \textsuperscript{14}C-Daten aus verschiedenen Quelldatenbanken -- unter anderem der hier verarbeiteten Radon-B Datenbank.\\
+6 & \textbf{c14bazAAR\textcite{schmid_c14bazaar_2018}}\newline \textit{\href{https://www.github.com/nevrome/c14bazAAR}{github/nevrome/c14bazAAR}}\newline \textsuperscript{14}C-Datenbeschaffung. R Paket zum strukturierten Download von \textsuperscript{14}C-Daten aus verschiedenen Quelldatenbanken -- unter anderem der hier verarbeiteten Radon-B Datenbank.\\
 \addlinespace
 7 & \textbf{neimann1995}\newline \textit{\href{https://www.github.com/nevrome/neimann1995}{github/nevrome/neimann1995}}\newline Reproduktion eines Artikels. Verständnisübung entlang eines der wesentlichen Artikel in der theoretischen Vorbereitung dieser Arbeit.\\
 \addlinespace
@@ -3518,9 +3518,8 @@ Folgende Pakete kamen zum Einsatz zur Text- und Literaturverarbeitung
 knitr\footnote{\textcite{xie_dynamic_2015}; \textcite{xie_knitr_2014};
   \textcite{xie_knitr_2018}}, markdown\footnote{\textcite{allaire_markdown_2017}},
 rmarkdown\footnote{\textcite{allaire_rmarkdown_2018}}), zur
-Datenbeschaffung (c14bazAAR\footnote{\textcite{schmid_c14bazaar_2018}},
-rnaturalearth\footnote{\textcite{south_rnaturalearth_2017}}), zur
-allgemeinen Datenmanipulation (broom\footnote{\textcite{robinson_broom_2018}},
+Datenbeschaffung (c14bazAAR, rnaturalearth\footnote{\textcite{south_rnaturalearth_2017}}),
+zur allgemeinen Datenmanipulation (broom\footnote{\textcite{robinson_broom_2018}},
 dplyr\footnote{\textcite{wickham_dplyr_2018}}, forcats\footnote{\textcite{wickham_forcats_2018}},
 kableExtra\footnote{\textcite{zhu_kableextra_2018}}, pbapply\footnote{\textcite{solymos_pbapply_2018}},
 plyr\footnote{\textcite{wickham_split-apply-combine_2011}},
@@ -3634,15 +3633,14 @@ Eine hinsichtlich der Variablenauswahl etwas reduzierte\footnote{Für
   werden:
   \url{https://github.com/ISAAKiel/c14bazAAR/blob/master/data-raw/variable_reference.csv}},
 aber hier ausreichende Version von Radon-B wurde mittels des R Pakets
-c14bazAAR\footnote{\textcite{schmid_c14bazaar_2018}} direkt in R
-bezogen. Dieser Ausgangsdatensatz enthielt alle zu diesem Zeitpunkt
-{[}15.07.2018{]} öffentlichen Einträge: 11.048 Daten von 2.766
-Fundplätzen aus 48 Ländern. Der erste Datenverarbeitungsschritt war das
-Entfernen aller Daten ohne Altersinformation und aller Daten außerhalb
-der theoretischen Reichweite der Kalibrationskurve (71-46401calBP)
-(10956 Daten verblieben). Zur Kalibration wurde das R Paket
-Bchron\footnote{\textcite{haslett_simple_2008}} und die darin
-enthaltenen Version es IntCal13 Datensatzes\footnote{\textcite{reimer_intcal13_2013}}
+c14bazAAR direkt in R bezogen. Dieser Ausgangsdatensatz enthielt alle zu
+diesem Zeitpunkt {[}15.07.2018{]} öffentlichen Einträge: 11.048 Daten
+von 2.766 Fundplätzen aus 48 Ländern. Der erste
+Datenverarbeitungsschritt war das Entfernen aller Daten ohne
+Altersinformation und aller Daten außerhalb der theoretischen Reichweite
+der Kalibrationskurve (71-46401calBP) (10956 Daten verblieben). Zur
+Kalibration wurde das R Paket Bchron\footnote{\textcite{haslett_simple_2008}}
+und die darin enthaltenen Version es IntCal13 Datensatzes\footnote{\textcite{reimer_intcal13_2013}}
 verwendet. Bchron berechnet das kalibrierte Alter mittels Numerischer
 Integration\footnote{\url{https://github.com/andrewcparnell/Bchron/blob/master/R/BchronCalibrate.R}
   {[}02.08.2018{]}} und liefert für jedes Datum eine normierte
@@ -4056,7 +4054,7 @@ Reevaluation eines großen Teils der Einträge erfordern würde.
 \hypertarget{representativity}{%
 \subsubsection{Repräsentativität}\label{representativity}}
 
-Die Abbildungen @ref(fig:general-map,
+Die Abbildungen \ref{fig:general-map},
 \ref{fig:development-amount-regions-burial-type} und
 \ref{fig:development-amount-regions-burial-construction} zeigen, dass
 der Datensatz für einzelne Regionen und Zeiträume verhältnismäßig viele,
@@ -4198,15 +4196,39 @@ England
 \hypertarget{simulation}{%
 \section{Simulation}\label{simulation}}
 
-\hypertarget{theoretische-grundlage-und-funktionalitat}{%
-\subsection{Theoretische Grundlage und
-Funktionalität}\label{theoretische-grundlage-und-funktionalitat}}
+\hypertarget{theoretische-grundlagen-und-funktionalitat}{%
+\subsection{Theoretische Grundlagen und
+Funktionalität}\label{theoretische-grundlagen-und-funktionalitat}}
 
 Wie werden warum welche Gegebenheiten der realen Welt im Modell
 abgebildet?
 
-\hypertarget{implementierung}{%
-\subsection{Implementierung}\label{implementierung}}
+\hypertarget{implementierung-und-algorithmen}{%
+\subsection{Implementierung und
+Algorithmen}\label{implementierung-und-algorithmen}}
+
+Die Simulationssoftware besteht aus zwei speziell für diese Anwendung
+entwickelten Modulen: Der Populationsgenerator popgenerator und die
+Expansionssimulation gluesless. Die Module sind aufeinander abgestimmt
+und in den verwendeten Versionen funktional auf die Fragestellungen
+dieser Arbeit zugeschnitten. Beide ließen sich jedoch relativ leicht für
+einen breiteren Anwendungsbereich öffnen, wenn dafür in Zukunft
+Notwendigkeit bestehen sollte. Die im folgenden ausgearbeitete
+Beschreibungen beziehen sich entsprechend jeweils speziell auf Version
+1.0 der Module, die für die Berechnung in dieser Arbeit zum Einsatz
+kamen. Im Gegensatz zu den Ausführungen im Kontext von Datenvorbereitung
+und -analyse in Kapitel @ref(\#radonb-dataset), wo darauf zugunsten des
+Leseflusses bewusst verzichtet wurde, werden hier nun die wesentlichen
+Funktionen und Klassen namentlich genannt. Das soll es erleichtern, die
+grundsätzlicher Architektur der Software zu verstehen.
+
+\hypertarget{populationsgenerator}{%
+\subsubsection{Populationsgenerator}\label{populationsgenerator}}
+
+Für den Aufbau des
+
+\hypertarget{expansionssimulation}{%
+\subsubsection{Expansionssimulation}\label{expansionssimulation}}
 
 \hypertarget{simulationsparameter}{%
 \subsection{Simulationsparameter}\label{simulationsparameter}}
