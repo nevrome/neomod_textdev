@@ -410,20 +410,20 @@ tibble::tibble(
   ),
   description = c(
     "Eine Liste der Kalenderjahre über die sich die Simulation erstrecken soll. Das kann eine künstliche Sequenz sein, oder sich an dem Realweltphänomen orientieren, das mit der Simulation erforscht werden soll.",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
+    "Anzahl der Gruppen, in die die Population untergliedert sein soll.",
+    "Eine Liste der Gruppennamen mit einer Definition ihrer inneren Reihenfolge.",
+    "Funktionen, die die Populationsgröße für jede Gruppe in Abhängigkeit von der Simulationszeit definieren.",
+    "Funktion, die die durchschnittliche Altersverteilung der Menschen in der Population beschreibt.",
+    "Altersfenster, auf das die Altersverteilungsfunktion angewandt wird.",
+    "Menge an horizontalen Beziehungen, die ein Individuum aufbaut.",
+    "Matrix die definiert, welche Gruppe in welchem Umfang mit welcher anderen Gruppe interagiert. Diese Tabelle kann verschiedene -- räumliche, kulturelle, wirtschaftliche -- Distanzen ausdrücken.",
+    "Anteil der vertikalen Beziehungen, die nicht innerhalb einer Gruppe bestehen, sondern über Gruppengrenzen hinweg reichen.",
+    "Anteil der horizontalen Beziehungen, die über Gruppengrenzen hinweg reichen.",
+    "Stärke einer vertikalen Beziehung. Die Beziehungsstärke hat Einfluss darauf, ob eine Idee beim Versuch von einem Individuum zum anderen zu springen Erfolg hat.",
+    "Stärke einer horizontalen Beziehung.",
+    "Namen der Ideen.",
+    "Proportionaler Anteil der Ideen in jeder Region zum Startzeitpunkt der Simulation.",
+    "Stärke der Ideen."
   ),
   values = c(
     "Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten:
@@ -462,12 +462,12 @@ tibble::tibble(
     booktabs = T,
     escape = F,
     col.names = c("Paramter", "Beschreibung", "Theoretischer Wertebereich"),
-    linesep = "\\addlinespace"
+    linesep = "\\addlinespace \\hline \\addlinespace"
   ) %>%
   kableExtra::kable_styling(full_width = T, font_size = 8) %>%
   kableExtra::column_spec(1, width = "18em") %>%
-  kableExtra::column_spec(2, width = "20em") %>%
-  kableExtra::column_spec(3, width = "15em") %>%
+  kableExtra::column_spec(2, width = "18em") %>%
+  kableExtra::column_spec(3, width = "18em") %>%
   gsub("table", "table*", .)
 ```
 
