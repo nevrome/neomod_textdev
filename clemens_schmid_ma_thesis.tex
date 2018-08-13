@@ -4231,16 +4231,17 @@ die nacheinander aufgerufen werden können -- die Interfacefunktion
 Module erweitert einen Eingabedatensatz sukzessive um generierte Daten
 hinsichtlich der zeitübergreifenden Gesamtpopulation, der Beziehungen
 innerhalb dieser Population und der Verteilung zweier Ideen darin zu
-einem hypothetischen Nullzeitpunkt. Der Eingabedatensatz muss in Form
-eines \texttt{data.frames}, also der in R üblichen Datenstruktur für
-tabellierte Daten unterschiedlicher Typen, vorliegen. Jede Zeile in
-diesem Datensatz enthält zunächst die Parameter -- später auch die
-Ausgabedaten -- für eine Population, ihre Relationen und Ideen. Komplexe
-Parameter sind dabei in \texttt{list\ columns} gespeichert. Diese
-erlauben es, fast beliebige Datenstrukturen in den Zellen eines
+einem hypothetischen Nullzeitpunkt. Der Eingabedatensatz -- das
+\texttt{models\_grid} -- muss in Form eines \texttt{data.frames}, also
+der in R üblichen Datenstruktur für tabellierte Daten, vorliegen. Jede
+Zeile in diesem Datensatz enthält zunächst die Parameter -- später auch
+die Ausgabedaten -- für eine Population, ihre Relationen und Ideen.
+Komplexe Parameter sind dabei in \texttt{list\ columns} gespeichert.
+Diese erlauben es, fast beliebige Datenstrukturen in den Zellen eines
 \texttt{data.frames} zu schachteln. Tabelle \ref{tab:param-popgenerator}
 beschreibt alle Parameter kurz und umreißt ihren theoretischen
-Wertebereich.
+Wertebereich. Die tatsächlich für die Simulation relevanten Werte werden
+in Kapitel \ref{simulation-parameters} diskutiert.
 
 \begin{table*}
 
@@ -4284,17 +4285,32 @@ Paramter & Beschreibung & Theoretischer Wertebereich\\
 \end{tabu}
 \end{table*}
 
-\texttt{init\_population\_settings} dient dazu, eine Abfolge von
-Individuen zu generieren, die nur durch ihre Lebenszeit und ihre
-Gruppenzugehörigkeit definiert sind. Menschen sind -- wie in Kapitel
-@ref\{simulation-theorie\} beschrieben -- sehr einfach modelliert.
+\texttt{init\_population\_settings} dient dazu eine große Menge von
+Individuen zu generieren, die gemeinsam eine generationenüberschreitende
+Population bilden. Menschen sind nur durch ihre Lebenszeit und ihre
+Gruppenzugehörigkeit definiert und damit -- wie in Kapitel
+@ref\{simulation-theorie\} beschrieben -- sehr einfach modelliert. Für
+die Erzeugung von Populationen, also der Verarbeitung der Daten im
+\texttt{models\_grid}, werden zunächst die Populationsparameter aus
+jeder Zeile in Instanzen der \texttt{S4}-Konfigurationsklasse
+\texttt{population\_settings} überführt. Diese und die folgenden
+Transformation in solche Konfigurationsobjekte erleichtern die
+Datenweitergabe innerhalb des Pakets. Aus jedem einzelnen
+\texttt{population\_settings} Objekt wird eine Population generiert. Da
+jede Population aus einer oder vielen Gruppen besteht, die biologische
+Vererbungsgruppen wie Familien oder Clans repräsentieren und jeweils
+eine individuelle Größenentwicklung durchlaufen können, wird für jede
+Gruppe in der Population ein Konfigurationsobjekt der Klasse
+\texttt{unit\_settings} erzeugt. Zur Erzeugung einer Gruppe wird dieses
+Objekt an die Funktion \texttt{generate\_unit} übergeben, die die
+Hauptlast der Populationsgenerierung trägt.
 
 \hypertarget{expansionssimulation}{%
 \subsubsection{Expansionssimulation}\label{expansionssimulation}}
 
-\hypertarget{wertebereiche-der-simulationsparameter}{%
+\hypertarget{simulation-parameters}{%
 \subsection{Wertebereiche der
-Simulationsparameter}\label{wertebereiche-der-simulationsparameter}}
+Simulationsparameter}\label{simulation-parameters}}
 
 \hypertarget{allgemeine-beobachtungen-zum-simulationsverhalten}{%
 \subsection{Allgemeine Beobachtungen zum
