@@ -350,7 +350,7 @@ Die Simulationssoftware besteht aus zwei speziell für diese Anwendung entwickel
 
 #### Populationsgenerator
 
-Der Populationsgenerator ist als R Paket implementiert. Er ist in drei Submodule gegliedert: `init_population_settings`, `init_relations_settings` und `init_ideas_settings`, die nacheinander aufgerufen werden können -- die Interfacefunktion `prepare_pops_rels_ideas` automatisiert das. Jedes dieser Module erweitert einen Eingabedatensatz sukzessive um generierte Daten hinsichtlich der zeitübergreifenden Gesamtpopulation, der Beziehungen innerhalb dieser Population und der Verteilung zweier Ideen darin zu einem hypothetischen Nullzeitpunkt. Der Eingabedatensatz muss in Form eines `data.frames`, also der in R üblichen Datenstruktur für tabellierte Daten unterschiedlicher Typen, vorliegen. Jede Zeile in diesem Datensatz enthält zunächst die Parameter -- später auch die Ausgabedaten -- für eine Population, ihre Relationen und Ideen. Komplexe Parameter sind dabei in `list columns` gespeichert. Diese erlauben es, fast beliebige Datenstrukturen in den Zellen eines `data.frames` zu schachteln. Tabelle \@ref(tab:param-popgenerator) beschreibt alle Parameter kurz und umreißt ihren theoretischen Wertebereich.
+Der Populationsgenerator ist als R Paket implementiert. Er ist in drei Submodule gegliedert: `init_population_settings`, `init_relations_settings` und `init_ideas_settings`, die nacheinander aufgerufen werden können -- die Interfacefunktion `prepare_pops_rels_ideas` automatisiert das. Jedes dieser Module erweitert einen Eingabedatensatz sukzessive um generierte Daten hinsichtlich der zeitübergreifenden Gesamtpopulation, der Beziehungen innerhalb dieser Population und der Verteilung zweier Ideen darin zu einem hypothetischen Nullzeitpunkt. Der Eingabedatensatz -- das `models_grid` -- muss in Form eines `data.frames`, also der in R üblichen Datenstruktur für tabellierte Daten, vorliegen. Jede Zeile in diesem Datensatz enthält zunächst die Parameter -- später auch die Ausgabedaten -- für eine Population, ihre Relationen und Ideen. Komplexe Parameter sind dabei in `list columns` gespeichert. Diese erlauben es, fast beliebige Datenstrukturen in den Zellen eines `data.frames` zu schachteln. Tabelle \@ref(tab:param-popgenerator) beschreibt alle Parameter kurz und umreißt ihren theoretischen Wertebereich. Die tatsächlich für die Simulation relevanten Werte werden in Kapitel \@ref(simulation-parameters) diskutiert. 
 
 ```{r param-popgenerator, echo=FALSE, tidy=FALSE, results = "asis"}
 tibble::tibble(
@@ -482,11 +482,11 @@ tibble::tibble(
   gsub("table", "table*", .)
 ```
 
-`init_population_settings` dient dazu, eine Abfolge von Individuen zu generieren, die nur durch ihre Lebenszeit und ihre Gruppenzugehörigkeit definiert sind. Menschen sind -- wie in Kapitel \@ref{simulation-theorie} beschrieben -- sehr einfach modelliert.
+`init_population_settings` dient dazu eine große Menge von Individuen zu generieren, die gemeinsam eine generationenüberschreitende Population bilden. Menschen sind nur durch ihre Lebenszeit und ihre Gruppenzugehörigkeit definiert und damit -- wie in Kapitel \@ref{simulation-theorie} beschrieben -- sehr einfach modelliert. Für die Erzeugung von Populationen, also der Verarbeitung der Daten im `models_grid`, werden zunächst die Populationsparameter aus jeder Zeile in Instanzen der `S4`-Konfigurationsklasse `population_settings` überführt. Diese und die folgenden Transformation in solche Konfigurationsobjekte erleichtern die Datenweitergabe innerhalb des Pakets. Aus jedem einzelnen `population_settings` Objekt wird eine Population generiert. Da jede Population aus einer oder vielen Gruppen besteht, die biologische Vererbungsgruppen wie Familien oder Clans repräsentieren und jeweils eine individuelle Größenentwicklung durchlaufen können, wird für jede Gruppe in der Population ein Konfigurationsobjekt der Klasse `unit_settings` erzeugt. Zur Erzeugung einer Gruppe wird dieses Objekt an die Funktion `generate_unit` übergeben, die die Hauptlast der Populationsgenerierung trägt. 
 
 #### Expansionssimulation
 
-### Wertebereiche der Simulationsparameter
+### Wertebereiche der Simulationsparameter {#simulation-parameters}
 
 ### Allgemeine Beobachtungen zum Simulationsverhalten
 
