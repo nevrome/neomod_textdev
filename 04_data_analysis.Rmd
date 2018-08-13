@@ -500,6 +500,45 @@ popgenerator stellt einige dedizierte Exportfunktionen bereit, die vor allem die
 
 #### Expansionssimulation
 
+Das C++ Programm gluesless simuliert die Expansion von Ideen in einem Populationsgraphen wie er mittels des popgenerators erzeugt werden kann. gluesless macht sich die objektorientierte Natur von C++ zu Abbildung der Simulationswelt in vier Klassen zunutze (siehe Tabelle X). 
+
+```{r projects, echo=FALSE, tidy=FALSE}
+library(magrittr)
+
+tibble::tibble(
+  name = c(
+    "Idea",
+    "Networkland",
+    "Aether",
+    "Timeline"
+  ),
+  description = c(
+    "",
+    "",
+    "",
+    ""
+  ) 
+) %>%
+  dplyr::transmute(
+    number = 1:nrow(.),
+    Projekt = paste0("\\textbf{", name, "}", "\n", description)
+  ) %>%
+  dplyr::mutate_all(
+    kableExtra::linebreak
+  ) %>%
+  knitr::kable(
+    caption = "Klassen in gluesless",
+    format = "latex",
+    booktabs = T,
+    escape = F,
+    col.names = c("", "Klasse"),
+    linesep = "\\addlinespace \\hline \\addlinespace"
+  ) %>%
+  kableExtra::kable_styling(full_width = T, font_size = 8) %>%
+  kableExtra::column_spec(1, bold = TRUE,  width = "0.5em") %>%
+  kableExtra::column_spec(2, width = "25em")
+```
+
 ### Wertebereiche der Simulationsparameter {#simulation-parameters}
 
 ### Allgemeine Beobachtungen zum Simulationsverhalten
