@@ -4262,7 +4262,7 @@ Paramter & Beschreibung & Theoretischer Wertebereich\\
 \addlinespace \hline \addlinespace
 \textit{Populationsparamter}\newline \textbf{unit\_amount}\newline \textit{integer} & Anzahl der Gruppen, in die die Population untergliedert sein soll. & Beliebiger positiver Integerwert.\newline     \texttt{1}, \texttt{8}, \texttt{100}\\
 \addlinespace \hline \addlinespace
-\textit{Populationsparamter}\newline \textbf{unit\_names}\newline \textit{list of characters or factors} & Eine Liste der Gruppennamen, wahlweise mit einer Definition ihrer inneren Reihenfolge. & Liste mit Namen. Die Anzahl muss \textit{unit\_amount} entsprechen.\newline     \texttt{list(factor("regionA", levels = regionen), factor("regionB", levels = regionen))}\\
+\textit{Populationsparamter}\newline \textbf{unit\_names}\newline \textit{list of factors} & Eine Liste der Gruppennamen, wahlweise mit einer Definition ihrer inneren Reihenfolge. & Liste mit Namen. Die Anzahl muss \textit{unit\_amount} entsprechen.\newline     \texttt{list(factor("regionA", levels = regionen), factor("regionB", levels = regionen))}\\
 \addlinespace \hline \addlinespace
 \textit{Populationsparamter}\newline \textbf{unit\_size\_functions}\newline \textit{list of functions} & Funktionen, die die Populationsgröße für jede Gruppe in Abhängigkeit von der Simulationszeit definieren. & Liste mit Funktionen. Die Anzahl muss \textit{unit\_amount} entsprechen.\newline     \texttt{list('regionA' = function(t) \{100\}, 'regionB' = function(t) \{100 + 10 * cos(t * 0.1)\})}\\
 \addlinespace \hline \addlinespace
@@ -4295,8 +4295,8 @@ Paramter & Beschreibung & Theoretischer Wertebereich\\
 Individuen zu generieren, die gemeinsam eine generationenüberschreitende
 Population bilden. Menschen sind nur durch ihre Lebenszeit und ihre
 Gruppenzugehörigkeit definiert und damit -- wie in Kapitel
-@ref\{simulation-theorie\} beschrieben -- sehr einfach modelliert. Für
-die Erzeugung von Populationen, also der Verarbeitung der Daten im
+\ref{simulation-theorie} beschrieben -- sehr einfach modelliert. Für die
+Erzeugung von Populationen, also der Verarbeitung der Daten im
 \texttt{models\_grid}, werden zunächst die Populationsparameter aus
 jeder Zeile in Instanzen der \texttt{S4}-Konfigurationsklasse
 \texttt{population\_settings} überführt. Diese und die folgenden
@@ -4330,7 +4330,15 @@ Verhältnis zur Gesamtsumme dieser Integrale gesetzt. Damit steht für
 jedes Geburtsfenster ein Faktor bereit, um den Anteil der
 Gesamtpopulation zu berechnen, der in diesem Zeitfenster existiert. Mit
 dieser Information können die entsprechenden Menschen mit der
-\texttt{generate\_humans} Funktion zufällig generiert werden.
+\texttt{generate\_humans} Funktion zufällig generiert werden. Das
+Beispiele in Abbildung \ref{fig:popgen-sizedev-example} belegt die
+Funktionalität dieses Ansatzes, illustriert aber auch den Umfang
+zufälliger Abweichungen der Ergebnispopulationsgröße von der
+Vorgabefunktion.
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/popgenerator_examples/create_unit_population_size_development_comparison} \caption[huhu]{huhu}\label{fig:popgen-sizedev-example}
+\end{figure}
 
 \hypertarget{expansionssimulation}{%
 \subsubsection{Expansionssimulation}\label{expansionssimulation}}
