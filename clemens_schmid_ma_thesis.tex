@@ -4449,6 +4449,45 @@ popgenerator ins Dateisystem abgelegt und von gluesless gelesen werden.
 \hypertarget{expansionssimulation}{%
 \subsubsection{Expansionssimulation}\label{expansionssimulation}}
 
+Das C++ Programm gluesless simuliert die Expansion von Ideen in einem
+Populationsgraphen wie er mittels des popgenerators erzeugt werden kann.
+gluesless macht sich die objektorientierte Natur von C++ zu Abbildung
+der Simulationswelt in vier Klassen zunutze: \texttt{Networkland},
+\texttt{Aether}, \texttt{Timeline}, \texttt{Idea}. Die Klassenmethoden
+greifen außerdem auf mehrere globale Hilfsfunktionen zurück. gluesless
+kann drei Eingabeparameter verarbeiten: Der Pfade zu einer pajek-Datei
+(.paj), die das Populationsnetzwerk beschreibt, der Pfad zu einer
+speziell formatierten Textdatei mit der Ideenverteilung zum
+Nullzeitpunkt und der Pfad der Ausgabetextdatei. Mit diesen Parametern
+kann es einfach auf der Kommandozeile aufgerufen werden.
+
+Wird das Programm mit den korrekten Eingaben gestartet, dann wird
+zunächst jeweils eine Instanz der Klassen \texttt{Networkland},
+\texttt{Aether} und \texttt{Timeline} angelegt. \texttt{Networkland}
+repräsentiert die Netzwerkwelt in der die Ideen leben und interagieren.
+Ihr Hauptbestandteil ist ein Zeiger auf ein Objekt der Klasse
+\texttt{TUndirNet}\footnote{\url{https://snap.stanford.edu/snap/doc/snapuser-ref/d8/da8/classTUndirNet.html}
+  {[}13.08.2018{]}} aus der SNAP Bibliothek, das dazu dient, den
+Populationsgraphen als sehr einfaches, ungerichtetes Netzwerk zu
+speichern und sehr schnell zugänglich zu machen. Die Hauptaufgabe der
+Klassenmethoden von \texttt{Networkland} ist es, ein Interface zu diesem
+Netzwerkdatentyp bereit zu stellen. Es kann verschiedene Fragen
+beantworten: z.B. ``Existiert ein bestimmter Knoten im Netzwerk?'',
+``Welche Nachbarn hat ein Knoten?'', ``Welchen Gewichtswert hat deine
+bestimmte Beziehung?''. Außerdem erlaubt es die Manipulation des
+Netzwerks, indem Knoten gelöscht werden können. Der \texttt{Aether} ist
+die gedankliche Einheit, die die Netzwerkwelt und alle Ideen umschließt.
+Er ist die Kapsel, die einen Zustand von Welt und Agenten abbildet.
+Dafür besitzt er einen Zeiger auf die im Programmablauf angelegte
+Instanz der \texttt{Networkland} Klasse und einen ganzen Vektor mit
+Zeigern auf die Ideen, die Instanzen der \texttt{Idea} Klasse sind.
+Neben Funktionen, die Informationen zum aktuellen Zustand von Netzwerk
+und Ideen zurückgeben, besitzt der \texttt{Aether} auch die
+\texttt{develop} Methode, die steuert unter welchen Bedingungen und in
+welcher Reihenfolge Ideen am Übergang von einem Zeitschritt zum nächsten
+agieren dürfen. Die Basiskonfiguration sieht eine zufällige Abfolge vor.
+Die \texttt{Timeline} Klasse \ldots{}
+
 \hypertarget{simulation-parameters}{%
 \subsection{Wertebereiche der
 Simulationsparameter}\label{simulation-parameters}}
