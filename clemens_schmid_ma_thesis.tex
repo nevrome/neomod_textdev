@@ -4241,7 +4241,13 @@ Diese erlauben es, fast beliebige Datenstrukturen in den Zellen eines
 \texttt{data.frames} zu schachteln. Tabelle \ref{tab:param-popgenerator}
 beschreibt alle Parameter kurz und umreißt ihren theoretischen
 Wertebereich. Die tatsächlich für die Simulation relevanten Werte werden
-in Kapitel \ref{simulation-parameters} diskutiert.
+in Kapitel \ref{simulation-parameters} diskutiert. Die Erzeugung von
+Populationen und Relationen ist soweit wie möglich vektorisiert, also
+ohne Schleifen oder schleifenersetzende Strukturen (\texttt{apply},
+\texttt{purrr::map}) programmiert, um die Berechnungsdauer zu
+minimieren. Dieser Schritt ist eine Konzession an die Technik und führte
+zu einem höheren Abstraktionsgrad der Populationsnetzwerke als
+ursprünglich geplant.
 
 \begin{table*}
 
@@ -4296,14 +4302,35 @@ jeder Zeile in Instanzen der \texttt{S4}-Konfigurationsklasse
 \texttt{population\_settings} überführt. Diese und die folgenden
 Transformation in solche Konfigurationsobjekte erleichtern die
 Datenweitergabe innerhalb des Pakets. Aus jedem einzelnen
-\texttt{population\_settings} Objekt wird eine Population generiert. Da
+\texttt{population\_settings} Objekt wird eine Population geschaffen. Da
 jede Population aus einer oder vielen Gruppen besteht, die biologische
 Vererbungsgruppen wie Familien oder Clans repräsentieren und jeweils
 eine individuelle Größenentwicklung durchlaufen können, wird für jede
 Gruppe in der Population ein Konfigurationsobjekt der Klasse
-\texttt{unit\_settings} erzeugt. Zur Erzeugung einer Gruppe wird dieses
-Objekt an die Funktion \texttt{generate\_unit} übergeben, die die
-Hauptlast der Populationsgenerierung trägt.
+\texttt{unit\_settings} zusammengestellt. Zur Erzeugung einer Gruppe
+wird dieses Objekt an die Funktion \texttt{generate\_unit} übergeben,
+die die Hauptlast der Menschengenerierung trägt. In ihr wird zunächst
+das Integral unter der \texttt{unit\_size\_function} im um einen
+Bufferbereich erweiterten Untersuchungszeitfenster berechnet, um zu
+ermitteln, wie viele Menschen-Jahr Kombinationen erforderlich sind, um
+die vorgegebene Populationsgrößenentwicklung abzubilden. Aus
+\texttt{age\_distribution\_function} und \texttt{age\_range} lässt sich
+die durchschnittliche Lebenserwartung der Menschen errechnen, die sich
+aus den Eingabeparameters ergibt. Beide Informationen zusammen
+ermöglichen es, die Anzahl an Menschen zu bestimmen, die insgesamt
+erforderlich ist, um die Größenentwicklung näherungsweise aufzubauen. Um
+diese Anzahl an Menschen den Erfordernissen der Populationsentwicklung
+entsprechend auf dem Zeitstrahl in mehr oder wenigen dichten Gruppen
+anzuordnen, wird eine regelmäßiges Sequenz von Geburtsfenstern
+abgegrenzt. Die Länge eines Geburstsfensters entspricht der mittleren
+Lebenserwartung. Um die oben errechnete Gesamtzahl der Menschen auf die
+Fenster aufzuteilen, wird wiederum das Integral der
+\texttt{age\_distribution\_function} in jedem Fenster ermittelt und in
+Verhältnis zur Gesamtsumme dieser Integrale gesetzt. Damit steht für
+jedes Geburtsfenster ein Faktor bereit, um den Anteil der
+Gesamtpopulation zu berechnen, der in diesem Zeitfenster existiert. Mit
+dieser Information können die entsprechenden Menschen mit der
+\texttt{generate\_humans} Funktion zufällig generiert werden.
 
 \hypertarget{expansionssimulation}{%
 \subsubsection{Expansionssimulation}\label{expansionssimulation}}
