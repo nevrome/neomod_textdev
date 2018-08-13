@@ -4245,9 +4245,9 @@ grundsätzlicher Architektur der Software zu verstehen.
 \subsubsection{Populationsgenerator}\label{populationsgenerator}}
 
 Der Populationsgenerator ist als R Paket implementiert. Er ist in drei
-Submodule gegliedert: \texttt{init\_population\_settings},
-\texttt{init\_relations\_settings} und \texttt{init\_ideas\_settings},
-die nacheinander aufgerufen werden können -- die Interfacefunktion
+Submodule gegliedert: \texttt{population\_generator},
+\texttt{relations\_generator} und \texttt{ideas\_generator}, die
+nacheinander aufgerufen werden können -- die Interfacefunktion
 \texttt{prepare\_pops\_rels\_ideas} automatisiert das. Jedes dieser
 Module erweitert einen Eingabedatensatz sukzessive um nondeterministisch
 generierte Daten hinsichtlich der zeitübergreifenden Gesamtpopulation,
@@ -4312,7 +4312,7 @@ Paramter & Beschreibung & Theoretischer Wertebereich\\
 \end{tabu}
 \end{table*}
 
-\texttt{init\_population\_settings} dient dazu eine große Menge von
+\texttt{population\_generator} dient dazu eine große Menge von
 Individuen zu generieren, die gemeinsam eine generationenüberschreitende
 Population bilden. Menschen sind nur durch ihre Lebenszeit und ihre
 Gruppenzugehörigkeit definiert und damit -- wie in Kapitel
@@ -4358,7 +4358,7 @@ Beispiele in Abbildung \ref{fig:popgen-sizedev-example} belegt die
 Funktionalität dieses Ansatzes, illustriert aber auch den Umfang der
 Abweichungen von Ergebnispopulationsgröße und Vorgabefunktion.
 \textbf{TODO: Diskussion}. Zum Abschluss der Berechnungen in
-\texttt{init\_population\_settings} werden die Gruppenpopulationen zur
+\texttt{population\_generator} werden die Gruppenpopulationen zur
 Gesamtpopulation zusammengeführt. Diese liegt in der Form eines
 \texttt{data.frames} vor, wobei jede Zeile ein Indiviuum repräsentiert.
 Jedes Individuum erhält eine eindeutige ID und bringt Informationen zu
@@ -4366,33 +4366,34 @@ seiner Lebensdauer, seinem Geburts- und Sterbezeitpunkt sowie seiner
 Gruppenzugehörigkeit mit. Das Sortierkriterium im Gesamtdatensatz ist
 das Geburtsjahr. Ein solcher Ergebnisdatensatz wird für jedes Modell,
 also jede Zeile, im Eingabedatensatz \texttt{models\_grid} erzeugt und
-kann entsprechend in der \texttt{list.column} \emph{populations} dort
+kann entsprechend in der \texttt{list\ column} \emph{populations} dort
 hinzugefügt werden.
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/popgenerator_examples/create_unit_population_size_development_comparison} \caption[huhu]{huhu}\label{fig:popgen-sizedev-example}
 \end{figure}
 
-Das Modul \texttt{init\_relations\_settings} erweitert diesen von
-\texttt{init\_population\_settings} modifizierten Eingabedatensatz. Es
-dient dazu, die vorhandene Gesamtpopulation sinnvoll inneinander zu
-verknüpfen um ein diachrones, soziales Netzwerk zu schaffen. Dafür wird
-zunächst für jedes Modell ein Objekt der Konfigurationsklasse
+Das Modul \texttt{relations\_generator} erweitert diesen von
+\texttt{population\_generator} modifizierten Eingabedatensatz. Es dient
+dazu, die vorhandene Gesamtpopulation sinnvoll inneinander zu verknüpfen
+um ein diachrones, soziales Netzwerk zu schaffen. Dafür wird zunächst
+für jedes Modell ein Objekt der Konfigurationsklasse
 \texttt{relations\_settings} instanziiert, das neben der in
-\texttt{init\_relations\_settings} generierten Population auch die
+\texttt{relations\_generator} generierten Population auch die
 Beziehungsparameter enthält, die vorgeben, welche Eigenschaften das
 Netzwerk besitzen soll. Dessen eigentliche Erzeugung ist ein
-dreigliedriger Prozess: Vertikale und Horizontale Beziehungen, die sich
+vierteiliger Prozess: Vertikale und Horizontale Beziehungen, die sich
 als Kanten im Netzwerk zwischen den Knoten der Individuen ausdrücken,
 werden getrennt voneinander aber jeweils innerhalb der oben erzeugten
 Gruppen hergestellt. Anschließend wird ein Teil der vorhandenen
 Beziehungen so umgelenkt, dass er die Gruppengrenzen überschreitet und
-somit die Gesamtpopulation verschränkt. Die Erzeugung der vertikalen
-Beziehungen mit \texttt{generate\_vertical\_relations} funktioniert also
-gruppenweise, verbindet ein jüngeres Individuum mit -- wenn im
-entsprechenden Zeitfenster vorhanden -- zwei älteren und orientiert sich
-dabei nicht an deren realem Alter sondern an Indexdistanzen (für eine
-Erklärung der Hintergründe dieser Lösung siehe Kapitel
+somit die Gesamtpopulation verschränkt. Abschließend werden die
+Beziehungen je nach Typ mit einem Kantengewicht versehen. Die Erzeugung
+der vertikalen Beziehungen mit \texttt{generate\_vertical\_relations}
+funktioniert gruppenweise, verbindet ein jüngeres Individuum mit -- wenn
+im entsprechenden Zeitfenster vorhanden -- zwei älteren und orientiert
+sich dabei nicht an deren realem Alter sondern an Indexdistanzen (für
+eine Erklärung der Hintergründe dieser Lösung siehe Kapitel
 \ref{simulation-theorie}). Eltern werden zufällig aus der Perspektive
 der Kinder gewählt, indem zunächst ein Indexbereich -- ein Bereich
 zwischen zwei individuellen IDs -- festgelegt wird, aus dem die
@@ -4403,12 +4404,47 @@ durchschnittliche Geburtsjahrdistanz eines Indexschrittes hängt von der
 Populationsgröße und -entwicklung ab. Um eine Distanz in Jahren in eine
 Distanz in Indexschritten umzuwandeln, muss die zeitlich lokale,
 mittlere Indexdistanz ermittelt werden. Das angezielte
-Altersdistanzfenster dafür wurde zwischen 40 und 15 Jahren festgelegt.
-Die zufällige Auswahl der Eltern erfolgt also in einem Pool von
+Altersdistanzfenster dafür wurde zwischen 40 und 15 Jahren vor dem
+Geburtsjahr des Kindes festgelegt. Die für jedes Kind individuelle und
+effektiv zufällige Auswahl der Eltern erfolgt also aus einem Pool von
 Individuuen, deren Index zwischen jenen liegt, die durchschnittlich die
 lokale 40 Jahresgrenze über- oder die durchschnittlich 15 Jahresgrenze
-unterschreiten. Die Erzeugung der
-\texttt{generate\_horizontal\_relations} \ldots{}
+unterschreiten. \texttt{generate\_horizontal\_relations} zur Erzeugung
+der horizontalen Beziehungen funktioniert nach dem selben technischen
+Prinzip wie \texttt{generate\_vertical\_relations}. Hier werden
+allerdings abhängig vom Wert von \texttt{amounts\_friends} mitunter
+wesentlich mehr Beziehungen hergestellt und das Bezugsfenster ist mit
+einer Altersdistanz von 50 Jahren in beide Richtungen ausgehend vom
+Geburtszeitpunkt des jeweiligen Individuums deutlich breiter. Sind die
+vertikalen und horizontalen Beziehungen gruppenintern etabliert, dann
+werden mit \texttt{modify\_relations\_cross\_unit} einige dieser
+Verbindungen zugunsten von gruppenübergreifenden Beziehungen aufgelöst.
+Die Eingabeparamter \texttt{cross\_unit\_proportion\_child\_of} und
+\texttt{cross\_unit\_proportion\_friend} sind entscheidend dafür, in
+welchem Umfang das für die beiden Beziehungstypen passiert. Davon
+abhängig werden mehr oder weniger Beziehungen für eine Modifikation
+zufällig ausgewählt. Diese besteht darin, dass eines der beiden
+Individuen durch ein anderes aus einer anderen Gruppe, aber dem selben
+Geburtsfenster ersetzt wird. Welche andere Gruppe gewählt wird, wird
+über eine Zufallsentscheidung auf Grundlage der
+\texttt{unit\_interaction\_matrix} festgelegt. In einem letzten Schritt
+innerhalb des \texttt{relations\_generator} Submoduls werden die
+Beziehungen nach den Eingabevariablen \texttt{weight\_child\_of} und
+\texttt{weight\_friend} mit einem Gewichtswert versehen. Die vier
+Teilschritte dienen gemeinsam dazu einen \texttt{data.frame} zu
+schaffen, der sinnvolle Beziehungen zwischen Individuen der
+Gesamtpopulation dokumentiert. Die \texttt{data.frames} für jedes Modell
+werden in der \texttt{list\ column} \emph{relations} an den
+Eingabedatensatz \texttt{models\_grid} angehängt.
+
+Das letzte und einfachste Submodul des popgenerator Pakets,
+\texttt{idea\_generator}, \ldots{}
+
+popgenerator stellt einige dedizierte Exportfunktionen bereit, die vor
+allem die Übergabe des generierten Populationsnetzwerks an die
+Expansionssimulation gluesless ermöglichen sollen. Der Austausch erfolgt
+über verschiedene, speziell formatierte Textdateien, die von
+popgenerator ins Dateisystem abgelegt und von gluesless gelesen werden.
 
 \hypertarget{expansionssimulation}{%
 \subsubsection{Expansionssimulation}\label{expansionssimulation}}
