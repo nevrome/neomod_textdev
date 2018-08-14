@@ -508,17 +508,12 @@ Die Hauptlast der Expansionssimulation tragen Methoden in der `Idea` Klasse. Das
 
 Die Expansionssimulation endet, wenn sich die Größe des Netzwerks von einem Zeitschritt zum nächsten nicht mehr ändert, also wenn die Ideen alle Knoten in ihrer Reichweite erobert haben. Naturgemäß führt das dazu, dass nicht alle Knoten im Netzwerk überhaupt von einer Idee erobert werden. Je nachdem, wie hoch die Hürden für eine erfolgreiche Knoteneroberung angesetzt sind, verbleiben mehr oder weniger Knoten (siehe Kapitel \@ref(simulation-theorie). Die `Timeline` Klasse stellt schließlich die Exportfunktion `export_to_text_file` bereit, die am Ende der `main` Methode ausgeführt wird. Diese transformiert und speichert die diagnostischen Daten und den Endzustand der Ideen hinsichtlich der von ihnen eingenommenen Netzwerkknoten in eine menschenlesbare Datei, die später zur Auswertung wieder in R eingelesen werden kann.  
 
-### Wertebereiche der Simulationsparameter {#simulation-parameters}
-
-### Allgemeine Beobachtungen zum Simulationsverhalten
+### Parameter und Simulationsverhalten {#simulation-parameters}
 
 ## Kulturelle und Räumliche Distanz
 
 ## Kausale Interaktionsbeziehungen
 
-## Simulation und reale Entwicklung
-
-...
 
 
 
