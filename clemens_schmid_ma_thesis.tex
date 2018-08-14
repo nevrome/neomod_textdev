@@ -4461,32 +4461,99 @@ speziell formatierten Textdatei mit der Ideenverteilung zum
 Nullzeitpunkt und der Pfad der Ausgabetextdatei. Mit diesen Parametern
 kann es einfach auf der Kommandozeile aufgerufen werden.
 
-Wird das Programm mit den korrekten Eingaben gestartet, dann wird
-zunächst jeweils eine Instanz der Klassen \texttt{Networkland},
-\texttt{Aether} und \texttt{Timeline} angelegt. \texttt{Networkland}
-repräsentiert die Netzwerkwelt in der die Ideen leben und interagieren.
-Ihr Hauptbestandteil ist ein Zeiger auf ein Objekt der Klasse
-\texttt{TUndirNet}\footnote{\url{https://snap.stanford.edu/snap/doc/snapuser-ref/d8/da8/classTUndirNet.html}
+Wird das Programm mit den korrekten Eingaben gestartet, dann wird die
+\texttt{main} Methode ausgeführt und zunächst jeweils eine Instanz der
+Klassen \texttt{Networkland}, \texttt{Aether} und \texttt{Timeline}
+angelegt. \texttt{Networkland} repräsentiert die Netzwerkwelt in der die
+Ideen leben und interagieren. Ihr Hauptbestandteil ist ein Zeiger auf
+ein Objekt der Klasse \texttt{TUndirNet}\footnote{\url{https://snap.stanford.edu/snap/doc/snapuser-ref/d8/da8/classTUndirNet.html}
   {[}13.08.2018{]}} aus der SNAP Bibliothek, das dazu dient, den
 Populationsgraphen als sehr einfaches, ungerichtetes Netzwerk zu
 speichern und sehr schnell zugänglich zu machen. Die Hauptaufgabe der
-Klassenmethoden von \texttt{Networkland} ist es, ein Interface zu diesem
-Netzwerkdatentyp bereit zu stellen. Es kann verschiedene Fragen
-beantworten: z.B. ``Existiert ein bestimmter Knoten im Netzwerk?'',
-``Welche Nachbarn hat ein Knoten?'', ``Welchen Gewichtswert hat deine
-bestimmte Beziehung?''. Außerdem erlaubt es die Manipulation des
-Netzwerks, indem Knoten gelöscht werden können. Der \texttt{Aether} ist
-die gedankliche Einheit, die die Netzwerkwelt und alle Ideen umschließt.
-Er ist die Kapsel, die einen Zustand von Welt und Agenten abbildet.
-Dafür besitzt er einen Zeiger auf die im Programmablauf angelegte
-Instanz der \texttt{Networkland} Klasse und einen ganzen Vektor mit
-Zeigern auf die Ideen, die Instanzen der \texttt{Idea} Klasse sind.
-Neben Funktionen, die Informationen zum aktuellen Zustand von Netzwerk
-und Ideen zurückgeben, besitzt der \texttt{Aether} auch die
-\texttt{develop} Methode, die steuert unter welchen Bedingungen und in
-welcher Reihenfolge Ideen am Übergang von einem Zeitschritt zum nächsten
-agieren dürfen. Die Basiskonfiguration sieht eine zufällige Abfolge vor.
-Die \texttt{Timeline} Klasse \ldots{}
+Klassenmethoden von \texttt{Networkland} ist es, ein bedarfsgerechtes
+Interface zu diesem Netzwerkdatentyp bereit zu stellen. Es kann
+verschiedene Fragen beantworten: z.B. ``Existiert ein bestimmter Knoten
+im Netzwerk?'', ``Welche Nachbarn hat ein Knoten?'', ``Welchen
+Gewichtswert hat eine bestimmte Beziehung?''. Außerdem erlaubt es die
+Manipulation des Netzwerks, indem Knoten gelöscht werden können. Der
+\texttt{Aether} ist die gedankliche Einheit, die die Netzwerkwelt und
+alle Ideen umschließt. Er ist die Kapsel, die den aktuellen Zustand von
+Welt und Agenten abbildet. Dafür besitzt er einen Zeiger auf die im
+Programmablauf angelegte Instanz der \texttt{Networkland} Klasse und
+einen Vektor mit Zeigern auf Instanzen der \texttt{Idea} Klasse. Neben
+Funktionen, die Informationen zum aktuellen Zustand von Netzwerk und
+Ideen zurückgeben, besitzt der \texttt{Aether} auch die \texttt{develop}
+Methode. Sie steuert unter welchen Bedingungen und in welcher
+Reihenfolge Ideen am Übergang von einem Zeitschritt zum nächsten agieren
+dürfen. Die Basiskonfiguration sieht eine zufällige Abfolge vor. Die
+\texttt{Timeline} Klasse umschließt wiederrum gedanklich den
+\texttt{Aether} und besitzt dafür einen Zeiger auf die Instanz dieser
+Klasse. Sie dient dazu, in jedem Zeitschritt diagnostische Werte zum
+Zustand des Aethers abzugreifen und in Vektoren aufgelistet vorzuhalten.
+Dazu gehört zum Beispiel die verbleibende Größe des Netzwerks. Auch
+\texttt{Timeline} verfügt über eine \texttt{develop} Methode, die
+einerseits die \texttt{develop} Methode im Aether anstößt und
+andererseits die Messung der diagnostischen Werte auslöst. Es ist diese
+\texttt{develop} Methode die im Hauptprogrammablauf in einer
+while-Schleife so lange immer wieder aufgerufen wird, bis die
+Ideenexpansion endet.
+
+Die Hauptlast der Expansionssimulation tragen Methoden in der
+\texttt{Idea} Klasse. Das ist in Programmstruktur- und semantik
+sinnvoll, da Ideen als aktiv handelnde Agenten modelliert werden sollen:
+Jede Form von Aktivität soll von ihnen ausgehen, während etwa die
+Netzwerkwelt, die Menschen und ihre Beziehungen abbildet, nur als
+passive Landschaft verstanden wird (siehe Kapitel
+\ref{simulation-theorie} für eine Erläuterung dieser Perspektive). Ideen
+besitzen einen Namen, einen Zeiger auf die Instanz der
+\texttt{Networkland} Klasse in der sie leben und zwei Vektoren, die die
+IDs der Netzwerkknoten speichern, auf denen sie aktuell sitzen und auf
+denen sie zum Zeitpunkt deren Todes saßen. Um letzteres zu verstehen,
+muss man den Algorithmus in der \texttt{expand} Methode betrachten, die
+die Ausbreitung der Ideen steuert. Zu Programmbeginn besetzen alle Ideen
+die ihnen mittels einer Eingabedatei zugewiesenen Startknoten im
+Netzwerk. In jedem Zeitschritt der Simulation darf nun jede Idee einmal
+handeln -- \texttt{Aether::develop} legt die Reihenfolge dabei fest. Der
+erste Schritt der Idee ist es, eine Liste aller Nachbarknoten zu den von
+ihr okkupierten zu erstellen. Die Idee versucht all diese Nachbarknoten
+einzunehmen, muss dafür allerdings verschiedene Hindernisse überwinden,
+die sich auf die Zufallsentscheidung ob sie Erfolg hat auswirken. Da in
+diesem Kontext viele Abfragen von Beziehungs- und Knoteninformationen im
+Netzwerk durchgeführt werden müssen, findet die Berechnung dieser
+Entscheidungen in einem Subnetzwerk statt, dass sich auf den aktuellen
+Dominanzbereich einer Idee und den unmittelbaren Nachbarn beschränkt.
+Für jeden Nachbarn werden drei Informationen abgefragt: Die Anzahl an
+Verbindungen zu Knoten, die die Idee schon hält, das maximale
+Kantengewicht unter all diesen Beziehungen und ob der Knoten selbst
+bereits von einer anderen Idee besetzt wird. Grundsätzlich wird für die
+Entscheidug ob ein Nachbarknoten der Idee zugesprochen wird gegen das
+Kantengewicht gewürfelt. Die Wahrscheinlichkeit wird erhöht, wenn
+mehrere Verbindungen zu Knoten der Idee bestehen und deutlich
+verringert, wenn der Nachbarknoten bereits Teil des Einflussgebiets
+einer anderen Idee ist. Nachdem auf dieser Grundlage für jeden
+Nachbarknoten entschieden wurde, ob er zu der aktuell handelnden Idee
+gehören wird, verlagert die Idee ihre Existenz auf diese Nachbarknoten.
+Ihre bisherigen Knoten sterben, das heißt sie werden aus dem Netzwerk
+gelöscht. Nur ihre Bezeichnung wird als Eroberung der Idee gespeichert.
+Das Löschen der alten Knoten führt automatisch dazu, dass die Ideen
+entlang der impliziten Zeitachse des Populationsnetzwerks voran
+schreiten und bildet gleichermaßen semantisch den Forschungskontext ab:
+Ideen zur Bestattungsformen drücken sich im Tod ihrer Träger aus. Dieser
+Algorithmus wird für jede Ideen in jedem Zeitschritt ausgeführt.
+
+Die Expansionssimulation endet, wenn sich die Größe des Netzwerks von
+einem Zeitschritt zum nächsten nicht mehr ändert, also wenn die Ideen
+alle Knoten in ihrer Reichweite erobert haben. Naturgemäß führt das
+dazu, dass nicht alle Knoten im Netzwerk überhaupt von einer Idee
+erobert werden. Je nachdem, wie hoch die Hürden für eine erfolgreiche
+Knoteneroberung angesetzt sind, verbleiben mehr oder weniger Knoten
+(siehe Kapitel \ref{simulation-theorie}. Die \texttt{Timeline} Klasse
+stellt schließlich die Exportfunktion \texttt{export\_to\_text\_file}
+bereit, die am Ende der \texttt{main} Methode ausgeführt wird. Diese
+transformiert und speichert die diagnostischen Daten und den Endzustand
+der Ideen hinsichtlich der von ihnen eingenommenen Netzwerkknoten in
+eine menschenlesbare Datei, die später zur Auswertung wieder in R
+eingelesen werden kann.
 
 \hypertarget{simulation-parameters}{%
 \subsection{Wertebereiche der
