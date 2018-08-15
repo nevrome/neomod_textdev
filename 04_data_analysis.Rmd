@@ -1,8 +1,4 @@
----
-output: html_document
-editor_options: 
-  chunk_output_type: console
----
+# Datenauswertung {#data-analysis}
 
 ```{r, echo=FALSE}
 # allow easy dynamic value integration
@@ -10,8 +6,6 @@ sf_prep <- "../neomod_analysis/data_text_elements/sf_prep.txt"
 sf_desc <- "../neomod_analysis/data_text_elements/sf_desc.txt"
 r <- txtstorage::read
 ```
-
-# Datenauswertung
 
 ## Software und Daten
 

@@ -1,9 +1,4 @@
----
-output: html_document
-editor_options: 
-  chunk_output_type: console
----
-# Cultural Evolution
+# Cultural Evolution {#cultural-evolution}
 
 ## Definition und Forschungsgeschichte
 
