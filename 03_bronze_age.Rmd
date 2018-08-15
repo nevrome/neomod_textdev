@@ -93,7 +93,7 @@ In der europäischen Bronzezeit sind mehrere unterschiedliche Bestattungstraditi
 
 Kurz zusammengefasst besagt das klassische Narrativ der Entwicklung bronzezeitlicher Bestattungssitten folgendes: In der frühen und mittleren Bronzezeit dominieren Körperbestattungen in verschiedenen Variationen. Brandgräber kommen in diesem Zeitfenster nur in der Ungarischen Tiefebene verstärkt vor. Hügelgräber konzentrieren sich auf Teile des Balkans sowie Ost-, West- und Nordeuropa, während in Zentral- und Südeuropa Flachgräber -- mehrheitlich Körperbestattungen -- überwiegen. In der mittleren Bronzezeit gewinnt Überhügelung zumindest in West- und Mitteleuropa an Bedeutung. In der späten Bronzezeit wird Brandbestattung zum häufigsten Bestattungsbrauch^[@harding_european_2000, 75-76. **Eigentlich Häusler 1977/1994/1996 -> ausbauen!**].
 
-### Regionaler Überblick {regions-archaeological-overview}
+### Regionaler Überblick {#regions-archaeological-overview}
 
 Schwerpunkt auf Grabform (Brandgrab vs. Körpergrab) und Grabkonstruktion. Weitere Aspekte wie Grabbeigaben, Körperhaltung, Geschlechtsdimorphismen, etc. werden nur dann beachtet, wenn sie direkt mit diesen Primäraspekten zusammenhängen.
 
