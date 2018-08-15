@@ -1,36 +1,10 @@
-<!-- header and footer -->
-\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-\fancyhf{}
-\fancyhead[LE,RO]{\textbf{\thepage}}
-\fancyhead[LO]{\textbf{\nouppercase{\rightmark}}}
-\fancyhead[RE]{\textbf{\nouppercase{\leftmark}}}
-\fancypagestyle{plain}{%
-  \fancyhead{} % get rid of headers
-  \renewcommand{\headrulewidth}{0pt} % and the line
-}
-
-<!-- list of tables + list of figures -->
-\setcounter{tocdepth}{3}
-\tableofcontents
-\listoftables
-\listoffigures
-
-<!-- controle space in between paragraphs, figures and tables -->
-\parskip 4pt
-\setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
-
-\AtEndDocument{
-  \input{declaration.tex}
-}
-
 # Einführung {#intro}
 
 Die vorliegende Master-Arbeit entstand 2017-2018 am Institut für Ur- und Frühgeschichte der Christian-Albrechts-Universität zu Kiel unter Betreuung von Priv.-Doz. Dr. Oliver Nakoinz und Dr. Martin Hinz. Sie ist quelloffen und voll reproduzierbar. 
 
 Ausgangspunkt der Überlegungen für diese Arbeit war die der *Evolutionary Archaeology* entlehnte Frage, ob kulturhistorische Transformations- und Ausbreitungsprozesse sinnvoll und gewinnbringen in einer Modellimplementierung abgebildet werden können, die Ideen, Traditionen und Innovationen als handlungsfähige Agenten begreift. Um diesen Ansatz in einer archäologische Abschlussarbeit zu erforschen, wurde ein Fallbeispiel gewählt, in dem sich gegenseitig ausschließende Ideen über einen langen Zeitraum in einem großen Raum konkurrieren: Bestattungstraditionen in der europäischen Bronzezeit. Diese lassen sich vereinfacht durch zwei Dichotomien beschreiben: Die Brandbestattung im Gegensatz zur Körperbestattung sowie das Flachgrab in Abgrenzung zum Hügelgrab. Für diesen Zusammenhang steht mit Radon-B ein Datensatz von mehreren tausend ^14^C-datierten Gräbern mit Metainformationen zur Verfügung, der die Phänomene in einem Zeitfenster von 2200 bis 800calBC in hoher Auflösung abbildet. 
 
-Die Arbeit verfolgt also diese vier Hauptziele: 
+Die vorliegende Arbeit verfolgt also diese sechs Hauptziele: 
 
 - Die Zusammenfassung der Grundlagen, Geschichte und Fragestellungen der *Cultural Evolution Theory* in Hinblick auf Entwicklung und Ausbreitung von modernen, komplexen Verhaltensmustern.
 - Die Vorstellung von Paradigmen und Herausforderungen der Thanatoarchäologie.
@@ -41,7 +15,11 @@ Die Arbeit verfolgt also diese vier Hauptziele:
 
 ## Gliederung
 
-Im zweiten Kapitel nach dieser Einführung wird die theoretische Grundlage des Modells diskutiert. Dabei ist die *Cultural Evolution theory* die Perspektive aus der alle weiteren wesentlichen Aspekte besehen werden sollen. Dazu gehören Fragen nach Wahrnehmung, Lernen und Wissensvermittlung in prähistorischen Gesellschaften (*Cognitive Archaeology*), nach Mechanismen der Ausbreitung von Ideen (*Diffusion of Innovation*) und nach Interaktion komplexer, selbständiger Entitäten in Computermodellen (*Agent-based Modelling*). 
+Die Arbeit ist, sieht man von dieser kurzen Einleitung und einer ebenso kurzen Zusammenfassung am Ende ab, in drei Teile gegliedert:
+
+Ein erster Teil zeichnet die Ges
+
+Im zweiten Kapitel nach dieser Einführung wird die theoretische Grundlage des Modells diskutiert. Dabei ist die *Cultural Evolution Theory* die Perspektive aus der alle weiteren wesentlichen Aspekte besehen werden sollen. Dazu gehören Fragen nach Wahrnehmung, Lernen und Wissensvermittlung in prähistorischen Gesellschaften (*Cognitive Archaeology*), nach Mechanismen der Ausbreitung von Ideen (*Diffusion of Innovation*) und nach Interaktion komplexer, selbständiger Entitäten in Computermodellen (*Agent-based Modelling*). 
 
 Das dritte Kapitel stellt das Fallbeispiel der Entwicklung bronzezeitlicher Bestattungssitten vor. Die Betrachtung bezieht sich auf ein großes Untersuchungsgebiet und einen langen Zeitraum. Entsprechend werden die wichtigsten Trends aufgezeigt, ohne zu sehr auf regionale und lokale Detailbeobachtungen eingehen zu können. Neben einer Darstellung des Forschungsstands aus der Literatur greift dieses Kapitel nach einer quellenkritischen Analyse auch auf oben beschriebenen Datensatz zurück, um die Zusammenhänge zu visulisieren und abzugleichen. Ein letzter Abschnitt reflektiert, inwiefern das Fallbeispiel vor dem Hintergrund der vorangegangenen theoretischen Überlegungen verstanden werden kann und welche Fragestellungen durch diesen Modellansatz beantwortet werden können.
 
