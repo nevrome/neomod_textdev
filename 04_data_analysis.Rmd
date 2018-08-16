@@ -333,9 +333,15 @@ Zur künstlichen Region *Northern Germany* gehören alle Neuen Bundesländer in 
 
 ##### Südskandinavien -- `r a("Southern Scandinavia")`
 
+Die Region *Southern Scandinavia* schließt ganz Dänemark mit Jütland, Fünen, Seeland und allen kleineren Inseln sowie große Teile des Osten Südschwedens, und Küstenregionen in Schleswig-Holstein und Mecklenburg-Vorpommern ein. Die ^14^C Daten sind sehr gut auf Jütland, Fünen und die schwedische Skåne Region verteilt.
+
 ##### Benelux -- `r a("Benelux")`
 
+Zur *Benelux* Region gehören hier die Niederlande, der Norden Belgiens und große Teile von Niedersachen und Nordrheinwestfalen. Aus all diesen Regionen liegen ^14^C Daten an Gräbern in Radon-B vor, die Datendichte in Belgien und den Niederlanden ist jedoch deutlich höher.
+
 ##### England -- `r a("England")`
+
+Die *England* Region erstreckt sich über England bis auf die Höhe von York und Liverpool, inkorporiert auch Teile von Wales, lässt aber Cornwall and Devon im Südwesten außen vor. Tatsächlich berührt sie auch einen schmalen Küstenstreifen am Festland, aus dem aber keine ^14^C Daten vorliegen. Die vorhandenen Daten konzentrieren sich im Südosten Britanniens, sind dort aber gut verteilt.
 
 #### Datenbedeutung
 
