@@ -339,11 +339,11 @@ Die Region *Southern Scandinavia* schließt ganz Dänemark mit Jütland, Fünen,
 
 ##### Benelux -- `r a("Benelux")`
 
-Zur *Benelux* Region gehören hier die Niederlande, der Norden Belgiens und große Teile von Niedersachen und Nordrheinwestfalen. Aus all diesen Regionen liegen ^14^C Daten an Gräbern in Radon-B vor, die Datendichte in Belgien und den Niederlanden ist jedoch deutlich höher.
-
+Zur *Benelux* Region gehören hier die Niederlande, der Norden Belgiens und große Teile von Niedersachen und Nordrheinwestfalen. Aus all diesen Regionen liegen ^14^C Daten an Gräbern in Radon-B vor, die Datendichte in Belgien und den Niederlanden ist jedoch deutlich höher. Wie in *Southern Scandinavia* ist auch in der *Benelux* Region die Frühbronzezeit im Gegensatz zu Mittel- und Spätbronzeit unterrepräsentiert -- wenn auch in etwas schwächerer Form. Während die Informationsdichte der *burial type* Variable diesem Verlauf folgt, ist die *burial construction* in der Spätbronzezeit nahezu undokumentiert. Wie in der *Southern Germany* Region zeichnet sich auch hier eine gravierende Differenz zwischen der Informationsdichte beider Variablen ab.     
+ 
 ##### England -- `r a("England")`
 
-Die *England* Region erstreckt sich über England bis auf die Höhe von York und Liverpool, inkorporiert auch Teile von Wales, lässt aber Cornwall and Devon im Südwesten außen vor. Tatsächlich berührt sie auch einen schmalen Küstenstreifen am Festland, aus dem aber keine ^14^C Daten vorliegen. Die vorhandenen Daten konzentrieren sich im Südosten Britanniens, sind dort aber gut verteilt.
+Die *England* Region erstreckt sich über England bis auf die Höhe von York und Liverpool, inkorporiert Teile von Wales und lässt dagegen Cornwall and Devon im Südwesten außen vor. Tatsächlich berührt sie auch einen schmalen Küstenstreifen am Festland, aus dem aber keine ^14^C Daten vorliegen. Die vorhandenen Daten konzentrieren sich im Südosten Britanniens, sind dort jedoch gut verteilt. Die diachrone Datenverfügbarkeit ist in Früh- und Mittelbronzezeit relativ gut, lässt dann allerdings in der Spätbronzezeit nach. *burial type* und *burial construction* verhalten sich entsprechend. 
 
 #### Datenbedeutung
 
