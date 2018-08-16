@@ -5,6 +5,7 @@
 sf_prep <- "../neomod_analysis/data_text_elements/sf_prep.txt"
 sf_desc <- "../neomod_analysis/data_text_elements/sf_desc.txt"
 r <- txtstorage::read
+a <- function(x) {r("regions graves amounts", sf_prep) %>% strsplit(", ") %>% unlist %>% magrittr::extract(grepl(x, .))}
 ```
 
 ## Software und Daten
@@ -302,7 +303,7 @@ Hinsichtlich der Primärvariablen dieser Arbeit *burial_type* und *burial_constr
 - Die Störung und Beraubung von Gräbern war ein in Geschichte und Vorgeschichte weit verbreitetes Phänomen. Hügelgräber wurden dabei aufgrund ihrer guten Sichtbarkeit üblicherweise stärker angegriffen als Flachgräber und könnten infolge dessen in Radon-B unterrepräsentiert sein.
 - Es ist davon auszugehen, dass ein großer Teil der in der Bronzezeit errichteten Hügelgräber durch landwirtschaftliche Aktivität -- langjähriges Überpflügen -- zerstört wurde. Auch das ist Grund für eine Unterrepräsentation im gesamten archäologischen Befund. 
 
-Die Repräsentativität der relativen Entwicklung der Primärvariablen (siehe Abbildung \@ref(fig:development-proportions-regions-burial-type) und \@ref(fig:development-proportions-regions-burial-construction)) kann zumindest oberflächlich geprüft werden, indem man die oben vorgestellten Ergebnisse auf Grundlage des Radon-B Datensatzes mit einer Auswertung der relativen Aussagen aus der Literatur vergleicht, wie sie in Kapitel \@ref(regions-archaeological-overview) zusammengefasst werden. Für Abbildung \@ref(general-map-regions-countries) wurden die Gräber und die künstlichen Regionen zur besseren Orientierung auf die modernen Ländergrenzen projiziert, auf die sich Kapitel \@ref(regions-archaeological-overview) bezieht. Zudem habe ich die Literaturangaben in eine stark simplifizierende Modellabbildung \@ref(fig:development-proportions-regions-pseudoquant) verarbeitet, die den Anteil einer Bestattungsform in einer Region und Periode wiedergibt. Angaben wie "In der Mittelbronzezeit dominiert in Süddeutschland die Bestattung in Hügelgräbern" wurden klassifiziert um pseudoquantitativ visualierbar zu werden. Von den 5 Klassen wurde die Zuordnung zu 0 -- Merkmal ist nicht vorhanden -- und 4 -- Merkmal ist absolut dominant -- nicht vorgenommen, da selbst bei extrem regelhaften Bestattungstraditionen in einem archäologischen Kontext stets Ausreißer auftreten. Außerdem sollte damit auch den berechtigten Unsicherheiten hinsichtlich der Repräsentativität des archäologischen Befunds Rechnung getragen werden.  
+Die Repräsentativität der relativen Entwicklung der Primärvariablen (siehe Abbildung \@ref(fig:development-proportions-regions-burial-type) und \@ref(fig:development-proportions-regions-burial-construction)) kann zumindest oberflächlich geprüft werden, indem man die oben vorgestellten Ergebnisse auf Grundlage des Radon-B Datensatzes mit einer Auswertung der relativen Aussagen aus der Literatur vergleicht, wie sie in Kapitel \@ref(regions-archaeological-overview) zusammengefasst werden. Für Abbildung \@ref(general-map-regions-countries) wurden die Gräber und die künstlichen Regionen zur besseren Orientierung auf die modernen Ländergrenzen projiziert, auf die sich Kapitel \@ref(regions-archaeological-overview) bezieht. Zudem wurden die Literaturangaben in eine stark simplifizierende Modellabbildung \@ref(fig:development-proportions-regions-pseudoquant) verarbeitet, die den Anteil einer Bestattungsform in einer Region und Periode wiedergibt. Angaben wie "In der Mittelbronzezeit dominiert in Süddeutschland die Bestattung in Hügelgräbern" wurden klassifiziert um pseudoquantitativ visualierbar zu werden. Von den 5 Klassen wurde die Zuordnung zu 0 -- Merkmal ist nicht vorhanden -- und 4 -- Merkmal ist absolut dominant -- nicht vorgenommen, da selbst bei extrem regelhaften Bestattungstraditionen in einem archäologischen Kontext stets Ausreißer auftreten. Außerdem sollte damit auch den berechtigten Unsicherheiten hinsichtlich der Repräsentativität des archäologischen Befunds Rechnung getragen werden. Die Angaben in dieser Abbildung sind extrem approximativ -- es bleibt zu hoffen, dass eine echte, quantitative Auswertung irgendwann möglich sein wird.   
 
 ```{r general-map-regions-countries, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_map_regions_countries.jpeg")
@@ -312,21 +313,23 @@ knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_m
 knitr::include_graphics("../neomod_analysis/figures_plots/development/development_pseudoquant.jpeg")
 ```
 
-Österreich und Tschechische Republik
+##### Österreich und Tschechische Republik
 
-Polen
+##### Westpolen -- `r a("Poland")`
 
-Süddeutschland
+Die künstliche Untersuchungsregion *Poland* deckt Landesmitte und Westen des heutigen Polens vollständig ab. Die ^14^C Daten aus dieser Region stammen allerdings fast ausschließlich aus den Woiwodschaften Kajuwien-Pommern, Lodsch und Niederschlesien. Die Datenmenge ist insgesamt gering, mit deutlich mehr Daten aus der Frühbronzezeit bis etwa 1700calBC. Aus Mittel- und Spätbronzezeit sind nahezu keine Informationen vorhanden. Das gilt sowohl für die *burial_type* als auch die *burial_construction* Variable, wobei erstere immerhin geringfügig besser dokumentiert ist. Die relative Entwicklung von *burial type* gibt die realen Verhältnisse näherungsweise wieder: Körperbestattungen waren bis in die Spätbronzezeit in Westpolen tatsächlich deutlich häufiger, während Brandbestattungen erst mit der Urnenfelderzeit dominant auftraten. Auch zuvor waren immer wieder Brandgräber angelegt worden, doch grundsätzlich ist die über Radon-B erfasste Tendenz korrekt. *burial construction* wird dagegen insofern falsch wiedergegeben, als das Hügelgräber auch in der Mittelbronzezeit eine wichtige Rolle spielten, die der Datensatz nicht würdigt. 
 
-Norddeutschland
+##### Süddeutschland
 
-Nordostfrankreich
+##### Norddeutschland
 
-Südskandinavien
+##### Nordostfrankreich
 
-Benelux
+##### Südskandinavien
 
-England
+##### Benelux
+
+##### England
 
 #### Datenbedeutung
 
