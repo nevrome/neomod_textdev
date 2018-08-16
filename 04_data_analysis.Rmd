@@ -325,17 +325,17 @@ Die Region *Poland* deckt Landesmitte und Westen des heutigen Polens vollständi
 
 Die künstliche Kreisregion *Southern Germany* umfasst Bayern vollständig, schließt aber auch größte Teile Baden-Württembergs und Thüringens sowie ausgedehnte Flächen in Mähren und Westösterreich ein. Aus letzteren Regionen liegen keine ^14^C Daten vor. Die Mehrzahl der vorhandenen Daten stammt aus der Oberpfalz, Niederbayern und Schwaben sowie (in Württemberg) dem Regierungsbezirken Tübingen. Für die Frühbronzezeit sind bemerkenswert viele Daten aus Süddeutschland in Radon-B erhalten, diese Menge nimmt aber im Laufe der Mittelbronzezeit ab und lässt die Spätbronzezeit beinahe ohne datierte Gräber zurück. Die *burial type* Variable ist recht gut erschlossen -- obgleich unverhältnismäßig viel mehr der frühen Körpergräber als urnenfelderzeitliche Brandbestattungen erfasst wurden. Diese Informationsfülle steht in krassem Kontrast zur Situation hinsichtlich der *burial construction* Variable, für die über die gesamte Bronzezeit nahezu keine Informationen aus diesem Areal bereit stehen. 
 
-##### Norddeutschland -- `r a("Northern Germany")`
-
-Zur künstlichen Region *Northern Germany* gehören alle Neuen Bundesländer in Ostdeutschland, aber auch große Teile Niedersachsens und Schleswig-Holsteins. Die ^14^C Daten dieser Region stammen überwiegend aus Sachsen-Anhalt und angrenzenden Regionen in Thüringen, Sachsen und Niedersachsen. Auch aus dem Raum nördlich von Bremen sind einge Daten in Radon-B dokumentiert. 
-
 ##### Nordostfrankreich -- `r a("Northeastern France")`
 
-*Northeastern France* bezeichnet eine Kreisregion, die die französischen Verwaltungsregionen Grand Est und Bourgogne-Franche-Comté, den Osten Baden-Württembergs, Rheinland-Pfalz und das Saarland, sowie Luxemburg und Wallonien in Belgien umfasst. Nur aus Württemberg und in Richtung des Pariser Beckens stehen hier größere Akkumulationen von ^14^C Daten zur Verfügung.
+*Northeastern France* bezeichnet eine Kreisregion, die die französischen Verwaltungsregionen Grand Est und Bourgogne-Franche-Comté, den Osten Baden-Württembergs, Rheinland-Pfalz und das Saarland, sowie Luxemburg und Wallonien in Belgien umfasst. Nur aus Württemberg und in Richtung des Pariser Beckens stehen hier Akkumulationen von ^14^C Daten zur Verfügung. Die Datenmenge ist insgesamt gering, in der Früh- und beginnenden Mittelbronzezeit jedoch gravierend niedrig. Für *burial type* sind immerhin nach diesem Zeitfenster eingeschränkt Aussagen möglich, *burial construction* dagegen muss obskur bleiben. 
+
+##### Norddeutschland -- `r a("Northern Germany")`
+
+Zur künstlichen Region *Northern Germany* gehören alle Neuen Bundesländer in Ostdeutschland, aber auch große Teile Niedersachsens und Schleswig-Holsteins. Die ^14^C Daten dieser Region stammen überwiegend aus Sachsen-Anhalt und angrenzenden Regionen in Thüringen, Sachsen und Niedersachsen. Auch aus dem Raum nördlich von Bremen sind einge Daten in Radon-B dokumentiert. In der Datenbank sind aus keiner anderen Region sind so viele datierte Gräber enthalten wie aus Norddeutschland. Der überwiegende Teil davon fällt in die Frühbronzezeit, während die Menge in der Mittelbronzezeit ab etwa 1800calBC für einige Jahrhunderte bis 1400calBC auffällig einbricht. Erst für die Spätbronzezeit ist wieder eine signifikante Anzahl an Daten belegt. *burial type* und *burial construction* zeichnen diese Entwicklung beide in etwa gleichem Umfang nach.  
 
 ##### Südskandinavien -- `r a("Southern Scandinavia")`
 
-Die Region *Southern Scandinavia* schließt ganz Dänemark mit Jütland, Fünen, Seeland und allen kleineren Inseln sowie große Teile des Osten Südschwedens, und Küstenregionen in Schleswig-Holstein und Mecklenburg-Vorpommern ein. Die ^14^C Daten sind sehr gut auf Jütland, Fünen und die schwedische Skåne Region verteilt.
+Die Region *Southern Scandinavia* schließt ganz Dänemark mit Jütland, Fünen, Seeland und allen kleineren Inseln sowie große Teile des Osten Südschwedens, und Küstenregionen in Schleswig-Holstein und Mecklenburg-Vorpommern ein. Die ^14^C Daten sind sehr gut auf Jütland, Fünen und die schwedische Skåne Region verteilt. Sie stammen vornehmlich aus Mittel- und Spätbronzezeit, die entsprechend vergleichsweise gut hinsichtlich der beiden Variablen *burial type* und *burial construction* erschlossen ist. Die Frühbronzezeit ist dagegen ein Desiderat -- obgleich auf höherem Niveau als beispielsweise *Northeastern France*. 
 
 ##### Benelux -- `r a("Benelux")`
 
