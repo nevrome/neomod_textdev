@@ -315,7 +315,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/development/developmen
 
 ##### Österreich, Tschechien, Slowakei und Ungarn --  `r a("Southeastern Central Europe")`
 
-Die künstliche Untersuchungsregion *Southeastern Central Europe* umfasst den Osten Österreichs (Oberösterreich, Niederösterreich, Steiermark, Burgenland), den Nordwesten Ungarns, die Westslowakei, Mähren und große Teile Böhmens. Die Dichte der ^14^C Daten an Gräbern aus Radon-B ist gering -- aus den verschiedenen Regionen liegen zwar jeweils einzelne Daten vor, große Areale müssen jedoch ohne Evidenz auskommen.
+Die künstliche Untersuchungsregion *Southeastern Central Europe* umfasst den Osten Österreichs (Oberösterreich, Niederösterreich, Steiermark, Burgenland), den Nordwesten Ungarns, die Westslowakei, Mähren und große Teile Böhmens. Die Dichte der ^14^C Daten an Gräbern aus Radon-B ist gering -- aus den verschiedenen Regionen liegen zwar jeweils einzelne Daten vor, große Areale müssen jedoch ohne Evidenz auskommen. Diachron ist das Datenaufkommen durchgehend niedrig und erreicht in der Mittelbronzezeit einen Tiefpunkt. Während für die *burial type* Variable eine konstanter Informationsfluss vorhanden ist, nimmt die Anzahl an Gräbern ohne Angaben zu *burial construction* in der Spätbronzezeit derart zu, dass überhaupt keine Aussage mehr für sie abgeleitet werden kann. 
 
 ##### Polen -- `r a("Poland")`
 
@@ -323,7 +323,7 @@ Die Region *Poland* deckt Landesmitte und Westen des heutigen Polens vollständi
 
 ##### Süddeutschland -- `r a("Southern Germany")`
 
-Die künstliche Kreisregion *Southern Germany* umfasst Bayern vollständig, schließt aber auch größte Teile Baden-Württembergs und Thüringens sowie ausgedehnte Flächen in Mähren und Westösterreich ein. Aus letzteren Regionen liegen keine ^14^C Daten vor. Die Mehrzahl der vorhandenen Daten stammt aus Der Oberpfalz, Niederbayern und Schwaben sowie (in Württemberg) dem Regierungsbezirken Tübingen.
+Die künstliche Kreisregion *Southern Germany* umfasst Bayern vollständig, schließt aber auch größte Teile Baden-Württembergs und Thüringens sowie ausgedehnte Flächen in Mähren und Westösterreich ein. Aus letzteren Regionen liegen keine ^14^C Daten vor. Die Mehrzahl der vorhandenen Daten stammt aus der Oberpfalz, Niederbayern und Schwaben sowie (in Württemberg) dem Regierungsbezirken Tübingen. Für die Frühbronzezeit sind bemerkenswert viele Daten aus Süddeutschland in Radon-B erhalten, diese Menge nimmt aber im Laufe der Mittelbronzezeit ab und lässt die Spätbronzezeit beinahe ohne datierte Gräber zurück. Die *burial type* Variable ist recht gut erschlossen -- obgleich unverhältnismäßig viel mehr der frühen Körpergräber als urnenfelderzeitliche Brandbestattungen erfasst wurden. Diese Informationsfülle steht in krassem Kontrast zur Situation hinsichtlich der *burial construction* Variable, für die über die gesamte Bronzezeit nahezu keine Informationen aus diesem Areal bereit stehen. 
 
 ##### Norddeutschland -- `r a("Northern Germany")`
 
