@@ -93,6 +93,14 @@ Kurz zusammengefasst besagt das klassische Narrativ der Entwicklung bronzezeitli
 
 Todo: Schwerpunkt auf Grabform (Brandgrab vs. Körpergrab) und Grabkonstruktion. Weitere Aspekte wie Grabbeigaben, Körperhaltung, Geschlechtsdimorphismen, etc. werden nur dann beachtet, wenn sie direkt mit diesen Primäraspekten zusammenhängen.
 
+Chronologieüberblick Abbildung \@ref(fig:general-chronology).
+
+\begin{landscape}
+```{r general-chronology, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/chronology/bronze_age_europe_chronology.jpeg")
+```
+\end{landscape}
+
 ### Slowakei und Ungarn
 
 Die Slowakei ist vor allem durch die Gebirgsrücken von Ost- und Westkarpaten geprägt. Im Südosten und Südwesten davon öffnet sich das Land nach Ungarn zum Karpatenbecken mit Kleiner und Großer Ungarischer Tiefebene. Die ausgedehnte, flache Landschaft wird und wurde von den Flüssen Donau und Theiß sowie deren Nebenflüssen dominiert, die das Becken in Nord-Süd-Richtung durchziehen. Vor ihrer Begradigung im 19. Jahrhundert mäandrierten beide stark und ihr Verlauf änderte sich häufig und in kurzen Intervallen. Neben ihrer geomorphologisch prägenden Wirkung stellten sie wichtige Kommunikationswege und kulturelle Grenzen dar: Im Karpatenbecken begneten West- und Mitteleuropa den Steppengebieten, dem Ostbalkan und dem östlichen Mittelmeergebiet. Für die bronzezeitliche kulturgeographie ist es sinnvoll, von West nach Ost in drei Areale zu untergliedern: Der Donauraum (Transdanubien), das Zwischenstromland zwischen Donau und Theiß und die Theißregion. Aufgrund der großen Heterogenität und inneren Komplexität der Entwicklungen in diesen Regionen, wird der Schwerpunkt der folgenden Ausführungen auf dem Westen Ungarns und der Slowakei liegen, also jenen Gebieten, die auch im Untersuchungsareal dieser Arbeit liegen. Die slowakische, bronzezeitliche Chronologie folgt einem modifizierten Schema nach Reinecke, in Ungarn dagegen ist eine an der Tellsiedlung Toszeg erarbeitete Chronologie verbreitet. Eine Aufteilung in Früh-, Mittel-, Spät und Endbronzezeit ist jedoch in beiden Kontexten gebräuchlich und kann Grenzenüberschreitend zur Anwendung gebracht werden^[@markova_slovakia_2013, 813-814.].
