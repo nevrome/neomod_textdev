@@ -34,43 +34,11 @@ Die vorliegende Arbeit wurde in fünf verschiedenen Teilprojekten entwickelt und
 
 Alle diese Projekte wurden und werden unabhängig voneinander mit der Versionskontrollsoftware Git^[https://git-scm.com/ [31.07.2018]] überwacht, die den Arbeitsfortschritt in vielen hundert einzeln kommentierten Veränderungspaketen -- "Commits" -- dokumentiert. Der Entstehungsprozess ist damit weitreichend nachvollziehbar, sieht man von Vorüberlegungen und Gesprächen ab, die keine konkreten Ergebnisse gezeitigt haben. Nach Abschluss von Korrektur und Revision der Arbeit, werden alle Projekte über die Cloud Plattform Github ^[https://github.com/ [31.07.2018]] zugänglich gemacht werden. Die im Text verarbeitete und darüber hinaus gesammelte Literatur ist in drei thematisch getrennte Sammlungen gegliedert und über das zotero Webportal einsehbar:  
 
-```{r libraries, echo=FALSE, tidy=FALSE}
-tibble::tibble(
-  name = c(
-    "cultural\\_evolution",
-    "bronze\\_age\\_burials",
-    "software\\_packages"
-  ),
-  link = c(
-    "\\href{https://www.zotero.org/groups/2086516/cultural\\_evolution}{zotero/cultural\\_evolution}",
-    "\\href{https://www.zotero.org/groups/2199051/bronze\\_age\\_burials}{zotero/bronze\\_age\\_burials}",
-    "\\href{https://www.zotero.org/groups/2211203/software\\_packages}{zotero/software\\_packages}"
-  ),
-  description = c(
-    "Cultural Evolution. Literatursammlung zu Cultural Evolution und ihren vielen Subthemen wie Memetik, Cultural Transmission oder Sozial Learning. Geht weit über eine rein archäologische Perspektive hinaus, umfasst aber gleichzeitig archäologische Fallstudien ohne großen theoretischen Selbstanspruch.",
-    "Bestattungssitten in der Bronzezeit. Archäologische Literatur zur Theorie der Thanatoarchäologie und zur kulturhistorischen Entwicklung in der Bronzezeit.",
-    "Software. Referenzen von wissenschaftlicher Software, die für Datenverarbeitung sowie Text- und Abbildungsvorbereitung zum Einsatz gekommen ist. Vor allem R Pakete und C++ Bibliotheken."
-  ) 
-) %>%
-  dplyr::transmute(
-    number = 1:nrow(.),
-    Bibliothek = paste0("\\textbf{", name, "}", "\n", ifelse(!is.na(link), paste0("\\textit{", link, "}", "\n"), ""), description)
-  ) %>%
-  dplyr::mutate_all(
-    kableExtra::linebreak
-  ) %>%
-  knitr::kable(
-    caption = "Literatursammlungen für diese Arbeit.",
-    format = "latex",
-    booktabs = T,
-    escape = F,
-    col.names = c("", "Bibliothek"),
-    linesep = "\\addlinespace \\hline \\addlinespace"
-  ) %>%
-  kableExtra::kable_styling(full_width = T, font_size = 8) %>%
-  kableExtra::column_spec(1, bold = TRUE,  width = "0.5em") %>%
-  kableExtra::column_spec(2, width = "25em")
-```
+**cultural_evolution**^[https://www.zotero.org/groups/2086516/cultural_evolution] -- Literatursammlung zu Cultural Evolution und ihren vielen Subthemen wie Memetik, Cultural Transmission oder Sozial Learning. Geht weit über eine rein archäologische Perspektive hinaus, umfasst aber gleichzeitig archäologische Fallstudien ohne großen theoretischen Selbstanspruch.
+
+**bronze_age_burials**^[https://www.zotero.org/groups/2199051/bronze_age_burials] -- Archäologische Literatur zur Theorie der Thanatoarchäologie und zur kulturhistorischen Entwicklung in der Bronzezeit.
+
+**software_packages**^[https://www.zotero.org/groups/2211203/software_packages] -- Referenzen von wissenschaftlicher Software, die für Datenverarbeitung sowie Text- und Abbildungsvorbereitung zum Einsatz gekommen ist. Vor allem R Pakete und C++ Bibliotheken.
 
 Die gesamte Datenanalyse wurde in der Statistikprogrammiersprache R^[@RCoreTeamLanguageEnvironmentStatistical2016] implementiert. Dabei kam neben Funktionen aus Basispaketen auch eine große Anzahl von Community-Paketen zum Einsatz, inklusiver mehrerer selbst entwickelter. Aufgrund der sonst unangemessen großen Menge an Referenzen, werden im folgenden nur die Pakete genannt, deren Funktionen tatsächlich unmittelbar aufgerufen wurden und nicht deren oft umfangreiche Sammlung an Abhängigkeiten. Die Zusammenstellung umfasst jedoch auch Pakete, die im Laufe der Entwicklung intensiv zum Einsatz kamen, dann aber aufgrund inhaltlicher oder technischer Veränderungen ersetzt werden mussten. Über die Entwicklungszeit dieser Arbeit haben sich viele der verwendeten Pakete ebenfalls weiterentwickelt -- die angebene Versionsnummer bezieht sich auf diejenige, mit der die in Version 1.0 dieser Arbeit abgedruckten Ergebnisse erstellt wurden. 
 <!--purrr::map(c("broom", "dplyr"), function(x) {toBibtex(citation(x))})-->
