@@ -93,10 +93,10 @@ Kurz zusammengefasst besagt das klassische Narrativ der Entwicklung bronzezeitli
 
 Todo: Schwerpunkt auf Grabform (Brandgrab vs. Körpergrab) und Grabkonstruktion. Weitere Aspekte wie Grabbeigaben, Körperhaltung, Geschlechtsdimorphismen, etc. werden nur dann beachtet, wenn sie direkt mit diesen Primäraspekten zusammenhängen.
 
-Chronologieüberblick Abbildung \@ref(fig:general-chronology).
+Chronologieüberblick Abbildung \@ref(fig:general-chronology)^[Die Abbildung basiert auf der Zusammenstellung in @roberts_old_2013. Dabei wurde auf folgende Quellenpublikationen zurückgegriffen: @burgess_bronze_1974; @burgess_age_1980; @needham_chronology_1996; @needham_first_2010; @needham_independent_1997; @lanting_14c-chronologie_2001; @gerloff_atlantic_2010; @gerloff_reineckes_2007; @eogan_accomplished_1994; @brindley_dating_2007; @louwe_kooijmanns_prehistory_2005; @arnoldussen_bronze_2008; @bourgeois_lage_2005; @de_laet_belgique_1982]
 
 \begin{landscape}
-```{r general-chronology, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r general-chronology, echo = FALSE, fig.scap = "Chronologiesysteme der Bronzezeit in Zentral-, Nord- und Nordwesteuropa", fig.cap = "Chronologiesysteme der Bronzezeit in Zentral-, Nord- und Nordwesteuropa. Bz = Bronzezeit, Br. = Age du bronze, Per. = Periode, BA = Bronze Age, MA = Metalwork Assemblage. Zusammengestellt aus \\textcite{roberts_old_2013}.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/chronology/bronze_age_europe_chronology.jpeg")
 ```
 \end{landscape}
