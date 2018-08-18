@@ -1,6 +1,8 @@
 # Datenauswertung {#data-analysis}
 
 ```{r, echo=FALSE}
+library(magrittr)
+
 # allow easy dynamic value integration
 sf_prep <- "../neomod_analysis/data_text_elements/sf_prep.txt"
 sf_desc <- "../neomod_analysis/data_text_elements/sf_desc.txt"
@@ -10,65 +12,27 @@ a <- function(x) {r("regions graves amounts", sf_prep) %>% strsplit(", ") %>% un
 
 ## Software und Daten
 
-Die vorliegende Arbeit wurde in fünf verschiedenen Teilprojekten entwickelt und hat mindestens vier Hilfsprojekte hervorgebracht oder inspiriert (siehe Tabelle \@ref(tab:projects)). Alle diese Projekte wurden und werden unabhängig voneinander mit der Versionskontrollsoftware Git^[https://git-scm.com/ [31.07.2018]] überwacht, die den Arbeitsfortschritt in vielen hundert einzeln kommentierten Veränderungspaketen -- "Commits" -- dokumentiert. Der Entstehungsprozess ist damit weitreichend nachvollziehbar, sieht man von Vorüberlegungen und Gesprächen ab, die keine konkreten Ergebnisse gezeitigt haben. Nach Abschluss von Korrektur und Revision der Arbeit, werden alle Projekte über die Cloud Plattform Github ^[https://github.com/ [31.07.2018]] zugänglich gemacht werden. Die im Text verarbeitete und darüber hinaus gesammelte Literatur ist in drei thematisch getrennte Sammlungen gegliedert (siehe Tabelle \@ref(tab:libraries)) und über das zotero Webportal einsehbar.   
+Die vorliegende Arbeit wurde in fünf verschiedenen Teilprojekten entwickelt und hat mindestens vier Hilfsprojekte hervorgebracht oder inspiriert:  
 
-```{r projects, echo=FALSE, tidy=FALSE}
-library(magrittr)
+**neomod_textdev**^[https://www.github.com/nevrome/neomod_textdev] -- Textproduktion. Der Text der Masterarbeit wurde in R Markdown^[https://rmarkdown.rstudio.com/ [31.07.2018]] mit im bookdown Framework^[@xie_bookdown_2016]; [@xie_bookdown_2018]; https://bookdown.org/ [31.07.2018]] verfasst. Da ausschließlich das Rendern mittels Pandoc^[https://pandoc.org/ [31.07.2018] in LaTeX^[https://www.latex-project.org/ [31.07.2018]] ins PDF Format vorgesehen war, enthält die Textvorlage auch vereinzelt LaTeX Ausdrücke. Jeder Commit löst dank Continous Integration mit Travis^[https://travis-ci.com/ [31.07.2018]] ein automatisches Rendern des Texts aus.
 
-tibble::tibble(
-  name = c(
-    "neomod\\_textdev",
-    "neomod\\_prepresentation",
-    "neomod\\_analysis",
-    "popgenerator\\tablefootnote{\\textcite{schmid_popgenerator_2018}}",
-    "gluesless\\tablefootnote{\\textcite{clemens_schmid_gluesless_2018}}",
-    "c14bazAAR\\tablefootnote{\\textcite{schmid_c14bazaar_2018}}",
-    "neimann1995",
-    "rdoxygen",
-    "txtstorage"
-  ),
-  link = c(
-    "\\href{https://www.github.com/nevrome/neomod\\_textdev}{github/nevrome/neomod\\_textdev}",
-    "\\href{https://www.github.com/nevrome/neomod\\_prepresentation}{github/nevrome/neomod\\_prepresentation}",
-    "\\href{https://www.github.com/nevrome/neomod\\_analysis}{github/nevrome/neomod\\_analysis}",
-    "\\href{https://www.github.com/nevrome/popgenerator}{github/nevrome/popgenerator}",
-    "\\href{https://www.github.com/nevrome/gluesless}{github/nevrome/gluesless}",
-    "\\href{https://www.github.com/nevrome/c14bazAAR}{github/nevrome/c14bazAAR}",
-    "\\href{https://www.github.com/nevrome/neimann1995}{github/nevrome/neimann1995}",
-    "\\href{https://www.github.com/nevrome/rdoxygen}{github/nevrome/rdoxygen}",
-    "\\href{https://www.github.com/nevrome/txtstorage}{github/nevrome/txtstorage}"
-  ),
-  description = c(
-    "Textproduktion. Der Text der Masterarbeit wurde in R Markdown\\tablefootnote{\\url{https://rmarkdown.rstudio.com/ [31.07.2018]}} mit im bookdown Framework\\tablefootnote{\\textcite{xie_bookdown_2016}; \\textcite{xie_bookdown_2018}; \\url{https://bookdown.org/ [31.07.2018]}} verfasst. Da ausschließlich das Rendern mittels Pandoc\\tablefootnote{\\url{https://pandoc.org/ [31.07.2018]}} in LaTeX\\tablefootnote{\\url{https://www.latex-project.org/ [31.07.2018]}} ins PDF Format vorgesehen war, enthält die Textvorlage auch vereinzelt LaTeX Ausdrücke. Jeder Commit löst dank Continous Integration mit Travis\\tablefootnote{\\url{https://travis-ci.com/ [31.07.2018]}} ein automatisches Rendern des Texts aus.",
-    "Präsentationen über die Inhalte der Masterarbeit. Vor- während und nach der Arbeit wurden mehrere Präsentation über Planung, Arbeitsfortschritt und Ergebnisse zusammengestellt. Die Präsentationen sind jeweils in R Markdown konstruiert, unterscheiden sich aber je nachdem, ob ein Rendern in HTML oder PDF vorgesehen war.",
-    "Datenanalyse. Sowohl die Realweltdaten als auch die Daten aus der Simulation wurden mit R ausgewertet. Dieses Projekt hat bewusst nicht die Form eines R Pakets, sondern setzt sich aus vielen einzelnen, teilweise redundanten R Skripten zusammen. Hier werden auch Ergebnisdaten und Abbildungen gespeichert. Erstere wurden aufgrund ihres Volumens weitestgehend  nicht mit Versionskontrolle dokumentiert und liegen entsprechend nur in den lokalen Systemen vor, in denen sie erzeugt wurden. Sie müssen bei Bedarf generiert oder -- im  Fall von Quelldaten -- heruntergeladen werden.",
-    "Populationsgenerator. R Paket zur Konstruktion von Populationsgraphen.",
-    "Expansionsmodell. C++ Programm zur Simulation der Ausbreitung von Ideen in einem Populationsgraphen, wie er von popgenerator erzeugt wird.",
-    "\\textsuperscript{14}C-Datenbeschaffung. R Paket zum strukturierten Download von \\textsuperscript{14}C-Daten aus verschiedenen Quelldatenbanken -- unter anderem der hier verarbeiteten Radon-B Datenbank.",
-    "Reproduktion eines Artikels. Verständnisübung entlang eines der wesentlichen Artikel in der theoretischen Vorbereitung dieser Arbeit.",
-    "Doxygen Dokumentation. R Paket um Doxygen Dokumentation für Source Code in R Paketen zu erstellen.",
-    "Textdatenspeicher. R Paket zur Verwaltung vo Austauschdateien mit einfachen Analyseergebnissen. Dient vor allem dazu, Zähldaten dynamisch in den Text der Arbeit einzubinden."
-  ) 
-) %>%
-  dplyr::transmute(
-    number = 1:nrow(.),
-    Projekt = paste0("\\textbf{", name, "}", "\n", ifelse(!is.na(link), paste0("\\textit{", link, "}", "\n"), ""), description)
-  ) %>%
-  dplyr::mutate_all(
-    kableExtra::linebreak
-  ) %>%
-  knitr::kable(
-    caption = "Projekte und Pakete für diese Arbeit.",
-    format = "latex",
-    booktabs = T,
-    escape = F,
-    col.names = c("", "Projekt"),
-    linesep = "\\addlinespace \\hline \\addlinespace"
-  ) %>%
-  kableExtra::kable_styling(full_width = T, font_size = 8) %>%
-  kableExtra::column_spec(1, bold = TRUE,  width = "0.5em") %>%
-  kableExtra::column_spec(2, width = "25em")
-```
+**neomod_prepresentation**^[https://www.github.com/nevrome/neomod_prepresentation] -- Präsentationen über die Inhalte der Masterarbeit. Vor- während und nach der Arbeit wurden mehrere Präsentation über Planung, Arbeitsfortschritt und Ergebnisse zusammengestellt. Die Präsentationen sind jeweils in R Markdown konstruiert, unterscheiden sich aber je nachdem, ob ein Rendern in HTML oder PDF vorgesehen war.
+
+**neomod_analysis**^[https://www.github.com/nevrome/neomod_analysis] -- Datenanalyse. Sowohl die Realweltdaten als auch die Daten aus der Simulation wurden mit R ausgewertet. Dieses Projekt hat bewusst nicht die Form eines R Pakets, sondern setzt sich aus vielen einzelnen, teilweise redundanten R Skripten zusammen. Hier werden auch Ergebnisdaten und Abbildungen gespeichert. Erstere wurden aufgrund ihres Volumens weitestgehend  nicht mit Versionskontrolle dokumentiert und liegen entsprechend nur in den lokalen Systemen vor, in denen sie erzeugt wurden. Sie müssen bei Bedarf generiert oder -- im  Fall von Quelldaten -- heruntergeladen werden.
+
+**popgenerator**^[@schmid_popgenerator_2018; https://www.github.com/nevrome/popgenerator] -- Populationsgenerator. R Paket zur Konstruktion von Populationsgraphen.
+
+**gluesless**^[@clemens_schmid_gluesless_2018; https://www.github.com/nevrome/gluesless] -- Expansionsmodell. C++ Programm zur Simulation der Ausbreitung von Ideen in einem Populationsgraphen, wie er von popgenerator erzeugt wird.
+
+**c14bazAAR**^[@schmid_c14bazaar_2018; https://www.github.com/nevrome/c14bazAAR] -- ^14^C-Datenbeschaffung. R Paket zum strukturierten Download von ^14^C-Daten aus verschiedenen Quelldatenbanken -- unter anderem der hier verarbeiteten Radon-B Datenbank.
+
+**neimann1995**^[https://www.github.com/nevrome/neimann1995)] -- Reproduktion eines Artikels. Verständnisübung entlang eines der wesentlichen Artikel in der theoretischen Vorbereitung dieser Arbeit.,
+
+**rdoxygen**^[https://www.github.com/nevrome/rdoxygen] -- Doxygen Dokumentation. R Paket um Doxygen Dokumentation für Source Code in R Paketen zu erstellen.,
+
+**txtstorage**^[https://www.github.com/nevrome/txtstorage] -- Textdatenspeicher. R Paket zur Verwaltung von Austauschdateien mit einfachen Analyseergebnissen. Dient vor allem dazu, Zähldaten dynamisch in den Text der Arbeit einzubinden.
+
+Alle diese Projekte wurden und werden unabhängig voneinander mit der Versionskontrollsoftware Git^[https://git-scm.com/ [31.07.2018]] überwacht, die den Arbeitsfortschritt in vielen hundert einzeln kommentierten Veränderungspaketen -- "Commits" -- dokumentiert. Der Entstehungsprozess ist damit weitreichend nachvollziehbar, sieht man von Vorüberlegungen und Gesprächen ab, die keine konkreten Ergebnisse gezeitigt haben. Nach Abschluss von Korrektur und Revision der Arbeit, werden alle Projekte über die Cloud Plattform Github ^[https://github.com/ [31.07.2018]] zugänglich gemacht werden. Die im Text verarbeitete und darüber hinaus gesammelte Literatur ist in drei thematisch getrennte Sammlungen gegliedert und über das zotero Webportal einsehbar:  
 
 ```{r libraries, echo=FALSE, tidy=FALSE}
 tibble::tibble(
