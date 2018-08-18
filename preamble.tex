@@ -26,3 +26,7 @@
 % figure rotation
 \usepackage{pdflscape}
 \DeclareDelayedFloatFlavor{landscape}{figure}
+% ignore note field in citations
+\AtEveryBibitem{%
+  \clearfield{note}%
+}
