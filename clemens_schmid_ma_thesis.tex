@@ -89,7 +89,7 @@
 % promille symbol
 \usepackage{textcomp}
 % move all figures and tables to the end of the document
-\usepackage[nomarkers,nolists,notables]{endfloat}
+\usepackage[nomarkers,notables]{endfloat}
 \AtBeginFigures{\setcounter{chapter}{0}}
 \renewcommand{\figuresection}{Abbildungen}
 % fancy headers
@@ -173,7 +173,6 @@
 
 \setcounter{tocdepth}{3}
 \tableofcontents
-\listoffigures
 
 \parskip 4pt \setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
 
@@ -5110,9 +5109,112 @@ Simulationsverhalten}\label{simulation-parameters}}
 \section{Kulturelle und Räumliche
 Distanz}\label{kulturelle-und-raumliche-distanz}}
 
+\hypertarget{fragestellung-und-methode}{%
+\subsection{Fragestellung und Methode}\label{fragestellung-und-methode}}
+
+\hypertarget{analyse-und-ergebnisse}{%
+\subsection{Analyse und Ergebnisse}\label{analyse-und-ergebnisse}}
+
+\hypertarget{kulturelle-distanz}{%
+\subsubsection{Kulturelle Distanz}\label{kulturelle-distanz}}
+
+\[d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2\]
+
+\begin{itemize}
+\tightlist
+\item
+  \(d_{ij}^2\): Squared Euclidean distance between two groups \(i\) and
+  \(j\)
+\item
+  \(k\): Variant counter
+\item
+  \(n\): Total amount of variants in a population
+\item
+  \(p_{ik}\): Relative frequency of the \(k\)'th variant in population
+  \(i\)
+\item
+  \(p_{jk}\): Relative frequency of the \(k\)'th variant in population
+  \(j\)
+\end{itemize}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type} \caption[huhu]{huhu}\label{fig:sed-dev-matrix-bt}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction} \caption[huhu]{huhu}\label{fig:sed-dev-matrix-bc}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type} \caption[huhu]{huhu}\label{fig:sed-mean-matrix-bt}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction} \caption[huhu]{huhu}\label{fig:sed-mean-matrix-bc}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type} \caption[huhu]{huhu}\label{fig:sed-dev-bt}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction} \caption[huhu]{huhu}\label{fig:sed-dev-bc}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/squared_euclidian_distance_burial_type_vs_burial_construction} \caption[huhu]{huhu}\label{fig:mantel-bt-bc}
+\end{figure}
+\end{landscape}
+
+\hypertarget{kulturelle-und-raumliche-distanz-1}{%
+\subsubsection{Kulturelle und Räumliche
+Distanz}\label{kulturelle-und-raumliche-distanz-1}}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_distance_network} \caption[huhu]{huhu}\label{fig:map-regions-distance-classes}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/sed_map_research_area_timeslices_burial_type} \caption[huhu]{huhu}\label{fig:map-sed-bt}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/sed_map_research_area_timeslices_burial_construction} \caption[huhu]{huhu}\label{fig:map-sed-bc}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_type} \caption[huhu]{huhu}\label{fig:mantel-bt-spatial}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_construction} \caption[huhu]{huhu}\label{fig:mantel-bc-spatial}
+\end{figure}
+\end{landscape}
+
+\hypertarget{simulation-1}{%
+\subsection{Simulation}\label{simulation-1}}
+
 \hypertarget{kausale-interaktionsbeziehungen}{%
 \section{Kausale
 Interaktionsbeziehungen}\label{kausale-interaktionsbeziehungen}}
+
+\hypertarget{fragestellung-und-methode-1}{%
+\subsection{Fragestellung und
+Methode}\label{fragestellung-und-methode-1}}
+
+\hypertarget{analyse-und-ergebnisse-1}{%
+\subsection{Analyse und Ergebnisse}\label{analyse-und-ergebnisse-1}}
+
+\hypertarget{simulation-2}{%
+\subsection{Simulation}\label{simulation-2}}
 
 \pby[title={Literatur},segment=\therefsegment,heading=subbibintoc]
 
