@@ -457,8 +457,19 @@ Die Expansionssimulation endet, wenn sich die Größe des Netzwerks von einem Ze
 
 ## Kulturelle und Räumliche Distanz
 
+### Fragestellung und Methode
+
+### Analyse und Ergebnisse
+
+### Simulation
+
 ## Kausale Interaktionsbeziehungen
 
+### Fragestellung und Methode
+
+### Analyse und Ergebnisse
+
+### Simulation
 
 
 
