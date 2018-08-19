@@ -25,8 +25,8 @@ subparagraph: yes
 <!-- list of tables + list of figures -->
 \setcounter{tocdepth}{3}
 \tableofcontents
-\listoftables
 \listoffigures
+<!-- \listoftables -->
 
 <!-- controle space in between paragraphs, figures and tables -->
 \parskip 4pt
