@@ -471,53 +471,53 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 - $p_{ik}$: Relative frequency of the $k$'th variant in population $i$
 - $p_{jk}$: Relative frequency of the $k$'th variant in population $j$
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-matrix-bt, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-matrix-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-mean-matrix-bt, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-mean-matrix-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-bt, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r mantel-bt-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_distance_burial_type_vs_burial_construction.jpeg")
 ```
 
 #### Kulturelle und Räumliche Distanz
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r map-regions-distance-classes, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_map_distance_network.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r map-sed-bt, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/sed_map_research_area_timeslices_burial_type.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r map-sed-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/sed_map_research_area_timeslices_burial_construction.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r mantel-bt-spatial, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_type.jpeg")
 ```
 
-```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r mantel-bc-spatial, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_construction.jpeg")
 ```
 
