@@ -461,6 +461,46 @@ Die Expansionssimulation endet, wenn sich die Größe des Netzwerks von einem Ze
 
 ### Analyse und Ergebnisse
 
+#### Kulturelle Distanz
+
+$$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
+
+- $d_{ij}^2$: Squared Euclidean distance between two groups $i$ and $j$
+- $k$: Variant counter
+- $n$: Total amount of variants in a population
+- $p_{ik}$: Relative frequency of the $k$'th variant in population $i$
+- $p_{jk}$: Relative frequency of the $k$'th variant in population $j$
+
+```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("/home/clemens/neomod/neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg")
+```
+
+```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("/home/clemens/neomod/neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction.jpeg")
+```
+
+```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("/home/clemens/neomod/neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type.jpeg")
+```
+
+```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("/home/clemens/neomod/neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg")
+```
+
+```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("/home/clemens/neomod/neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type.jpeg")
+```
+
+```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("/home/clemens/neomod/neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg")
+```
+
+```{r popgen-sizedev-example, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("/home/clemens/neomod/neomod_analysis/figures_plots/sed/squared_euclidian_distance_burial_type_vs_burial_construction.jpeg")
+```
+
+#### Kulturelle und Räumliche Distanz
+
 ### Simulation
 
 ## Kausale Interaktionsbeziehungen
