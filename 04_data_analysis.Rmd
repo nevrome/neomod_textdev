@@ -473,44 +473,44 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 
 \@ref(fig:sed-dev-matrix-bt)
 
-```{r sed-dev-matrix-bt, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-matrix-bt, echo = FALSE, fig.scap = "Plotmatrix der Squared Euclidian Distance (SED) Beziehungen zwischen den Regionen für \\textit{burial type}", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
 \@ref(fig:sed-dev-matrix-bc)
 
-```{r sed-dev-matrix-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-matrix-bc, echo = FALSE, fig.scap = "Plotmatrix der SED Beziehungen für \\textit{burial construction}", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
 \@ref(fig:sed-mean-matrix-bt)
 
-```{r sed-mean-matrix-bt, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-mean-matrix-bt, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SED Beziehungen für \\textit{burial type}", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type.jpeg")
 ```
 
 \@ref(fig:sed-mean-matrix-bc)
 
-```{r sed-mean-matrix-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-mean-matrix-bc, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SED Beziehungen für \\textit{burial construction}", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
 \@ref(fig:sed-dev-bt)
 
-```{r sed-dev-bt, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-bt, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial type} SED für jede Region zu jeder anderen", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
 \@ref(fig:sed-dev-bc)
 
-```{r sed-dev-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-bc, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial construction} SED für jede Region zu jeder anderen", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
 \@ref(fig:mantel-bt-bc)
 
 \begin{landscape}
-```{r mantel-bt-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r mantel-bt-bc, echo = FALSE, fig.scap = "\\textit{burial type} SED aufgetragen gegen \\textit{burial construction} SED für verschiedene Zeitschritte", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_distance_burial_type_vs_burial_construction.jpeg")
 ```
 \end{landscape}
