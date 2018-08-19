@@ -495,9 +495,11 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_eu
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
+\begin{landscape}
 ```{r mantel-bt-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_distance_burial_type_vs_burial_construction.jpeg")
 ```
+\end{landscape}
 
 #### Kulturelle und Räumliche Distanz
 
@@ -505,21 +507,29 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_
 knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_map_distance_network.jpeg")
 ```
 
+\begin{landscape}
 ```{r map-sed-bt, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/sed_map_research_area_timeslices_burial_type.jpeg")
 ```
+\end{landscape}
 
+\begin{landscape}
 ```{r map-sed-bc, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/sed_map_research_area_timeslices_burial_construction.jpeg")
 ```
+\end{landscape}
 
+\begin{landscape}
 ```{r mantel-bt-spatial, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_type.jpeg")
 ```
+\end{landscape}
 
+\begin{landscape}
 ```{r mantel-bc-spatial, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_construction.jpeg")
 ```
+\end{landscape}
 
 ### Simulation
 
