@@ -25,7 +25,7 @@ subparagraph: yes
 <!-- list of tables + list of figures -->
 \setcounter{tocdepth}{3}
 \tableofcontents
-\listoffigures
+<!-- \listoffigures -->
 <!-- \listoftables -->
 
 <!-- controle space in between paragraphs, figures and tables -->
