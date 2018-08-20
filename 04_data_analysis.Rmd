@@ -487,29 +487,29 @@ Um die kulturelle Distanz zwischen den Regionen basierend auf den Variablen *bur
 
 Die Mehrzahl der Kurven in Abbildung \@ref(fig:sed-dev-matrix-bt) für *burial type* entspricht den Erwartungen: Zu Beginn der Bronzezeit ist Körperbestattung im gesamten Untersuchungsareal weit verbreitet, also ist die Euklidische Distanz 2200calBC in fast jeder Regionenbeziehung gering. Nur der Benelux-Raum, in dem der Brandbestattungsanteil schon in der Frühbronzezeit groß ist, schert aus. Ab der Mittel-, besonders aber am Übergang zur Spätbronzezeit, vollzog sich in ganz Europa der Übergang zur Dominanz der Brandbestattung. Die SED-Werte steigen über diesen Zeitraum durchweg an und zeichnen deutliche Peaks oder Entwicklungen mit mehreren, aufeinanderfolgenden Maxima. Das ist Konsequenz dessen, dass der Übergangsprozess in jeder Region tatsächlich und so wie er in Radon-B abgebildet ist unterschiedlich und gegenüber anderen Räumen zeitversetzt ablief. Am Ende der Spätbronzezeit nähert sich die durchschnittliche SED wieder Null an, da dann in fast ganz Europa die Brandbestattung vorherrschte. Abbildung \@ref(fig:sed-dev-bt) stellt den selben Sachverhalt in einer an Abbildung \@ref(fig:development-amount-regions-burial-type) orientierten Form dar. Das erleichtert es, die Rolle einzelner Regionen im Gesamtkontext zu beurteilen. Die in Radon-B dargestellte, frühe und vollständige Übernahme des Brandbestattungsritus im Benelux-Raum hebt ihn deutlich von den anderen Regionen ab. England dagegen, mit seinem langsamen, graduellen Übergang von Körper- zu Brandbestattung fällt durch durchgehend mäßige Distanzen zu allen anderen Regionen auf. Sie kommt ohne deutliche Minima und Maxima aus. Die Situation für *burial construction* ist, wie aus den Abbildungen \@ref(fig:sed-dev-matrix-bc) und \@ref(fig:sed-dev-bc) ersichtlich, komplizierter. Hier ist kein allgemeiner Trend zu erkennen, sondern eine Vielzahl an lokalen und zeitlich begrenzten Phänomenen. Das liegt auch daran, wie der aus Radon-B entwickelte Proxy die Entwicklungen der realen Welt abbildet (siehe Kapitel \@ref(representativity)). Zur Mittelbronzezeit sollte die Hügelgräberkultur eine grundsätzliche Reduktion der SED für fast alle Regionenbeziehungen bewirken -- dieser Effekt ist tatsächlich leicht, aber bei weitem nicht so akzentuiert wie wünschenwert sichtbar. 
 
-```{r sed-dev-matrix-bt, echo = FALSE, fig.scap = "Plotmatrix der SEDs für \\textit{burial type}", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-matrix-bt, echo = FALSE, fig.scap = "Plotmatrix der SEDs für \\textit{burial type}", fig.cap = "Matrix mit $8*8=64$ Einzelplots. Jeder Plot zeigt die Entwicklung der Squared Euclidian Distance (SED) für die Variable \\textit{burial type} über den Zeitraum von 2200 bis 800calBC für jeweils eine Regionenbeziehung. Über der grauen Linie der echten Datenentwicklung liegt jeweils eine stärkere in der Farbe der Spaltenregion, die den Verlauf eines dynamisch eingepassten Splines (loess, span = 0.3) zeigt.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
-```{r sed-dev-bt, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial type} SEDs für jede Region", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-bt, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial type} SEDs für jede Region", fig.cap = "Alternative Darstellung der Plotmatrix in \\ref{fig:sed-dev-matrix-bt}.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
-```{r sed-dev-matrix-bc, echo = FALSE, fig.scap = "Plotmatrix der SEDs für \\textit{burial construction}", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-matrix-bc, echo = FALSE, fig.scap = "Plotmatrix der SEDs für \\textit{burial construction}", fig.cap = "Wie Abbildung \\ref{fig:sed-dev-matrix-bt}.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
-```{r sed-dev-bc, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial construction} SEDs für jede Region", fig.cap = "huhu", out.extra = ""}
+```{r sed-dev-bc, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial construction} SEDs für jede Region", fig.cap = "Alternative Darstellung der Plotmatrix in \\ref{fig:sed-dev-matrix-bc}.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
 Das arithmetische Mittel der SEDs zweier Regionen ist ein Maß für deren diachrone Gesamtähnlichkeit. Die Abbildungen \@ref(fig:sed-mean-matrix-bt) und \@ref(fig:sed-mean-matrix-bc) visualiseren diesen Wert in Form einer Matrix. Für *burial type* ist eine grundsätzliche Ähnlichkeit der Zentral- und Nordeuropäischen Regionen (*Southeastern Central Europe*, *Poland*, *Southern Germany*, *Northeastern France*, *Northern Germany*, *Southern Scandinavia*) zu erkennen, während der Benelux-Raum und Großbritannien davon distanziert scheinen, untereinander aber große Ähnlichkeit aufweisen. Die größten Übereinstimmungen bestehen in Zentraleuropa zwischen *Southern Scandinavia* und *Southern Germany*, zwischen *Poland* und *Southern Germany* sowie zwischen *Northeastern France* und *Northern Germany*. Das spricht für ein hinsichtlich dieser Variable ausgeprägtes Austauschnetzwerk nördlich der Alpen. Für *burial construction* gelten dagegen andere Bedingungen. Im durch diese Variable definierten Interaktionsnetzwerk sind die mittleren Distanzen in Zentraleuropa viel größer. Stattdessen bilden Nord- und Nordwesteuropa (*Southern Scandinavia*, *Benelux*, *England*) ein relativ kohärente Einheit. Besonders *Benelux* und *England* verhalten sich hinsichtlich der Entwicklung von Flach- und Hügelgrabsitte bemerkenswert ähnlich.   
 
-```{r sed-mean-matrix-bt, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SEDs für \\textit{burial type}", fig.cap = "huhu", out.extra = ""}
+```{r sed-mean-matrix-bt, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SEDs für \\textit{burial type}", fig.cap = "Die Farbintensität bildet die Werteverteilung ab.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type.jpeg")
 ```
 
-```{r sed-mean-matrix-bc, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SEDs für \\textit{burial construction}", fig.cap = "huhu", out.extra = ""}
+```{r sed-mean-matrix-bc, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SEDs für \\textit{burial construction}", fig.cap = "Wie Abbildung \\ref{fig:sed-dev-matrix-bc}.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
@@ -525,7 +525,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_
 
 Um die kulturelle mit der räumlichen Distanz zu vergleichen und auf Korrelation zu untersuchen, musste zunächst ein Maß für die räumliche Distanz festgelegt werden. Dafür wurden Distanzklassen definiert (siehe Abbildung \@ref(fig:map-regions-distance-classes)) indem die geographischen Distanzen zwischen den Zentrumspunkten der Region normalisiert und bewusst so aufgeteilt wurden, dass eine sinnvolle, vierstufige Einteilung entstand.
 
-```{r map-regions-distance-classes, echo = FALSE, fig.scap = "Karte des klassifizierten, räumlichen Distanznetzwerks", fig.cap = "huhu", out.extra = ""}
+```{r map-regions-distance-classes, echo = FALSE, fig.scap = "Karte des klassifizierten, räumlichen Distanznetzwerks", fig.cap = "Die Kantenstärke repräsentiert das Kantengewicht: Breite Linien repräsentierten enge Beziehungen mit niedrigem Distanz-Wert. Die Kanten des Netzwerks sind bogenförmig um Überschneidungungen zu vermeiden, die es erschweren würden das Gewicht der einzelnen Verbindungen abzulesen.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_map_distance_network.jpeg")
 ```
 
