@@ -459,8 +459,6 @@ Die Expansionssimulation endet, wenn sich die Größe des Netzwerks von einem Ze
 
 ### Fragestellung und Methode
 
-### Analyse und Ergebnisse
-
 $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 
 - $d_{ij}^2$: Squared Euclidean distance between two groups $i$ and $j$
@@ -471,7 +469,17 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 
 SED überbetont Unterschiede
 
+Korrellieren die beiden Kulturdistanten?
+
 Mantel Test: Was das, und warum?
+
+Toblers Gesetz
+
+Im Fall der großen, künstlichen und sich gegenseitig sogar überlappenden Regionen, die in dieser Arbeit als Untersuchungseinheiten festgelegt wurden, kann das nur mithilfe von Distanzklassen umgesetzt werden. Realitätsnähere oder auch nur kontinuierlich skalierte Distanzen erfordern eine Festlegung von Punkten 
+
+### Analyse und Ergebnisse
+
+Die Analyse ist zweigeteilt...
 
 #### Kulturelle Distanz
 
@@ -519,11 +527,13 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_
 
 #### Kulturelle und Räumliche Distanz
 
-\@ref(fig:map-regions-distance-classes)
+Um die kulturelle mit der räumlichen Distanz zu vergleichen und auf Korrelation zu untersuchen, musste zunächst ein Maß für die räumliche Distanz festgelegt werden. Dafür wurden Distanzklassen definiert (siehe Abbildung \@ref(fig:map-regions-distance-classes)) indem die geographischen Distanzen zwischen den Zentrumspunkten der Region normalisiert und bewusst so aufgeteilt wurden, dass eine sinnvolle, vierstufige Einteilung entstand.
 
 ```{r map-regions-distance-classes, echo = FALSE, fig.scap = "Karte des klassifizierten, räumlichen Distanznetzwerks", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_map_distance_network.jpeg")
 ```
+
+In dem so geschaffenen, räumlichen Netzwerk
 
 \@ref(fig:map-sed-bt)
 
