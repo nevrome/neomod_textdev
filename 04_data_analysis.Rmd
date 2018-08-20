@@ -469,6 +469,10 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 - $p_{ik}$: Relative frequency of the $k$'th variant in population $i$
 - $p_{jk}$: Relative frequency of the $k$'th variant in population $j$
 
+SED überbetont Unterschiede
+
+Mantel Test: Was das, und warum?
+
 #### Kulturelle Distanz
 
 Um die kulturelle Distanz zwischen den Regionen basierend auf den Variablen *burial_type* und *burial construction* zu berechnen, wurden die in Kapitel \@ref(descriptive-data-analysis) vorgestellten Datensätze zur relativen Entwicklung der Varianten weiterverwendet. Diese enthalten zu jedem Jahr im Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen Anteil der verschiedenen Bestattungsformen in den in Kapitel \@ref(data-prep-and-segmentation) etablierten, künstlichen Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die SED zwischen jeder Region berechnen. Die Abbildungen \@ref(fig:sed-dev-matrix-bt) und \@ref(fig:sed-dev-matrix-bc) zeigen den Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer Plotmatrix. 
@@ -505,7 +509,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_me
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
-\@ref(fig:mantel-bt-bc)
+Vor dem Hintergrund dieser Beobachtungen ist es besonders interessant, die kulturellen Netzwerke, die sich aus den Distanzen von *burial type* und *burial construction* aufspannen, zu vergleichen. Abbildung \@ref(fig:mantel-bt-bc) zeigt den Raum, der sich aus den beiden SED-Wertereihen ergibt und die Anordung der $\frac{8*8}{2}-\frac{8}{2}=28$ Regionenbeziehungen darin. Sie erlaubt es für jedes 200-Jahre-Zeitfenster abzuschätzen, ob die beiden Variablen korrelieren. Der Manteltest zeigt an, ob eine solche Korrelation statistisch signifikant ist. Die Abbildung belegt, dass die Distanznetzwerke von *burial type* und *burial construction* nicht äquivalent sind. Auch eine signifikante Negativkorrelation besteht nicht. Der Grad der Übereinstimmung zweier Regionen in der Frage nach Körper- und Brandbestattung ist also nicht geeignet, die Ähnlichkeit der Entwicklungen dieser Regionen hinsichtlich der Dominanz von Flach- oder Hügelgräbern nachherzusagen. Einzig für das Zeitfenster am Übergang zur Mittelbronzezeit von 1800 bis 1600calBC wird das 5%-Signifikanzniveau des Manteltests beinahe unterschritten und damit eine statistisch belastbare Beziehung angedeutet. 
 
 \begin{landscape}
 ```{r mantel-bt-bc, echo = FALSE, fig.scap = "\\textit{burial type} SED aufgetragen gegen \\textit{burial construction} SED für verschiedene Zeitfenster", fig.cap = "huhu", out.extra = ""}
