@@ -471,17 +471,11 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 
 #### Kulturelle Distanz
 
-Um die kulturelle Distanz basierend auf den Variablen *burial_type* und *burial construction* zu berechnen, wurde auf den in Kapitel \@ref(descriptive-data-analysis)  
-
-
-
-\@ref(fig:sed-dev-matrix-bt)
+Um die kulturelle Distanz zwischen den Regionen basierend auf den Variablen *burial_type* und *burial construction* zu berechnen, wurden die in Kapitel \@ref(descriptive-data-analysis) vorgestellten Datensätze zur relativen Entwicklung der Varianten weiterverwendet. Diese enthalten zu jedem Jahr im Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen Anteil der verschiedenen Bestattungsformen in den in Kapitel \@ref(data-prep-and-segmentation) etablierten, künstlichen Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die SED zwischen jeder Region berechnen. Die Abbildungen \@ref(fig:sed-dev-matrix-bt) und \@ref(fig:sed-dev-matrix-bc) zeigen den Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer Plotmatrix. Die Mehrzahl der Kurven in Abbildung \@ref(fig:sed-dev-matrix-bt) entspricht der Erwartung: Zu Beginn der Bronzezeit ist Körperbestattung im gesamten Untersuchungsareal weit verbreitet, also ist die Euklidische Distanz 2200calBC in fast jeder Regionenbeziehung gering. Nur der Benelux-Raum, in dem der Brandbestattungsanteil schon in der Frühbronzezeit groß ist, schert aus. Ab der Mittel-, besonders aber am Übergang zur Spätbronzezeit, vollzog sich in ganz Europa der Übergang zur Dominanz der Brandbestattung. Die SED-Werte steigen über diesen Zeitraum durchweg an und zeichnen deutliche Peaks oder Entwicklungen mit mehreren, aufeinanderfolgenden Maxima. Das ist Konsequenz dessen, dass der Übergangsprozess in jeder Region tatsächlich und so wie er in Radon-B abgebildet ist unterschiedlich und gegenüber anderen Räumen zeitversetzt ablief. Am Ende der Spätbronzezeit nähert sich die durchschnittliche SED wieder Null an, da dann in fast ganz Europa die Brandbestattung vorherrscht. 
 
 ```{r sed-dev-matrix-bt, echo = FALSE, fig.scap = "Plotmatrix der SEDs für \\textit{burial type}", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg")
 ```
-
-\@ref(fig:sed-dev-matrix-bc)
 
 ```{r sed-dev-matrix-bc, echo = FALSE, fig.scap = "Plotmatrix der SEDs für \\textit{burial construction}", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction.jpeg")
