@@ -155,7 +155,7 @@ Innerhalb des Untersuchungsareals wurden künstliche Regionen abgegrenzt, um die
 knitr::include_graphics("../neomod_analysis/figures_plots/general_maps/general_map_research_area_regions.jpeg")
 ```
 
-### Deskriptive Analyse
+### Deskriptive Analyse {#descriptive-data-analysis}
 
 Aus dem Areal der kreisförmigen, artifiziellen Großregionen, die für diese Arbeit festgelegt wurden (siehe Abbildung \@ref(fig:general-map-research-area-regions)) liegen in Radon-B Informationen zu mindestens `r r("gpr size", sf_desc)` Gräbern auf Grundlage von `r r("dpr size", sf_desc)` ^14^C Daten vor (zur Datenauswahl und -vorbereitung siehe Kapitel \@ref(data-prep-and-segmentation)). Geht man davon aus, dass die Eingaben in Radon-B korrekt sind, dann stammen die ^14^C Daten von `r r("dpr sites amount", sf_desc)` Fundplätzen. Zu den Daten sind `r r("dpr period amount", sf_desc)` verschiedene Periodenbegriffe und `r r("dpr culture amount", sf_desc)` archäologische Kulturen dokumentiert, diese Information ist jedoch aufgrund der Datensituation sinnvoll auswertbar (siehe Kapitel \@ref(source-criticism)). `r r("dpr material bone amount", sf_desc)` Daten wurden an Probenmaterial von Knochen und Zähnen (`r r("dpr material cremated bones amount", sf_desc)` davon verbrannt), `r r("dpr material charcoal wood amount", sf_desc)` von Holz und Holzkohle, ein kleiner Teil (`r r("dpr material other amount", sf_desc)`) von sonstigen Materialien wie Nüssen, Harz oder Pech gemessen. Für die restlichen `r r("dpr material unknown amount", sf_desc)` Daten ist keine Materialangabe hinterlegt. Hinsichtlich der Variablen *burial_type* und *burial_construction* gelten die in Tabelle \@ref(tab:dprcrosstab) dargestellte Verhältnisse.
 
@@ -461,8 +461,6 @@ Die Expansionssimulation endet, wenn sich die Größe des Netzwerks von einem Ze
 
 ### Analyse und Ergebnisse
 
-#### Kulturelle Distanz
-
 $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 
 - $d_{ij}^2$: Squared Euclidean distance between two groups $i$ and $j$
@@ -470,6 +468,12 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 - $n$: Total amount of variants in a population
 - $p_{ik}$: Relative frequency of the $k$'th variant in population $i$
 - $p_{jk}$: Relative frequency of the $k$'th variant in population $j$
+
+#### Kulturelle Distanz
+
+Um die kulturelle Distanz basierend auf den Variablen *burial_type* und *burial construction* zu berechnen, wurde auf den in Kapitel \@ref(descriptive-data-analysis)  
+
+
 
 \@ref(fig:sed-dev-matrix-bt)
 
