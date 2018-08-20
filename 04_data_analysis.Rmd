@@ -471,14 +471,26 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 
 #### Kulturelle Distanz
 
-Um die kulturelle Distanz zwischen den Regionen basierend auf den Variablen *burial_type* und *burial construction* zu berechnen, wurden die in Kapitel \@ref(descriptive-data-analysis) vorgestellten Datensätze zur relativen Entwicklung der Varianten weiterverwendet. Diese enthalten zu jedem Jahr im Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen Anteil der verschiedenen Bestattungsformen in den in Kapitel \@ref(data-prep-and-segmentation) etablierten, künstlichen Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die SED zwischen jeder Region berechnen. Die Abbildungen \@ref(fig:sed-dev-matrix-bt) und \@ref(fig:sed-dev-matrix-bc) zeigen den Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer Plotmatrix. Die Mehrzahl der Kurven in Abbildung \@ref(fig:sed-dev-matrix-bt) entspricht der Erwartung: Zu Beginn der Bronzezeit ist Körperbestattung im gesamten Untersuchungsareal weit verbreitet, also ist die Euklidische Distanz 2200calBC in fast jeder Regionenbeziehung gering. Nur der Benelux-Raum, in dem der Brandbestattungsanteil schon in der Frühbronzezeit groß ist, schert aus. Ab der Mittel-, besonders aber am Übergang zur Spätbronzezeit, vollzog sich in ganz Europa der Übergang zur Dominanz der Brandbestattung. Die SED-Werte steigen über diesen Zeitraum durchweg an und zeichnen deutliche Peaks oder Entwicklungen mit mehreren, aufeinanderfolgenden Maxima. Das ist Konsequenz dessen, dass der Übergangsprozess in jeder Region tatsächlich und so wie er in Radon-B abgebildet ist unterschiedlich und gegenüber anderen Räumen zeitversetzt ablief. Am Ende der Spätbronzezeit nähert sich die durchschnittliche SED wieder Null an, da dann in fast ganz Europa die Brandbestattung vorherrscht. 
+Um die kulturelle Distanz zwischen den Regionen basierend auf den Variablen *burial_type* und *burial construction* zu berechnen, wurden die in Kapitel \@ref(descriptive-data-analysis) vorgestellten Datensätze zur relativen Entwicklung der Varianten weiterverwendet. Diese enthalten zu jedem Jahr im Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen Anteil der verschiedenen Bestattungsformen in den in Kapitel \@ref(data-prep-and-segmentation) etablierten, künstlichen Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die SED zwischen jeder Region berechnen. Die Abbildungen \@ref(fig:sed-dev-matrix-bt) und \@ref(fig:sed-dev-matrix-bc) zeigen den Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer Plotmatrix. 
+
+Die Mehrzahl der Kurven in Abbildung \@ref(fig:sed-dev-matrix-bt) für *burial type* entspricht den Erwartungen: Zu Beginn der Bronzezeit ist Körperbestattung im gesamten Untersuchungsareal weit verbreitet, also ist die Euklidische Distanz 2200calBC in fast jeder Regionenbeziehung gering. Nur der Benelux-Raum, in dem der Brandbestattungsanteil schon in der Frühbronzezeit groß ist, schert aus. Ab der Mittel-, besonders aber am Übergang zur Spätbronzezeit, vollzog sich in ganz Europa der Übergang zur Dominanz der Brandbestattung. Die SED-Werte steigen über diesen Zeitraum durchweg an und zeichnen deutliche Peaks oder Entwicklungen mit mehreren, aufeinanderfolgenden Maxima. Das ist Konsequenz dessen, dass der Übergangsprozess in jeder Region tatsächlich und so wie er in Radon-B abgebildet ist unterschiedlich und gegenüber anderen Räumen zeitversetzt ablief. Am Ende der Spätbronzezeit nähert sich die durchschnittliche SED wieder Null an, da dann in fast ganz Europa die Brandbestattung vorherrschte. Abbildung \@ref(fig:sed-dev-bt) stellt den selben Sachverhalt in einer an Abbildung \@ref(fig:development-amount-regions-burial-type) orientierten Form dar. Das erleichtert es, die Rolle einzelner Regionen im Gesamtkontext zu beurteilen. Die in Radon-B dargestellte, frühe und vollständige Übernahme des Brandbestattungsritus im Benelux-Raum hebt ihn deutlich von den anderen Regionen ab. England dagegen, mit seinem langsamen, graduellen Übergang von Körper- zu Brandbestattung fällt durch durchgehend geringe Distanzen zu allen anderen Regionen auf. 
 
 ```{r sed-dev-matrix-bt, echo = FALSE, fig.scap = "Plotmatrix der SEDs für \\textit{burial type}", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
+```{r sed-dev-bt, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial type} SEDs für jede Region", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type.jpeg")
+```
+
+Die Situation für *burial construction* ist, wie aus den Abbildungen \@ref(fig:sed-dev-matrix-bc) und \@ref(fig:sed-dev-bc) ersichtlich, komplizierter. Hier ist kein allgemeiner Trend zu erkennen, sondern eine Vielzahl an lokalen und zeitlich begrenzten Phänomenen. Das liegt auch daran, wie der aus Radon-B entwickelte Proxy die Entwicklungen der realen Welt abbildet (siehe Kapitel \@ref(representativity)). Zur Mittelbronzezeit sollte die Hügelgräberkultur eine grundsätzliche Reduktion der SED für fast alle Regionenbeziehungen bewirken -- dieser Effekt ist tatsächlich leicht, aber bei weitem nicht so akzentuiert wie wünschenwert sichtbar. 
+
 ```{r sed-dev-matrix-bc, echo = FALSE, fig.scap = "Plotmatrix der SEDs für \\textit{burial construction}", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction.jpeg")
+```
+
+```{r sed-dev-bc, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial construction} SEDs für jede Region", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
 \@ref(fig:sed-mean-matrix-bt)
@@ -491,18 +503,6 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_me
 
 ```{r sed-mean-matrix-bc, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SEDs für \\textit{burial construction}", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg")
-```
-
-\@ref(fig:sed-dev-bt)
-
-```{r sed-dev-bt, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial type} SEDs für jede Region", fig.cap = "huhu", out.extra = ""}
-knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type.jpeg")
-```
-
-\@ref(fig:sed-dev-bc)
-
-```{r sed-dev-bc, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial construction} SEDs für jede Region", fig.cap = "huhu", out.extra = ""}
-knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
 \@ref(fig:mantel-bt-bc)
