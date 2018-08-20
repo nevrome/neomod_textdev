@@ -4132,8 +4132,8 @@ auf dem alle folgenden Beobachtungen beruhen.
 \includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area_regions} \caption[Karte mit den künstlichen, kreisförmigen Regionen]{Wie Abbildung \ref{fig:general-map-research-area}. Die Regionen sind farblich markiert.}\label{fig:general-map-research-area-regions}
 \end{figure}
 
-\hypertarget{deskriptive-analyse}{%
-\subsection{Deskriptive Analyse}\label{deskriptive-analyse}}
+\hypertarget{descriptive-data-analysis}{%
+\subsection{Deskriptive Analyse}\label{descriptive-data-analysis}}
 
 Aus dem Areal der kreisförmigen, artifiziellen Großregionen, die für
 diese Arbeit festgelegt wurden (siehe Abbildung
@@ -4187,7 +4187,7 @@ zeitlich explizit gemacht werden.
 \end{figure}
 \end{landscape}
 
-Entscheidend ist dabei hier nicht unbedingt, wann exakt wo welche Art
+Entscheidend ist hierfür nicht unbedingt, wann und wo exakt welche Art
 Grab angelegt wurde. Stattdessen soll aus dieser Information eine
 quantitative Beschreibung zur Verbreitung und Dominanz von Ideen
 extrahiert werden. Zur Erstellung dieses Proxies wurde die Annahme
@@ -4202,9 +4202,9 @@ Körperbestattung I2639/25217 vom Fundplatz Amesbury Down angefertigt
 wurde. Liegen mehrere Daten aus einer Region für ein Jahr vor, dann kann
 das Auftreten der verschiedenen Ausprägungen von \emph{burial\_type} und
 \emph{burial\_construction} gezählt werden. Tut man das für alle Jahre
-in allen Regionen mit allen Ausprägungen tut, dann ergeben sich sechs
-aufschlussreiche Zeitreihen, die sich jahrweise sinnvoll zur Gesamtzahl
-der Beobachtungen addieren (für \emph{burial\_type} siehe Abbildung
+mit allen Ausprägungen, dann ergeben sich sechs aufschlussreiche
+Zeitreihen, die sich jahrweise sinnvoll zur Gesamtzahl der Beobachtungen
+addieren (für \emph{burial\_type} siehe Abbildung
 \ref{fig:development-amount-regions-burial-type}), für
 \emph{burial\_construction} Abbildung
 \ref{fig:development-amount-regions-burial-construction}). Aus den
@@ -4226,8 +4226,7 @@ Nichtsdestoweniger erlauben die Abbildungen
 \ref{fig:development-proportions-regions-burial-type}) und
 \ref{fig:development-proportions-regions-burial-construction} schon
 jetzt bemerkenswerte, wenn auch teilweise objektiv falsche
-Interpretationen (für eine Kontextualisierung siehe
-\ref{representativity}):
+Interpretationen (für eine Bewertung siehe \ref{representativity}):
 
 \begin{figure}[!t]
 
@@ -5115,9 +5114,6 @@ Distanz}\label{kulturelle-und-raumliche-distanz}}
 \hypertarget{analyse-und-ergebnisse}{%
 \subsection{Analyse und Ergebnisse}\label{analyse-und-ergebnisse}}
 
-\hypertarget{kulturelle-distanz}{%
-\subsubsection{Kulturelle Distanz}\label{kulturelle-distanz}}
-
 \[d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2\]
 
 \begin{itemize}
@@ -5137,16 +5133,72 @@ Distanz}\label{kulturelle-und-raumliche-distanz}}
   \(j\)
 \end{itemize}
 
-\ref{fig:sed-dev-matrix-bt}
+\hypertarget{kulturelle-distanz}{%
+\subsubsection{Kulturelle Distanz}\label{kulturelle-distanz}}
+
+Um die kulturelle Distanz zwischen den Regionen basierend auf den
+Variablen \emph{burial\_type} und \emph{burial construction} zu
+berechnen, wurden die in Kapitel \ref{descriptive-data-analysis}
+vorgestellten Datensätze zur relativen Entwicklung der Varianten
+weiterverwendet. Diese enthalten zu jedem Jahr im
+Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen
+Anteil der verschiedenen Bestattungsformen in den in Kapitel
+\ref{data-prep-and-segmentation} etablierten, künstlichen
+Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die SED
+zwischen jeder Region berechnen. Die Abbildungen
+\ref{fig:sed-dev-matrix-bt} und \ref{fig:sed-dev-matrix-bc} zeigen den
+Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer
+Plotmatrix.
+
+Die Mehrzahl der Kurven in Abbildung \ref{fig:sed-dev-matrix-bt} für
+\emph{burial type} entspricht den Erwartungen: Zu Beginn der Bronzezeit
+ist Körperbestattung im gesamten Untersuchungsareal weit verbreitet,
+also ist die Euklidische Distanz 2200calBC in fast jeder
+Regionenbeziehung gering. Nur der Benelux-Raum, in dem der
+Brandbestattungsanteil schon in der Frühbronzezeit groß ist, schert aus.
+Ab der Mittel-, besonders aber am Übergang zur Spätbronzezeit, vollzog
+sich in ganz Europa der Übergang zur Dominanz der Brandbestattung. Die
+SED-Werte steigen über diesen Zeitraum durchweg an und zeichnen
+deutliche Peaks oder Entwicklungen mit mehreren, aufeinanderfolgenden
+Maxima. Das ist Konsequenz dessen, dass der Übergangsprozess in jeder
+Region tatsächlich und so wie er in Radon-B abgebildet ist
+unterschiedlich und gegenüber anderen Räumen zeitversetzt ablief. Am
+Ende der Spätbronzezeit nähert sich die durchschnittliche SED wieder
+Null an, da dann in fast ganz Europa die Brandbestattung vorherrschte.
+Abbildung \ref{fig:sed-dev-bt} stellt den selben Sachverhalt in einer an
+Abbildung \ref{fig:development-amount-regions-burial-type} orientierten
+Form dar. Das erleichtert es, die Rolle einzelner Regionen im
+Gesamtkontext zu beurteilen. Die in Radon-B dargestellte, frühe und
+vollständige Übernahme des Brandbestattungsritus im Benelux-Raum hebt
+ihn deutlich von den anderen Regionen ab. England dagegen, mit seinem
+langsamen, graduellen Übergang von Körper- zu Brandbestattung fällt
+durch durchgehend geringe Distanzen zu allen anderen Regionen auf.
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type} \caption[Plotmatrix der SEDs für \textit{burial type}]{huhu}\label{fig:sed-dev-matrix-bt}
 \end{figure}
 
-\ref{fig:sed-dev-matrix-bc}
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type} \caption[Entwicklung der \textit{burial type} SEDs für jede Region]{huhu}\label{fig:sed-dev-bt}
+\end{figure}
+
+Die Situation für \emph{burial construction} ist, wie aus den
+Abbildungen \ref{fig:sed-dev-matrix-bc} und \ref{fig:sed-dev-bc}
+ersichtlich, komplizierter. Hier ist kein allgemeiner Trend zu erkennen,
+sondern eine Vielzahl an lokalen und zeitlich begrenzten Phänomenen. Das
+liegt auch daran, wie der aus Radon-B entwickelte Proxy die
+Entwicklungen der realen Welt abbildet (siehe Kapitel
+\ref{representativity}). Zur Mittelbronzezeit sollte die
+Hügelgräberkultur eine grundsätzliche Reduktion der SED für fast alle
+Regionenbeziehungen bewirken -- dieser Effekt ist tatsächlich leicht,
+aber bei weitem nicht so akzentuiert wie wünschenwert sichtbar.
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction} \caption[Plotmatrix der SEDs für \textit{burial construction}]{huhu}\label{fig:sed-dev-matrix-bc}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction} \caption[Entwicklung der \textit{burial construction} SEDs für jede Region]{huhu}\label{fig:sed-dev-bc}
 \end{figure}
 
 \ref{fig:sed-mean-matrix-bt}
@@ -5159,18 +5211,6 @@ Distanz}\label{kulturelle-und-raumliche-distanz}}
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction} \caption[Matrix der durchschnittlichen SEDs für \textit{burial construction}]{huhu}\label{fig:sed-mean-matrix-bc}
-\end{figure}
-
-\ref{fig:sed-dev-bt}
-
-\begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type} \caption[Entwicklung der \textit{burial type} SEDs für jede Region]{huhu}\label{fig:sed-dev-bt}
-\end{figure}
-
-\ref{fig:sed-dev-bc}
-
-\begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction} \caption[Entwicklung der \textit{burial construction} SEDs für jede Region]{huhu}\label{fig:sed-dev-bc}
 \end{figure}
 
 \ref{fig:mantel-bt-bc}
