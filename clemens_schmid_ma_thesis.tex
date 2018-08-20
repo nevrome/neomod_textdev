@@ -5111,9 +5111,6 @@ Distanz}\label{kulturelle-und-raumliche-distanz}}
 \hypertarget{fragestellung-und-methode}{%
 \subsection{Fragestellung und Methode}\label{fragestellung-und-methode}}
 
-\hypertarget{analyse-und-ergebnisse}{%
-\subsection{Analyse und Ergebnisse}\label{analyse-und-ergebnisse}}
-
 \[d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2\]
 
 \begin{itemize}
@@ -5135,7 +5132,22 @@ Distanz}\label{kulturelle-und-raumliche-distanz}}
 
 SED überbetont Unterschiede
 
+Korrelieren die beiden Kulturdistanten?
+
 Mantel Test: Was das, und warum?
+
+Toblers Gesetz
+
+Im Fall der großen, künstlichen und sich gegenseitig sogar überlappenden
+Regionen, die in dieser Arbeit als Untersuchungseinheiten festgelegt
+wurden, kann das nur mithilfe von Distanzklassen umgesetzt werden.
+Realitätsnähere oder auch nur kontinuierlich skalierte Distanzen
+erfordern eine Festlegung von Punkten
+
+\hypertarget{analyse-und-ergebnisse}{%
+\subsection{Analyse und Ergebnisse}\label{analyse-und-ergebnisse}}
+
+Die Analyse ist zweigeteilt\ldots{}
 
 \hypertarget{kulturelle-distanz}{%
 \subsubsection{Kulturelle Distanz}\label{kulturelle-distanz}}
@@ -5177,7 +5189,17 @@ vollständige Übernahme des Brandbestattungsritus im Benelux-Raum hebt
 ihn deutlich von den anderen Regionen ab. England dagegen, mit seinem
 langsamen, graduellen Übergang von Körper- zu Brandbestattung fällt
 durch durchgehend mäßige Distanzen zu allen anderen Regionen auf. Sie
-kommt ohne deutliche Minima und Maxima aus.
+kommt ohne deutliche Minima und Maxima aus. Die Situation für
+\emph{burial construction} ist, wie aus den Abbildungen
+\ref{fig:sed-dev-matrix-bc} und \ref{fig:sed-dev-bc} ersichtlich,
+komplizierter. Hier ist kein allgemeiner Trend zu erkennen, sondern eine
+Vielzahl an lokalen und zeitlich begrenzten Phänomenen. Das liegt auch
+daran, wie der aus Radon-B entwickelte Proxy die Entwicklungen der
+realen Welt abbildet (siehe Kapitel \ref{representativity}). Zur
+Mittelbronzezeit sollte die Hügelgräberkultur eine grundsätzliche
+Reduktion der SED für fast alle Regionenbeziehungen bewirken -- dieser
+Effekt ist tatsächlich leicht, aber bei weitem nicht so akzentuiert wie
+wünschenwert sichtbar.
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type} \caption[Plotmatrix der SEDs für \textit{burial type}]{huhu}\label{fig:sed-dev-matrix-bt}
@@ -5186,17 +5208,6 @@ kommt ohne deutliche Minima und Maxima aus.
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type} \caption[Entwicklung der \textit{burial type} SEDs für jede Region]{huhu}\label{fig:sed-dev-bt}
 \end{figure}
-
-Die Situation für \emph{burial construction} ist, wie aus den
-Abbildungen \ref{fig:sed-dev-matrix-bc} und \ref{fig:sed-dev-bc}
-ersichtlich, komplizierter. Hier ist kein allgemeiner Trend zu erkennen,
-sondern eine Vielzahl an lokalen und zeitlich begrenzten Phänomenen. Das
-liegt auch daran, wie der aus Radon-B entwickelte Proxy die
-Entwicklungen der realen Welt abbildet (siehe Kapitel
-\ref{representativity}). Zur Mittelbronzezeit sollte die
-Hügelgräberkultur eine grundsätzliche Reduktion der SED für fast alle
-Regionenbeziehungen bewirken -- dieser Effekt ist tatsächlich leicht,
-aber bei weitem nicht so akzentuiert wie wünschenwert sichtbar.
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction} \caption[Plotmatrix der SEDs für \textit{burial construction}]{huhu}\label{fig:sed-dev-matrix-bc}
@@ -5220,10 +5231,9 @@ untereinander aber große Ähnlichkeit aufweisen. Die größten
 Scandinavia} und \emph{Southern Germany}, zwischen \emph{Poland} und
 \emph{Southern Germany} sowie zwischen \emph{Northeastern France} und
 \emph{Northern Germany}. Das spricht für ein hinsichtlich dieser
-Variable ausgeprägtes Austauschnetzwerk nördlich der Alpen.
-
-Für \emph{burial construction} gelten dagegen andere Bedingungen. Im
-durch diese Variable definierten Interaktionsnetzwerk sind die mittleren
+Variable ausgeprägtes Austauschnetzwerk nördlich der Alpen. Für
+\emph{burial construction} gelten dagegen andere Bedingungen. Im durch
+diese Variable definierten Interaktionsnetzwerk sind die mittleren
 Distanzen in Zentraleuropa viel größer. Stattdessen bilden Nord- und
 Nordwesteuropa (\emph{Southern Scandinavia}, \emph{Benelux},
 \emph{England}) ein relativ kohärente Einheit. Besonders \emph{Benelux}
@@ -5267,13 +5277,26 @@ belastbare Beziehung angedeutet.
 \subsubsection{Kulturelle und Räumliche
 Distanz}\label{kulturelle-und-raumliche-distanz-1}}
 
-\ref{fig:map-regions-distance-classes}
+Um die kulturelle mit der räumlichen Distanz zu vergleichen und auf
+Korrelation zu untersuchen, musste zunächst ein Maß für die räumliche
+Distanz festgelegt werden. Dafür wurden Distanzklassen definiert (siehe
+Abbildung \ref{fig:map-regions-distance-classes}) indem die
+geographischen Distanzen zwischen den Zentrumspunkten der Region
+normalisiert und bewusst so aufgeteilt wurden, dass eine sinnvolle,
+vierstufige Einteilung entstand.
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_distance_network} \caption[Karte des klassifizierten, räumlichen Distanznetzwerks]{huhu}\label{fig:map-regions-distance-classes}
 \end{figure}
 
-\ref{fig:map-sed-bt}
+So wie das räumliche Distanznetzwerk aller Regionenbeziehungen visuliert
+werden kann, so lassen sich auch die beiden kulturellen Netzwerke
+darstellen (siehe Abbildung \ref{fig:map-sed-bt} und
+\ref{fig:map-sed-bc}). Im Gegensatz zu den im Untersuchungsnetzwerk
+weitestgehend statischen Distanzen im räumlichen Netzwerk verändern sich
+die Entfernungen im \emph{burial type} und \emph{burial construction}
+Netzwerk im Laufe der Bronzezeit deutlich. Deswegen ist hier erneut ein
+Trennung in Zeitfenster sinnvoll.
 
 \begin{landscape}
 \begin{figure}
@@ -5281,23 +5304,60 @@ Distanz}\label{kulturelle-und-raumliche-distanz-1}}
 \end{figure}
 \end{landscape}
 
-\ref{fig:map-sed-bc}
-
 \begin{landscape}
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/sed/sed_map_research_area_timeslices_burial_construction} \caption[Einzelkarten des \textit{burial construction} SED Netzwerks für verschiedene Zeitfenster]{huhu}\label{fig:map-sed-bc}
 \end{figure}
 \end{landscape}
 
-\ref{fig:mantel-bt-spatial}
+Um die Korrelation der Kulturnetzwerke mit dem räumlichen
+Distanznetzwerk zu prüfen, eignet sich -- ähnlich wie in Abbildung
+\ref{fig:mantel-bt-bc} -- die Projektion der 28 Regionenbeziehungen in
+den SED-Raumdistanz Raum (siehe Abbildung \ref{fig:mantel-bt-spatial}
+und \ref{fig:mantel-bc-spatial}). Die ordinale Skalierung der
+Raumdistanzklassen erschwert das einerseits, erlaubt andererseits aber
+auch das Anlegen diagnostischer Boxplots zur Veranschaulichung der
+Werteverteilung. Sie hat auch zufolge, dass für den Manteltest auf
+Korrelation nicht wie oben Pearsons Korrelationskoeffizient, sondern der
+Spearmansche Rangkorrelationskoeffizient berechnet werden muss. Für die
+Beziehung zwischen dem SED Netzwerk basierend auf \emph{burial type} und
+der räumlichen Distanz ergeben sich aus Abbildung
+\ref{fig:mantel-bt-spatial} mehrere Beobachtungen: Erstaunlicherweise
+scheint die kulturelle Distanz grundsätzlich nicht mit der räumlichen zu
+korrelieren. Ein signifikanter Zusammenhang zwischen den Distanzmaßen
+offenbart sich nur für das frühbronzezeitliche Zeitfenster 2000 bis
+1800calBC. Das bedeutet, dass direkt aneinander angrenzende Großregionen
+nur in der Frühbronzezeit, also lange vor dem universellen Umstieg zur
+urnenfelderzeitlichen Brandbestattung, tendenziell eher gleiche
+Entwicklungen durchlaufen als weiter voneinander entfernte. Das ist ein
+Indiz dafür, dass in der Frühbronzezeit mehr unmittelbarer gedanklicher
+Austausch zwischen Nachbarregionen stattgefunden hat als in den
+anschließenden Perioden, in denen die hier untersuchten Großräume
+stärker voneinander isoliert waren. In der Mittelbronzezeit durchlaufen
+die SED-Entwicklungen der \emph{burial type} Variable die schon in
+Abbildung \ref{sed-dev-matrix-bt} beobachteten Spitzen. Die Korrelation
+zwischen kultureller und räumlicher Distanz ist über diese Peaks hinweg
+gering und kippt zwischen 1400 und 1200calBC, also am Übergang zur
+Spätbronzezeit, sogar ins Negative -- wenn auch nicht signifikant. Die
+kulturelle Distanz zwischen mehreren geographisch weit voneinander
+entfernten Regionen ist dann geringer als zwischen mehreren direkt
+aneinander angrenzenden. Betrachtet man das SED Netzwerk auf Grundlage
+von \emph{burial construction} und untersucht es mittels Abbildung
+\ref{fig:mantel-bc-spatial} auf räumliche Korrelation, kommt man zu
+grundsätzlich ähnlichen Schlüssen wie im \emph{burial type} Kontext. Die
+Distanzwerte sind hier insgesamt größer und die SED Unterschiede
+innerhalb der einzelnen Raumdistanzklassen deutlich akzentuierter,
+dennoch ist das Zeitfenster der mit Abstand größten, räumlichen
+Korrelation auch hier die Frühbronzezeit. Signifikant ist diese nur für
+das Zeitfenster zwischen 1800 und 1600calBC. Negativkorrelation deutet
+sich für \emph{burial construction} nicht an, doch auch hier nähert sich
+der Korrelationskoeffizient in der Spätbronzezeit Null an.
 
 \begin{landscape}
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_type} \caption[\textit{burial type} SED aufgetragen gegen die räumlichen Distanzklassen für verschiedene Zeitfenster]{huhu}\label{fig:mantel-bt-spatial}
 \end{figure}
 \end{landscape}
-
-\ref{fig:mantel-bc-spatial}
 
 \begin{landscape}
 \begin{figure}
