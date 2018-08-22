@@ -137,9 +137,19 @@ Das wirft die philosophische Frage auf, inwiefern Menschen Sklaven ihrer Gene un
 
 ### Weiterentwicklung und Abgesang {#memetics-more-and-end}
 
-Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes Meme erwiesen. Die Grundidee ist in den Strömungen der *Dual Inheritance theory* aufgegangen, aber auch die Memetik an sich hat sich über dieses intitiale Kapitel hinaus weiterentwickelt. Maßgeblichen Anteil daran hatten unter anderem die Psychologin Susan Blackmoore^[@blackmore_meme_1999. Ich werde im folgenden aus einer mir vorliegenden, deutschen Ausgabe zitieren: @blackmore_macht_2000.] (\*1951), der Philosoph Daniel Dennett^[siehe u.a. @dennett_brainstorms_1978, @dennett_elbow_1984, @dennett_consciousness_1991, @dennett_darwins_1995.] (\*1942) und eine große Zahl von Natur- und Geisteswissenschaftlern, die sich im mittlerweile eingestellten Journal of Memetics^[http://cfpm.org/jom-emit/ [06.01.2018]] zu Wort gemeldet haben.
+Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes Meme erwiesen. Die Grundidee ist in den Strömungen der *Dual Inheritance theory* aufgegangen, aber auch die Memetik an sich hat sich über dieses intitiale Kapitel hinaus weiterentwickelt. Maßgeblichen Anteil daran hatten unter anderem die Psychologin Susan Blackmoore^[@blackmore_meme_1999 -- Ich werde im folgenden aus einer mir vorliegenden, deutschen Ausgabe zitieren: @blackmore_macht_2000] (\*1951), der Philosoph Daniel Dennett^[siehe u.a. @dennett_brainstorms_1978, @dennett_elbow_1984, @dennett_consciousness_1991, @dennett_darwins_1995] (\*1942) und eine große Zahl von Natur- und Geisteswissenschaftlern, die sich im mittlerweile eingestellten Journal of Memetics^[http://cfpm.org/jom-emit/ [06.01.2018]] zu Wort gemeldet haben.
 
-Blackmore bezieht sich unmittelbar auf Dawkins Ausgangsidee und erweitert sie um einige Aspekte. Die besondere Qualität ihres Buches *The meme machine* liegt in der Synthese vieler Diskurse und Spannungslinien, die sich rund um die Memetik bis in die 90er Jahre herauskristallisiert hatten. Dennoch lässt sich ihre Perspektive auf eine einfache Formel reduzieren, die sie in verschiedenen Kontexten immer wieder angepasst anwendet: Sobald Meme existieren übernehmen sie die Rolle des dominanten Replikators, der das Verhalten seiner Träger wesentlich und langfristig beeinflusst. Dieses Interpretationsmuster bringt sie so beispielsweise für die Entstehung von Sprache, als Mechanismus sexueller Selektion oder als Begründung für zwischenmenschnlichem Altruismus zur Anwendung:
+Blackmore bezieht sich unmittelbar auf Dawkins Ausgangsidee und erweitert sie um einige Aspekte. Die besondere Qualität ihres Buches *The meme machine* liegt in der Synthese vieler Diskurse und Spannungslinien, die sich rund um die Memetik bis in die 90er Jahre herauskristallisiert hatten.
+
+Zunächst verknüpft sie den Mechanismus der Meme-Übertragung mit Imitation
+
+Kapitel 3 
+
+Kapitel 5
+
+The memes’ eye view
+
+Dennoch lässt sich ihre Perspektive auf eine einfache Formel reduzieren, die sie in verschiedenen Kontexten immer wieder angepasst anwendet: Sobald Meme existieren übernehmen sie die Rolle des dominanten Replikators, der das Verhalten seiner Träger wesentlich und langfristig beeinflusst. Dieses Interpretationsmuster bringt sie so beispielsweise für die Entstehung von Sprache, als Mechanismus sexueller Selektion oder als Begründung für zwischenmenschnlichem Altruismus zur Anwendung:
 
 > Als sich die Imitationsfähigkeit erst einmal entwickelt hatte und Meme auftauchten, haben diese Meme die Umwelt verändert, in der die Gene selektiert wurden und zwangen sie so, immmer bessere memverbreitende Apparate zu schaffen. Mit anderen Worten ist die menschliche Sprachfähigkeit memgetrieben, und die Funktion der Sprache besteht darin, Meme zu verbreiten.
 > 
@@ -153,15 +163,7 @@ Blackmore bezieht sich unmittelbar auf Dawkins Ausgangsidee und erweitert sie um
 > 
 > -- @blackmore_macht_2000, 252.
 
-Zunächst verknüpft sie den Mechanismus der Meme-Übertragung mit Imitation
-
-Kapitel 3 
-
-Kapitel 5
-
-The memes’ eye view
-
-Dennett konzentriert sich...
+Daniel Dennett verarbeitet Dawkins Memetik ausführlich in seinen philosophischen Beiträgen zu Religion, Moral und der Natur des menschlichen Denkens. Sein Engagement in der Diskussion um evolutionäre Perspektiven auf die Kulturentwicklung ist ein Beleg dafür, dass Memetik -- wie schon weiter oben angedeutet -- weniger als wissenschaftliche Theorie denn als philosophische Strömung verstanden werden kann. In *Darwin's Dangerous Idea*^[@dennett_darwins_1995] betrachtet er den Kontrast zwischen der von Darwin initiierten Evolutionstheorie und Entstehungsmodellen, die übernatürliche Mechanismen -- *skyhooks* -- inkorporieren. Evolutionstheorie müsste trotz ihrer immanenten Überlegenheit als modernes, wissenschaftliches Erklärungsmodell auch eine fundierte Begründung für die scheinbare und effektive Zweckhaftigkeit und Formähnlichkeit zufälliger, biologischer Entwicklung und menschlichen Kulturhandelns formulieren. Dafür führt Dennett das Konzept des *design space* ein, der der natürlichen Evolution Grenzen aufzwingt und sie lenkt. Evolution versteht Dennett als streng *algorithmischen* Prozess von Anpassung durch Selektion. Memetik dient ihm als philosophisches Werkzeug, um diesen Mechanismus aus dem Natur- in den Kulturkontext zu übertragen. Das erlaubt es, sogar über den Menschen hinaus -- hinsichtlich künstlicher Intelligenz -- ein und dasselbe Erklärungsmodell für unterschiedliche Domänen zur Anwendung zu bringen. 
 
 Journal of Memetics
 
