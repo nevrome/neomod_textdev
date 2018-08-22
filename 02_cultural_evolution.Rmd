@@ -76,11 +76,11 @@ tibble::tribble(
   gsub("table", "table*", .)
 ```
 
-*Dual inheritance theory* ist ein wesentlicher Teil der theoretischen Grundlage für die Espansionsssimulation, die für die vorliegende Arbeit entwickelt wurde (siehe Kapitel \@ref(simulation-theorie)). Um sie besser zu verstehen, lohnt es sich, einen wichtigen Teil ihrer Entstehungsgeschichte nachzuzeichnen: Richard Dawkins *Memetik*.
+*Dual inheritance theory* ist ein wesentlicher Teil der theoretischen Grundlage für die Expansionsssimulation, die für die vorliegende Arbeit entwickelt wurde (siehe Kapitel \@ref(simulation-theorie)). Um sie besser zu verstehen, lohnt es sich, einen wichtigen Teil ihrer Entstehungsgeschichte nachzuzeichnen: Richard Dawkins *Memetik*.
 
 ## Memetik {#memetics}
 
-Memetik (engl. *Memetics*) ist eine Variante der oben beschriebenen *Dual inheritance theory*. Der Begriff *Meme* wurde 1976 vom britischen Evolutionsbiologen Richard Dawkins in seinem Buch *The selfish gene* eingeführt^[@Dawkinsselfishgene1976. Ich werde im folgenden aus einer Neuauflage des Buches zitieren, die 2016 40 Jahre nach der Erstpublikation veröffentlicht und um Kommentare von Dawkins erweitert wurde: @Dawkinsselfishgene40th2016.]. Obgleich populärwissenschaftlich hat es doch in verschiedenen Fachbereichen beachtliche Rezeption erfahren und darf als wichtiger Grundstein dieser intellektuellen Strömung gelten. Memetik wurde von Kritikern als wissenschaftlich irrelevante Philosophie oder Pseudowissenschaft abgelehnt (siehe Kapitel \@ref(memetics-critique)). Das liegt nicht zuletzt an ihrem niederschwelligen Zugang zu Cultural evolution theory. Ihr größter Verdienst ist es, Grundgedanken zur Kulturevolutionsforschung zu Ende zu denken und radikal vereinfacht auszufomulieren. Das hat den Diskurs in viele Fächer getragen und zu einer neuen Reife geführt: Die Memetik hat sich selbst abgeschafft.
+Memetik (engl. *Memetics*) ist eine Variante der oben beschriebenen *Dual inheritance theory*. Der Begriff *Meme* wurde 1976 vom britischen Evolutionsbiologen Richard Dawkins in *The selfish gene*^[@Dawkinsselfishgene1976. Ich werde im folgenden aus einer Neuauflage des Buches zitieren, die 2016 40 Jahre nach der Erstpublikation veröffentlicht und um Kommentare von Dawkins erweitert wurde: @Dawkinsselfishgene40th2016.] eingeführt. Obgleich populärwissenschaftlich hat es doch in verschiedenen Fachbereichen beachtliche Rezeption erfahren und darf als wichtiger Grundstein dieser intellektuellen Strömung gelten. Memetik ist eine außergewöhnlich wirkungsvolle Nischenwissenschaft, die von Kritikern als irrelevant, unpraktikabel, Ideologie oder Pseudowissenschaft abgelehnt (siehe Kapitel \@ref(memetics-critique)) wurde. Das liegt nicht zuletzt an ihrem niederschwelligen Zugang zu Cultural evolution theory. Ihr größter Verdienst ist es, Grundgedanken zur Kulturevolutionsforschung zu Ende zu denken und radikal vereinfacht auszufomulieren. Das hat den Diskurs in mehrere Fächer getragen und zu einer neuen Reife geführt: Memetik hat sich selbst abgeschafft.
 
 ### Meme in Dawkins *The selfish gene* {#memetics-dawkins}
 
@@ -137,7 +137,13 @@ Das wirft die philosophische Frage auf, inwiefern Menschen Sklaven ihrer Gene un
 
 ### Kurze Geschichte der Memetik {#memetics-history}
 
-Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes Meme erwiesen. Die Grundidee ist in den Strömungen der *Dual Inheritance theory* aufgegangen, aber auch die Memetik an sich hat sich über dieses intitiale Kapitel hinaus weiterentwickelt. Maßgeblichen Anteil daran hatten unter anderem die Psychologin Susan Blackmoore^[@blackmore_meme_1999 -- Ich werde im folgenden aus einer mir vorliegenden, deutschen Ausgabe zitieren: @blackmore_macht_2000] (\*1951), der Philosoph Daniel Dennett^[siehe u.a. @dennett_brainstorms_1978, @dennett_elbow_1984, @dennett_consciousness_1991, @dennett_darwins_1995] (\*1942) und eine große Zahl von Natur- und Geisteswissenschaftlern, die sich im mittlerweile eingestellten Journal of Memetics^[http://cfpm.org/jom-emit/ [06.01.2018]] zu Wort gemeldet haben.
+Dawkins war nicht der erste Autor, der den Meme-Begriff für Einheiten der Kulturübertragung genutzt hat, obgleich die subjektive Orginalität seiner Wortschöpfung der Wahrheit entsprechen mag^[@laurent_note_1999]. Dawkins Quellen und Inspiration zu hinterfragen würde den Rahmen dieser Arbeit sprengen, es seien aber immerhin Ted Cloak^[@cloak_cultural_1966; @cloak_is_1975] sowie Cavalli-Sforza und Feldman^[@cavalli-sforza_models_1973] erwähnt, die Teile der Meme-Idee vorweg genommen hatten und von Dawkins darin auch zitiert werden.
+
+@vada_what_2015
+
+Memetik selbst hat sich, in Dawkins Terminologie, als außerordentlich potentes Meme erwiesen. 
+
+Maßgeblichen Anteil daran hatten unter anderem die Psychologin Susan Blackmoore^[@blackmore_meme_1999 -- Ich werde im folgenden aus einer mir vorliegenden, deutschen Ausgabe zitieren: @blackmore_macht_2000] (\*1951), der Philosoph Daniel Dennett^[siehe u.a. @dennett_brainstorms_1978, @dennett_elbow_1984, @dennett_consciousness_1991, @dennett_darwins_1995] (\*1942) und eine große Zahl von Natur- und Geisteswissenschaftlern, die sich im mittlerweile eingestellten Journal of Memetics^[http://cfpm.org/jom-emit/ [06.01.2018]] zu Wort gemeldet haben.
 
 Blackmore bezieht sich unmittelbar auf Dawkins Ausgangsidee und erweitert sie um einige Aspekte. Die besondere Qualität ihres Buches *The meme machine* liegt in der Synthese vieler Diskurse und Spannungslinien, die sich rund um die Memetik bis in die 90er Jahre herauskristallisiert hatten.
 
@@ -165,7 +171,7 @@ Dennoch lässt sich ihre Perspektive auf eine einfache Formel reduzieren, die si
 
 Daniel Dennett verarbeitet Dawkins Memetik ausführlich in seinen philosophischen Beiträgen zu Religion, Moral und der Natur des menschlichen Denkens. Sein Engagement in der Diskussion um evolutionäre Perspektiven auf die Kulturentwicklung ist ein Beleg dafür, dass Memetik -- wie schon weiter oben angedeutet -- weniger als wissenschaftliche Theorie denn als philosophische Strömung verstanden werden kann. In *Darwin's Dangerous Idea*^[@dennett_darwins_1995] betrachtet er den Kontrast zwischen der von Darwin initiierten Evolutionstheorie und Entstehungsmodellen, die übernatürliche Mechanismen -- *skyhooks* -- inkorporieren. Evolutionstheorie müsste trotz ihrer immanenten Überlegenheit als modernes, wissenschaftliches Erklärungsmodell auch eine fundierte Begründung für die scheinbare und effektive Zweckhaftigkeit und Formähnlichkeit zufälliger, biologischer Entwicklung und menschlichen Kulturhandelns formulieren. Dafür führt Dennett das Konzept des *design space* ein, der der natürlichen Evolution Grenzen aufzwingt und sie lenkt. Evolution versteht Dennett als streng *algorithmischen* Prozess von Anpassung durch Selektion. Memetik dient ihm als philosophisches Werkzeug, um diesen Mechanismus aus dem Natur- in den Kulturkontext zu übertragen. Das erlaubt es, sogar über den Menschen hinaus -- hinsichtlich künstlicher Intelligenz -- ein und dasselbe Erklärungsmodell für unterschiedliche Domänen zur Anwendung zu bringen. 
 
-Journal of Memetics
+Journal of Memetics 45 Paper
 
 ### Kritik {#memetics-critique}
 
