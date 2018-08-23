@@ -167,6 +167,14 @@ Das Journal of Memetics -- Evolutionary Models of Information Transmission (JoM-
 
 ### Kritik {#memetics-critique}
 
+Die Kritik an der Memetik ist vielfältig und setzt sowohl an ihren Grundsätzen als auch Details an. Folgende drei Aussagen wurden als wichtigste Angriffspunkte von verschiedenen Kritikern wiederholt: 
+
+1. Die Übertragung biologischer Terminologie und Erkentnisse auf Kulturprozesse ist grundsätzlich unzulässig oder zumindest in der Memetik zu stark vereinfacht.
+
+2. Memetik bietet keine ausreichenden Ansatzpunkte für systematische Falsifizierung oder quantitative Modellierung.
+
+3. Die Terminologie der Memetik bringt keinen substantiellen Zugewinn im Kontext der Cultural evolution Forschung.
+
 Abgesang:
 http://jom-emit.cfpm.org/2002/vol6/edmonds_b_letter.html
 http://jom-emit.cfpm.org/2005/vol9/edmonds_b.html
