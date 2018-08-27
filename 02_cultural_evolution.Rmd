@@ -163,7 +163,13 @@ Daniel Dennett verarbeitet Dawkins Memetik ausführlich in seinen philosophische
 > 
 > -- @dennett_darwins_1995, 345-346.
 
-Das Journal of Memetics -- Evolutionary Models of Information Transmission (JoM-EMIT) wurde als Online Zeitschrift mit Peer-Review Prozess eingerichtet. Während seiner kurzen Existenz wurden in ihm nur 45 Artikel^[http://cfpm.org/jom-emit/all.html [23.08.2018]] zu kulturevolutionärer Grundlagenforschung, Wissenschaftstheorie, Philosophie sowie Modellierung und Empirie rund um und mit der Terminologie der Memetik veröffentlicht. Die Mehrzahl der -- häufig sehr kurzen -- Beiträge beschäftigt sich mit Begriffsdefinition, der experimentellen Anwendung der Memetik auf Fragestellungen in diversen Fachbereichen sowie Vorschläge zur computerbasierten Simulation von Memeexpansionsprozessen. Obgleich das Ziel der Zeitschrift insofern erreicht wurde, als dass sie als wichtige Kommunikationsplattform für die Diskussion rund um Memetik wahrgenommen wurde, ist sie gleichermaßen die Dokumentation ihres Scheiterns als eigenständige Wissenschaft: Mehrere Autoren stellen die Aussichten der Memetik zuletzt explizit in Frage.
+Das Journal of Memetics -- Evolutionary Models of Information Transmission (JoM-EMIT) wurde als Online Zeitschrift mit Peer-Review Prozess eingerichtet. Während seiner kurzen Existenz wurden in ihm nur 45 Artikel^[http://cfpm.org/jom-emit/all.html [23.08.2018]] zu kulturevolutionärer Grundlagenforschung, Wissenschaftstheorie, Philosophie sowie Modellierung und Empirie rund um und mit der Terminologie der Memetik veröffentlicht. Die Mehrzahl der -- häufig sehr kurzen -- Beiträge beschäftigt sich mit Begriffsdefinition, der experimentellen Anwendung der Memetik auf Fragestellungen in diversen Fachbereichen sowie Vorschläge zur computerbasierten Simulation von Memeexpansionsprozessen. Die Autoren versuchten Memetik als anwendungsorientiere Wissenschaft zu definieren:
+
+> [...] the application of models with an evolutionary or genetic *structure* to the *domain* of (cultural) information transmission. 
+>
+> -- @edmonds_modelling_1998
+
+Obgleich das Ziel der Zeitschrift insofern erreicht wurde, als dass sie als wichtige Kommunikationsplattform für die Diskussion rund um Memetik wahrgenommen wurde, ist sie gleichermaßen die Dokumentation ihres Scheiterns als eigenständige Wissenschaft: Mehrere Autoren stellen die Aussichten der Memetik zuletzt explizit in Frage.
 
 ### Kritik {#memetics-critique}
 
@@ -288,15 +294,9 @@ Soziale Hierarchien und Prestigesysteme können als Hilfsmittel dienen, um zu en
 
 Ein Phänomen, das für vertikale Transmission besondere Relevanz besitzt, ist *Assortative Paarung* (*Assortative mating*). Partnerwahl beim Menschen ist kein zufälliger Prozess, sondern folgt statistisch einem erforschbaren Regelwerk. Beispielsweise neigen Individuen bei der Partnersuche zu Gegenübern mit hoher Ähnlichkeit körperlicher und kultureller Merkmale. Ein Nachweis dieses Effekts gelang in modernen Kontexten bei Charakteristika wie Augenfarbe, Körpergröße, IQ, Bildungsstand und Tabakkonsum^[@domingue_genetic_2014; @keller_genetic_2013; @laeng_why_2007; @treur_spousal_2015]. Assortative Paarung führt zu höherer Korrelation genetischer und kultureller Eigenschaften in einer Population und kann dennoch mehr Vielfalt hervorrufen^[@feldman_evolution_1977; @rice_multifactorial_1978]: Seltene Eigenschaften können sich leichter ausbreiten und behaupten^[@creanza_complexity_2014; @creanza_models_2012]. Assortativer Paarung ist dabei auch ein sich selbst verstärkender Prozess, da aus Beziehungen ähnlicher Partner statistisch mehr Kinder hervorgehen^[@thiessen_human_1980] und soziale Netzwerke dazu neigen, sich zu reproduzieren^[@abdellaoui_association_2013; @abdellaoui_educational_2015]. Das hat auch Rückwirkungen auf die genetische Zusammensetzung von menschlicher Populationen^[@robinson_genetic_2017]. Sprachgrenzen können dabei als wesentliche Hürde beim genetischen Austausch auftreten^[@barbujani_zones_1990; @de_filippo_y-chromosomal_2011; @karafet_coevolution_2016], müssen es aber keinesfalls^[@hunley_gene_2005; @hunley_genetic_2008; @srithawong_genetic_2015]. Homophily, die Präferenz mit ähnlichen Menschen zu interagieren, beschränkt sich nicht nur auf die Partnerwahl, sondern erstreckt sich auf jede Form zwischenmenschlicher Beziehung: Ideen werden grundsätzlich schneller zwischen ähnlichen Individuen übertragen^[@centola_experimental_2011; @centola_spread_2010]. 
 
-### (Computerbasierte) Modellierung
+### Übertragung nicht unmittelbar selektionsrelevanter Eigenschaften: Style Transmission
 
-Cultural Evolution theory ist angelegt zur Modellbildung in Anthropologischen Wissenschaften. Edmonds definierte Memetik vor seiner oben nachvollzogenen Abkehr folgendermaßen:
 
-> the application of models with an evolutionary or genetic *structure* to the *domain* of (cultural) information transmission. 
->
-> -- @edmonds_modelling_1998
-
-Im selben Artikel *On Modelling in Memetics* aus dem 2. Band des Journal of Memetics weist er aber bereits auf Risiken der Modellierung in diesem Kontext hin und formuliert Anforderungen. 
 
 
 
