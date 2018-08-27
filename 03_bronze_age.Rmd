@@ -235,5 +235,5 @@ Sowohl für das urnenflederzeitliche Vollmarshausen als auch das frühbronzezeit
 In Kontakt- und Übergangsbereichen der Bestattungssitten kam es an verschiedenen Punkten zu überraschenden Überschneidungen der Ritualausführung. In Periode III der skandinavischen Bronzeit wurde in Dänemark Leichenbrand in Sarg- und Kistengräbern beigesetzt, die zuvor für Körperbestattungen verwendet worden waren. In der Champagnen finden sich Brandbestattungen in Grabgruben, die ausreichend Platz für einen unverbrannten Körper geboten hätten. Für ein aunjetitzerzeitliches Gräberfeld in Jeßnitz (Sachsen-Anhalt) rekonstruieren die Ausgräber ein Ritual, das sekundäre Feuereinwirkung auf schon in Särgen deponierte Körperbestattungen eingeschlossen hätte. **Ausbauen!** ^[@harding_european_2000, 113.] 
 
 
-
+\newpage
 \pby[title={Literatur},segment=\therefsegment,heading=subbibintoc]
