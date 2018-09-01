@@ -285,9 +285,9 @@ Die *England* Region erstreckt sich über England bis auf die Höhe von York und
 
 ## Simulation
 
-Abbildung \@ref(neiman_general)
+Abbildung \@ref(fig:neiman-general)
 
-```{r neiman_general, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r neiman-general, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
 knitr::include_graphics("../neiman1995/static_plots/neiman_general.jpeg")
 ```
 
