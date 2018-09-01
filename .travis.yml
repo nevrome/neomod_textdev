@@ -18,7 +18,7 @@ addons:
 
 before_script:
   - tlmgr update biblatex
-  - chmod +x ./_clone_neomod_analysis.sh
+  - chmod +x ./_clone_required_repos.sh
   - chmod +x ./_build.sh
   - chmod +x ./_deploy.sh
   - ./_clone_neomod_analysis.sh
