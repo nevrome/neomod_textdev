@@ -5,7 +5,7 @@ classoption: openany,twoside,twocolumn
 geometry: "left=2.5cm, right=2cm, top=2cm, bottom=2cm"
 bibliography: ["references-cultural-evolution.bib", "references-bronze-age-burials.bib", "references-software-and-data-analysis.bib"]
 biblio-style: authoryear-icomp #https://www.sharelatex.com/learn/Biblatex_citation_styles
-biblatexoptions: [refsegment=chapter]
+biblatexoptions: [refsegment=chapter, giveninits=true]
 link-citations: yes
 subparagraph: yes
 ---
