@@ -29,9 +29,11 @@
 % figure rotation
 \usepackage{pdflscape}
 \DeclareDelayedFloatFlavor{landscape}{figure}
-% ignore note field in citations
-\AtEveryBibitem{%
-  \clearfield{note}%
+% ignore fields in citations
+\AtEveryBibitem{
+  \clearfield{note}
+  \clearfield{isbn}
+  \clearfield{issn}
 }
 % better removal of orphaned and widowed lines
 \usepackage[all]{nowidow}
