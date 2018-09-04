@@ -30,13 +30,17 @@
 \usepackage{pdflscape}
 \DeclareDelayedFloatFlavor{landscape}{figure}
 % ignore fields in citations
-\AtEveryBibitem{
-  \clearfield{note}
-  \clearfield{isbn}
-  \clearfield{issn}
-  \clearfield{language}
-  \clearfield{month}
-  \clearfield{publisher}
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldset=note,null]
+      \step[fieldset=isbn,null]
+      \step[fieldset=issn,null]
+      \step[fieldset=language,null]
+      \step[fieldset=month,null]
+      \step[fieldset=publisher,null]
+    }
+  }
 }
 % better removal of orphaned and widowed lines
 \usepackage[all]{nowidow}
