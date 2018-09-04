@@ -27,7 +27,7 @@
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\usepackage[style=apa]{biblatex}
+\usepackage[style=authoryear-icomp]{biblatex}
 \ExecuteBibliographyOptions{refsegment=chapter}
 \addbibresource{references-cultural-evolution.bib}
 \addbibresource{references-bronze-age-burials.bib}
@@ -97,6 +97,9 @@
 \pagestyle{fancy}
 % section header formatting
 \usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-25pt}{25pt}
 \titleformat{\section}[display]{\normalfont\Large\bfseries}{\thesection}{0pt}{}
 \titleformat{\subsection}[display]{\normalfont\large\bfseries}{\thesubsection}{0pt}{}
 \titleformat{\subsubsection}[display]{\normalfont\normalsize\bfseries}{\thesubsubsection}{0pt}{}
@@ -109,6 +112,11 @@
 \AtEveryBibitem{%
   \clearfield{note}%
 }
+% better removal of orphaned and widowed lines
+\usepackage[all]{nowidow}
+% control footnote margin
+\usepackage[hang]{footmisc}
+\setlength\footnotemargin{13pt}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -186,11 +194,12 @@
 Die vorliegende Master-Arbeit entstand 2017-2018 am Institut für Ur- und
 Frühgeschichte der Christian-Albrechts-Universität zu Kiel unter
 Betreuung von Priv.-Doz. Dr.~Oliver Nakoinz und Dr.~Martin Hinz. Sie ist
-quelloffen und voll reproduzierbar.
+quelloffen und voll reproduzierbar. Sämtlicher Programmcode wird
+spätestens zum Abschluss des Prüfungsvorgangs veröffentlicht.
 
 Ausgangspunkt der Überlegungen für diese Arbeit war die der
 \emph{Evolutionary Archaeology} entlehnte Frage, ob kulturhistorische
-Transformations- und Ausbreitungsprozesse sinnvoll und gewinnbringen in
+Transformations- und Ausbreitungsprozesse sinnvoll und gewinnbringend in
 einer Modellimplementierung abgebildet werden können, die Ideen,
 Traditionen und Innovationen als handlungsfähige Agenten begreift. Um
 diesen Ansatz in einer archäologische Abschlussarbeit zu erforschen,
@@ -199,10 +208,10 @@ Ideen über einen langen Zeitraum in einem großen Raum konkurrieren:
 Bestattungstraditionen in der europäischen Bronzezeit. Diese lassen sich
 vereinfacht durch zwei Dichotomien beschreiben: Brandbestattung im
 Gegensatz zu Körperbestattung sowie das Flachgrab in Abgrenzung zum
-Hügelgrab. Für diesen Zusammenhang steht mit Radon-B ein Datensatz von
-mehreren tausend \textsuperscript{14}C-datierten Gräbern mit
-Metainformationen zur Verfügung, der die Phänomene in einem Zeitfenster
-von 2200 bis 800calBC in hoher Auflösung abbildet.
+Hügelgrab. Mit Radon-B steht ein Datensatz von mehreren tausend
+\textsuperscript{14}C-datierten Gräbern mit Metainformationen zur
+Verfügung, der die Phänomene in einem Zeitfenster von 2200 bis 800calBC
+in hoher Auflösung abbildet.
 
 Die Arbeit verfolgt also folgende Hauptziele:
 
@@ -216,18 +225,18 @@ Die Arbeit verfolgt also folgende Hauptziele:
   Die Vorstellung von Paradigmen und Herausforderungen der
   Thanatoarchäologie.
 \item
-  Die Betrachung der besonderen Qualität von Bestattungssitten als mit
+  Die Betrachtung der besonderen Qualität von Bestattungssitten als mit
   dem Tod verknüpften Ideen aus kulturevolutionärer Perspektive.
 \item
-  Die Überblicksartige Erfassung der Entwicklung bronezeitlicher
+  Die überblicksartige Erfassung der Entwicklung bronzezeitlicher
   Bestattungssitten in Nordwest-, Nord-, und Zentraleuropa in den vielen
-  hundert relevanten Kulturzusammenhängen.
+  hundert relevanten Kulturkontexten.
 \item
   Die Auswertung des Radon-B Datensatzes hinsichtlich der zeitlichen und
   räumlichen Verbreitung der primären Bestattungsformen.
 \item
-  Die Konstruktion und Anwendung eines deduktiven, simulationsgeeigneten
-  Modells, das theoretische Vorüberlgeungen aufgreift und zur
+  Die Konstruktion und Anwendung eines deduktiven, simulationsfähigen
+  Modells, das theoretische Vorüberlegungen aufgreift und zur
   Kontextualisierung und Erforschung der Realweltentwicklung geeignet
   ist.
 \end{itemize}
@@ -235,7 +244,7 @@ Die Arbeit verfolgt also folgende Hauptziele:
 Die Arbeit ist, sieht man von dieser kurzen Einleitung und einer ebenso
 kurzen Zusammenfassung am Ende ab, in drei Abschnitte gegliedert:
 
-Ein erster Teil, Kapitel @ref(cultural-evolution, zeichnet die
+Ein erster Teil, Kapitel \ref{cultural-evolution}, zeichnet die
 Geschichte der \emph{Cultural Evolution Theory} nach, führt näher in die
 forschungsgeschichtlich wichtige Unterströmung \emph{Memetik} ein und
 gibt einen Überblick über aktuelle Entwicklungen und Fragestellungen --
@@ -248,7 +257,7 @@ Vertiefung und als Kompendium für die Zukunft viel Literatur angefügt.
 
 Der zweite Teil, Kapitel \ref{bronze-age-burial-rites}, stellt das
 Fallbeispiel der Entwicklung bronzezeitlicher Bestattungssitten vor.
-Dabei wird zunächst auf eine Reihe von Vorüberlegungen eingegangen, die
+Dabei werden zunächst eine Reihe von Vorüberlegungen verarbeitet, die
 den Tod und seine archäologische Erforschung kontextualisieren. Die
 damit erfassten Probleme und Paradigmen sind essentiell für eine
 Betrachtung von Bestattungssitten aus \emph{Cultural Evolution}
@@ -263,10 +272,10 @@ Datensatzes abzuschätzen.
 Ein dritter und letzter Teil, Kapitel \ref{data-analysis}, dient der
 Präsentation und Auswertung des Datensatzes. Das erarbeitete Modell und
 seine Implementierung als computerbasiertes Simulationswerkzeug werden
-erklärt, wofür sowohl die inhaltlichen Zusammenhänge als auch die
-technische Umsetzung thematisiert werden müssen. Aus dem Vergleich von
-realer und simulierter Entwicklung anhand eines Proxies, der sowohl aus
-den \textsuperscript{14}C-Daten als auch den Simulationsergebnissen
+erklärt, wofür sowohl die Modellsemantik als auch seine technische
+Umsetzung thematisiert werden müssen. Aus dem Vergleich von realer und
+simulierter Entwicklung anhand eines Proxies, der sowohl aus den
+\textsuperscript{14}C-Daten als auch den Simulationsergebnissen
 abgeleitet werden kann, ergeben sich interpretierbare Beobachtungen. Die
 Simulation dient im folgenden auch als Vergleichsgegenstand für die
 Untersuchung von Unterschieden in kultureller und räumlicher Distanz
@@ -742,7 +751,7 @@ Altruismus, Vorratshaltung, etc.) zum Erfolg führt?''. Die ökologische
 Nische des Menschen in Relation zu seinen Subsistenzstrategien, seinem
 Paarungsverhalten und seiner sozialen Struktur sind wesentliche
 Forschungsgegenstände der Human Behavioural Ecology\footnote{\textcite{henrich_search_2001};
-  \textcite{kaplan_Theory_2000}; \textcite{voland_evolutionary_1998};
+  \textcite{kaplan_theory_2000}; \textcite{voland_evolutionary_1998};
   \textcite{winterhalder_risk-senstive_1999}}. Die kleinteilige
 Aufgliederung der Fragestellungen hinsichtlich einzelner Situationen und
 Verhaltensweisen erlaubt es dabei, auch komplexe Fragen quantitativ in
@@ -1618,7 +1627,7 @@ Viel beachtete Fallbeispiele dieser Interaktion sind unter anderem
 anthropogen induzierte Aussterbeereignisse von Megafauna\footnote{\textcite{barnosky_assessing_2004}},
 Feuernutzung für Landschaftseingriffe\footnote{\textcite{bird_fire_2008}},
 die Ausbreitung der Links- und Rechtshändigkeit\footnote{\textcite{laland_gene-culture_1995}},
-die Entstehung der Laktose-Toleranz\footnote{\textcite{feldman_Theory_1989};
+die Entstehung der Laktose-Toleranz\footnote{\textcite{feldman_theory_1989};
   \textcite{ingram_population_2012}} und die rückläufige, demographische
 Entwicklung in modernen, westlichen Gesellschaften\footnote{\textcite{borgerhoff_mulder_demographic_1998};
   \textcite{fogarty_role_2013}; \textcite{ihara_cultural_2004}}. Auch
@@ -2034,7 +2043,7 @@ zwischen Menschen hat nicht nur Mutation zur Folge, sondern auch
 Restrukturierung und Hierarchisierung: Menschen abstrahieren
 Informationen und können Daten mit sozialen Bezügen und Daten aus
 vertrauten, kulturellen Umständen besser verinnerlichen\footnote{\textcite{mesoudi_hierarchical_2004};
-  \textcite{mesoudi_Bias_2006M}; \textcite{washburn_remembering_2001}}.
+  \textcite{mesoudi_bias_2006}; \textcite{washburn_remembering_2001}}.
 Das ist sicher ein Grund dafür, warum soziale und religiöse Systeme sich
 selbst reproduzieren und so über lange Zeit Bestand haben
 können\footnote{\textcite{kuijt_people_2000};
@@ -2150,7 +2159,7 @@ verstärkendes System. Insbesondere Ideen, die nicht direkt
 subsistenzrelevant sind, sind in ihrer momentanen Ausbreitungsdynamik
 stark davon abhängig, wie groß die Verbreitung der Idee in der
 Population bereits ist. Eindrucksvolle Beispiele dafür sind unter
-anderem Kleidermode oder Babynamen\footnote{\textcite{acerbi_Biases_2014};
+anderem Kleidermode oder Babynamen\footnote{\textcite{acerbi_biases_2014};
   \textcite{acerbi_logic_2012}}. Ist eine Population in teilweise
 isolierte Gruppen aufgeteilt, erwirkt ein starker Frequency Bias
 Homogenität innerhalb und Heterogenität außerhalb von Gruppen. Die bei
@@ -2178,7 +2187,7 @@ Führungspersonen, die über mehr Risikokapital verfügen, das sie für die
 Evaluation von Innovationen investieren können. Dieses Kopierverhalten
 lässt sich experimentell bereits an Kleinkindern beobachten, die sich an
 jenen Erwachsenen orientieren, die die verstärkte Aufmerksamkeit anderer
-Erwachsenen genießen\footnote{\textcite{chudek_prestige-Biased_2012}}.
+Erwachsenen genießen\footnote{\textcite{chudek_prestige-biased_2012}}.
 \emph{Prestige Bias} führt auch zu \emph{Indirect Bias}: Menschen wählen
 ihre Vorbildern oft aufgrund weniger auszeichnender Charakteristika aus.
 Sie neigen auch dazu, neben den ursprünglich ausschlaggebenden
