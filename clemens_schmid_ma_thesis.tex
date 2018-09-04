@@ -28,7 +28,7 @@
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage[style=authoryear-icomp]{biblatex}
-\ExecuteBibliographyOptions{refsegment=chapter}
+\ExecuteBibliographyOptions{refsegment=chapter,giveninits=true}
 \addbibresource{references-cultural-evolution.bib}
 \addbibresource{references-bronze-age-burials.bib}
 \addbibresource{references-software-and-data-analysis.bib}
@@ -109,13 +109,18 @@
 \usepackage{pdflscape}
 \DeclareDelayedFloatFlavor{landscape}{figure}
 % ignore fields in citations
-\AtEveryBibitem{
-  \clearfield{note}
-  \clearfield{isbn}
-  \clearfield{issn}
-  \clearfield{language}
-  \clearfield{month}
-  \clearfield{publisher}
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldset=note,null]
+      \step[fieldset=isbn,null]
+      \step[fieldset=issn,null]
+      \step[fieldset=language,null]
+      \step[fieldset=month,null]
+      \step[fieldset=publisher,null]
+      \step[fieldset=pagetotal,null]
+    }
+  }
 }
 % better removal of orphaned and widowed lines
 \usepackage[all]{nowidow}
