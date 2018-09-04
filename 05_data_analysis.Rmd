@@ -293,6 +293,9 @@ knitr::include_graphics("../neiman1995/static_plots/neiman_general.jpeg")
 
 ### Theoretische Grundlagen und Funktionalität {#simulation-theorie}
 
+lehmann_complex_2018
+sapienza_estimating_2018
+
 Wie werden warum welche Gegebenheiten der realen Welt im Modell abgebildet?
 
 Obgleich das die Situation in manchen kulturhistorischen Zusammenhängen nur unzureichend abbildet, wird hier der Einfachheit davon ausgegangen, dass vertikale Beziehungen immer in einer 2:1 Relation von Eltern zu Kind bestehen. Die Eltern müssen älter sein als das Kind, also einen früheren Geburtszeitpunkt haben, dürfen aber zu diesem Zeitpunkt auch nicht zu alt -- also tot -- sein. Tatsächlich müsste für die Zuordnung von Eltern zu Kindern hier eine Vielzahl von Parametern beachtet werden: Ein Zeitfenster der gemeinsamen Fruchtbarkeit der Eltern, Partnertreue, Altersäquivalenz der Partner oder eine theoretische Maximalproduktion von Kindern pro weiblichem Individuum, um nur einige zu nennen. Diesen Anforderungen kann man stets nur unvollständig gerecht werden, die Realwelt lässt sich jedoch mit einer Simulation, die die Populationserzeugung generativ voranschreiten lässt besser abbilden als mit dem hier gewählten Ansatz. Nach anfänglichen Versuchen musste darauf jedoch 
