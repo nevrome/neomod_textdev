@@ -76,10 +76,20 @@ Betrachtet man Bestattungsriten als in Raum und Zeit verbreitetes Kulturverhalte
 
 Diese Qualität als mit dem Tod assoziiertem Verhalten rückt Bestattungssitten in die Sphäre von Ritual und Religion. Die archäologische Auseinandersetzung mit diesen Themengebieten leidet am Dilemma der Datengrundlage, tut sich schwer damit, falsifizierbare, wissenschaftliche Aussagen hervorzubringen und ist ein -- explizit -- kleines Feld geblieben, wobei -- implizit -- Aussagen zu Religion und Ritual in archäologischen Fallstudien allgegenwärtig sind^[@bertemes_archaeology_2001; @chapman_archaeology_1981; @insoll_archaeology_2004; @renfrew_archaeology_1994]. Im Cultural Evolution Kontext dagegen ist Religion viel Aufmerksamkeit zugekommen, selbst wenn man die antireligiösen Stimmen beiseite lässt, die rund um Dawkins Memetik laut geworden sind (siehe Kapitel \@ref(memetics)) und ihren wissenschaftlichen Anspruch für Gesellschaftskritik aufgegeben haben. Joseph Watts Dissertation *The Cultural Evolution of Religion: A phylogenetic approach*^[@watts_cultural_2016] gibt einen aktuellen Überblick über *Evolutionary Religious Studies*, der hier schlicht aufgrund seines Umfangs nicht nachvollzogen werden kann. Religion ist eine bemerkenswerte Kategorie des menschlichen Verhaltensspektrums, da die in sie investierten Kosten an Zeit, Arbeit und intellektueller Kapazität ihren Nutzen scheinbar signifikant übersteigen. Ihre Erforschung aus evolutionärer Perspektive hat also vor allem den Anspruch, ihre Entstehung trotz dieses Missverhältnisses zu erklären^[@wilson_evolutionary_2012-1]. Dabei haben sich mit *by-product accounts* und *functional accounts* zwei Schulen herausgebildet: Erstere konzentiert sich auch die kognitive Veranlagung des Menschen, religiös oder spirituell aufgeladene Information leicht zu erzeugen, aufzunehmen und zu verarbeiten^[@barrett_exploring_2000; @baumard_explaining_2013; @boyer_evolutionary_2008], während letztere nach den Selektionsvorteilen religiöser Strukturen und Verhaltensmuster sucht^[@norenzayan_cultural_2016; @sosis_adaptationist-byproduct_2009; @wilson_darwins_2002]. 
 
-Bestattungsrituale selbst waren bisher selten Gegenstand von Fallstudien der Evolutionary Archaeology. Eine umfassende Analyse dieses Themenkomplexes steht daher noch aus. Im folgenden sollen drei Beiträge vorgestellt werden, die jeweils verschiedene Aspekte 
+Tod und Ableben waren selten explizit Gegenstand der Cultural Evolution Forschung^[@falger_cultural_2003]. Auch in der Evolutionary Archaeology beschäftigten sich wenige Beiträge mit diesem Themenkomplex: ein Desiderat. Im folgenden sollen wesentliche Gedanken dreier Artikel vorgestellt werden, die jeweils einzelne Aspekte von Tod und Ritual beleuchten, ohne allerdings Bestattungsriten aus Cultural Evolution Perspektive vollständig zu charakterisieren. Diese Aufgabe verbleibt für die Zukunft und kann erst auf Grundlage von explizit darauf ausgerichteten Fallstudien gelingen.
 
+### Die Bedeutung von Ritualen
 
+@aldenderfer_ritual_1993
 
 CT also has been used to explain the maintenance of group cohesion through ritual behavior (Aldenderfer 1993; McClure 2004)
 
 Aldenderfer (1993) takes these arguments a step further, suggesting that runaway conformist evolutionary processes allow ritual behaviors to become controlled by certain people, leading to the development of rigid hierarchies where key individuals wield great ritual power to extend their prestige and social power.
+
+### Demonstration von Macht und Reichtum
+
+@henrich_evolution_2009
+
+### Trauer als abhängige Variable
+
+@macdonald_grief_2001
