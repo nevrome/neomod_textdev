@@ -96,15 +96,16 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 % section header formatting
-\usepackage[raggedright]{titlesec} %raggedright prevents hyphenation in titles
+%raggedright prevents hyphenation in titles
+\usepackage{titlesec}
 \titleformat{\chapter}[display]
-{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+{\normalfont\huge\bfseries\raggedright}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{-25pt}{25pt}
-\titleformat{\section}[display]{\normalfont\Large\bfseries}{\thesection}{0pt}{}
-\titleformat{\subsection}[display]{\normalfont\large\bfseries}{\thesubsection}{0pt}{}
-\titleformat{\subsubsection}[display]{\normalfont\normalsize\bfseries}{\thesubsubsection}{0pt}{}
-\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{}{0pt}{}
-\titleformat{\subparagraph}[runin]{\normalfont\normalsize\bfseries}{}{0pt}{}
+\titleformat{\section}[display]{\normalfont\Large\bfseries\raggedright}{\thesection}{0pt}{}
+\titleformat{\subsection}[display]{\normalfont\large\bfseries\raggedright}{\thesubsection}{0pt}{}
+\titleformat{\subsubsection}[display]{\normalfont\normalsize\bfseries\raggedright}{\thesubsubsection}{0pt}{}
+\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries\raggedright}{}{0pt}{}
+\titleformat{\subparagraph}[runin]{\normalfont\normalsize\bfseries\raggedright}{}{0pt}{}
 % figure rotation
 \usepackage{pdflscape}
 \DeclareDelayedFloatFlavor{landscape}{figure}
@@ -3089,30 +3090,39 @@ Joseph Henrichs Artikel \emph{The evolution of costly displays,
 cooperation and religion: credibility enhancing displays and their
 implications for cultural evolution}\footnote{\textcite{henrich_evolution_2009}}
 beschäftigt sich mit der Bedeutung und Entstehung von kostenaufwändigem
-Repräsentativverhalten wie Tieropfer, rituelle Verstümmelung oder
-Märtyrertum. Henrich erklärt diese Phänomene aus Cultural Evolution
+Repräsentativverhalten wie Feuerlauf, Tieropfer, rituelle Verstümmelung
+oder Märtyrertum. Henrich erklärt diese Phänomene aus Cultural Evolution
 Perspektive mit Bezug auf Biased Transmission (siehe Kapitel
 \ref{biased-transmission}): Menschen können Manipulation durch ihre
 kulturellen Vorbilder vermeiden, indem sie deren Aussagen dann mehr
 Gewicht geben, wenn die Kommunikation derselben mit persönlichen Kosten
-verknüpft ist. Demnach bevorzugen Lernende diese Form der Kommunikation
-und erzeugen Selektionsdruck hin zu aufwändigen Demonstrationen von
-Authentizität. Henrich demonstriert die Konsequenzen dieses Modells in
-einer computerbasieren Simulation, die relavante Parameter besser
-zugänglich macht. Die Konkurrenz zwischen Gruppen und Institutionen
-innerhalb von Gruppen scheint ein wichtiger Anreiz zur Konsolidierung,
-Intensivierung und Ritualisierung teuren Repräsentativverhaltens zu
-sein. Diese Rituale werden häufig in Ideologien eingepasst, die den
-Gruppenzusammenhalt stärken und der Gruppe insgesamt dienen.
+verknüpft ist -- \emph{credibility enhancing displays}. Demnach
+bevorzugen Lernende diese Form der Kommunikation und erzeugen
+Selektionsdruck hin zu aufwändigen Demonstrationen von Authentizität.
+Henrich demonstriert die Konsequenzen dieses Modells in einer
+computerbasieren Simulation. Diese legt nahe, dass Ideen und
+Glaubensüberzeugungen unter der Annahme des beschriebenen
+Selektionsdrucks dazu neigen, langfristig stabile Verbindungen mit
+kostenaufwändigen Praktiken einzugehen. Die Konkurrenz zwischen Gruppen
+und Institutionen innerhalb von Gruppen scheint ein wichtiger Anreiz zur
+Konsolidierung, Intensivierung und Ritualisierung teuren
+Repräsentativverhaltens zu sein. Diese Rituale werden häufig in
+Ideologien eingepasst, die den inneren Gruppenzusammenhalt stärken, und
+sind ob ihrer für die Gruppe vorbereiteten Natur immanent förderlich, da
+sie die Idee des Opferns für die Gruppe etablieren. Gruppen, die mehr
+kostenaufändige Demonstrationsrituale praktizieren, sind tendentiell
+stabiler und können sich leichter gegen andere durchsetzen -- hier kann
+\emph{Group Selection} wirken (siehe Kapitel \ref{biased-transmission}).
+Henrichs Modell hat weitere Implikationen für religiöse Praktiken:
 
 Viele Bestattungspraktiken der Bronzezeit sind vergleichsweise
 aufwändig: Die Errichtung eines Scheiterhaufens oder sogar eines
-Grabhügels ist mit einer großen Investition von Zeit und Arbeitskraft
-verbunden. Diese Aufbauten und damit zusammenhängende Handlungen
-adressieren die gesamte Gruppe -- und Rezipienten darüber hinaus (siehe
-Kapitel \ref{grave-architecture}). Henrichs Beobachtungen zur
-gruppeninternen Wirkung kostenintensiver Rituale gelten somit sicher in
-besonderer Weise für Bestattungssitten.
+Grabhügels ist mit einer signifikanten Investition von Zeit und
+Arbeitskraft verbunden. Diese Aufbauten und damit zusammenhängende
+Handlungen adressieren die gesamte Gruppe -- und Rezipienten darüber
+hinaus (siehe Kapitel \ref{grave-architecture}). Henrichs Beobachtungen
+zur gruppeninternen Wirkung kostenintensiver Rituale gelten somit sicher
+in besonderer Weise für Bestattungssitten.
 
 \hypertarget{macdonald-trauer-als-abhangige-variable}{%
 \subsection{MacDonald: Trauer als abhängige
