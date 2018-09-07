@@ -89,9 +89,13 @@
 % promille symbol
 \usepackage{textcomp}
 % move all figures and tables to the end of the document
-\usepackage[nomarkers,notables]{endfloat}
+\usepackage[nomarkers,notables,nofiglist]{endfloat}
 \AtBeginFigures{\setcounter{chapter}{0}}
 \renewcommand{\figuresection}{Abbildungen}
+% change name of list of figures to <empty>
+\addto\captionsngerman{
+  \renewcommand{\listfigurename}{}
+}
 % fancy headers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -3743,9 +3747,9 @@ bildete\footnote{\textcite{czebreszuk_bronze_2013}, 772-773 \& 775-776.}.
 
 Die kulturhistorische Entwicklung Deutschlands in der Bronzezeit ist
 komplex und erlaubt die Unterscheidung etlicher Gruppen, Stile und
-Kulturkomplexe. Wesentlich zum Verständnis sind seine geographische
-Gliederung und intensive Interdependenzen mit angrenzenden Phänomenen,
-die sich als Ergebnis seiner Lage in Zentraleuropa zu allen
+Kulturkomplexe. Wesentlich zum Verständnis sind Deutschlands
+geographische Gliederung und intensive Interdependenzen mit angrenzenden
+Phänomenen, die sich als Ergebnis der Lage in Zentraleuropa zu allen
 Himmelsrichtungen ergeben. Geomorphologisch kann Deutschland von Süd
 nach Nord grob in Folgende Regionen untergliedert werden: Die
 (Bayrischen) Alpen und zugehörige Vorgebirgszonen, die süddeutsche
@@ -3783,7 +3787,7 @@ Baden-Württemberg.
 In der Frühbronzezeit existierten mehrere lokal begrenzte
 Kultureinheiten in Süddeutschland, die als Inseln in einer meist noch
 spätneolithischen Umgebung entstanden. Im Süden und Südosten von Bayern
-fand sich die Straubing-Gruppe, deren Verbreitungsgebiet sich auch nach
+fand sich die Straubing Gruppe, deren Verbreitungsgebiet sich auch nach
 Österreich fortsetzte. Westlich grenzte sie an die Ries Gruppe an.
 Ausgehend vom Oberrhein fanden sich in Baden-Württemberg, jeweils
 nördlich aneinander anschließend, die Singen Gruppe, die
@@ -3813,7 +3817,7 @@ waren oft von einer Steinsetzung, einem Graben oder -- besonders in
 Westfalen und den Niederlanden -- Pfostensetzungen eingehegt. Sie kommen
 in der Regel nicht einzeln vor, sondern clustern in kleineren bis sehr
 großen Gruppen, die gemeinsam ein landschaftsprägendes Gräberfeld mit
-oft dutzenden Hügeln bilden. Jeder Hügel gehörte einer kleinen
+oft dutzenden Hügeln bilden. Jeder Hügel gehörte scheinbar einer kleinen
 Familiengruppe, wobei die Anlage ursprünglich meist über einer
 Zentralbestattung angelegt wurde. Spätere Bestattungen wurden in den
 vorhanden Hügel eingetieft und liegen deswegen meist höher als das
@@ -3821,7 +3825,7 @@ Ursprungsgrab. Zwischen den Hügeln einer Gruppe wurden gelegentlich
 Flachgräber angelegt. Die Bestattungen wurden zunächst meist als
 Körpergräber ausgeführt, der Anteil von Brandgräbern nahm im Laufe der
 Mittelbronzezeit jedoch immer mehr zu. In der Regel wurde der Leichnam
-ausgestreckt in Nord-Süd- oder Ost-West-Orientierung deponiert und die
+ausgestreckt in Nord-Süd oder Ost-West Orientierung deponiert und die
 Grabgrube mit Steinsetzungen oder Holzplanken ausgebaut. Die Ausstattung
 der Toten ist geschlechtsabhängig und scheint die persönlich Ausstattung
 im Leben widerzuspiegeln: Männer wurden mit Waffen wie Schwert, Dolch,
@@ -3843,32 +3847,32 @@ zusammengehörigen Services -- in einfache oder mit einer Steinkiste
 ausgebaute Grabgruben gelegt. Mit der Einführung der Brandbestattung
 ging die Aufgabe des Hügelbaus einher. Vereinzelt wurden jedoch noch
 weiter Körpergräber angelegt, die mit einer reichen Beigabenausstattung
-die Traditionen der Hügelgräberzeit fortführen. Obgleich die
+die Traditionen der Hügelgräberzeit fortführten. Obgleich die
 Spätbronzezeit in Süddeutschland mit größerer kultureller
-Standardisierung als die Mittelbronzezeit assoziiert werden kann ist sie
-doch bei weitem kein völlig einheitliches oder homogenes Phänomen. Sie
-lässt sich ausgehend von Bz D bis Ha B2/3 in mindestens fünf Phasen
+Standardisierung als die Mittelbronzezeit assoziiert werden kann, ist
+sie doch bei weitem kein völlig einheitliches oder homogenes Phänomen.
+Sie lässt sich ausgehend von Bz D bis Ha B2/3 in mindestens fünf Phasen
 gliedern und reicht bis in die Eisenzeit hinein. Zwar sind viele
-Metallartefaktkategorien weit verbreitet, Schmuck -- besonders Fibeln --
-und Keramik zeigen dagegen starke regionale Variabilität. In
-Süddeutschland kann die südliche Bayrische Gruppe im Alpenvorland, die
-Fränkisch-Pfälzische Gruppe in Ostbayern und weiter westlich die
-Untermainisch-Schwäbische Gruppe unterschieden werden. Auch innerhalb
-des Urnenfelderbestattungsrituals gibt es Varianten, die sich vor allem
-durch die Beigabenmenge und Auswahl ausdrücken: Die Mehrzahl der Gräber
-enthält nur Keramik, manche daneben auch einige wenige Nadeln und
-Schmuckgegenstände, reichere dann Messer, Rasierklingen und einfache
+Metallwerkzeug- und Waffenkategorien weit verbreitet, Schmuck --
+besonders Fibeln -- und Keramik zeigen jedoch starke regionale
+Variabilität. In Süddeutschland kann die südliche Bayrische Gruppe im
+Alpenvorland, die Fränkisch-Pfälzische Gruppe in Ostbayern und weiter
+westlich die Untermainisch-Schwäbische Gruppe unterschieden werden. Auch
+innerhalb des Urnenfelderbestattungsrituals gibt es Varianten, die sich
+vor allem durch die Beigabenmenge und Auswahl ausdrücken: Die Mehrzahl
+der Gräber enthält nur Keramik, manche daneben auch einige wenige Nadeln
+und Schmuckgegenstände, reichere dann Messer, Rasierklingen und einfache
 Waffen wie ein Bogen mit Pfeilen. Die herausragend reichen Bestattungen
 sind mit größeren Waffen wie Schwertern und Speerspitzen, sowie
 bronzenem Trinkgeschirr, Wagenteilen und hochwertigem Bronze- und
 Goldschmuck ausgestattet. In Südwestdeutschland sind sie häufig mit
-einer Nord-Süd-orientierten Kammer aus Holz oder Stein ausgebaut. Diese
-Gräber gehören meist zu erwachsenen Männern, denen seitens der
-Archäologischen Forschungstradition eine Führungsposition in ihrer
+einer Nord-Süd orientierten Kammer aus Holz oder Stein ausgebaut. Diese
+Gräber gehören in der Regel zu erwachsenen Männern, denen seitens der
+archäologischen Forschungstradition eine Führungsposition in ihrer
 lokalen Gruppe zugesprochen wird. Manche sind als Körperbestattungen
 ausgeführt und enthalten außergewöhnliche Beigaben wie Zeremonialwägen,
 Rohmetall und Bronzegewichte. Frauengräber dieser Art sind selten,
-gelegentlich treten jedoch Gräber auf, in denen die sowohl Überreste
+gelegentlich treten allerdings Gräber auf, in denen sowohl Überreste
 eines Mannes als auch einer Frau beigesetzt sind. Frauengräber sind mit
 Schmuck und Trachtbestandteilen ausgestattet und allgemein beigabenärmer
 als Männergräber. Geschlecht und Alter korrelieren grundsätzlich mit der
@@ -6282,12 +6286,16 @@ Methode}\label{fragestellung-und-methode-1}}
 \newpage
 \pby[title={Literatur},segment=\therefsegment,heading=subbibintoc]
 
-\hypertarget{zusammenfassung-und-abschlieende-gedanken}{%
-\chapter{Zusammenfassung und Abschließende
-Gedanken}\label{zusammenfassung-und-abschlieende-gedanken}}
+\hypertarget{fazit}{%
+\chapter{Fazit}\label{fazit}}
 
-\hypertarget{abbildungen}{%
-\chapter{Abbildungen}\label{abbildungen}}
+\hypertarget{abbildungsanhang}{%
+\chapter{Abbildungsanhang}\label{abbildungsanhang}}
+
+\begingroup
+\let\clearpage\relax
+\listoffigures
+\endgroup
 
 \printbibliography
 
