@@ -10,9 +10,13 @@
 % promille symbol
 \usepackage{textcomp}
 % move all figures and tables to the end of the document
-\usepackage[nomarkers,notables]{endfloat}
+\usepackage[nomarkers,notables,nofiglist]{endfloat}
 \AtBeginFigures{\setcounter{chapter}{0}}
 \renewcommand{\figuresection}{Abbildungen}
+% change name of list of figures to <empty>
+\addto\captionsngerman{
+  \renewcommand{\listfigurename}{}
+}
 % fancy headers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
