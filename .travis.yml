@@ -18,6 +18,7 @@ addons:
 
 before_script:
   - tlmgr update biblatex
+  - tlmgr update hyphsubst
   - chmod +x ./_clone_required_repos.sh
   - chmod +x ./_build.sh
   - chmod +x ./_deploy.sh
