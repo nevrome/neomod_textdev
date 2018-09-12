@@ -2487,7 +2487,7 @@ für theoretische Vorüberlegungen sowie die Modellimplementierung und
 also gleichermaßen die Suche nach einem Datensatz, bei dem
 Anküpfungspunkte zur Modellidee zu erwarten waren.
 
-Ein spezielles Subset der C14-Datenbank Radon-B\footnote{\textcite{jutta_kneisel_radon-b_2013}}
+Ein spezielles Subset der C14-Datenbank Radon-B\footnote{\textcite{kneisel_radon-b_2013}}
 erfüllt diese Bedingung (siehe Kapitel \ref{radonb-dataset}). Es enthält
 Informationen zur zeitlichen und räumlichen Verteilung bronzezeitlicher
 Bestattungssitten: Die Fallstudie dieser Arbeit konzentriert sich auf
@@ -4612,9 +4612,9 @@ inspiriert:
 
 \textbf{neomod\_textdev}\footnote{\url{https://www.github.com/nevrome/neomod_textdev}}
 Textproduktion. Der Text der Masterarbeit wurde in R Markdown\footnote{\url{https://rmarkdown.rstudio.com/}
-  {[}31.07.2018{]}} mit im bookdown Framework\footnote{\textcite{xie_bookdown_2016}};
-\autocite{xie_bookdown_2018}; \url{https://bookdown.org/}
-{[}31.07.2018{]}{]} verfasst. Da ausschließlich das Rendern mittels
+  {[}31.07.2018{]}} im bookdown Framework\footnote{\textcite{xie_bookdown_2016};
+  \textcite{xie_bookdown_2018}; \url{https://bookdown.org/}
+  {[}31.07.2018{]}} verfasst. Da ausschließlich das Rendern mittels
 Pandoc\^{}{[}\url{https://pandoc.org/} {[}31.07.2018{]} in
 LaTeX\footnote{\url{https://www.latex-project.org/} {[}31.07.2018{]}}
 ins PDF Format vorgesehen war, enthält die Textvorlage auch vereinzelt
@@ -4623,7 +4623,7 @@ Travis\footnote{\url{https://travis-ci.com/} {[}31.07.2018{]}} ein
 automatisches Rendern des Texts aus.
 
 \textbf{neomod\_prepresentation}\footnote{\url{https://www.github.com/nevrome/neomod_prepresentation}}
-Präsentationen über die Inhalte der Masterarbeit. Vor- während und nach
+Präsentationen über die Inhalte der Masterarbeit. Vor, während und nach
 der Arbeit wurden mehrere Präsentation über Planung, Arbeitsfortschritt
 und Ergebnisse zusammengestellt. Die Präsentationen sind jeweils in R
 Markdown konstruiert, unterscheiden sich aber je nachdem, ob ein Rendern
@@ -4700,19 +4700,19 @@ allem R Pakete und C++ Bibliotheken.
 Die gesamte Datenanalyse wurde in der Statistikprogrammiersprache
 R\footnote{\textcite{RCoreTeamLanguageEnvironmentStatistical2016}}
 implementiert. Dabei kam neben Funktionen aus Basispaketen auch eine
-große Anzahl von Community-Paketen zum Einsatz, inklusiver mehrerer
+große Anzahl von Community-Paketen zum Einsatz, inklusive mehrerer
 selbst entwickelter. Aufgrund der sonst unangemessen großen Menge an
 Referenzen, werden im folgenden nur die Pakete genannt, deren Funktionen
 tatsächlich unmittelbar aufgerufen wurden und nicht deren oft
 umfangreiche Sammlung an Abhängigkeiten. Die Zusammenstellung umfasst
 jedoch auch Pakete, die im Laufe der Entwicklung intensiv zum Einsatz
 kamen, dann aber aufgrund inhaltlicher oder technischer Veränderungen
-ersetzt werden mussten. Über die Entwicklungszeit dieser Arbeit haben
-sich viele der verwendeten Pakete ebenfalls weiterentwickelt -- die
-angebene Versionsnummer bezieht sich auf diejenige, mit der die in
-Version 1.0 dieser Arbeit abgedruckten Ergebnisse erstellt wurden.
-Folgende Pakete kamen zum Einsatz zur Text- und Literaturverarbeitung
-(bookdown\footnote{\textcite{xie_bookdown_2016};
+ersetzt werden mussten und aus dem Produktivcode entfernt wurden. Über
+die Entwicklungszeit dieser Arbeit haben sich viele der verwendeten
+Pakete ebenfalls weiterentwickelt -- die angebene Versionsnummer bezieht
+sich auf diejenige, mit der die in Version 1.0 dieser Arbeit
+abgedruckten Ergebnisse erstellt wurden. Folgende Pakete kamen zum
+Einsatz zur Text- und Literaturverarbeitung (bookdown\footnote{\textcite{xie_bookdown_2016};
   \textcite{xie_bookdown_2018}}, citr\footnote{\textcite{aust_citr_2017}},
 knitr\footnote{\textcite{xie_dynamic_2015}; \textcite{xie_knitr_2014};
   \textcite{xie_knitr_2018}}, markdown\footnote{\textcite{allaire_markdown_2017}},
@@ -4764,18 +4764,17 @@ heruntergeladen.
 \section{Datensatz Radon-B}\label{radonb-dataset}}
 
 Radon-B\footnote{\textcite{kneisel_radon-b_2013}} ist eine öffentlich
-verfügbare Datenbank, die einzelne Radiokohlenstoffdatierungen --
-\textsuperscript{14}C-Daten -- aus der Bronze- und Frühen Eisenzeit in
+verfügbare Datenbank, die Radiokohlenstoffdatierungen --
+\textsuperscript{14}C-Daten -- aus der Bronze- und frühen Eisenzeit in
 Europa sammelt. Sie konzentriert sich auf ein Zeitfenster zwischen 2300
 bis 500calBC ab, enthält jedoch auch Daten jenseits dieses Limits. Neben
-Radon-B steht mit ihrer Schwesterdatenbank
-Radon\autocite{martin_hinz_radon_2012} eine strukturell äquivalente
-Sammlung mit einem Schwerpunkt auf neolithischen Daten zur Verfügung.
-Jedes Datum ist mit Kerndaten und Metainformationen verknüpft (siehe
-Tabelle \ref{tab:radonbparams}). Die Informationen wurden aus einzelnen
-Publikationen zusammengetragen und sind teilweise unvollständig,
-inkonsistent oder fehlerhaft (siehe auch Kapitel
-\ref{source-criticism}).
+Radon-B steht mit ihrer Schwesterdatenbank Radon\footnote{\textcite{martin_hinz_radon_2012}}
+eine strukturell äquivalente Sammlung mit einem Schwerpunkt auf
+neolithischen Daten zur Verfügung. Jedes Datum ist mit Kerndaten und
+Metainformationen verknüpft (siehe Tabelle \ref{tab:radonbparams}). Die
+Informationen wurden aus einzelnen Publikationen zusammengetragen und
+sind teilweise unvollständig, inkonsistent oder fehlerhaft (siehe auch
+Kapitel \ref{source-criticism}).
 
 \begin{table}
 
@@ -4838,7 +4837,7 @@ Altersinformation und aller Daten außerhalb der theoretischen Reichweite
 der Kalibrationskurve (71-46401calBP) (10956 Daten verblieben). Zur
 Kalibration wurde das R Paket Bchron\footnote{\textcite{haslett_simple_2008}}
 und die darin enthaltenen Version es IntCal13 Datensatzes\footnote{\textcite{reimer_intcal13_2013}}
-verwendet. Bchron berechnet das kalibrierte Alter mittels Numerischer
+verwendet. Bchron berechnet das kalibrierte Alter mittels numerischer
 Integration\footnote{\url{https://github.com/andrewcparnell/Bchron/blob/master/R/BchronCalibrate.R}
   {[}02.08.2018{]}} und liefert für jedes Datum eine normierte
 Wahrscheinlichkeitskurve. Alter mit Wahrscheinlichkeiten unterhalb eines
@@ -4872,14 +4871,14 @@ mit Angaben zu Labornummer, Koordinaten, Dichteverteilung des
 kalibrierten Alters und \emph{burial\_type} sowie
 \emph{burial\_construction}. Eine Karte der so vorbereiteten Gräberdaten
 zeigt die hohe Heterogenität der Datendichte in verschiedenen Regionen
-Europas (siehe Abbildung \ref{fig:general-map}.
+Europas (siehe Abbildung \ref{fig:general-map}).
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/general_maps/general_map} \caption[Übersichtskarte der \textsuperscript{14}C Daten an bronzezeitlichen Gräbern in Europa]{Übersichtskarte der \textsuperscript{14}C Daten an bronzezeitlichen Gräbern in Europa. Die Karte zeigt Daten aus einem  Zeitfenster von 2200 bis 800calBC. Einzelne Daten liegen außerhalb des gewählten Kartenausschnitts. Jedes Datum ist nach seinen Kontextinformationen hinsichtlich der Variablen \textit{burial type} und \textit{burial construction} in Form und Farbe markiert.}\label{fig:general-map}
 \end{figure}
 
 Abbildung \ref{fig:general-map-research-area} zeigt das
-Untersuchungsareals dieser Arbeit. Es folgt keinen natürlichen oder
+Untersuchungsareal dieser Arbeit. Es folgt keinen natürlichen oder
 kulturellen Grenzen, sondern wurde rein künstlich in Anbetracht der
 räumlichen Verteilung der zusammengestellten \textsuperscript{14}C-Daten
 festgelegt. Auf Grundlage visueller Analyse der Punktdichte schien es
@@ -4899,21 +4898,21 @@ ausgewählten Daten stammen aus dem Rechteckareal.
 
 Der nach oben beschriebenem Vorgehen zusammengestellte Arbeitsdatensatz
 umfasst also 1894 Einträge aus der Radon-B Datenbank. Die effektive
-Anzahl an \textsuperscript{14}C Daten, die diese Einträge wiedergeben,
+Anzahl an \textsuperscript{14}C-Daten, die diese Einträge wiedergeben,
 ist jedoch geringer: Eine Zählung der Labornummern ergibt 1831
 individuelle Werte. Diese Diskrepanz ergibt sich aus Einträgen mit
 keiner (\emph{n/a-n/a}) oder unvollständiger (z.B. \emph{MAMS-n/a},
 \emph{Gd-n/a}, \emph{Ke-n/a}) Labornummer sowie Daten die mehrfach in
 die Datenbank eingegeben wurden (z.B. \emph{OxA-29003},
 \emph{GrN-10754}, \emph{BRAMS-1217}). Letzteres betrifft 46 Einträge in
-dieser Datenauswahl, die ein und dasselbe \textsuperscript{14}C Datum
+dieser Datenauswahl, die ein und dasselbe \textsuperscript{14}C-Datum
 zwei- oder mehrfach repräsentieren. Die Anzahl an Gräbern, die durch die
 Einträge repräsentiert werden ist noch geringer: Für 498 Einträge gilt,
 dass die ihnen zugehörige Kombination aus Fundplatz und Befund von
 mindestens einem weiteren Eintrag abgedeckt wird. Der wichtigste Grund
-dafür ist, dass für ein Grab häufig mehrere \textsuperscript{14}C Daten
+dafür ist, dass für ein Grab häufig mehrere \textsuperscript{14}C-Daten
 in Auftrag gegeben werden. Die Abweichungen zwischen Einträgen und
-\textsuperscript{14}C Daten sowie \textsuperscript{14}C Daten und
+\textsuperscript{14}C-Daten sowie \textsuperscript{14}C-Daten und
 Gräbern scheinen also auf den ersten Blick schwerwiegend zu sein.
 Nichtsdestoweniger wurde in einem ersten Durchlauf der Berechnungen von
 einer Korrektur abgesehen, und tatsächlich waren die Auswirkungen dieses
@@ -4930,8 +4929,8 @@ besteht, dass das auch für andere Datenkombinationen in Zukunft gelten
 wird, schien es sinnvoll einen Algorithmus zu entwickeln, um die Fehler
 zumindest teilweise auszugleichen.
 
-Erstere Abweichung zwischen der Menge an Einträgen und den tatsächlich
-vorhanden \textsuperscript{14}C Daten ist durch unvollständige
+Die Abweichung zwischen der Menge an Einträgen und den tatsächlich
+vorhanden \textsuperscript{14}C-Daten ist durch unvollständige
 Datenpublikation und Fehleingabe bedingt. Sie wird sich mit der
 stückweisen Verbesserung des Radon-B Datensatzes in Zukunft hoffentlich
 selbst lösen. Da sich die Einträge jenseits der Labornummer häufig
@@ -4942,15 +4941,15 @@ in Frage zu stellen, kamen Werkzeuge aus dem c14bazAAR Paket zum
 Einsatz, die Einträge mit äquivalenter Labornummer automatisch
 zusammenführen. Abweichende Einträge in den Ausgangsdaten werden dabei
 als unbekannte Werte behandelt. Von den 1848 oben zusammengestellten
-Einträgen blieben 1.848 erhalten.
+Einträgen blieben 1848 erhalten.
 
-Die zweite Mengenabweichung zwischen \textsuperscript{14} Daten und
+Die zweite Mengenabweichung zwischen \textsuperscript{14}C-Daten und
 Gräbern ist schwerwiegender, da sie immerhin nahezu ein Drittel der
 Einträge betrifft und keine Aussicht besteht, dass sich dieses Problem
 mit einer Verbesserung der Datenlage lösen wird: Sie ist Teil der
 Semantik des Datensatzes. Da für einzelne Gräber mehrere (bis zu 8)
-\textsuperscript{14}C Daten vorliegen, muss für diese jeweils ein
-individuelles chronologisches Modell definiert werden, dass alle Daten
+\textsuperscript{14}C-Daten vorliegen, muss für diese jeweils ein
+individuelles chronologisches Modell definiert werden, das alle Daten
 vereint. Für einen großen Teil der Gräber könnte zwar angenommen werden,
 dass die Datierungen sich tatsächlich nur auf ein einzelnes, zu einem
 bestimmten Zeitpunkt in einen geschlossenen Befund eingebrachtes
@@ -4976,11 +4975,11 @@ wurde. Innerhalb dieser Auswahl wurden nach Fundplatz und Befund
 gegliederte Gruppen angelegt und deren kalibrierte Dichteverteilungen
 zusammengeführt. Notwendig wäre dafür eigentlich ein individuelles
 chronologisches Modell für jede dieser Datengruppen. Stattdessen wurden
-die einzelnen Dichteverteilungen addiert und auf die das Gesamtmaximum
-bezogen normiert. Die Information, ob ein Alter zum \(2\sigma\) Bereich
-eines Datums gehört, wurde immer dann als wahr angenommen, wenn es im
-\(2\sigma\) mindestens eines Datums liegt. Aus der Perspektive der
-\textsuperscript{14}C Datenverarbeitung ist dieses Vorgehen nicht
+die einzelnen Dichteverteilungen addiert und bezogen auf das
+Gesamtmaximum normiert. Die Information, ob ein Alter zum \(2\sigma\)
+Bereich eines Datums gehört, wurde immer dann als wahr angenommen, wenn
+es im \(2\sigma\) mindestens eines Datums liegt. Aus der Perspektive der
+\textsuperscript{14}C-Datenverarbeitung ist dieses Vorgehen nicht
 korrekt, angesichts der zugrundeliegenden Fragestellung und der
 Herausforderungen des Datensatzes jedoch sinnvoll: Jeder Eintrag im
 Datensatz soll einen Ort und einen Zeitraum definieren, in dem die mit
@@ -5014,7 +5013,7 @@ Zentren beträgt in dieser Konfiguration 400km (im Bezugssystem der
 EPSG:102013 Projektion). In einem weiteren Schritt wurden kreisförmige
 Regionen um die Zentrumspunkte aufgebaut. Der Kreisradius wurde nach
 Augenmaß mit 240km so gewählt, dass möglichst alle bekannten
-\textsuperscript{14}C Daten (also damit auch Gräber) in mindestens einer
+\textsuperscript{14}C-Daten (also damit auch Gräber) in mindestens einer
 Region verortet sind. Das Überlappen von Regionen wurde dabei in Kauf
 genommen. Andere Regionendefinitionen anhand alternativer geometrischer
 Formen (Rechtecke, Hexagone), nach der Dichteverteilung von Fundpunkten,
@@ -5024,7 +5023,7 @@ Zukunft evaluiert werden. Das gilt auch hinsichtlich der Größe der
 Einheiten, die aufgrund der diachron geringen Datenmenge sehr groß
 gewählt werden mussten. Nur aus den acht Regionen, die in Abbildung
 \ref{fig:general-map-research-area-regions} definiert werden, sind
-ausreichend \textsuperscript{14}C Daten an Gräbern bekannt, um eine
+ausreichend \textsuperscript{14}C-Daten an Gräbern bekannt, um eine
 nähere Betrachtung zu rechtfertigen. Der Schwellwert dafür wurde mit 60
 Gräbern jedoch sehr niedrig angelegt um das effektive Untersuchungsareal
 nicht noch weiter verkleinern zu müssen. Die Benennung der Regionen war
@@ -5053,10 +5052,10 @@ Aus dem Areal der kreisförmigen, artifiziellen Großregionen, die für
 diese Arbeit festgelegt wurden (siehe Abbildung
 \ref{fig:general-map-research-area-regions}) liegen in Radon-B
 Informationen zu mindestens 1562 Gräbern auf Grundlage von 1701
-\textsuperscript{14}C Daten vor (zur Datenauswahl und -vorbereitung
+\textsuperscript{14}C-Daten vor (zur Datenauswahl und -vorbereitung
 siehe Kapitel \ref{data-prep-and-segmentation}). Geht man davon aus,
 dass die Eingaben in Radon-B korrekt sind, dann stammen die
-\textsuperscript{14}C Daten von 454 Fundplätzen. Zu den Daten sind 41
+\textsuperscript{14}C-Daten von 454 Fundplätzen. Zu den Daten sind 41
 verschiedene Periodenbegriffe und 25 archäologische Kulturen
 dokumentiert, diese Information ist jedoch aufgrund der Datensituation
 sinnvoll auswertbar (siehe Kapitel \ref{source-criticism}). 1160 Daten
@@ -5088,10 +5087,9 @@ unknown & 12 & 117 & 559\\
 Von besonderem Interesse für die vorliegende Arbeit ist eine diachrone
 Perspektive in der Bestattungssittenentwicklung. Schon eine Kartierung
 der Gräber in Zeitschritten von 200 Jahren (siehe Abbildung
-@ref\{fig:general-map-research-area-timeslices\}) offenbart generelle
+\ref{fig:general-map-research-area-timeslices}) offenbart generelle
 Trends hinsichtlich \emph{burial\_type} und \emph{burial\_construction}
-in Früh-, Mittel- und Spätbronzezeit: Flachgrab -- Hügelgrab --
-Flachgrab und Körpergrab -- Brandgrab. Diese Beobachtung kann mittels
+in Früh-, Mittel- und Spätbronzezeit. Diese Beobachtungen können mittels
 des erstellten Datensatzes erheblich präzisiert sowie räumlich- und
 zeitlich explizit gemacht werden.
 
@@ -5101,17 +5099,17 @@ zeitlich explizit gemacht werden.
 \end{figure}
 \end{landscape}
 
-Entscheidend ist hierfür nicht unbedingt, wann und wo exakt welche Art
-Grab angelegt wurde. Stattdessen soll aus dieser Information eine
+Entscheidend ist hierfür nicht unbedingt, wann und wo welche Art Grab
+angelegt wurde. Stattdessen soll aus dieser Information eine
 quantitative Beschreibung zur Verbreitung und Dominanz von Ideen
 extrahiert werden. Zur Erstellung dieses Proxies wurde die Annahme
 getroffen, dass eine Idee zu einem bestimmten Zeitpunkt in einer Region
 dann als anwesend gewertet werden muss, wenn ein Grab in dieser Region
 existiert, dessen \(2\sigma\) Wahrscheinlichkeitsbereich ermittelt aus
-einem oder mehreren \textsuperscript{14}C Daten diesen Zeitpunkt
+einem oder mehreren \textsuperscript{14}C-Daten diesen Zeitpunkt
 umfasst. Ein Beispiel: Die Idee ``Körperbestattung'' muss 1447calBC
 anwesend gewesen sein, da dieses Jahr im \(2\sigma\) Bereich des
-\textsuperscript{14}C Datums NZA-32497 liegt, das für die
+\textsuperscript{14}C-Datums NZA-32497 liegt, das für die
 Körperbestattung I2639/25217 vom Fundplatz Amesbury Down angefertigt
 wurde. Liegen mehrere Daten aus einer Region für ein Jahr vor, dann kann
 das Auftreten der verschiedenen Ausprägungen von \emph{burial\_type} und
@@ -5119,13 +5117,13 @@ das Auftreten der verschiedenen Ausprägungen von \emph{burial\_type} und
 mit allen Ausprägungen, dann ergeben sich sechs aufschlussreiche
 Zeitreihen, die sich jahrweise sinnvoll zur Gesamtzahl der Beobachtungen
 addieren (für \emph{burial\_type} siehe Abbildung
-\ref{fig:development-amount-regions-burial-type}), für
+\ref{fig:development-amount-regions-burial-type}, für
 \emph{burial\_construction} Abbildung
 \ref{fig:development-amount-regions-burial-construction}). Aus den
 Ausprägungsmengen lässt sich auch das jeweilige Verhältnis der Ideen in
-jedem Jahr in jeder Region berechnen (für \emph{burial\_type} Abbildung
-\ref{fig:development-proportions-regions-burial-type}), für
-\emph{burial\_construction} Abbildung
+jedem Jahr in jeder Region berechnen (für \emph{burial\_type} siehe
+Abbildung \ref{fig:development-proportions-regions-burial-type}, für
+\emph{burial\_construction} siehe Abbildung
 \ref{fig:development-proportions-regions-burial-construction}). Dabei
 wurden die Gräber, für die keine Information zu den Primärvariablen
 vorliegt (\emph{unknown}) ignoriert. Die Entwicklung der Verhältnisse
@@ -5137,7 +5135,7 @@ Regionen und Zeiträume liegen sehr wenige Gräber vor. Die Ergebnisse
 aller folgenden Analysen müssen entsprechend mit Vorsicht gelesen
 werden. Sie könnten sich bei zunehmender Datenmenge verändern.
 Nichtsdestoweniger erlauben die Abbildungen
-\ref{fig:development-proportions-regions-burial-type}) und
+\ref{fig:development-proportions-regions-burial-type} und
 \ref{fig:development-proportions-regions-burial-construction} schon
 jetzt bemerkenswerte, wenn auch teilweise objektiv falsche
 Interpretationen (für eine Bewertung siehe \ref{representativity}):
@@ -5179,7 +5177,7 @@ Interpretationen (für eine Bewertung siehe \ref{representativity}):
 \end{figure}
 
 Definitiv gab es im Laufe der Bronzezeit in Europa einen Trend weg von
-der Körperbestattung hin zur Brandbestattung. Um 2200 waren
+der Körperbestattung hin zur Brandbestattung. Um 2200calBC waren
 Brandbestattungen in Polen, Süddeutschland, Nordostfrankreich und
 Norddeutschland nahezu unbekannt. Im Nordwesten, in Großbritannien und
 im Benelux Raum, und im Südosten, in Österreich und Tschechien, gab es
@@ -5192,10 +5190,10 @@ England stetig. Körper- und Brandbestattung hielten sich hier lange die
 Waage. Ähnlich verhielt es sich in Südskandinavien, wo der Anteil an
 Brandbestattungen bis zur Spätbronzezeit allerdings wesentlich geringer
 ausfiel. In Polen und Norddeutschland setzte sich Brandbestattung mit
-dem Beginn er Spätbronzezeit relativ plötzlich und vollständig durch. In
-Nordostfrankreich und Norddeutschland vollzieht sich dieser Wandel schon
-in der Mittelbronzezeit. In beiden Kontexten spielten Körperbestattungen
-auch danach eine wesentliche Rolle.
+dem Beginn der Spätbronzezeit relativ plötzlich und vollständig durch.
+In Nordostfrankreich und Norddeutschland vollzieht sich dieser Wandel
+schon in der Mittelbronzezeit. In beiden Kontexten spielten
+Körperbestattungen auch danach eine wesentliche Rolle.
 
 Hinsichtlich der Frage nach Grabüberhügelung ist das Bild erheblich
 heterogener. In Österreich und Tschechien waren Flachgräber bis in die
@@ -5287,7 +5285,7 @@ Ungleichverteilung der Daten hat viele verschiedene Gründe.
   Wissenschaftler abhängig. Daten wurden zeitlich und räumlich
   bedarfsweise aus der Literatur gesammelt.
 \item
-  Die Verfügbarkeit von \textsuperscript{14}C Daten in der Literatur ist
+  Die Verfügbarkeit von \textsuperscript{14}C-Daten in der Literatur ist
   wiederrum stark daran gebunden, ob ein modernes Forschungsprojekt mit
   Konzentration auf eine Region und ein Zeitfenster durchgeführt wurde.
   Neben der zufälligen Verteilung der Interessensgebiete der Forschenden
@@ -5296,20 +5294,20 @@ Ungleichverteilung der Daten hat viele verschiedene Gründe.
   Rolle, die die Arbeit in manchen Räumen erleichtert oder kompliziert.
 \item
   Auch im Untersuchungsgebiet dieser Arbeit begegnen sich
-  unterschiedliche Forschungstraditionen, die \textsuperscript{14}C
-  Daten in der Vergangenheit mehr oder weniger essentiell für die
-  Konstruktion einer absolutchronologischen Einschätzung gehalten haben.
-  \textsuperscript{14}C Daten sind in verschiedenen metallzeitlichen
-  Kontexten der Genauigkeit relativchronologischer Einordnungen -- etwa
-  auf Grundlage von Fibeltypologie -- unterlegen und werden deswegen nur
-  sporadisch zur Schaffung von absolutchronologischen Einhängepunkten
-  genutzt. In Feuchtbodenkontexten und bei Verfügbarkeit der
-  erforderlichen Hölzer wird Dendrochronologische Datierung bevorzugt
-  angewandt. Die verfügbaren \textsuperscript{14}C Kalibrationskurven
-  bilden in manchen Zeiträumen Plateaus aus, was die erreichbare
-  Datierungsgenauigkeit der Daten signifikant einschränkt. Ist ein
-  solcher Effekt bekannt, dann werden erst gar keine Daten in Auftrag
-  gegeben.
+  unterschiedliche Forschungstraditionen, die
+  \textsuperscript{14}C-Daten in der Vergangenheit mehr oder weniger
+  essentiell für die Konstruktion einer absolutchronologischen
+  Einschätzung gehalten haben. \textsuperscript{14}C-Daten sind in
+  verschiedenen metallzeitlichen Kontexten der Genauigkeit
+  relativchronologischer Einordnungen -- etwa auf Grundlage von
+  Fibeltypologie -- unterlegen und werden deswegen nur sporadisch zur
+  Schaffung von absolutchronologischen Einhängepunkten genutzt. In
+  Feuchtbodenkontexten und bei Verfügbarkeit der erforderlichen Hölzer
+  wird Dendrochronologische Datierung bevorzugt angewandt. Die
+  verfügbaren \textsuperscript{14}C Kalibrationskurven bilden in manchen
+  Zeiträumen Plateaus aus, was die erreichbare Datierungsgenauigkeit der
+  Daten signifikant einschränkt. Ist ein solcher Effekt bekannt, dann
+  werden erst gar keine Daten in Auftrag gegeben.
 \item
   \textsuperscript{14}C Datierung erfordert eine zwar kleine, aber
   hinreichend genau kontextualisierbare Menge organischen Fundmaterials.
@@ -5330,7 +5328,7 @@ Ungleichverteilung der Daten hat viele verschiedene Gründe.
   Verstorbenen repräsentativ sein. In diesem Fall ist anzunehmen, dass
   weitere, abweichende Bestattungsrituale praktiziert wurden, die keine
   oder archäologisch nur schwer fassbare Überreste hinterlassen haben.
-  Diese Rituale sind in den \textsuperscript{14}C Daten aus Radon-B
+  Diese Rituale sind in den \textsuperscript{14}C-Daten aus Radon-B
   nicht abgebildet.
 \end{itemize}
 
@@ -5409,18 +5407,18 @@ schlicht eine falsche Tendenz anzeigen:
 Die künstliche Untersuchungsregion \emph{Southeastern Central Europe}
 umfasst den Osten Österreichs (Oberösterreich, Niederösterreich,
 Steiermark, Burgenland), den Nordwesten Ungarns, die Westslowakei,
-Mähren und große Teile Böhmens. Die Dichte der \textsuperscript{14}C
-Daten an Gräbern aus Radon-B ist gering -- aus den verschiedenen
-Regionen liegen zwar jeweils einzelne Daten vor, große Areale müssen
-jedoch ohne Evidenz auskommen. Diachron ist das Datenaufkommen
-durchgehend niedrig und erreicht in der Mittelbronzezeit einen
-Tiefpunkt. Während für die \emph{burial type} Variable eine konstanter
-Informationsfluss vorhanden ist, nimmt die Anzahl an Gräbern ohne
-Angaben zu \emph{burial construction} in der Spätbronzezeit derart zu,
-dass überhaupt keine Aussage mehr für sie abgeleitet werden kann. Um die
-relative Entwicklung innerhalb der Variaben \emph{burial type} und
+Mähren und große Teile Böhmens. Die Dichte der
+\textsuperscript{14}C-Daten an Gräbern aus Radon-B ist gering -- aus den
+verschiedenen Regionen liegen zwar jeweils einzelne Daten vor, große
+Areale müssen jedoch ohne Evidenz auskommen. Diachron ist das
+Datenaufkommen durchgehend niedrig und erreicht in der Mittelbronzezeit
+einen Tiefpunkt. Während für die \emph{burial type} Variable eine
+konstanter Informationsfluss vorhanden ist, nimmt die Anzahl an Gräbern
+ohne Angaben zu \emph{burial construction} in der Spätbronzezeit derart
+zu, dass überhaupt keine Aussage mehr für sie abgeleitet werden kann. Um
+die relative Entwicklung innerhalb der Variaben \emph{burial type} und
 \emph{burial construction}, wie sie mithilfe des Radon-B Datensatzes auf
-Grundlage von \textsuperscript{14}C Daten nachhergesagt wurde, burteilen
+Grundlage von \textsuperscript{14}C-Daten nachhergesagt wurde, burteilen
 zu können, muss zunächst ein Resumee aus den Angaben in Kapitel
 \ref{regions-archaeological-overview} gezogen werden. Das ist dadurch
 erschwert, dass die Region vielfältige geographische und kulturelle
@@ -5431,11 +5429,11 @@ lokalen Tradition in dieser Hinsicht stabil -- mit insgesamt einer
 leichten Zunahme der Brandgräber. Die Urnenfelderzeit brachte den
 Übergang zur absoluten Dominanz der Brandbestattung. Die Entwicklung der
 \emph{burial type} Variable im Radon-B Proxy bildet diese Entwicklung
-grundsätzlich korrekt ab. Die Informationen aus \textsuperscript{14}C
-Daten zu \emph{burial construction} zeichnen die Relevanz von
-Flachgräbern in der Frühbronzezeit korrekt nach, letztere werden dann
-aber in der Mittelbronzezeit gegenüber der Anlage von Grabhügeln
-überbetont. In der Spätbronzezeit waren Bestattungen auf
+grundsätzlich korrekt ab. Die Informationen aus
+\textsuperscript{14}C-Daten zu \emph{burial construction} zeichnen die
+Relevanz von Flachgräbern in der Frühbronzezeit korrekt nach, letztere
+werden dann aber in der Mittelbronzezeit gegenüber der Anlage von
+Grabhügeln überbetont. In der Spätbronzezeit waren Bestattungen auf
 Flachgräberfeldern häufig, obgleich auch Hügel der Grabhügelkultur
 weiter belegt wurden. Dieser Umstand kann -- sicher aufgrund der
 geringen Datenmenge -- nicht korrekt aus Radon-B abgeleitet werden.
@@ -5445,7 +5443,7 @@ geringen Datenmenge -- nicht korrekt aus Radon-B abgeleitet werden.
 (134)}{Polen -- Poland (134)}}\label{polen-poland-134}}
 
 Die Region \emph{Poland} deckt Landesmitte und Westen des heutigen
-Polens vollständig ab. Die \textsuperscript{14}C Daten aus dieser Region
+Polens vollständig ab. Die \textsuperscript{14}C-Daten aus dieser Region
 stammen allerdings fast ausschließlich aus den Woiwodschaften
 Kajuwien-Pommern, Lodsch und Niederschlesien. Die Datenmenge ist
 insgesamt gering, mit deutlich mehr Daten aus der Frühbronzezeit bis
@@ -5471,7 +5469,7 @@ würdigt.
 Die künstliche Kreisregion \emph{Southern Germany} umfasst Bayern
 vollständig, schließt aber auch größte Teile Baden-Württembergs und
 Thüringens sowie ausgedehnte Flächen in Mähren und Westösterreich ein.
-Aus letzteren Regionen liegen keine \textsuperscript{14}C Daten vor. Die
+Aus letzteren Regionen liegen keine \textsuperscript{14}C-Daten vor. Die
 Mehrzahl der vorhandenen Daten stammt aus der Oberpfalz, Niederbayern
 und Schwaben sowie (in Württemberg) dem Regierungsbezirken Tübingen. Für
 die Frühbronzezeit sind bemerkenswert viele Daten aus Süddeutschland in
@@ -5505,7 +5503,7 @@ französischen Verwaltungsregionen Grand-Est und Bourgogne-Franche-Comté,
 den Osten Baden-Württembergs, Rheinland-Pfalz und das Saarland, sowie
 Luxemburg und Wallonien in Belgien umfasst. Nur aus Württemberg und in
 Richtung des Pariser Beckens stehen hier Akkumulationen von
-\textsuperscript{14}C Daten zur Verfügung. Die Datenmenge ist insgesamt
+\textsuperscript{14}C-Daten zur Verfügung. Die Datenmenge ist insgesamt
 gering, in der Früh- und beginnenden Mittelbronzezeit jedoch gravierend
 niedrig. Für \emph{burial type} sind immerhin nach diesem Zeitfenster
 eingeschränkt Aussagen möglich, \emph{burial construction} dagegen muss
@@ -5524,7 +5522,7 @@ verbreitet.
 
 Zur künstlichen Region \emph{Northern Germany} gehören alle Neuen
 Bundesländer in Ostdeutschland, aber auch große Teile Niedersachsens und
-Schleswig-Holsteins. Die \textsuperscript{14}C Daten dieser Region
+Schleswig-Holsteins. Die \textsuperscript{14}C-Daten dieser Region
 stammen überwiegend aus Sachsen-Anhalt und angrenzenden Regionen in
 Thüringen, Sachsen und Niedersachsen. Auch aus dem Raum nördlich von
 Bremen sind einge Daten in Radon-B dokumentiert. In der Datenbank sind
@@ -5557,7 +5555,7 @@ Scandinavia}
 Die Region \emph{Southern Scandinavia} schließt ganz Dänemark mit
 Jütland, Fünen, Seeland und allen kleineren Inseln sowie große Teile des
 Osten Südschwedens, und Küstenregionen in Schleswig-Holstein und
-Mecklenburg-Vorpommern ein. Die \textsuperscript{14}C Daten sind sehr
+Mecklenburg-Vorpommern ein. Die \textsuperscript{14}C-Daten sind sehr
 gut auf Jütland, Fünen und die schwedische Skåne Region verteilt. Da die
 Bronzezeit in Skandinavien erheblich später als in Mitteleuropa beginnt
 und an einem anderen, chronologischen System gemessen wird, lassen sich
@@ -5591,7 +5589,7 @@ traten Flachgräberfelder hinzu.
 
 Zur \emph{Benelux} Region gehören hier die Niederlande, der Norden
 Belgiens und große Teile von Niedersachen und Nordrheinwestfalen. Aus
-all diesen Regionen liegen \textsuperscript{14}C Daten an Gräbern in
+all diesen Regionen liegen \textsuperscript{14}C-Daten an Gräbern in
 Radon-B vor, die Datendichte in Belgien und den Niederlanden ist jedoch
 deutlich höher. Wie in \emph{Southern Scandinavia} ist auch in der
 \emph{Benelux} Region die Frühbronzezeit im Gegensatz zu Mittel- und
@@ -5624,12 +5622,12 @@ Die \emph{England} Region erstreckt sich über England bis auf die Höhe
 von York und Liverpool, inkorporiert Teile von Wales und lässt dagegen
 Cornwall and Devon im Südwesten außen vor. Tatsächlich berührt sie auch
 einen schmalen Küstenstreifen am Festland, aus dem aber keine
-\textsuperscript{14}C Daten vorliegen. Die vorhandenen Daten
+\textsuperscript{14}C-Daten vorliegen. Die vorhandenen Daten
 konzentrieren sich im Südosten Britanniens, sind dort jedoch gut
 verteilt. Die diachrone Datenverfügbarkeit ist in Früh- und
 Mittelbronzezeit relativ gut, lässt dann allerdings in der
 Spätbronzezeit nach. \emph{burial type} und \emph{burial construction}
-verhalten sich entsprechend. Die aus den \textsuperscript{14}C Daten
+verhalten sich entsprechend. Die aus den \textsuperscript{14}C-Daten
 abgeleitete relative Entwicklung gibt für \emph{burial type} die
 richtige Tendenz an: Brandgräber gewannen im Laufe der Bronzezeit immer
 weiter an Bedeutung, während Körperbestattung noch lange parallel lange
