@@ -136,6 +136,13 @@
 % control footnote margin
 \usepackage[hang]{footmisc}
 \setlength\footnotemargin{13pt}
+% end every footnote with a period, if it not already has one
+% french spacing has to be turned off for this solution to work
+\makeatletter%
+\long\def\@makefntext#1{%
+  \parindent 1em\noindent \hb@xt@ 1.8em{\hss\@makefnmark}#1%
+  \ifnum\the\spacefactor<3000.\fi}
+\makeatother
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -207,11 +214,13 @@
   \input{declaration.tex}
 }
 
+\nonfrenchspacing
+
 \hypertarget{intro}{%
 \chapter{Einführung}\label{intro}}
 
-Die vorliegende Master-Arbeit entstand 2017-2018 am Institut für Ur- und
-Frühgeschichte der Christian-Albrechts-Universität zu Kiel unter
+Die vorliegende Master-Arbeit entstand 2017 -- 2018 am Institut für Ur-
+und Frühgeschichte der Christian-Albrechts-Universität zu Kiel unter
 Betreuung von Priv.-Doz. Dr.~Oliver Nakoinz und Dr.~Martin Hinz. Sie ist
 quelloffen und voll reproduzierbar. Sämtlicher Programmcode wird
 spätestens zum Abschluss des Prüfungsvorgangs veröffentlicht.
@@ -221,18 +230,18 @@ Ausgangspunkt der Überlegungen für diese Arbeit war die der
 Transformations- und Ausbreitungsprozesse sinnvoll und gewinnbringend in
 einer Modellimplementierung abgebildet werden können, die Ideen,
 Traditionen und Innovationen als handlungsfähige Agenten begreift. Um
-diesen Ansatz in einer archäologische Abschlussarbeit zu erforschen,
-wurde ein Fallbeispiel gewählt, in dem sich gegenseitig ausschließende
-Ideen über einen langen Zeitraum in einem großen Raum konkurrieren:
-Bestattungstraditionen in der europäischen Bronzezeit. Diese lassen sich
-vereinfacht durch zwei Dichotomien beschreiben: Brandbestattung im
-Gegensatz zu Körperbestattung sowie das Flachgrab in Abgrenzung zum
-Hügelgrab. Mit Radon-B steht ein Datensatz von mehreren tausend
-\textsuperscript{14}C-datierten Gräbern mit Metainformationen zur
-Verfügung, der die Phänomene in einem Zeitfenster von 2200 bis 800calBC
-in hoher Auflösung abbildet.
+diesen Ansatz in einer archäologischen Abschlussarbeit erforschen zu
+können, wurde ein Fallbeispiel gewählt, in dem sich gegenseitig
+ausschließende Ideen über einen langen Zeitraum in einem großen Raum
+konkurrieren: Bestattungstraditionen in der europäischen Bronzezeit.
+Diese lassen sich vereinfacht durch zwei Dichotomien beschreiben:
+Brandbestattung im Gegensatz zu Körperbestattung sowie das Flachgrab in
+Abgrenzung zum Hügelgrab. Mit Radon-B steht ein Datensatz von mehreren
+tausend \textsuperscript{14}C-datierten Gräbern mit Metainformationen
+zur Verfügung, der die Phänomene in einem Zeitfenster von 2200 bis
+800calBC in hoher Auflösung abbildet.
 
-Die Arbeit verfolgt also folgende Hauptziele:
+Die Arbeit verfolgt folgende Ziele:
 
 \begin{itemize}
 \tightlist
@@ -248,8 +257,8 @@ Die Arbeit verfolgt also folgende Hauptziele:
   dem Tod verknüpften Ideen aus kulturevolutionärer Perspektive.
 \item
   Die überblicksartige Erfassung der Entwicklung bronzezeitlicher
-  Bestattungssitten in Nordwest-, Nord-, und Zentraleuropa in den vielen
-  hundert relevanten Kulturkontexten.
+  Bestattungssitten in Nordwest-, Nord-, und Zentraleuropa in den
+  relevanten Kulturkontexten.
 \item
   Die Auswertung des Radon-B Datensatzes hinsichtlich der zeitlichen und
   räumlichen Verbreitung der primären Bestattungsformen.
@@ -260,8 +269,7 @@ Die Arbeit verfolgt also folgende Hauptziele:
   ist.
 \end{itemize}
 
-Die Arbeit ist, sieht man von dieser kurzen Einleitung und einer ebenso
-kurzen Zusammenfassung am Ende ab, in drei Abschnitte gegliedert:
+Die Arbeit ist in drei Abschnitte gegliedert:
 
 Ein erster Teil, Kapitel \ref{cultural-evolution}, zeichnet die
 Geschichte der \emph{Cultural Evolution Theory} nach, führt näher in die
@@ -269,39 +277,37 @@ forschungsgeschichtlich wichtige Unterströmung \emph{Memetik} ein und
 gibt einen Überblick über aktuelle Entwicklungen und Fragestellungen --
 zunächst ganz allgemein, dann mit Schwerpunkt auf den Aspekt
 \emph{Cultural Transmission}, der für diese Arbeit von besonderer
-Bedeutung ist. Ein solcher Überblick muss allein aufgrund der Vielfalt
-und Heterogenität von Themen und Fächern die er berührt stets
-unvollständig bleiben. Aus diesem Grund wurde zur bedarfsgerechten
-Vertiefung und als Kompendium für die Zukunft viel Literatur angefügt.
+Bedeutung ist. Die Vielfalt und Heterogenität von Themen und Fächern,
+die er berührt, können im Rahmen dieser Arbeit nicht alle umfassend
+angesprochen werden. Für die bedarfsgerechte Vertiefung und als
+Kompendium für die Zukunft wurde daher an entsprechenden Stellen auf
+weiterführende Literatur verwiesen.
 
-Der zweite Teil, Kapitel \ref{bronze-age-burial-rites}, stellt das
-Fallbeispiel der Entwicklung bronzezeitlicher Bestattungssitten vor.
-Dabei werden zunächst eine Reihe von Vorüberlegungen verarbeitet, die
-den Tod und seine archäologische Erforschung kontextualisieren. Die
-damit erfassten Probleme und Paradigmen sind essentiell für eine
-Betrachtung von Bestattungssitten aus \emph{Cultural Evolution}
-Perspektive. Der größte Teil des Kapitels ist einer Beschreibung der
-Entwicklung von Bestattungspraktiken im Untersuchungsareal gewidmet.
-Diese nimmt naturgemäß viel Raum ein und muss dennoch als äußerst
-reduziert gelten. Ein ausführliches Quellenstudium hätte den Rahmen
-dieser Arbeit gesprengt. Die aus wenigen Übersichtstexten kompilierte
-Übersicht ist immerhin geeignet, die Repräsentativität des Radon-B
-Datensatzes abzuschätzen.
+Der zweite Teil, Kapitel \ref{bronze-age-burial-rites}, widmet sich dem
+Fallbeispiel der Entwicklung bronzezeitlicher Bestattungssitten. Dabei
+werden zunächst eine Reihe von Vorüberlegungen verarbeitet, die den Tod
+und seine archäologische Erforschung kontextualisieren. Die damit
+erfassten Probleme und Paradigmen sind essentiell für eine Betrachtung
+von Bestattungssitten aus \emph{Cultural Evolution} Perspektive.
+Anschließend wird die Entwicklung der Bestattungssitten im
+Untersuchungsgebiet kompilativ betrachtet. Diese nimmt naturgemäß viel
+Raum ein und muss dennoch als äußerst reduziert gelten: Ein
+ausführliches Quellenstudium hätte den Rahmen dieser Arbeit gesprengt.
+Die aus Übersichtstexten kompilierte Zusammenschau ist immerhin
+geeignet, die Repräsentativität des Radon-B Datensatzes abzuschätzen.
 
 Ein dritter und letzter Teil, Kapitel \ref{data-analysis}, dient der
 Präsentation und Auswertung des Datensatzes. Das erarbeitete Modell und
 seine Implementierung als computerbasiertes Simulationswerkzeug werden
-erklärt, wofür sowohl die Modellsemantik als auch seine technische
-Umsetzung thematisiert werden müssen. Aus dem Vergleich von realer und
-simulierter Entwicklung anhand eines Proxies, der sowohl aus den
-\textsuperscript{14}C-Daten als auch den Simulationsergebnissen
-abgeleitet werden kann, ergeben sich interpretierbare Beobachtungen. Die
-Simulation dient im folgenden auch als Vergleichsgegenstand für die
-Untersuchung von Unterschieden in kultureller und räumlicher Distanz
-sowie der Messung von diachroner Einflussbeziehungen im Netzwerk der
-europäischen Großregionen. Kapitel \ref{data-analysis} ist also endlich
-der quantitativen Forschung gewidmet, die für diese Arbeit unternommen
-wurde.
+vorgestellt. Dabei werden sowohl die ihm zugrunde liegende
+Modellsemantik als auch seine technische Umsetzung vertieft. Aus dem
+Vergleich von realer und simulierter Entwicklung anhand eines Proxies,
+der sowohl aus den \textsuperscript{14}C-Daten als auch den
+Simulationsergebnissen abgeleitet werden kann, ergeben sich
+interpretierbare Beobachtungen. Die Simulation dient im folgenden auch
+als Vergleichsgegenstand für die Untersuchung von Unterschieden in
+kultureller und räumlicher Distanz sowie der Messung von diachroner
+Einflussbeziehungen im Netzwerk der europäischen Großregionen.
 
 \hypertarget{cultural-evolution}{%
 \chapter{Cultural Evolution}\label{cultural-evolution}}
@@ -328,8 +334,8 @@ Neurologie, Genetik, Soziologie und alle anthropologischen Fächer sind
 betroffen und haben sich an dieser Diskussion beteiligt. Die Übertragung
 biologisch-evolutiver Wirkmechanismen zur Erklärung menschlichen
 Verhaltens war bereits Gegenstand akademischer Debatte, lange bevor
-Charles Darwins (*1809 - †1882) Evolutionstheorie mit den Standardwerken
-\emph{On the Origin of Species}\footnote{\textcite{Darwinoriginspeciesmeans1859}}
+Charles Darwins (*1809 -- †1882) Evolutionstheorie mit den
+Standardwerken \emph{On the Origin of Species}\footnote{\textcite{Darwinoriginspeciesmeans1859}}
 und \emph{The Descent of Man}\footnote{\textcite{Darwindescentmanselection1871}}
 in Fachwelt und Öffentlichkeit verarbeitet wurden\footnote{\textcite{petermann_geschichte_2004},
   501-502.}: Parallel zur Entwicklung der \emph{Evolutionsbiologie} in
@@ -360,46 +366,46 @@ diskutiert\footnote{\textcite{bowler_evolution_1989}, 188-202.}.
 Insbesondere der Streit zwischen darwinistischer Evolution durch
 Selektion und \emph{lamarckistischer Evolution} durch Vererbung
 erworbener Eigenschaften war nicht entschieden. Jean-Baptiste de Lamarck
-(*1744 - †1829) war zwar weitestgehend überholt, aber sein
+(*1744 -- †1829) war zwar weitestgehend überholt, aber sein
 Adaptionsgedanke lebte in \emph{Neo-Lamarckismus}\footnote{\textcite{bowler_evolution_1989},
   236-247.} und \emph{Orthogenese}\footnote{\textcite{bowler_evolution_1989},
   247-250.} fort, die als Alternativen für den vor allem von August
-Weismann (*1834 - †1914) und Alfred Russel Wallace (*1823 - †1913)
+Weismann (*1834 -- †1914) und Alfred Russel Wallace (*1823 -- †1913)
 propagierten \emph{Neo-Darwinismus}\footnote{\textcite{bowler_evolution_1989},
   251-260.} diskutiert wurden. Weismann vertrat einen dogmatischen
 \emph{Selektionismus} und führte mit der \emph{Keimplasmatheorie} eine
 Erklärung für Vererbung ein, die wichtige Aspekte der Genetik vorwegnahm
 und lamarckistische Adaption ausschloss. Die frühe \emph{Genetik} ging
 jedoch nicht aus darwinistischem Selektionismus hervor. Stattdessen
-wurde die Wiederentdeckung der bereits von Gregor Mendel (*1822 - †1884)
-1866 publizierten \emph{Mendelschen Vererbungsregeln} um 1900 vor allem
-im Kontext der \emph{Saltationstheorie} diskutiert, die nicht Selektion,
-sondern tiefgreifende, spontane Mutationen als Motor der Evolution
-favorisierte\footnote{\textcite{bowler_evolution_1989}, 260-261.}. Ein
-bekannter, streitbarer Vertreter dieser Schule war William Bateson
-(*1861 - †1926). Er prägte den Begriff \emph{Genetik} und trug
-maßgeblich zur Popularisierung der Mendelschen Regeln bei. Ihm entgegen
-stand die ebenfalls noch junge Wissenschaft der \emph{Biometrie}, die
-statistische Methoden zur Untersuchung von Populationen einführte und
-die Bedeutung von Selektion hervorhob. Darwins Cousin Francis Galton
-(*1822 - †1911) gilt als Vorreiter dieser Strömung, vertrat aber eine
-fehlerhafte, inkohärente Vererbungslehre. Erst Nachfolgern wie Walter
-Frank Raphael Weldon (*1860 - †1906) und Karl Pearson (*1857 - †1936)
-gelang der Nachweis, dass Selektion zur nachhaltiger Veränderung in
-Populationen führen kann\footnote{\textcite{bowler_evolution_1989},
+wurde die Wiederentdeckung der bereits von Gregor Mendel (*1822 --
+†1884) 1866 publizierten \emph{Mendelschen Vererbungsregeln} um 1900 vor
+allem im Kontext der \emph{Saltationstheorie} diskutiert, die nicht
+Selektion, sondern tiefgreifende, spontane Mutationen als Motor der
+Evolution favorisierte\footnote{\textcite{bowler_evolution_1989},
+  260-261.}. Ein bekannter, streitbarer Vertreter dieser Schule war
+William Bateson (*1861 -- †1926). Er prägte den Begriff \emph{Genetik}
+und trug maßgeblich zur Popularisierung der Mendelschen Regeln bei. Ihm
+entgegen stand die ebenfalls noch junge Wissenschaft der
+\emph{Biometrie}, die statistische Methoden zur Untersuchung von
+Populationen einführte und die Bedeutung von Selektion hervorhob.
+Darwins Cousin Francis Galton (*1822 -- †1911) gilt als Vorreiter dieser
+Strömung, vertrat aber eine fehlerhafte, inkohärente Vererbungslehre.
+Erst Nachfolgern wie Walter Frank Raphael Weldon (*1860 -- †1906) und
+Karl Pearson (*1857 -- †1936) gelang der Nachweis, dass Selektion zur
+nachhaltiger Veränderung in Populationen führen kann\footnote{\textcite{bowler_evolution_1989},
   256-260.}. Die Debatte um den genauen Mechanismus der Evolution war
 entscheidend für die Biologie im späten 19. und frühen 20. Jahrhundert
 -- die Interdependenzen von Mutation, Adaption und Selektion waren noch
 nicht verstanden.
 
 In den ersten Jahrzehnten des 20. Jahrhunderts wurde Hugo de Vries
-(*1848 - †1935) \emph{Mutationstheorie} die in Fachkreisen am weitesten
+(*1848 -- †1935) \emph{Mutationstheorie} die in Fachkreisen am weitesten
 verbreitete Evolutionstheorie. Nach de Vries funktioniert Mutation wie
 in der \emph{Saltationstheorie} als schnelles Hervorbringen neuer,
 vollständiger Varianten, die dann durch Selektion sortiert werden. Viele
 seiner Anhänger verwarfen die Notwendigkeit für Selektion jedoch -- so
-z.B. Thomas Hunt Morgan (*1866 - †1945) oder Wilhelm Johannsen (*1857 -
-†1927), die moralisch und inhaltlich gegen eine tragende Rolle von
+z.B. Thomas Hunt Morgan (*1866 -- †1945) oder Wilhelm Johannsen (*1857
+-- †1927), die moralisch und inhaltlich gegen eine tragende Rolle von
 Selektion argumentierten und gleichzeitig wesentliche Beiträge zur
 Definition der Vererbungseinheiten im Kontext der noch jungen
 \emph{Genetik} leisteten. Morgans Forschung an Fruchtfliegen führte zu
@@ -423,10 +429,10 @@ Populationsbiologie und die botanische und zoologische Feldforschung
 erhielten deutliche Anstöße -- auch zur Quantifizierung und
 Systematisierung von Forschung. Die \emph{Synthese} wurde von
 Protagonisten wie Julian S. Huxley (*1887-†1975), Sewall G. Wright
-(*1889 - †1988), Ronald A. Fisher (*1890 - †1962), John B. S. Haldane
+(*1889 -- †1988), Ronald A. Fisher (*1890 -- †1962), John B. S. Haldane
 (*1892-†1964), Theodosius G. Dobzhansky (*1900-†1975), Bernhard Rensch
-(*1900-†1990), Edmund B. Ford (*1901 - †1988), George G. Simpson
-(*1902-†1984) und neben vielen anderen vor allem Ernst Mayr (*1904 -
+(*1900-†1990), Edmund B. Ford (*1901 -- †1988), George G. Simpson
+(*1902-†1984) und neben vielen anderen vor allem Ernst Mayr (*1904 --
 †2005) getragen. Trotz ihrer augenscheinlich anregenden Wirkung verblieb
 berechtigte Kritik an der \emph{Synthetischen Evolutionstheorie}: Der
 rigide durchgesetzte Schwerpunkt auf Selektionismus auf Darwinismus
@@ -464,8 +470,8 @@ kann vor diesem Hintergrund in sehr einfachen Begriffen und mit wenigen
 Parametern erfolgen\footnote{\textcite{noauthor_evolutionismus_1986}}.
 Bei der ersten Formulierung Evolutionistischer Theorie hat Darwin nur
 eine untergeordnete Rolle gespielt. Protagonisten wie Herbert Spencer
-(*1820 - †1903) und John Lubbok (*1834 - †1913) orientierten sich
-stärker an Charles Lyell (*1797 - †1875), der in der ersten Hälfte des
+(*1820 -- †1903) und John Lubbok (*1834 -- †1913) orientierten sich
+stärker an Charles Lyell (*1797 -- †1875), der in der ersten Hälfte des
 19. Jahrhunderts mit den geologischen Schlüsselprinzipien
 \emph{Aktualismus} (rezente, natürliche Phänomene haben so auch in der
 Vergangenheit stattgefunden) und \emph{Gradualismus} (geologischer
@@ -482,11 +488,11 @@ Weiterentwicklung der Kulturen auf, das durch Vergleich mit rezenten
 Gesellschaften und deren Organisationsgrad versteh- und kategorisierbar
 geworden war. Die Evolutionisten bildeten keine kohärente Schule.
 Stattdessen wurde eine Gruppe von Individuen -- maßgeblich Lewis Henry
-Morgan (*1818 - †1881), Herbert Spencer, John Ferguson McLennan (*1827 -
-†1881), Edward Burnett Tylor (*1832 - †1917) und John Wesley Powell
-(*1834 - †1902) -- abschätzig von Gegnern mit diesem Begriff belegt. Dem
-Evolutionismus wurde vorgeworfen, die Aussagekraft materieller Kultur
-über die soziale Organisation vorgeschichtlicher Gesellschaften
+Morgan (*1818 -- †1881), Herbert Spencer, John Ferguson McLennan (*1827
+-- †1881), Edward Burnett Tylor (*1832 -- †1917) und John Wesley Powell
+(*1834 -- †1902) -- abschätzig von Gegnern mit diesem Begriff belegt.
+Dem Evolutionismus wurde vorgeworfen, die Aussagekraft materieller
+Kultur über die soziale Organisation vorgeschichtlicher Gesellschaften
 positivistisch überbewertet zu haben. \emph{Konjekturalgeschichte} und
 \emph{Vergleichende Methode} hätten zu einer Perspektive unlinearer
 Entwicklung geführt, die durch Stufengliederung der
@@ -505,8 +511,8 @@ wissenschaftstheoretische Schule, sondern eine polemische Zuschreibung
 wissenschaftlicher, ideologischer und politischer Gegner. Die heftige
 Kontroverse, die rund um Evolutionstheorie in der zweiten Hälfte des 19.
 Jahrhunderts entstand, wurde von Propagandisten wie Thomas Henry Huxley
-(*1825 - †1895) (\emph{Darwin's Bulldog}) oder, im deutschsprachigen
-Raum, Ernst Haeckel (*1834 - †1919) getragen. Die Erkenntnisse hatten
+(*1825 -- †1895) (\emph{Darwin's Bulldog}) oder, im deutschsprachigen
+Raum, Ernst Haeckel (*1834 -- †1919) getragen. Die Erkenntnisse hatten
 Konsequenzen für fundamentale weltanschauliche Fragen -- entsprechend
 wurde die Diskussion von der Presse aufgegriffenen und einer breiten
 Öffentlichkeit präsentiert. Das hatte starke, oft unangemessene
@@ -527,18 +533,18 @@ stabilisiert, der sich politisch gegen staatliche Eingriffe ins
 Wirtschaftssystem und für individuelle, zwischenmenschliche Solidarität
 ausspricht. Spencer beeinflusste eine ganze Reihe amerikanischer
 Ethnologen und Soziologen\footnote{\textcite{smith_cultural_1992}, 62.},
-darunter William Graham Sumner (*1840 - †1910), Lester Frank Ward (*1841
-- †1913) und Franklin Henry Giddings (*1855 - †1931). Sie teilten
-Spencers Verständnis biosozialer Evolution und deren
+darunter William Graham Sumner (*1840 -- †1910), Lester Frank Ward
+(*1841 -- †1913) und Franklin Henry Giddings (*1855 -- †1931). Sie
+teilten Spencers Verständnis biosozialer Evolution und deren
 empirisch-positivistischer Erforschbarkeit, jeder repräsentiert
 gleichermaßen aber gegensätzliche Ansichten darüber, wie stark die
 evolutiven Prozesse menschliche Gesellschaften determinieren. Europas
 Sozialdarwinisten waren keine Spencerianer, dafür aber umso stärker
 Theorien radikal-biologischen und rassistischen Existenzkampfs
-verpflichtet. Zu nennen sind unter anderem Gustav Ratzenhofer (*1842 -
-†1904), Jakov Novicov (*1849 - †1912), Michelangelo Vaccaro (*1854 -
+verpflichtet. Zu nennen sind unter anderem Gustav Ratzenhofer (*1842 --
+†1904), Jakov Novicov (*1849 -- †1912), Michelangelo Vaccaro (*1854 --
 †1937) und besonders der jüdisch-polnische Jurist und Soziologe Ludwig
-Gumplowicz (*1838 - †1909), der mit seinem wissenschaftlichen Rassismus
+Gumplowicz (*1838 -- †1909), der mit seinem wissenschaftlichen Rassismus
 in einer Rede im September 1933 von Adolf Hitler fast wörtlich zitiert
 wurde\footnote{\textcite{petermann_geschichte_2004}, 511-524.}:
 
@@ -566,7 +572,7 @@ Neoevolutionismus}\label{cultural-relativism-neoevolutionism}}
 Kritiker des Evolutionismus in der ersten Hälfte des zwanzigsten
 Jahrhunderts waren Vertreter der britischen \emph{Social Anthropology},
 deutscher \emph{Kulturgeschichte} und vor allem der von Franz Boas
-(*1858 - †1942) etablierten, amerikanischen \emph{Kulturanthropologie}.
+(*1858 -- †1942) etablierten, amerikanischen \emph{Kulturanthropologie}.
 Die Gemeinsamkeit dieser Schulen und Strömungen liegt an ihrem
 traditionellen Fokus auf den jeweiligen naturräumlichen, historischen
 und soziopolitischen Kontext einzelner kultureller Ausprägung. Boas war
@@ -575,9 +581,9 @@ emigrierte nach seiner Zuwendung zur Ethnologie in die USA. Er gilt als
 Begründer des \emph{historischen Partikularismus}, der sich gegen
 deduktive, umfassende Erklärungsmodelle wie Evolutionismus und
 Diffusionismus wandte. Letzterer hatte sich parallel zu ersterem vor
-allem in Europa aus den Arbeiten von Friedrich Ratzel (*1844 - †1904),
-Leo Frobenius (*1873 - †1938) -- Gründer der Kulturkreislehre -- sowie
-Hermann Baumann (*1902 - †1972), Gustaf Kossinna (*1858 - †1931) und
+allem in Europa aus den Arbeiten von Friedrich Ratzel (*1844 -- †1904),
+Leo Frobenius (*1873 -- †1938) -- Gründer der Kulturkreislehre -- sowie
+Hermann Baumann (*1902 -- †1972), Gustaf Kossinna (*1858 -- †1931) und
 verschiedenen Autoren der \emph{Wiener Schule} der Völkerkunde
 herausgebildet. Boas verwarf diese Weltmodelle, die ihnen zugrunde
 liegende \emph{Vergleichende Methode} und ihre Analogieschlüsse und
@@ -603,10 +609,10 @@ Verständnis der Interaktion zwischen Gruppen bereits Grundaussagen der
 (siehe Kapitel \ref{cultural-transmission}). Boas war ein politischer
 Mensch und argumentierte mit Kulturrelativismus gegen Rassismus und
 Faschismus\footnote{\textcite{petermann_geschichte_2004}, 643-655.}.
-Schüler von Boas (\emph{Boasianer}) wie Clark Wissler (*1870 - †1947),
-Elsie Clews Parsons (*1875 - †1941), Alfred Kroeber (*1876 - †1960),
-Alexander Goldenweiser (*1880 - †1940), Robert Lowie (*1883 - †1957),
-Paul Radin (*1883 - †1959), Edward Sapir (*1884 - †1939) prägten die
+Schüler von Boas (\emph{Boasianer}) wie Clark Wissler (*1870 -- †1947),
+Elsie Clews Parsons (*1875 -- †1941), Alfred Kroeber (*1876 -- †1960),
+Alexander Goldenweiser (*1880 -- †1940), Robert Lowie (*1883 -- †1957),
+Paul Radin (*1883 -- †1959), Edward Sapir (*1884 -- †1939) prägten die
 amerikanische Ethnologie nachhaltig und führten über Jahrzehnte einen
 erbitterten Diskurs mit Evolutionisten und Neoevolutionisten\footnote{\textcite{petermann_geschichte_2004},
   654-688.}.
@@ -620,13 +626,13 @@ aber dennoch bewusst nach Gesetzmäßigkeiten soziokultureller Prozesse
 suchen um der Anthropologie ein höheres Abstraktionsniveau zu
 erschließen. Aus dieser Definition heraus lassen sich dem
 Neoevolutionismus einige der bedeutendsten Ethnologen und Archäologen
-zuordnen: Vere Gordon Childe (*1892 - †1957), Karl Wittfogel (*1896 -
-†1988), George Murdock (*1897 - †1985), Leslie White (*1900 - †1975) und
-Julian Haynes Steward (*1902 - †1972) Auch die Arbeit einer nachfolgende
-Generation mit Protagonisten wie Elman Service (*1915 - †1996), Morton
-Fried (*1923 - †1986), Roy Rappaport (*1926 - †1997), Marshall Sahlins
-(*1930) oder Lewis Binford (*1931 - †2011) ist stark von
-neoevolutionistischem Denken geprägt.
+zuordnen: Vere Gordon Childe (*1892 -- †1957), Karl Wittfogel (*1896 --
+†1988), George Murdock (*1897 -- †1985), Leslie White (*1900 -- †1975)
+und Julian Haynes Steward (*1902 -- †1972) Auch die Arbeit einer
+nachfolgende Generation mit Protagonisten wie Elman Service (*1915 --
+†1996), Morton Fried (*1923 -- †1986), Roy Rappaport (*1926 -- †1997),
+Marshall Sahlins (*1930) oder Lewis Binford (*1931 -- †2011) ist stark
+von neoevolutionistischem Denken geprägt.
 
 Vere Gordon Childe, ursprünglich Philologe aus Australien, etablierte
 sich in Europa durch seine großen, synthetischen Werke als
@@ -1176,8 +1182,8 @@ und \emph{Darwin's Dangerous Idea}\footnote{\textcite{dennett_darwins_1995};
 Geisteswissenschaftlern, die sich unter anderem im 1997 eigens
 gegründeten Journal of Memetics\footnote{\url{http://cfpm.org/jom-emit/}
   {[}06.01.2018{]}} zu Wort gemeldet haben. Darunter genannt werden
-sollen Aaron Lynch\footnote{u.a. \textcite{lynch_thought_1996}} (*1880 -
-†1940), Francis Heylighen\footnote{u.a.
+sollen Aaron Lynch\footnote{u.a. \textcite{lynch_thought_1996}} (*1880
+-- †1940), Francis Heylighen\footnote{u.a.
   \textcite{heylighen_evolution_1996} und
   \textcite{heylighen_selfish_1992}} (*1960), und Derek
 Gatherer\footnote{u.a. \textcite{gatherer_identifying_2002} und
@@ -1369,9 +1375,9 @@ Niedergang der Memetik zu erklären.
   ähnelt der frühen Kritik am Evolutionismus durch die Boasianer (siehe
   Kapitel \ref{cultural-relativism-neoevolutionism}). Einer der
   sichtbarsten Vertreter dieser ausgesprochen antisoziobiologischen
-  Perspektive war Stephen Jay Gould (*1941 - †2002). Memetik entwickelte
-  sich also als kontroverse Nische in einem ohnehin heiß umkämpften
-  Umfeld.
+  Perspektive war Stephen Jay Gould (*1941 -- †2002). Memetik
+  entwickelte sich also als kontroverse Nische in einem ohnehin heiß
+  umkämpften Umfeld.
 \end{enumerate}
 
 \begin{quote}
@@ -1452,9 +1458,9 @@ Evolutionary Psychology, Human Behavioural Ecology und Dual Inheritance
 Theory sind Grundlage für abstrakte Modelle, Fallstudien und
 theoretische Weiterentwicklung. Besonders hervorgetan haben sich hier in
 den vergangenen 30 Jahren neben Cavalli-Sforza, Feldmann, Richerson,
-Boyd und Shennan auch Robert Chester Dunnell (*1942 - †2010), Michael
+Boyd und Shennan auch Robert Chester Dunnell (*1942 -- †2010), Michael
 John O'Brien (*1950), Patrice A. Teltser (*1954), Ben Sandford Cullen
-(*1964 - †1995) und eine Vielzahl jüngerer Kollegen wie R. Lee Lyman,
+(*1964 -- †1995) und eine Vielzahl jüngerer Kollegen wie R. Lee Lyman,
 Joseph Henrich, Oren Kolodny, Ken Aoki, Alex Mesoudi oder Enrico Crema.
 Seit 2015 konstituiert sich eine Cultural Evolution Society als
 interdisziplinäre Wissenschaftsvereinigung\footnote{\url{https://culturalevolutionsociety.org}
@@ -1795,9 +1801,10 @@ erwartungsgemäß schwerwiegende ökonomische Konsequenzen\footnote{\textcite{ba
 Die Ursprünge der Cultural Transmission Theory sind im klassischen
 Diffusionismus (siehe Kapitel \ref{cultural-relativism-neoevolutionism})
 und seinen etwas reiferen Ausprägungen nach der Fundamentalkritik der
-Boasianer zu suchen -- etwa bei Alfred Louis Kroeber (*1876 - †1960)
-oder Wilhelm Koppers (*1886 - †1961). Seit dem ist Cultural Transmission
-auch Gegenstand der Archäologischen Fachdiskussion\footnote{\textcite{lyman_cultural_2008};
+Boasianer zu suchen -- etwa bei Alfred Louis Kroeber (*1876 -- †1960)
+oder Wilhelm Koppers (*1886 -- †1961). Seit dem ist Cultural
+Transmission auch Gegenstand der Archäologischen
+Fachdiskussion\footnote{\textcite{lyman_cultural_2008};
   \textcite{shennan_evolution_2008}}. Die Ausbreitung und Entwicklung
 von Ideen lässt sich getrennt voneinander erforschen, die Integration
 von Cultural Transmission in Cultural Evolution und Dual Inheritance
