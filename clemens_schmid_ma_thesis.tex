@@ -4647,7 +4647,7 @@ Populationsgenerator. R Paket zur Konstruktion von Populationsgraphen.
 \textbf{gluesless}\footnote{\textcite{clemens_schmid_gluesless_2018};
   \url{https://www.github.com/nevrome/gluesless}} Expansionsmodell. C++
 Programm zur Simulation der Ausbreitung von Ideen in einem
-Populationsgraphen, wie er von popgenerator erzeugt wird.
+Populationsgraphen, wie er von \emph{popgenerator} erzeugt wird.
 
 \textbf{c14bazAAR}\footnote{\textcite{schmid_c14bazaar_2018};
   \url{https://www.github.com/nevrome/c14bazAAR}}
@@ -4741,7 +4741,7 @@ Rcpp\footnote{\textcite{eddelbuettel_extending_2017};
   \textcite{eddelbuettel_seamless_2013}}, rlang\footnote{\textcite{henry_rlang_2018}},
 roxygen2\footnote{\textcite{wickham_roxygen2_2017}}, testthat\footnote{\textcite{wickham_testthat_2011}}).
 
-Die Expansionssimultion gluesless ist in C++\footnote{\textcite{standard-cpp-foundation_international_2017}}
+Die Expansionssimultion \emph{gluesless} ist in C++\footnote{\textcite{standard-cpp-foundation_international_2017}}
 umgesetzt, um auf dessen höhere Geschwindigkeit und bessere Werkzeuge
 für objektorientiertes Programmieren zurückgreifen zu können. Zur
 Abbildung des Populationsgraphen kam zunächst die Boost Graph
@@ -5237,34 +5237,44 @@ Die Radon-B Datenbank hat inhaltliche Unzulänglichkeiten, die sich vor
 allem aus inkonsistenter Dateneingabe infolge mangelnder Vorgaben in
 Freitextfeldern ergeben. Eine systematische Lösung dieser Probleme wäre
 sehr aufwändig, da sie die individuelle, nicht automatisierbare
-Reevaluation eines großen Teils der Einträge erfordern würde.
+Reevaluation eines großen Teils der Einträge erfordern würde. Folgende
+Problematiken ergeben sich aus den mangelnden Vorgaben:
 
 \begin{itemize}
 \tightlist
 \item
   Viele Einträge sind unvollständig. Die Unvollständigkeiten rühren
-  sicher teilweise aus Mängeln in den ausgewerteten Publikationen: Der
-  \(\\delta\)\textsuperscript{13}C Wert, Material und Spezies des
-  beprobten Überrests oder der kulturhistorische Kontext sind mitunter
-  nicht bekannt oder nicht publiziert.
+  sicher teilweise aus Mängeln in den ausgewerteten Publikationen:
+  Material und Spezies des beprobten Überrests, der
+  \(\delta\)\textsuperscript{13}C Wert oder der kulturhistorische
+  Kontext sind mitunter nicht bekannt oder nicht publiziert. Für dieses
+  Problem gibt es keine Lösung -- sieht man von der akribischen
+  Rekonstruktion des Datierungsvorgangs in Zusammenarbeit mit den
+  beteiligten Laboren ab.
 \item
-  Mehrere eigentlich kategorisierbare Kontextvariablen sind mit einer
+  Mehrere nominal oder ordinal skalierte, also eigentlich
+  kategorisierbare Kontextvariablen sind mit keiner oder einer
   inkosistenten Kategorienauswahl versehen oder nicht sinnvoll
   hierarchisiert. Während für manche Variablen (Feature Type, Sample
   Material) eine Kategorisierung bewusst festgelegt worden zu sein
   scheint, die dann nur in wenigen Fällen durch freie Einträge erweitert
   wurde, scheint bei anderen (Culture, Phase) keine klare Vorgabe zu
   bestehen, welche semantischen Inhalte in welcher Struktur dort
-  eingefügt werden sollen.
+  eingefügt werden sollen. Die Materialdefinition könnte durch strengere
+  Vereinheitlichung der Eingabewerte leicht besser gelöst werden. Die
+  sinnvolle Auswahl und Hierarchisierung kulturhistorischer Begriffe ist
+  dagegen mit großen Schwierigkeiten verknüpft.
 \item
   Viele Einträge sind mehrsprachig -- vor allem Englisch und Deutsch --
   wobei in ein und dem selben Datensatz mitunter mehrere Sprachen für
-  einzelne Felder auftreten.
+  einzelne Variablen auftreten. Zur Lösung dieses Problems wäre eine
+  systematische Reevaluation jedes Datums erforderlich.
 \item
   Die Koordinateninformationen sind übermäßig genau, wenn man in
   Betracht zieht, dass sie in der Regel nur den Fundplatz und keine
   Befunde auf demselben verorten. Die scheinbare Genauigkeit reicht
-  häufig in den Zentimeter-Bereich.
+  häufig in den Zentimeterbereich. Die Daten sollten automatisiert
+  gerundet werden.
 \end{itemize}
 
 \hypertarget{representativity}{%
@@ -5286,28 +5296,28 @@ Ungleichverteilung der Daten hat viele verschiedene Gründe.
   bedarfsweise aus der Literatur gesammelt.
 \item
   Die Verfügbarkeit von \textsuperscript{14}C-Daten in der Literatur ist
-  wiederrum stark daran gebunden, ob ein modernes Forschungsprojekt mit
+  wiederum stark daran gebunden, ob ein modernes Forschungsprojekt mit
   Konzentration auf eine Region und ein Zeitfenster durchgeführt wurde.
   Neben der zufälligen Verteilung der Interessensgebiete der Forschenden
   spielt hier auch die politische Rahmensituation -- etwa die lang
   andauernde Trennung Europas in West und Ost -- eine entscheidende
   Rolle, die die Arbeit in manchen Räumen erleichtert oder kompliziert.
 \item
-  Auch im Untersuchungsgebiet dieser Arbeit begegnen sich
-  unterschiedliche Forschungstraditionen, die
-  \textsuperscript{14}C-Daten in der Vergangenheit mehr oder weniger
-  essentiell für die Konstruktion einer absolutchronologischen
-  Einschätzung gehalten haben. \textsuperscript{14}C-Daten sind in
-  verschiedenen metallzeitlichen Kontexten der Genauigkeit
-  relativchronologischer Einordnungen -- etwa auf Grundlage von
-  Fibeltypologie -- unterlegen und werden deswegen nur sporadisch zur
-  Schaffung von absolutchronologischen Einhängepunkten genutzt. In
-  Feuchtbodenkontexten und bei Verfügbarkeit der erforderlichen Hölzer
-  wird Dendrochronologische Datierung bevorzugt angewandt. Die
-  verfügbaren \textsuperscript{14}C Kalibrationskurven bilden in manchen
-  Zeiträumen Plateaus aus, was die erreichbare Datierungsgenauigkeit der
-  Daten signifikant einschränkt. Ist ein solcher Effekt bekannt, dann
-  werden erst gar keine Daten in Auftrag gegeben.
+  Im Untersuchungsgebiet dieser Arbeit begegnen sich unterschiedliche
+  Forschungstraditionen, die \textsuperscript{14}C-Daten in der
+  Vergangenheit mehr oder weniger essentiell für die Konstruktion einer
+  absolutchronologischen Einschätzung gehalten haben.
+  \textsuperscript{14}C-Daten sind in verschiedenen metallzeitlichen
+  Kontexten der Genauigkeit relativchronologischer Einordnungen -- etwa
+  auf Grundlage von Fibeltypologie -- unterlegen und werden deswegen nur
+  sporadisch zur Schaffung von absolutchronologischen Einhängepunkten
+  genutzt. In Feuchtbodenkontexten und bei Verfügbarkeit der
+  erforderlichen Hölzer wird die dendrochronologische Datierung
+  bevorzugt angewandt. Die verfügbaren \textsuperscript{14}C
+  Kalibrationskurven bilden in manchen Zeiträumen Plateaus aus, was die
+  erreichbare Datierungsgenauigkeit der Daten signifikant einschränkt.
+  Ist ein solcher Effekt bekannt, dann werden erst gar keine Daten in
+  Auftrag gegeben.
 \item
   \textsuperscript{14}C Datierung erfordert eine zwar kleine, aber
   hinreichend genau kontextualisierbare Menge organischen Fundmaterials.
@@ -5320,7 +5330,7 @@ Ungleichverteilung der Daten hat viele verschiedene Gründe.
 \item
   Aus sehr wenigen Regionen und Zeiten der europäischen Bronzezeit sind
   so viele Gräber dokumentiert, dass davon ausgegangen werden kann, eine
-  signifikante Stuchprobe der Bestattungskultur der Gesamtpopulation
+  signifikante Stichprobe der Bestattungskultur der Gesamtpopulation
   erforscht zu haben. Stattdessen ist in mehreren Kontexten
   offensichtlich, dass nur die Bestattungen einzelner sozialen Gruppen,
   eines Geschlechts oder einer ethnischen Gruppe erfasst wurden: Die
@@ -5349,6 +5359,13 @@ Effekte\footnote{\textcite{harding_european_2000}, 84-85.}.
   errichteten Hügelgräber durch landwirtschaftliche Aktivität --
   langjähriges Überpflügen -- zerstört wurde. Auch das ist Grund für
   eine Unterrepräsentation im gesamten archäologischen Befund.
+\item
+  TODO: aber: wenn sie noch vorhanden sind sind sie - im Gegensatz zu
+  Flachgräber - direkt sichtbar
+\item
+  zeichnen sich oft eindeutig identifizierbar in Luftbildern ab
+\item
+  TODO: Datierung von Brandgräbern
 \end{itemize}
 
 Die Repräsentativität der relativen Entwicklung der Primärvariablen
@@ -5358,8 +5375,8 @@ zumindest oberflächlich geprüft werden, indem man die oben vorgestellten
 Ergebnisse auf Grundlage des Radon-B Datensatzes mit einer Auswertung
 der relativen Aussagen aus der Literatur vergleicht, wie sie in Kapitel
 \ref{regions-archaeological-overview} zusammengefasst werden. Für
-Abbildung \ref{general-map-regions-countries} wurden die Gräber und die
-künstlichen Regionen zur besseren Orientierung auf die modernen
+Abbildung \ref{fig:general-map-regions-countries} wurden die Gräber und
+die künstlichen Regionen zur besseren Orientierung auf die modernen
 Ländergrenzen projiziert, auf die sich Kapitel
 \ref{regions-archaeological-overview} bezieht. Zudem wurden die
 Literaturangaben in eine stark simplifizierende Modellabbildung
@@ -5412,21 +5429,21 @@ Mähren und große Teile Böhmens. Die Dichte der
 verschiedenen Regionen liegen zwar jeweils einzelne Daten vor, große
 Areale müssen jedoch ohne Evidenz auskommen. Diachron ist das
 Datenaufkommen durchgehend niedrig und erreicht in der Mittelbronzezeit
-einen Tiefpunkt. Während für die \emph{burial type} Variable eine
-konstanter Informationsfluss vorhanden ist, nimmt die Anzahl an Gräbern
+einen Tiefpunkt. Während für die \emph{burial type} Variable ein
+konstanter Informationsfluss gegeben ist, nimmt die Anzahl an Gräbern
 ohne Angaben zu \emph{burial construction} in der Spätbronzezeit derart
 zu, dass überhaupt keine Aussage mehr für sie abgeleitet werden kann. Um
 die relative Entwicklung innerhalb der Variaben \emph{burial type} und
 \emph{burial construction}, wie sie mithilfe des Radon-B Datensatzes auf
-Grundlage von \textsuperscript{14}C-Daten nachhergesagt wurde, burteilen
-zu können, muss zunächst ein Resumee aus den Angaben in Kapitel
-\ref{regions-archaeological-overview} gezogen werden. Das ist dadurch
-erschwert, dass die Region vielfältige geographische und kulturelle
-Räume schneidet. Brand- und Körperbestattung bestanden im Südosten
-Mitteleuropas schon in der Frühbronzezeit nebeneinander und auch über
-die Expansion der Grabhügelsitte in der Mittelbronzezeit blieben die
-lokalen Tradition in dieser Hinsicht stabil -- mit insgesamt einer
-leichten Zunahme der Brandgräber. Die Urnenfelderzeit brachte den
+Grundlage von \textsuperscript{14}C-Daten nachhergesagt wurde,
+beurteilen zu können, muss zunächst ein Resümee aus den Angaben in
+Kapitel \ref{regions-archaeological-overview} gezogen werden. Das ist
+dadurch erschwert, dass die Region vielfältige geographische und
+kulturelle Räume schneidet. Brand- und Körperbestattung bestanden im
+Südosten Mitteleuropas schon in der Frühbronzezeit nebeneinander und
+auch über die Expansion der Grabhügelsitte in der Mittelbronzezeit
+blieben die lokalen Tradition in dieser Hinsicht stabil -- mit insgesamt
+einer leichten Zunahme der Brandgräber. Die Urnenfelderzeit brachte den
 Übergang zur absoluten Dominanz der Brandbestattung. Die Entwicklung der
 \emph{burial type} Variable im Radon-B Proxy bildet diese Entwicklung
 grundsätzlich korrekt ab. Die Informationen aus
@@ -5512,7 +5529,7 @@ Variablen ist entsprechend fehlerbehaftet. Immerhin die Parallelexistenz
 von Brand- und Körperbestattung in Früh- und Mittelbronzezeit wird
 korrekt wiedergegeben. Die existierte allerdings schon in der
 Frühbronzezeit und entwickelte sich sicher nuancierter als der Proxy
-vermuten lässt. Entegegen der Ableitung aus den \textsuperscript{14}C
+vermuten lässt. Entgegen der Ableitung aus den \textsuperscript{14}C
 Verhältnissen waren Flachgräber in \emph{Northeastern France} durchaus
 verbreitet.
 
@@ -5525,9 +5542,9 @@ Bundesländer in Ostdeutschland, aber auch große Teile Niedersachsens und
 Schleswig-Holsteins. Die \textsuperscript{14}C-Daten dieser Region
 stammen überwiegend aus Sachsen-Anhalt und angrenzenden Regionen in
 Thüringen, Sachsen und Niedersachsen. Auch aus dem Raum nördlich von
-Bremen sind einge Daten in Radon-B dokumentiert. In der Datenbank sind
-aus keiner anderen Region sind so viele datierte Gräber enthalten wie
-aus Norddeutschland. Der überwiegende Teil davon fällt in die
+Bremen sind einige Daten in Radon-B dokumentiert. In der Datenbank sind
+aus keiner anderen Region so viele datierte Gräber enthalten wie aus
+Norddeutschland. Der überwiegende Teil davon fällt in die
 Frühbronzezeit, während die Menge in der Mittelbronzezeit ab etwa
 1800calBC für einige Jahrhunderte bis 1400calBC auffällig einbricht.
 Erst für die Spätbronzezeit ist wieder eine signifikante Anzahl an Daten
@@ -5536,7 +5553,7 @@ construction} zeichnen diese Entwicklung beide in etwa gleichem Umfang
 nach. Da in Norddeutschland Einflüsse aus allen vier Himmelsrichtungen
 zusammenkommen und maßgeblich zur Ausformung der lokalen Kulturphänomene
 beitragen, ist es auch hier schwierig die Gesamtentwicklung hinsichtlich
-der Primärvariablen äbzuschätzen. \emph{burial site} wird durch den
+der Primärvariablen abzuschätzen. \emph{burial site} wird durch den
 \textsuperscript{14}C Proxy insofern richtig wiedergegeben, als dass
 Körperbestattungen in der Frühbronzezeit dominierten und besonders im
 Norden ab der Mittelbronzezeit von Brandbestattungen abgelöst werden. In
@@ -5558,7 +5575,7 @@ Osten Südschwedens, und Küstenregionen in Schleswig-Holstein und
 Mecklenburg-Vorpommern ein. Die \textsuperscript{14}C-Daten sind sehr
 gut auf Jütland, Fünen und die schwedische Skåne Region verteilt. Da die
 Bronzezeit in Skandinavien erheblich später als in Mitteleuropa beginnt
-und an einem anderen, chronologischen System gemessen wird, lassen sich
+und an einem anderen chronologischen System gemessen wird, lassen sich
 die diachronenen Entwicklungen nicht einfach mittels des dreigliedrigen
 Gerüsts aus Früh-, Mittel- und Spätbronzezeit vergleichen. Die Mehrzahl
 der Daten aus Skandinavien stammt aus dem Zeitraum ab Periode IB.
@@ -5670,21 +5687,21 @@ lehmann\_complex\_2018 sapienza\_estimating\_2018
 Wie werden warum welche Gegebenheiten der realen Welt im Modell
 abgebildet?
 
-Obgleich das die Situation in manchen kulturhistorischen Zusammenhängen
+Obgleich es die Situation in manchen kulturhistorischen Zusammenhängen
 nur unzureichend abbildet, wird hier der Einfachheit davon ausgegangen,
 dass vertikale Beziehungen immer in einer 2:1 Relation von Eltern zu
 Kind bestehen. Die Eltern müssen älter sein als das Kind, also einen
 früheren Geburtszeitpunkt haben, dürfen aber zu diesem Zeitpunkt auch
-nicht zu alt -- also tot -- sein. Tatsächlich müsste für die Zuordnung
-von Eltern zu Kindern hier eine Vielzahl von Parametern beachtet werden:
-Ein Zeitfenster der gemeinsamen Fruchtbarkeit der Eltern, Partnertreue,
-Altersäquivalenz der Partner oder eine theoretische Maximalproduktion
-von Kindern pro weiblichem Individuum, um nur einige zu nennen. Diesen
-Anforderungen kann man stets nur unvollständig gerecht werden, die
-Realwelt lässt sich jedoch mit einer Simulation, die die
-Populationserzeugung generativ voranschreiten lässt besser abbilden als
-mit dem hier gewählten Ansatz. Nach anfänglichen Versuchen musste darauf
-jedoch
+nicht zu alt -- also jenseits der Menopause oder tot -- sein.
+Tatsächlich müsste für die Zuordnung von Eltern zu Kindern hier eine
+Vielzahl von Parametern beachtet werden: Ein Zeitfenster der gemeinsamen
+Fruchtbarkeit der Eltern, Partnertreue, Altersäquivalenz der Partner
+oder eine theoretische Maximalproduktion von Kindern pro weiblichem
+Individuum, um nur einige zu nennen. Diesen Anforderungen kann man stets
+nur unvollständig gerecht werden, die Realwelt lässt sich jedoch mit
+einer Simulation, die die Populationserzeugung generativ voranschreiten
+lässt besser abbilden als mit dem hier gewählten Ansatz. Nach
+anfänglichen Versuchen musste darauf jedoch
 
 Ein Filtern nach diesen Kriterien ist aber bei großen Populationszahlen
 ein zeit- und rechenaufwändiger Vorgang und wurde nach anfänglichen
@@ -5697,22 +5714,24 @@ Letztere hätte eine Unterscheidung nach dem Geschlecht erfordert.
 Algorithmen}\label{implementierung-und-algorithmen}}
 
 Die Simulationssoftware besteht aus zwei speziell für diese Anwendung
-entwickelten Modulen: Der Populationsgenerator popgenerator und die
-Expansionssimulation gluesless. Die Module sind aufeinander abgestimmt
-und in den verwendeten Versionen funktional auf die Fragestellungen
-dieser Arbeit zugeschnitten. Beide ließen sich jedoch relativ leicht für
-einen breiteren Anwendungsbereich öffnen, wenn dafür in Zukunft
-Notwendigkeit bestehen sollte. Die im folgenden ausgearbeitete
-Beschreibungen beziehen sich entsprechend jeweils speziell auf Version
-1.0 der Module, die für die Berechnung in dieser Arbeit zum Einsatz
-kamen. Im Gegensatz zu den Ausführungen im Kontext von Datenvorbereitung
-und -analyse in Kapitel @ref(\#radonb-dataset), wo darauf zugunsten des
-Leseflusses bewusst verzichtet wurde, werden hier nun die wesentlichen
-Funktionen und Klassen namentlich genannt. Das soll es erleichtern, die
-grundsätzlicher Architektur der Software zu verstehen.
+entwickelten Modulen: Dem Populationsgenerator \emph{popgenerator} und
+der Expansionssimulation \emph{gluesless}. Die Module sind aufeinander
+abgestimmt und in den verwendeten Versionen funktional auf die
+Fragestellungen dieser Arbeit zugeschnitten. Beide ließen sich jedoch
+relativ leicht für einen breiteren Anwendungsbereich öffnen, wenn dafür
+in Zukunft Notwendigkeit bestehen sollte. Die im folgenden
+ausgearbeitete Beschreibungen beziehen sich entsprechend jeweils
+speziell auf Version 1.0 der Module, die für die Berechnung in dieser
+Arbeit zum Einsatz kamen. Im Gegensatz zu den Ausführungen im Kontext
+von Datenvorbereitung und -analyse in Kapitel @ref(\#radonb-dataset), wo
+darauf zugunsten des Leseflusses bewusst verzichtet wurde, werden hier
+nun die wesentlichen Funktionen und Klassen namentlich genannt. Das soll
+es erleichtern, die grundsätzlicher Architektur der Software zu
+verstehen.
 
-\hypertarget{populationsgenerator}{%
-\subsubsection{Populationsgenerator}\label{populationsgenerator}}
+\hypertarget{populationsgenerator-popgenerator}{%
+\subsubsection{\texorpdfstring{Populationsgenerator
+\emph{popgenerator}}{Populationsgenerator popgenerator}}\label{populationsgenerator-popgenerator}}
 
 Der Populationsgenerator ist als R Paket implementiert. Er ist in drei
 Submodule gegliedert: \texttt{population\_generator},
@@ -5739,6 +5758,13 @@ ohne Schleifen oder schleifenersetzende Strukturen (\texttt{apply},
 minimieren. Dieser Schritt ist eine Konzession an die Technik und führte
 zu einem höheren Abstraktionsgrad der Populationsnetzwerke als
 ursprünglich geplant.
+
+\emph{popgenerator} stellt einige dedizierte Exportfunktionen bereit,
+die vor allem die Übergabe des generierten Populationsnetzwerks an die
+Expansionssimulation \emph{gluesless} ermöglichen sollen. Der Austausch
+erfolgt über verschiedene, speziell formatierte Textdateien, die von
+\emph{popgenerator} ins Dateisystem abgelegt und von \emph{gluesless}
+gelesen werden.
 
 \begin{table*}
 
@@ -5782,14 +5808,17 @@ Paramter & Beschreibung & Theoretischer Wertebereich\\
 \end{tabu}
 \end{table*}
 
+\hypertarget{popualtion_generator}{%
+\paragraph{popualtion\_generator}\label{popualtion_generator}}
+
 \texttt{population\_generator} dient dazu eine große Menge von
 Individuen zu generieren, die gemeinsam eine generationenüberschreitende
 Population bilden. Menschen sind nur durch ihre Lebenszeit und ihre
 Gruppenzugehörigkeit definiert und damit -- wie in Kapitel
 \ref{simulation-theorie} beschrieben -- sehr einfach modelliert. Die
-zeitliche Auflösung des popgenerator Moduls ist jahrweise und damit an
-die Erfordernisse der Fragestellung dieser Arbei angepasst. Für die
-Erzeugung von Populationen, also der Verarbeitung der Daten im
+zeitliche Auflösung des \emph{popgenerator} Moduls ist jahrweise und
+damit an die Erfordernisse der Fragestellung dieser Arbei angepasst. Für
+die Erzeugung von Populationen, also der Verarbeitung der Daten im
 \texttt{models\_grid}, werden zunächst die Populationsparameter aus
 jeder Zeile in Instanzen der \texttt{S4}-Konfigurationsklasse
 \texttt{population\_settings} überführt. Diese und die folgenden
@@ -5800,13 +5829,15 @@ jede Population aus einer oder vielen Gruppen besteht, die biologische
 Vererbungsgruppen wie Familien oder Clans repräsentieren und jeweils
 eine individuelle Größenentwicklung durchlaufen können, wird für jede
 Gruppe in der Population ein Konfigurationsobjekt der Klasse
-\texttt{unit\_settings} zusammengestellt. Zur Erzeugung einer Gruppe
-wird dieses Objekt an die Funktion \texttt{generate\_unit} übergeben,
-die die Hauptlast der Menschengenerierung trägt. In ihr wird zunächst
-das Integral unter der \texttt{unit\_size\_function} im um einen
-Bufferbereich erweiterten Untersuchungszeitfenster berechnet, um zu
-ermitteln, wie viele Menschen-Jahr Kombinationen erforderlich sind, um
-die vorgegebene Populationsgrößenentwicklung abzubilden. Aus
+\texttt{unit\_settings} zusammengestellt.
+
+Zur Erzeugung einer Gruppe wird dieses Objekt an die Funktion
+\texttt{generate\_unit} übergeben, die die Hauptlast der
+Menschengenerierung trägt. In ihr wird zunächst das Integral unter der
+\texttt{unit\_size\_function} im um einen Bufferbereich erweiterten
+Untersuchungszeitfenster berechnet, um zu ermitteln, wie viele
+Menschen-Jahr Kombinationen erforderlich sind, um die vorgegebene
+Populationsgrößenentwicklung abzubilden. Aus
 \texttt{age\_distribution\_function} und \texttt{age\_range} lässt sich
 die durchschnittliche Lebenserwartung der Menschen errechnen, die sich
 aus den Eingabeparameters ergibt. Beide Informationen zusammen
@@ -5821,8 +5852,9 @@ Fenster aufzuteilen, wird wiederum das Integral der
 \texttt{age\_distribution\_function} in jedem Fenster ermittelt und in
 Verhältnis zur Gesamtsumme dieser Integrale gesetzt. Damit steht für
 jedes Geburtsfenster ein Faktor bereit, um den Anteil der
-Gesamtpopulation zu berechnen, der in diesem Zeitfenster existiert. Mit
-dieser Information können die entsprechenden Menschen mit der
+Gesamtpopulation zu berechnen, der in diesem Zeitfenster existiert.
+
+Mit dieser Information können die entsprechenden Menschen mit der
 \texttt{generate\_humans} Funktion zufällig generiert werden. Das
 Beispiele in Abbildung \ref{fig:popgen-sizedev-example} belegt die
 Funktionalität dieses Ansatzes, illustriert aber auch den Umfang der
@@ -5843,6 +5875,9 @@ hinzugefügt werden.
 \includegraphics{../neomod_analysis/figures_plots/popgenerator_examples/create_unit_population_size_development_comparison} \caption[huhu]{huhu}\label{fig:popgen-sizedev-example}
 \end{figure}
 
+\hypertarget{relations_generator}{%
+\paragraph{relations\_generator}\label{relations_generator}}
+
 Das Modul \texttt{relations\_generator} erweitert diesen von
 \texttt{population\_generator} modifizierten Eingabedatensatz. Es dient
 dazu, die vorhandene Gesamtpopulation sinnvoll inneinander zu verknüpfen
@@ -5858,38 +5893,43 @@ werden getrennt voneinander aber jeweils innerhalb der oben erzeugten
 Gruppen hergestellt. Anschließend wird ein Teil der vorhandenen
 Beziehungen so umgelenkt, dass er die Gruppengrenzen überschreitet und
 somit die Gesamtpopulation verschränkt. Abschließend werden die
-Beziehungen je nach Typ mit einem Kantengewicht versehen. Die Erzeugung
-der vertikalen Beziehungen mit \texttt{generate\_vertical\_relations}
-funktioniert gruppenweise, verbindet ein jüngeres Individuum mit -- wenn
-im entsprechenden Zeitfenster vorhanden -- zwei älteren und orientiert
-sich dabei nicht an deren realem Alter sondern an Indexdistanzen (für
-eine Erklärung der Hintergründe dieser Lösung siehe Kapitel
-\ref{simulation-theorie}). Eltern werden zufällig aus der Perspektive
-der Kinder gewählt, indem zunächst ein Indexbereich -- ein Bereich
-zwischen zwei individuellen IDs -- festgelegt wird, aus dem die
-potentiellen Eltern stammen können. Zwar kann sicher angenommen werden,
-dass ein Kind eine niederere ID besitzen muss als seine Eltern, doch
-darüber hinaus ist der Umgang mit den Indizes rein approximativ: Die
-durchschnittliche Geburtsjahrdistanz eines Indexschrittes hängt von der
-Populationsgröße und -entwicklung ab. Um eine Distanz in Jahren in eine
-Distanz in Indexschritten umzuwandeln, muss die zeitlich lokale,
-mittlere Indexdistanz ermittelt werden. Das angezielte
-Altersdistanzfenster dafür wurde zwischen 40 und 15 Jahren vor dem
-Geburtsjahr des Kindes festgelegt. Die für jedes Kind individuelle und
-effektiv zufällige Auswahl der Eltern erfolgt also aus einem Pool von
-Individuuen, deren Index zwischen jenen liegt, die durchschnittlich die
-lokale 40 Jahresgrenze über- oder die durchschnittlich 15 Jahresgrenze
-unterschreiten. \texttt{generate\_horizontal\_relations} zur Erzeugung
-der horizontalen Beziehungen funktioniert nach dem selben technischen
-Prinzip wie \texttt{generate\_vertical\_relations}. Hier werden
-allerdings abhängig vom Wert von \texttt{amounts\_friends} mitunter
-wesentlich mehr Beziehungen hergestellt und das Bezugsfenster ist mit
-einer Altersdistanz von 50 Jahren in beide Richtungen ausgehend vom
-Geburtszeitpunkt des jeweiligen Individuums deutlich breiter. Sind die
-vertikalen und horizontalen Beziehungen gruppenintern etabliert, dann
-werden mit \texttt{modify\_relations\_cross\_unit} einige dieser
-Verbindungen zugunsten von gruppenübergreifenden Beziehungen aufgelöst.
-Die Eingabeparamter \texttt{cross\_unit\_proportion\_child\_of} und
+Beziehungen je nach Typ mit einem Kantengewicht versehen.
+
+Die Erzeugung der vertikalen Beziehungen mit
+\texttt{generate\_vertical\_relations} funktioniert gruppenweise,
+verbindet ein jüngeres Individuum mit -- wenn im entsprechenden
+Zeitfenster vorhanden -- zwei älteren und orientiert sich dabei nicht an
+deren realem Alter sondern an Indexdistanzen (für eine Erklärung der
+Hintergründe dieser Lösung siehe Kapitel \ref{simulation-theorie}).
+Eltern werden zufällig aus der Perspektive der Kinder gewählt, indem
+zunächst ein Indexbereich -- ein Bereich zwischen zwei individuellen IDs
+-- festgelegt wird, aus dem die potentiellen Eltern stammen können. Zwar
+kann sicher angenommen werden, dass ein Kind eine niederere ID besitzen
+muss als seine Eltern, doch darüber hinaus ist der Umgang mit den
+Indizes rein approximativ: Die durchschnittliche Geburtsjahrdistanz
+eines Indexschrittes hängt von der Populationsgröße und -entwicklung ab.
+Um eine Distanz in Jahren in eine Distanz in Indexschritten umzuwandeln,
+muss die zeitlich lokale, mittlere Indexdistanz ermittelt werden. Das
+angezielte Altersdistanzfenster dafür wurde zwischen 40 und 15 Jahren
+vor dem Geburtsjahr des Kindes festgelegt. Die für jedes Kind
+individuelle und effektiv zufällige Auswahl der Eltern erfolgt also aus
+einem Pool von Individuuen, deren Index zwischen jenen liegt, die
+durchschnittlich die lokale 40 Jahresgrenze über- oder die
+durchschnittlich 15 Jahresgrenze unterschreiten.
+
+\texttt{generate\_horizontal\_relations} zur Erzeugung der horizontalen
+Beziehungen funktioniert nach dem selben technischen Prinzip wie
+\texttt{generate\_vertical\_relations}. Hier werden allerdings abhängig
+vom Wert von \texttt{amounts\_friends} mitunter wesentlich mehr
+Beziehungen hergestellt und das Bezugsfenster ist mit einer
+Altersdistanz von 50 Jahren in beide Richtungen ausgehend vom
+Geburtszeitpunkt des jeweiligen Individuums deutlich breiter.
+
+Sind die vertikalen und horizontalen Beziehungen gruppenintern
+etabliert, dann werden mit \texttt{modify\_relations\_cross\_unit}
+einige dieser Verbindungen zugunsten von gruppenübergreifenden
+Beziehungen aufgelöst. Die Eingabeparamter
+\texttt{cross\_unit\_proportion\_child\_of} und
 \texttt{cross\_unit\_proportion\_friend} sind entscheidend dafür, in
 welchem Umfang das für die beiden Beziehungstypen passiert. Davon
 abhängig werden mehr oder weniger Beziehungen für eine Modifikation
@@ -5917,29 +5957,28 @@ Eingabedatensatz \texttt{models\_grid} angehängt.
 \includegraphics{../neomod_analysis/figures_plots/simulation_population_graph/population_graph_tulip} \caption[huhu]{huhu}\label{fig:graph-tulip}
 \end{figure}
 
-Das letzte und einfachste Submodul des popgenerator Pakets,
+\hypertarget{idea_generator}{%
+\paragraph{idea\_generator}\label{idea_generator}}
+
+Das letzte und einfachste Submodul des \emph{popgenerator} Pakets,
 \texttt{idea\_generator}, \ldots{}
 
-popgenerator stellt einige dedizierte Exportfunktionen bereit, die vor
-allem die Übergabe des generierten Populationsnetzwerks an die
-Expansionssimulation gluesless ermöglichen sollen. Der Austausch erfolgt
-über verschiedene, speziell formatierte Textdateien, die von
-popgenerator ins Dateisystem abgelegt und von gluesless gelesen werden.
+\hypertarget{expansionssimulation-gluesless}{%
+\subsubsection{\texorpdfstring{Expansionssimulation
+\emph{gluesless}}{Expansionssimulation gluesless}}\label{expansionssimulation-gluesless}}
 
-\hypertarget{expansionssimulation}{%
-\subsubsection{Expansionssimulation}\label{expansionssimulation}}
-
-Das C++ Programm gluesless simuliert die Expansion von Ideen in einem
-Populationsgraphen wie er mittels des popgenerators erzeugt werden kann.
-gluesless macht sich die objektorientierte Natur von C++ zu Abbildung
-der Simulationswelt in vier Klassen zunutze: \texttt{Networkland},
-\texttt{Aether}, \texttt{Timeline}, \texttt{Idea}. Die Klassenmethoden
-greifen außerdem auf mehrere globale Hilfsfunktionen zurück. gluesless
-kann drei Eingabeparameter verarbeiten: Der Pfade zu einer pajek-Datei
-(.paj), die das Populationsnetzwerk beschreibt, der Pfad zu einer
-speziell formatierten Textdatei mit der Ideenverteilung zum
-Nullzeitpunkt und der Pfad der Ausgabetextdatei. Mit diesen Parametern
-kann es einfach auf der Kommandozeile aufgerufen werden.
+Das C++ Programm \emph{gluesless} simuliert die Expansion von Ideen in
+einem Populationsgraphen wie er mittels des \emph{popgenerators} erzeugt
+werden kann. \emph{gluesless} macht sich die objektorientierte Natur von
+C++ zu Abbildung der Simulationswelt in vier Klassen zunutze:
+\texttt{Networkland}, \texttt{Aether}, \texttt{Timeline}, \texttt{Idea}.
+Die Klassenmethoden greifen außerdem auf mehrere globale Hilfsfunktionen
+zurück. \emph{gluesless} kann drei Eingabeparameter verarbeiten: Den
+Pfade zu einer pajek-Datei (.paj), die das Populationsnetzwerk
+beschreibt, der Pfad zu einer speziell formatierten Textdatei mit der
+Ideenverteilung zum Nullzeitpunkt und der Pfad der Ausgabetextdatei. Mit
+diesen Parametern kann es einfach auf der Kommandozeile aufgerufen
+werden.
 
 Wird das Programm mit den korrekten Eingaben gestartet, dann wird die
 \texttt{main} Methode ausgeführt und zunächst jeweils eine Instanz der
@@ -5966,7 +6005,7 @@ Ideen zurückgeben, besitzt der \texttt{Aether} auch die \texttt{develop}
 Methode. Sie steuert unter welchen Bedingungen und in welcher
 Reihenfolge Ideen am Übergang von einem Zeitschritt zum nächsten agieren
 dürfen. Die Basiskonfiguration sieht eine zufällige Abfolge vor. Die
-\texttt{Timeline} Klasse umschließt wiederrum gedanklich den
+\texttt{Timeline} Klasse umschließt wiederum gedanklich den
 \texttt{Aether} und besitzt dafür einen Zeiger auf die Instanz dieser
 Klasse. Sie dient dazu, in jedem Zeitschritt diagnostische Werte zum
 Zustand des Aethers abzugreifen und in Vektoren aufgelistet vorzuhalten.
@@ -6006,7 +6045,7 @@ Für jeden Nachbarn werden drei Informationen abgefragt: Die Anzahl an
 Verbindungen zu Knoten, die die Idee schon hält, das maximale
 Kantengewicht unter all diesen Beziehungen und ob der Knoten selbst
 bereits von einer anderen Idee besetzt wird. Grundsätzlich wird für die
-Entscheidug ob ein Nachbarknoten der Idee zugesprochen wird gegen das
+Entscheidung ob ein Nachbarknoten der Idee zugesprochen wird gegen das
 Kantengewicht gewürfelt. Die Wahrscheinlichkeit wird erhöht, wenn
 mehrere Verbindungen zu Knoten der Idee bestehen und deutlich
 verringert, wenn der Nachbarknoten bereits Teil des Einflussgebiets
@@ -6103,11 +6142,11 @@ weiterverwendet. Diese enthalten zu jedem Jahr im
 Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen
 Anteil der verschiedenen Bestattungsformen in den in Kapitel
 \ref{data-prep-and-segmentation} etablierten, künstlichen
-Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die SED
-zwischen jeder Region berechnen. Die Abbildungen
-\ref{fig:sed-dev-matrix-bt} und \ref{fig:sed-dev-matrix-bc} zeigen den
-Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer
-Plotmatrix.
+Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die
+Squared Euclidian Distance (SED) zwischen jeder Region berechnen. Die
+Abbildungen \ref{fig:sed-dev-matrix-bt} und \ref{fig:sed-dev-matrix-bc}
+zeigen den Verlauf der SED-Entwicklung für jede Regionenbeziehung in
+einer Plotmatrix.
 
 Die Mehrzahl der Kurven in Abbildung \ref{fig:sed-dev-matrix-bt} für
 \emph{burial type} entspricht den Erwartungen: Zu Beginn der Bronzezeit
@@ -6278,23 +6317,24 @@ Austausch zwischen Nachbarregionen stattgefunden hat als in den
 anschließenden Perioden, in denen die hier untersuchten Großräume
 stärker voneinander isoliert waren. In der Mittelbronzezeit durchlaufen
 die SED-Entwicklungen der \emph{burial type} Variable die schon in
-Abbildung \ref{sed-dev-matrix-bt} beobachteten Spitzen. Die Korrelation
-zwischen kultureller und räumlicher Distanz ist über diese Peaks hinweg
-gering und kippt zwischen 1400 und 1200calBC, also am Übergang zur
-Spätbronzezeit, sogar ins Negative -- wenn auch nicht signifikant. Die
-kulturelle Distanz zwischen mehreren geographisch weit voneinander
-entfernten Regionen ist dann geringer als zwischen mehreren direkt
-aneinander angrenzenden. Betrachtet man das SED Netzwerk auf Grundlage
-von \emph{burial construction} und untersucht es mittels Abbildung
-\ref{fig:mantel-bc-spatial} auf räumliche Korrelation, kommt man zu
-grundsätzlich ähnlichen Schlüssen wie im \emph{burial type} Kontext. Die
-Distanzwerte sind hier insgesamt größer und die SED Unterschiede
-innerhalb der einzelnen Raumdistanzklassen deutlich akzentuierter,
-dennoch ist das Zeitfenster der mit Abstand größten, räumlichen
-Korrelation auch hier die Frühbronzezeit. Signifikant ist diese nur für
-das Zeitfenster zwischen 1800 und 1600calBC. Negativkorrelation deutet
-sich für \emph{burial construction} nicht an, doch auch hier nähert sich
-der Korrelationskoeffizient in der Spätbronzezeit Null an.
+Abbildung \ref{fig:sed-dev-matrix-bt} beobachteten Spitzen. Die
+Korrelation zwischen kultureller und räumlicher Distanz ist über diese
+Peaks hinweg gering und kippt zwischen 1400 und 1200calBC, also am
+Übergang zur Spätbronzezeit, sogar ins Negative -- wenn auch nicht
+signifikant. Die kulturelle Distanz zwischen mehreren geographisch weit
+voneinander entfernten Regionen ist dann geringer als zwischen mehreren
+direkt aneinander angrenzenden. Betrachtet man das SED Netzwerk auf
+Grundlage von \emph{burial construction} und untersucht es mittels
+Abbildung \ref{fig:mantel-bc-spatial} auf räumliche Korrelation, kommt
+man zu grundsätzlich ähnlichen Schlüssen wie im \emph{burial type}
+Kontext. Die Distanzwerte sind hier insgesamt größer und die SED
+Unterschiede innerhalb der einzelnen Raumdistanzklassen deutlich
+akzentuierter, dennoch ist das Zeitfenster der mit Abstand größten,
+räumlichen Korrelation auch hier die Frühbronzezeit. Signifikant ist
+diese nur für das Zeitfenster zwischen 1800 und 1600calBC.
+Negativkorrelation deutet sich für \emph{burial construction} nicht an,
+doch auch hier nähert sich der Korrelationskoeffizient in der
+Spätbronzezeit Null an.
 
 \begin{landscape}
 \begin{figure}
