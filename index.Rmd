@@ -35,3 +35,6 @@ subparagraph: yes
 \AtEndDocument{
   \input{declaration.tex}
 }
+
+<!-- french spacing has to be turned off for the automatic period generation in footnotes -->
+\nonfrenchspacing

@@ -57,3 +57,10 @@
 % control footnote margin
 \usepackage[hang]{footmisc}
 \setlength\footnotemargin{13pt}
+% end every footnote with a period, if it not already has one
+% french spacing has to be turned off for this solution to work
+\makeatletter%
+\long\def\@makefntext#1{%
+  \parindent 1em\noindent \hb@xt@ 1.8em{\hss\@makefnmark}#1%
+  \ifnum\the\spacefactor<3000.\fi}
+\makeatother
