@@ -288,6 +288,8 @@ Die vorliegende Arbeit ist also eine klare Sekundärverwendung von Radon-B. Ein 
 
 ## Simulation {#simulation}
 
+Eines der wesentlichen Ziele dieser Arbeit war es, jenseits der induktiven Datenanalyse anzukommen und selbst eine computerbasierte Simulation zu entwickeln. Das folgende Kapitel beschreibt die Ergebnisse dieses Unterfangens. Gemessen an der Menge möglicher Permutatione von Implementierung und Parametern, die auf Grundlage des Modellansatzes erprobt und ausgewertet werden könnten, ist dieses Kapitel radikal gekürzt. Hier besteht viel Raum für zukünftige Forschung.
+
 ### Theoretische Grundlagen und Funktionalität {#simulation-theorie}
 
 TODO: Wie komme ich von der Theorie zur Praxis, v.a. Neiman
