@@ -4617,37 +4617,44 @@ Textproduktion. Der Text der Masterarbeit wurde in R Markdown\footnote{\url{http
   {[}31.07.2018{]}} verfasst. Da ausschließlich das Rendern mittels
 Pandoc\^{}{[}\url{https://pandoc.org/} {[}31.07.2018{]} in
 LaTeX\footnote{\url{https://www.latex-project.org/} {[}31.07.2018{]}}
-ins PDF Format vorgesehen war, enthält die Textvorlage auch vereinzelt
-LaTeX Ausdrücke. Jeder Commit löst dank Continous Integration mit
+ins PDF Format vorgesehen war, enthält die Textvorlage auch LaTeX
+Ausdrücke. Jeder Commit löst dank Continous Integration mit
 Travis\footnote{\url{https://travis-ci.com/} {[}31.07.2018{]}} ein
 automatisches Rendern des Texts aus.
 
 \textbf{neomod\_prepresentation}\footnote{\url{https://www.github.com/nevrome/neomod_prepresentation}}
 Präsentationen über die Inhalte der Masterarbeit. Vor, während und nach
-der Arbeit wurden mehrere Präsentation über Planung, Arbeitsfortschritt
-und Ergebnisse zusammengestellt. Die Präsentationen sind jeweils in R
+der Arbeit wurden mehrere Präsentation zu Planung, Arbeitsfortschritt
+und Ergebnissen zusammengestellt. Die Präsentationen sind jeweils in R
 Markdown konstruiert, unterscheiden sich aber je nachdem, ob ein Rendern
-in HTML oder PDF vorgesehen war.
+in HTML oder PDF vorgesehen war. Neben fertigen Foliensätzen enthält das
+Repositorium auch mehrere Abstracts, die in diesem Kontext für
+verschiedene Tagungen vorbereitet und eingereicht wurden.
 
 \textbf{neomod\_analysis}\footnote{\url{https://www.github.com/nevrome/neomod_analysis}}
 Datenanalyse. Sowohl die Realweltdaten als auch die Daten aus der
-Simulation wurden mit R ausgewertet. Dieses Projekt hat bewusst nicht
-die Form eines R Pakets, sondern setzt sich aus vielen einzelnen,
-teilweise redundanten R Skripten zusammen. Hier werden auch
+Simulation wurden mit R ausgewertet. Dieses Projekt hat nicht die Form
+eines R Pakets, sondern setzt sich aus vielen einzelnen R Skripten mit
+einem bewusst hohen Grad an Redundanz zusammen. Hier werden auch
 Ergebnisdaten und Abbildungen gespeichert. Erstere wurden aufgrund ihres
 Volumens weitestgehend nicht mit Versionskontrolle dokumentiert und
 liegen entsprechend nur in den lokalen Systemen vor, in denen sie
 erzeugt wurden. Sie müssen bei Bedarf generiert oder -- im Fall von
-Quelldaten -- heruntergeladen werden.
+Quelldaten -- heruntergeladen werden. Jene Teile der Auswertung, die
+nicht mit der Simulation zusammen hängen und damit keine zu großen
+Anforderungen an die Rechenkapazität des ausführenden Systems stellen,
+werden über Continous Integration auf Funktionalität überwacht.
 
 \textbf{popgenerator}\footnote{\textcite{schmid_popgenerator_2018};
   \url{https://www.github.com/nevrome/popgenerator}}
-Populationsgenerator. R Paket zur Konstruktion von Populationsgraphen.
+Populationsgenerator. R Paket zur Konstruktion von Populationsnetzwerken
+(siehe Kapitel \ref{popgenerator}).
 
 \textbf{gluesless}\footnote{\textcite{clemens_schmid_gluesless_2018};
   \url{https://www.github.com/nevrome/gluesless}} Expansionsmodell. C++
 Programm zur Simulation der Ausbreitung von Ideen in einem
-Populationsgraphen, wie er von \emph{popgenerator} erzeugt wird.
+Populationsnetzwerk, wie es von \emph{popgenerator} erzeugt wird (siehe
+Kapitel \ref{gluesless}).
 
 \textbf{c14bazAAR}\footnote{\textcite{schmid_c14bazaar_2018};
   \url{https://www.github.com/nevrome/c14bazAAR}}
@@ -4658,16 +4665,22 @@ Datenbank.
 
 \textbf{neimann1995}\footnote{\url{https://www.github.com/nevrome/neimann1995})}
 Reproduktion eines Artikels. Verständnisübung entlang eines der
-wesentlichen Artikel in der theoretischen Vorbereitung dieser Arbeit.,
+wesentlichen Artikel in der theoretischen Vorbereitung dieser Arbeit.
+Enthält auch die Simulationsimplementierung für Abbildung
+\ref{fig:neiman-general}.
 
 \textbf{rdoxygen}\footnote{\url{https://www.github.com/nevrome/rdoxygen}}
-Doxygen Dokumentation. R Paket um Doxygen Dokumentation für Source Code
-in R Paketen zu erstellen.,
+Doxygen Dokumentation. R Paket um Doxygen\footnote{\url{http://www.doxygen.nl}
+  {[}13.09.2018{]}} Dokumentation für Source Code in R Paketen zu
+erstellen. Das war besonders relevant, solange gluesless als R Paket mit
+Rcpp implementiert war. Diese Konfiguration wurde im Laufe der
+Entwicklung zugunsten eines reinen C++ Programms aufgegeben.
 
 \textbf{txtstorage}\footnote{\url{https://www.github.com/nevrome/txtstorage}}
 Textdatenspeicher. R Paket zur Verwaltung von Austauschdateien mit
-einfachen Analyseergebnissen. Dient vor allem dazu, Zähldaten dynamisch
-in den Text der Arbeit einzubinden.
+einfachen Analyseergebnissen. Dient vor allem dazu, Zähldaten aus
+\emph{neomod\_analysis} zu speichern und dann dynamisch in den Text der
+Arbeit einzubinden.
 
 Alle diese Projekte wurden und werden unabhängig voneinander mit der
 Versionskontrollsoftware Git\footnote{\url{https://git-scm.com/}
@@ -4676,24 +4689,25 @@ hundert einzeln kommentierten Veränderungspaketen -- ``Commits'' --
 dokumentiert. Der Entstehungsprozess ist damit weitreichend
 nachvollziehbar, sieht man von Vorüberlegungen und Gesprächen ab, die
 keine konkreten Ergebnisse gezeitigt haben. Nach Abschluss von Korrektur
-und Revision der Arbeit, werden alle Projekte über die Cloud Plattform
+und Revision der Arbeit werden alle Projekte über die Cloud Plattform
 Github \footnote{\url{https://github.com/} {[}31.07.2018{]}} zugänglich
 gemacht werden. Die im Text verarbeitete und darüber hinaus gesammelte
 Literatur ist in drei thematisch getrennte Sammlungen gegliedert und
 über das zotero Webportal einsehbar:
 
 \textbf{cultural\_evolution}\footnote{\url{https://www.zotero.org/groups/2086516/cultural_evolution}}
-Literatursammlung zu Cultural Evolution und ihren vielen Subthemen wie
-Memetik, Cultural Transmission oder Sozial Learning. Geht weit über eine
-rein archäologische Perspektive hinaus, umfasst aber gleichzeitig
-archäologische Fallstudien ohne großen theoretischen Selbstanspruch.
+Literatursammlung zu Cultural Evolution und ihren Subthemen wie Memetik,
+Cultural Transmission oder Social Learning (siehe Kapitel
+\ref{cultural-evolution}). Die Zusammenstellung geht weit über eine rein
+archäologische Perspektive hinaus, um die forschungsgeschichtliche
+Entwicklung und aktuelle, fächerübergreifende Diskussion abzubilden.
 
 \textbf{bronze\_age\_burials}\footnote{\url{https://www.zotero.org/groups/2199051/bronze_age_burials}}
 Archäologische Literatur zur Theorie der Thanatoarchäologie und zur
 kulturhistorischen Entwicklung in der Bronzezeit.
 
 \textbf{software\_packages}\footnote{\url{https://www.zotero.org/groups/2211203/software_packages}}
-Referenzen von wissenschaftlicher Software, die für Datenverarbeitung
+Referenzen zu wissenschaftlicher Software, die für Datenverarbeitung
 sowie Text- und Abbildungsvorbereitung zum Einsatz gekommen ist. Vor
 allem R Pakete und C++ Bibliotheken.
 
@@ -4757,7 +4771,7 @@ des Stanford Network Analysis Project\footnote{\url{https://snap.stanford.edu/}
   {[}01.08.2018{]}; \textcite{leskovec2016snap}} (SNAP) abgelöst.
 
 Die für die Kartengestaltung benötigten Raumdaten, also
-Landmasse-Außengrenzen, Administrative Ländergrenzen sowie Flüsse und
+Landmasse-Außengrenzen, administrative Ländergrenzen sowie Flüsse und
 Seen, stammen aus dem Natural Earth Projekt\footnote{\url{https://www.naturalearthdata.com}
   {[}02.08.2018{]}}. Verwendet wurden Daten des mittleren
 Auflösungssniveaus, das eine Maßstabsperspektive von 1:50.000.000
@@ -5734,9 +5748,9 @@ nun die wesentlichen Funktionen und Klassen namentlich genannt. Das soll
 es erleichtern, die grundsätzlicher Architektur der Software zu
 verstehen.
 
-\hypertarget{populationsgenerator-popgenerator}{%
+\hypertarget{popgenerator}{%
 \subsubsection{\texorpdfstring{Populationsgenerator
-\emph{popgenerator}}{Populationsgenerator popgenerator}}\label{populationsgenerator-popgenerator}}
+\emph{popgenerator}}{Populationsgenerator popgenerator}}\label{popgenerator}}
 
 Der Populationsgenerator ist als R Paket implementiert. Er ist in drei
 Submodule gegliedert: \texttt{population\_generator},
@@ -5968,9 +5982,9 @@ Eingabedatensatz \texttt{models\_grid} angehängt.
 Das letzte und einfachste Submodul des \emph{popgenerator} Pakets,
 \texttt{idea\_generator}, \ldots{}
 
-\hypertarget{expansionssimulation-gluesless}{%
+\hypertarget{gluesless}{%
 \subsubsection{\texorpdfstring{Expansionssimulation
-\emph{gluesless}}{Expansionssimulation gluesless}}\label{expansionssimulation-gluesless}}
+\emph{gluesless}}{Expansionssimulation gluesless}}\label{gluesless}}
 
 Das C++ Programm \emph{gluesless} simuliert die Expansion von Ideen in
 einem Populationsgraphen wie er mittels des \emph{popgenerators} erzeugt
