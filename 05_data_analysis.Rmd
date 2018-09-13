@@ -532,7 +532,7 @@ Im Fall der großen, künstlichen und sich gegenseitig sogar überlappenden Regi
 
 ### Analyse und Ergebnisse
 
-Die Analyse ist zweigeteilt...
+Die Analyse ist zweigeteilt in einen Abschnitt zu kultureller Distanz innerhalb des von den Variablen *burial_type* und *burial construction* geschaffenen Bezugssystems, und einen Abschnitt, der dieser internen Betrachtung räumliche Distanz gegenüberstellt. 
 
 #### Kulturelle Distanz
 
