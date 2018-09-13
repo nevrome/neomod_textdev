@@ -134,9 +134,11 @@
 % better removal of orphaned and widowed lines
 \usepackage[all]{nowidow}
 % control footnote margin
+
 \usepackage[hang]{footmisc}
 \setlength\footnotemargin{13pt}
 % this redefinition is only necessary for the end period
+\makeatletter%
 \long\def\@makefntext#1{%
   \bgroup
   \setbox\@tempboxa\hbox{%
@@ -163,7 +165,7 @@
   \ifnum\the\spacefactor<3000.\fi
   \par\egroup
 }
-\makeatletter%
+\makeatother
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
