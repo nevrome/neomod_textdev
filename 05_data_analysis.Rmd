@@ -278,9 +278,13 @@ Die *England* Region erstreckt sich über England bis auf die Höhe von York und
 
 #### Datenbedeutung
 
-TODO: Datensemantik
+Für diese Arbeit wurden aus dem Radon-B Datensatz ^14^C-Daten extrahiert und verarbeitet, die in den vergangenen Jahrzehnten zur Datierung von Grabbefunden angefertigt wurden. Die der Erstellung einer ^14^C-Datierung zugrundeliegende Fragestellung ist in der Regel nicht äquivalent zu jener, die den gesammelten Daten in dieser Arbeit auferlegt wird. Während hier abstrakt die Anwesenheit einer Idee zu einem gewissen Zeitpunkt an einem gewissen Ort gemessen werden soll, werden Gräber meist genau umgekehrt dafür datiert, sie selbst als konkreten Gegenstand zu kontextualisieren, einzuordnen und besser zu verstehen. Feldforschung orientiert sich per Definition an kleinräumigen Fragestellungen, die sie in ihrem jeweiligen Umfang beantworten kann und muss viel Energie drauf verwenden, jedem Befund, der durch Grabung unweigerlich zerstört wird, möglichst gerecht zu werden. Hier verläuft ein grundsätzlicher Bruch zwischen der großen, theoretischen Archäologie, die umfassende Narrative entwickeln und dafür dem Einzelfall nur quantitativ Beachtung schenken möchte, und der einzelnen Grabung oder Notbergung, die jedem Grabbefund ein Maß an Respekt und mitunter viel Arbeitszeit widmen muss. 
 
-- Unterschied: Selbst Hügel anlegen vs. Grab in vorhandenen Hügel einbringen
+^14^C-Daten 
+
+
+
+
 
 ## Simulation
 
