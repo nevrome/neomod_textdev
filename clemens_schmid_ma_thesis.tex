@@ -133,9 +133,6 @@
 }
 % better removal of orphaned and widowed lines
 \usepackage[all]{nowidow}
-% control footnote margin
-\usepackage[hang]{footmisc}
-\setlength\footnotemargin{13pt}
 % end every footnote with a period, if it not already has one
 % french spacing has to be turned off for this solution to work
 \makeatletter%
@@ -143,6 +140,9 @@
   \parindent 1em\noindent \hb@xt@ 1.8em{\hss\@makefnmark}#1%
   \ifnum\the\spacefactor<3000.\fi}
 \makeatother
+% control footnote margin
+\usepackage[hang]{footmisc}
+\setlength\footnotemargin{13pt}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -5320,7 +5320,8 @@ Ungleichverteilung der Daten hat viele verschiedene Gründe.
   Neben der zufälligen Verteilung der Interessensgebiete der Forschenden
   spielt hier auch die politische Rahmensituation -- etwa die lang
   andauernde Trennung Europas in West und Ost -- eine entscheidende
-  Rolle, die die Arbeit in manchen Räumen erleichtert oder kompliziert.
+  Rolle. Diese Gegebenheiten können die Arbeit in manchen Räumen
+  deutlich erleichtern oder verkomplizieren.
 \item
   Im Untersuchungsgebiet dieser Arbeit begegnen sich unterschiedliche
   Forschungstraditionen, die \textsuperscript{14}C-Daten in der
@@ -5363,26 +5364,28 @@ Ungleichverteilung der Daten hat viele verschiedene Gründe.
 
 Hinsichtlich der Primärvariablen dieser Arbeit \emph{burial\_type} und
 \emph{burial\_construction} ergeben sich weitere, besondere
-Effekte\footnote{\textcite{harding_european_2000}, 84-85.}.
+Effekte\footnote{\textcite{harding_european_2000}, 84-85.}:
+
+Die Störung und Beraubung von Gräbern war ein in Geschichte und
+Vorgeschichte weit verbreitetes Phänomen. Hügelgräber wurden dabei
+aufgrund ihrer guten Sichtbarkeit üblicherweise stärker angegriffen als
+Flachgräber und könnten infolge dessen in Radon-B unterrepräsentiert
+sein. Außerdem ist davon auszugehen, dass ein großer Teil der in der
+Bronzezeit errichteten Hügelgräber durch landwirtschaftliche Aktivität
+-- langjähriges Überpflügen -- zerstört wurde. Auch das ist Grund für
+eine Unterrepräsentation im gesamten archäologischen Befund.
+Andererseits: Wenn ein Hügelgrab noch vorhanden ist, dann ist es -- im
+Gegensatz zu einem Flachgrab -- leichter sichtbar und gerät eher in den
+Fokus archäologischer Aufmerksamkeit. Hügelgräber zeichnen sich oft
+eindeutig identifizierbar in Luftbildern oder digitalen Geländemodellen
+ab, während Flachgräber für heutige Methoden der Fernerkundung deutlich
+schwieriger zu erkennen sind. Gewissheit bringt oft erst eine
+Sondagegrabung.
+
+\url{https://www.researchgate.net/post/Is_it_possible_and_if_how_to_find_out_with_radiocarbon_dating_or_other_methods_at_what_point_were_burned_human_remains}
 
 \begin{itemize}
 \tightlist
-\item
-  Die Störung und Beraubung von Gräbern war ein in Geschichte und
-  Vorgeschichte weit verbreitetes Phänomen. Hügelgräber wurden dabei
-  aufgrund ihrer guten Sichtbarkeit üblicherweise stärker angegriffen
-  als Flachgräber und könnten infolge dessen in Radon-B
-  unterrepräsentiert sein.
-\item
-  Es ist davon auszugehen, dass ein großer Teil der in der Bronzezeit
-  errichteten Hügelgräber durch landwirtschaftliche Aktivität --
-  langjähriges Überpflügen -- zerstört wurde. Auch das ist Grund für
-  eine Unterrepräsentation im gesamten archäologischen Befund.
-\item
-  TODO: aber: wenn sie noch vorhanden sind sind sie - im Gegensatz zu
-  Flachgräber - direkt sichtbar
-\item
-  zeichnen sich oft eindeutig identifizierbar in Luftbildern ab
 \item
   TODO: Datierung von Brandgräbern
 \end{itemize}
