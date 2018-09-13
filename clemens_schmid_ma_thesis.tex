@@ -4659,14 +4659,15 @@ Datenanalyse. Sowohl die Realweltdaten als auch die Daten aus der
 Simulation wurden mit R ausgewertet. Dieses Projekt hat nicht die Form
 eines R Pakets, sondern setzt sich aus vielen einzelnen R Skripten mit
 einem bewusst hohen Grad an Redundanz zusammen. Hier werden auch
-Ergebnisdaten und Abbildungen gespeichert. Erstere wurden aufgrund ihres
-Volumens weitestgehend nicht mit Versionskontrolle dokumentiert und
-liegen entsprechend nur in den lokalen Systemen vor, in denen sie
-erzeugt wurden. Sie müssen bei Bedarf generiert oder -- im Fall von
-Quelldaten -- heruntergeladen werden. Jene Teile der Auswertung, die
-nicht mit der Simulation zusammen hängen und damit keine zu großen
-Anforderungen an die Rechenkapazität des ausführenden Systems stellen,
-werden über Continous Integration auf Funktionalität überwacht.
+Abbildungen und Daten gespeichert, die als Ergebnis der Analysen erzeugt
+wurden. Die Ergebnisdaten wurden aufgrund ihres Volumens weitestgehend
+nicht mit Versionskontrolle dokumentiert und liegen entsprechend nur in
+den lokalen Systemen vor, in denen sie erzeugt wurden. Sie müssen bei
+Bedarf generiert oder -- im Fall von Quelldaten -- heruntergeladen
+werden. Jene Teile der Auswertung, die nicht mit der Simulation zusammen
+hängen und damit keine zu großen Anforderungen an die Rechenkapazität
+des ausführenden Systems stellen, werden über Continous Integration auf
+Funktionalität überwacht.
 
 \textbf{popgenerator}\footnote{\textcite{schmid_popgenerator_2018};
   \url{https://www.github.com/nevrome/popgenerator}}
@@ -4687,8 +4688,9 @@ Quelldatenbanken -- unter anderem der hier verarbeiteten Radon-B
 Datenbank.
 
 \textbf{neimann1995}\footnote{\url{https://www.github.com/nevrome/neimann1995})}
-Reproduktion eines Artikels. Verständnisübung entlang eines der
-wesentlichen Artikel in der theoretischen Vorbereitung dieser Arbeit.
+Reproduktion von Simulation und Distanzberechnungen in
+\textcite{neiman_stylistic_1995}. Verständnisübung entlang eines der
+wesentlichen Artikel für die theoretischen Vorbereitung dieser Arbeit.
 Enthält auch die Simulationsimplementierung für Abbildung
 \ref{fig:neiman-general}.
 
@@ -4708,18 +4710,18 @@ Arbeit einzubinden.
 Alle diese Projekte wurden und werden unabhängig voneinander mit der
 Versionskontrollsoftware Git\footnote{\url{https://git-scm.com/}
   {[}31.07.2018{]}} überwacht, die den Arbeitsfortschritt in vielen
-hundert einzeln kommentierten Veränderungspaketen -- ``Commits'' --
-dokumentiert. Der Entstehungsprozess ist damit weitreichend
-nachvollziehbar, sieht man von Vorüberlegungen und Gesprächen ab, die
-keine konkreten Ergebnisse gezeitigt haben. Nach Abschluss von Korrektur
-und Revision der Arbeit werden alle Projekte über die Cloud Plattform
-Github \footnote{\url{https://github.com/} {[}31.07.2018{]}} zugänglich
-gemacht werden. Die im Text verarbeitete und darüber hinaus gesammelte
-Literatur ist in drei thematisch getrennte Sammlungen gegliedert und
-über das zotero Webportal einsehbar:
+hundert einzeln kommentierten Paketen von Änderungsoperationen --
+``Commits'' -- dokumentiert. Der Entstehungsprozess ist damit
+weitreichend nachvollziehbar, sieht man von Vorüberlegungen und
+Gesprächen ab, die keine konkreten Ergebnisse gezeitigt haben. Nach
+Abschluss von Korrektur und Revision der Arbeit werden alle Projekte
+über die Cloud Plattform Github \footnote{\url{https://github.com/}
+  {[}31.07.2018{]}} zugänglich gemacht. Die im Text verarbeitete und
+darüber hinaus gesammelte Literatur ist in drei thematisch getrennte
+Sammlungen gegliedert und über das zotero Webportal einsehbar:
 
 \textbf{cultural\_evolution}\footnote{\url{https://www.zotero.org/groups/2086516/cultural_evolution}}
-Literatursammlung zu Cultural Evolution und ihren Subthemen wie Memetik,
+Literatursammlung zu Cultural Evolution und Subthemen wie Memetik,
 Cultural Transmission oder Social Learning (siehe Kapitel
 \ref{cultural-evolution}). Die Zusammenstellung geht weit über eine rein
 archäologische Perspektive hinaus, um die forschungsgeschichtliche
@@ -4730,9 +4732,9 @@ Archäologische Literatur zur Theorie der Thanatoarchäologie und zur
 kulturhistorischen Entwicklung in der Bronzezeit.
 
 \textbf{software\_packages}\footnote{\url{https://www.zotero.org/groups/2211203/software_packages}}
-Referenzen zu wissenschaftlicher Software, die für Datenverarbeitung
-sowie Text- und Abbildungsvorbereitung zum Einsatz gekommen ist. Vor
-allem R Pakete und C++ Bibliotheken.
+Referenzen zu (wissenschaftlicher) Software, die für Datenverarbeitung
+sowie Text- und Abbildungsvorbereitung zum Einsatz kam. Vor allem R
+Pakete und C++ Bibliotheken.
 
 Die gesamte Datenanalyse wurde in der Statistikprogrammiersprache
 R\footnote{\textcite{RCoreTeamLanguageEnvironmentStatistical2016}}
@@ -4809,8 +4811,8 @@ Radon-B\footnote{\textcite{kneisel_radon-b_2013}} ist eine öffentlich
 verfügbare Datenbank, die Radiokohlenstoffdatierungen --
 \textsuperscript{14}C-Daten -- aus der Bronze- und frühen Eisenzeit in
 Europa sammelt. Sie konzentriert sich auf ein Zeitfenster zwischen 2300
-bis 500calBC ab, enthält jedoch auch Daten jenseits dieses Limits. Neben
-Radon-B steht mit ihrer Schwesterdatenbank Radon\footnote{\textcite{martin_hinz_radon_2012}}
+und 500calBC, enthält jedoch auch Daten außerhalb dieses Zeitraums.
+Neben Radon-B steht mit ihrer Schwesterdatenbank Radon\footnote{\textcite{martin_hinz_radon_2012}}
 eine strukturell äquivalente Sammlung mit einem Schwerpunkt auf
 neolithischen Daten zur Verfügung. Jedes Datum ist mit Kerndaten und
 Metainformationen verknüpft (siehe Tabelle \ref{tab:radonbparams}). Die
@@ -4912,8 +4914,8 @@ Arbeitsschritten lässt sich der Hauptausgangsdatensatz als Tabelle mit
 mit Angaben zu Labornummer, Koordinaten, Dichteverteilung des
 kalibrierten Alters und \emph{burial\_type} sowie
 \emph{burial\_construction}. Eine Karte der so vorbereiteten Gräberdaten
-zeigt die hohe Heterogenität der Datendichte in verschiedenen Regionen
-Europas (siehe Abbildung \ref{fig:general-map}).
+zeigt die hohe Heterogenität der Datendichte und -qualität in
+verschiedenen Regionen Europas (siehe Abbildung \ref{fig:general-map}).
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/general_maps/general_map} \caption[Übersichtskarte der \textsuperscript{14}C Daten an bronzezeitlichen Gräbern in Europa]{Übersichtskarte der \textsuperscript{14}C Daten an bronzezeitlichen Gräbern in Europa. Die Karte zeigt Daten aus einem  Zeitfenster von 2200 bis 800calBC. Einzelne Daten liegen außerhalb des gewählten Kartenausschnitts. Jedes Datum ist nach seinen Kontextinformationen hinsichtlich der Variablen \textit{burial type} und \textit{burial construction} in Form und Farbe markiert.}\label{fig:general-map}
@@ -4966,10 +4968,11 @@ Werteverteilung innerhalb der Dubletten: cremation: 170, inhumation:
 104, unknown: 224) und \emph{burial construction} (flat: 82, mound: 86,
 unknown: 330) und auch zeitlich und räumlich waren die Abweichungen
 scheinbar weitestgehend zufällig verteilt. In dieser Datenkombination
-also eher ein statistisches Rauschen. Da allerdings keine Garantie
-besteht, dass das auch für andere Datenkombinationen in Zukunft gelten
-wird, schien es sinnvoll einen Algorithmus zu entwickeln, um die Fehler
-zumindest teilweise auszugleichen.
+wirken beide Effekte also eher wie ein statistisches Rauschen. Da
+allerdings keine Garantie besteht, dass das auch für andere
+Datenkombinationen in Zukunft gelten wird, schien es sinnvoll einen
+Algorithmus zu entwickeln, um die Fehler zumindest teilweise
+auszugleichen.
 
 Die Abweichung zwischen der Menge an Einträgen und den tatsächlich
 vorhanden \textsuperscript{14}C-Daten ist durch unvollständige
@@ -5019,8 +5022,9 @@ zusammengeführt. Notwendig wäre dafür eigentlich ein individuelles
 chronologisches Modell für jede dieser Datengruppen. Stattdessen wurden
 die einzelnen Dichteverteilungen addiert und bezogen auf das
 Gesamtmaximum normiert. Die Information, ob ein Alter zum \(2\sigma\)
-Bereich eines Datums gehört, wurde immer dann als wahr angenommen, wenn
-es im \(2\sigma\) mindestens eines Datums liegt. Aus der Perspektive der
+Bereich eines Grabes gehört, wurde unter diesen Umständen immer dann als
+wahr angenommen, wenn es im \(2\sigma\) Bereich mindestens eines der
+zusammengeführten Daten liegt. Aus der Perspektive der
 \textsuperscript{14}C-Datenverarbeitung ist dieses Vorgehen nicht
 korrekt, angesichts der zugrundeliegenden Fragestellung und der
 Herausforderungen des Datensatzes jedoch sinnvoll: Jeder Eintrag im
@@ -5058,30 +5062,30 @@ Augenmaß mit 240km so gewählt, dass möglichst alle bekannten
 \textsuperscript{14}C-Daten (also damit auch Gräber) in mindestens einer
 Region verortet sind. Das Überlappen von Regionen wurde dabei in Kauf
 genommen. Andere Regionendefinitionen anhand alternativer geometrischer
-Formen (Rechtecke, Hexagone), nach der Dichteverteilung von Fundpunkten,
-anhand sich zeitlich wandelnder, archäologisch erfasster, kultureller
-Einheiten sind denkbar und sollten bei zunehmender Datenverfügbarkeit in
-Zukunft evaluiert werden. Das gilt auch hinsichtlich der Größe der
-Einheiten, die aufgrund der diachron geringen Datenmenge sehr groß
-gewählt werden mussten. Nur aus den acht Regionen, die in Abbildung
-\ref{fig:general-map-research-area-regions} definiert werden, sind
-ausreichend \textsuperscript{14}C-Daten an Gräbern bekannt, um eine
-nähere Betrachtung zu rechtfertigen. Der Schwellwert dafür wurde mit 60
-Gräbern jedoch sehr niedrig angelegt um das effektive Untersuchungsareal
-nicht noch weiter verkleinern zu müssen. Die Benennung der Regionen war
-an den modernen, administrativen Einheiten orientiert, die die Kreise im
-wesentlichen einschließen (siehe Kapitel \ref{representativity} für eine
-nähere Beschreibung der geographischen Ausdehnung der Regionen). Ihre im
-folgenden stets eingehaltene, geographische Reihenfolge von Südost nach
-Nordwest soll die Lesbarkeit- und Interpretierbarkeit von Abbildungen
-erhöhen. Mit angegeben ist die Menge an Gräbern pro Region:
-\emph{Southeastern Central Europe} (70), \emph{Poland} (134),
-\emph{Southern Germany} (213), \emph{Northeastern France} (64),
-\emph{Northern Germany} (475), \emph{Southern Scandinavia} (209),
-\emph{Benelux} (284), \emph{England} (113). Durch die Regionengliederung
-verringerte sich das effektive Untersuchungsareal weiter. Von den 1704
-Gräbern im Rechteckareal verblieben 1562. Das ist der Ausgangsdatensatz
-auf dem alle folgenden Beobachtungen beruhen.
+Formen (Rechtecke, Hexagone, Polygone), nach der Dichteverteilung von
+Fundpunkten, anhand sich zeitlich wandelnder, archäologisch erfasster,
+kultureller Einheiten sind denkbar und sollten bei zunehmender
+Datenverfügbarkeit in Zukunft evaluiert werden. Das gilt auch
+hinsichtlich der Größe der Einheiten, die aufgrund der diachron geringen
+Datenmenge sehr groß gewählt werden mussten. Nur aus den acht Regionen,
+die in Abbildung \ref{fig:general-map-research-area-regions} definiert
+werden, sind ausreichend \textsuperscript{14}C-Daten an Gräbern bekannt,
+um eine nähere Betrachtung zu rechtfertigen. Der Schwellwert dafür wurde
+mit 60 Gräbern jedoch sehr niedrig angelegt, um das effektive
+Untersuchungsareal nicht noch weiter verkleinern zu müssen. Die
+Benennung der Regionen war an den modernen, administrativen Einheiten
+orientiert, die die Kreise im wesentlichen einschließen (siehe Kapitel
+\ref{representativity} für eine nähere Beschreibung der geographischen
+Ausdehnung der Regionen). Ihre im folgenden stets eingehaltene,
+geographische Reihenfolge von Südost nach Nordwest soll die Lesbarkeit-
+und Interpretierbarkeit von Abbildungen erhöhen. Mit angegeben ist die
+Menge an Gräbern pro Region: \emph{Southeastern Central Europe} (70),
+\emph{Poland} (134), \emph{Southern Germany} (213), \emph{Northeastern
+France} (64), \emph{Northern Germany} (475), \emph{Southern Scandinavia}
+(209), \emph{Benelux} (284), \emph{England} (113). Durch die
+Regionengliederung verringerte sich das effektive Untersuchungsareal
+weiter. Von den 1704 Gräbern im Rechteckareal verblieben 1562. Das ist
+der Ausgangsdatensatz auf dem alle folgenden Beobachtungen beruhen.
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area_regions} \caption[Karte mit künstlichen Untersuchungsregionen]{Karte mit künstlichen Untersuchungsregionen. Wie Abbildung \ref{fig:general-map-research-area}. Die Regionen sind farblich markiert.}\label{fig:general-map-research-area-regions}
@@ -5789,6 +5793,14 @@ kann den Datenbankautoren allerdings nicht zum Vorwurf gemacht werden.
 \hypertarget{simulation}{%
 \section{Simulation}\label{simulation}}
 
+Eines der wesentlichen Ziele dieser Arbeit war es, jenseits der
+induktiven Datenanalyse anzukommen und selbst eine computerbasierte
+Simulation zu entwickeln. Das folgende Kapitel beschreibt die Ergebnisse
+dieses Unterfangens. Gemessen an der Menge möglicher Permutatione von
+Implementierung und Parametern, die auf Grundlage des Modellansatzes
+erprobt und ausgewertet werden könnten, ist dieses Kapitel radikal
+gekürzt. Hier besteht viel Raum für zukünftige Forschung.
+
 \hypertarget{simulation-theorie}{%
 \subsection{Theoretische Grundlagen und
 Funktionalität}\label{simulation-theorie}}
@@ -5936,8 +5948,8 @@ Population bilden. Menschen sind nur durch ihre Lebenszeit und ihre
 Gruppenzugehörigkeit definiert und damit -- wie in Kapitel
 \ref{simulation-theorie} beschrieben -- sehr einfach modelliert. Die
 zeitliche Auflösung des \emph{popgenerator} Moduls ist jahrweise und
-damit an die Erfordernisse der Fragestellung dieser Arbei angepasst. Für
-die Erzeugung von Populationen, also der Verarbeitung der Daten im
+damit an die Erfordernisse der Fragestellung dieser Arbeit angepasst.
+Für die Erzeugung von Populationen, also der Verarbeitung der Daten im
 \texttt{models\_grid}, werden zunächst die Populationsparameter aus
 jeder Zeile in Instanzen der \texttt{S4}-Konfigurationsklasse
 \texttt{population\_settings} überführt. Diese und die folgenden
@@ -5958,20 +5970,20 @@ Untersuchungszeitfenster berechnet, um zu ermitteln, wie viele
 Menschen-Jahr Kombinationen erforderlich sind, um die vorgegebene
 Populationsgrößenentwicklung abzubilden. Aus
 \texttt{age\_distribution\_function} und \texttt{age\_range} lässt sich
-die durchschnittliche Lebenserwartung der Menschen errechnen, die sich
-aus den Eingabeparameters ergibt. Beide Informationen zusammen
-ermöglichen es, die Anzahl an Menschen zu bestimmen, die insgesamt
-erforderlich ist, um die Größenentwicklung näherungsweise aufzubauen. Um
-diese Anzahl an Menschen den Erfordernissen der Populationsentwicklung
-entsprechend auf dem Zeitstrahl in mehr oder wenigen dichten Gruppen
-anzuordnen, wird eine regelmäßiges Sequenz von Geburtsfenstern
-abgegrenzt. Die Länge eines Geburstsfensters entspricht der mittleren
-Lebenserwartung. Um die oben errechnete Gesamtzahl der Menschen auf die
-Fenster aufzuteilen, wird wiederum das Integral der
-\texttt{age\_distribution\_function} in jedem Fenster ermittelt und in
-Verhältnis zur Gesamtsumme dieser Integrale gesetzt. Damit steht für
-jedes Geburtsfenster ein Faktor bereit, um den Anteil der
-Gesamtpopulation zu berechnen, der in diesem Zeitfenster existiert.
+die durchschnittliche Lebenserwartung der Menschen errechnen. Beide
+Informationen zusammen ermöglichen es, die Anzahl an Menschen zu
+bestimmen, die insgesamt erforderlich ist, um die Größenentwicklung
+näherungsweise aufzubauen. Um diese Anzahl an Menschen den
+Erfordernissen der Populationsentwicklung entsprechend auf dem
+Zeitstrahl in mehr oder wenige dichte Gruppen anzuordnen, wird eine
+regelmäßige Sequenz von Geburtsfenstern abgegrenzt. Die Länge eines
+Geburstsfensters entspricht der mittleren Lebenserwartung. Um die oben
+errechnete Gesamtzahl der Menschen auf die Fenster aufzuteilen, wird
+wiederum das Integral der \texttt{age\_distribution\_function} in jedem
+einzelnen Fenster ermittelt und in Verhältnis zur Gesamtsumme dieser
+Integrale gesetzt. Damit steht für jedes Geburtsfenster ein Faktor
+bereit, um den Anteil der Gesamtpopulation zu berechnen, der in diesem
+Zeitfenster existiert.
 
 Mit dieser Information können die entsprechenden Menschen mit der
 \texttt{generate\_humans} Funktion zufällig generiert werden. Das
