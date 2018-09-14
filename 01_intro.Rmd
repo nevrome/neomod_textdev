@@ -4,16 +4,14 @@ Die vorliegende Master-Arbeit entstand 2017 -- 2018 am Institut für Ur- und Fr�
 
 Ausgangspunkt der Überlegungen für diese Arbeit war die der *Evolutionary Archaeology* entlehnte Frage, ob kulturhistorische Transformations- und Ausbreitungsprozesse sinnvoll und gewinnbringend in einer Modellimplementierung abgebildet werden können, die Ideen, Traditionen und Innovationen als handlungsfähige Agenten begreift. Um diesen Ansatz in einer archäologischen Abschlussarbeit erforschen zu können, wurde ein Fallbeispiel gewählt, in dem sich gegenseitig ausschließende Ideen über einen langen Zeitraum in einem großen Raum konkurrieren: Bestattungstraditionen in der europäischen Bronzezeit. Diese lassen sich vereinfacht durch zwei Dichotomien beschreiben: Brandbestattung im Gegensatz zu Körperbestattung sowie das Flachgrab in Abgrenzung zum Hügelgrab. Mit Radon-B steht ein Datensatz von mehreren tausend ^14^C-datierten Gräbern mit Metainformationen zur Verfügung, der die Phänomene in einem Zeitfenster von 2200 bis 800calBC in hoher Auflösung abbildet. 
 
-Die Arbeit verfolgt folgende Ziele: 
+Die Arbeit verfolgt sechs Ziele und ist in drei Abschnitte gegliedert: 
 
-- Die Zusammenfassung der Grundlagen, Geschichte und Fragestellungen der *Cultural Evolution Theory* in Hinblick auf Entwicklung und Ausbreitung von modernen, komplexen Verhaltensmustern.
-- Die Vorstellung von Paradigmen und Herausforderungen der Thanatoarchäologie.
-- Die Betrachtung der besonderen Qualität von Bestattungssitten als mit dem Tod verknüpften Ideen aus kulturevolutionärer Perspektive.
-- Die überblicksartige Erfassung der Entwicklung bronzezeitlicher Bestattungssitten in Nordwest-, Nord-, und Zentraleuropa in den relevanten Kulturkontexten.
-- Die Auswertung des Radon-B Datensatzes hinsichtlich der zeitlichen und räumlichen Verbreitung der primären Bestattungsformen.
-- Die Konstruktion und Anwendung eines deduktiven, simulationsfähigen Modells, das theoretische Vorüberlegungen aufgreift und zur Kontextualisierung und Erforschung der Realweltentwicklung geeignet ist.
-
-Die Arbeit ist in drei Abschnitte gegliedert:
+- **Cultural Evolution:** Die Zusammenfassung der Grundlagen, Geschichte und Fragestellungen der *Cultural Evolution Theory* in Hinblick auf Entwicklung und Ausbreitung von modernen, komplexen Verhaltensmustern.
+- **Thanatoarchäologie:** Die Vorstellung von Paradigmen und Herausforderungen der archäologischen Erforschung des Todes.
+- **Bestattungssitten als Kulturverhalten:** Die Betrachtung der besonderen Qualität von Bestattungssitten als mit dem Tod verknüpften Ideen aus kulturevolutionärer Perspektive.
+- **Archäologischer Überblick:** Die überblicksartige Erfassung der Entwicklung bronzezeitlicher Bestattungssitten in Nordwest-, Nord-, und Zentraleuropa in den relevanten Kulturkontexten.
+- **Radon-B:** Die Auswertung des Radon-B Datensatzes hinsichtlich der zeitlichen und räumlichen Verbreitung der primären Bestattungsformen, sowie der kulturellen Distanzen zwischen verschiedenen Regionen Europas auf dieser Grundlage.
+- **Simulation:** Die Konstruktion und Anwendung eines deduktiven, simulationsfähigen Modells, das theoretische Vorüberlegungen aufgreift und zur Kontextualisierung und Erforschung der Realweltentwicklung geeignet ist.
 
 Ein erster Teil, Kapitel \@ref(cultural-evolution), zeichnet die Geschichte der *Cultural Evolution Theory* nach, führt näher in die forschungsgeschichtlich wichtige Unterströmung *Memetik* ein und gibt einen Überblick über aktuelle Entwicklungen und Fragestellungen -- zunächst ganz allgemein, dann mit Schwerpunkt auf den Aspekt *Cultural Transmission*, der für diese Arbeit von besonderer Bedeutung ist. Die Vielfalt und Heterogenität von Themen und Fächern, die er berührt, können im Rahmen dieser Arbeit nicht alle umfassend angesprochen werden. Für die bedarfsgerechte Vertiefung und als Kompendium für die Zukunft wurde daher an entsprechenden Stellen auf weiterführende Literatur verwiesen.  
 
