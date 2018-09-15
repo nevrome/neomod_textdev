@@ -5770,7 +5770,7 @@ kann den Datenbankautoren allerdings nicht zum Vorwurf gemacht werden.
 Eines der wesentlichen Ziele dieser Arbeit war es, jenseits der
 induktiven Datenanalyse anzukommen und selbst eine computerbasierte
 Simulation zu entwickeln. Das folgende Kapitel beschreibt die Ergebnisse
-dieses Unterfangens. Gemessen an der Menge möglicher Permutatione von
+dieses Unterfangens. Gemessen an der Menge möglicher Permutationen von
 Implementierung und Parametern, die auf Grundlage des Modellansatzes
 erprobt und ausgewertet werden könnten, ist dieses Kapitel radikal
 gekürzt. Hier besteht viel Raum für zukünftige Forschung.
@@ -5778,7 +5778,38 @@ gekürzt. Hier besteht viel Raum für zukünftige Forschung.
 \hypertarget{simulation-theorie}{%
 \subsection{Grundlagen und Funktionalität}\label{simulation-theorie}}
 
-Der
+Dem Modell liegen drei strukturgebende Gedanken zugrunde:
+
+\textbf{Abstraktion vom Akteur Mensch auf den Akteur Idee} \newline  Das
+Modell soll nicht Menschen abbilden, die Ideen aufnehmen, verarbeiten
+und weitergeben, sondern Ideen, die Menschen besetzen und sie als
+Wirtsorganismen zum Zweck ihrer eigenen Ausbreitung instrumentalisieren.
+Dieser Perspektivwechsel ist der \emph{Memetik} entlehnt, zu deren
+wichtigsten Paradigmen es gehört, die Idee ins Zentrum der
+Aufmerksamtkeit zu stellen -- \emph{the meme's eye view} (siehe Kapitel
+\ref{memetics-dawkins}). Durch die Loslösung vom Menschen als zentraler
+Entität des Modells wird eine alternative Form agentenbasierter
+Modellierung möglich: Menschliches Verhalten ist enorm vielfältig und
+selten zufriedenstellend in wenigen Subroutinen repräsentierbar. Es wäre
+naiv anzunehmen, dass Ideen ohne komplexe Wechselwirkungen mit der
+Realität auskommen würden, allerdings fällt es konzeptionell leichter,
+ihr Verhalten statistisch auf eindeutige Muster zu reduzieren. Folgt man
+der \emph{Dual Inheritance Theory}, so stehen sie durch die Bedrohung
+des Vergessens unter unmittelbarem Selektionsdruck. Es ist eine valide
+Arbeitshypothese, Ideen wie allen biologischen Organismen den
+unbedingten, opportunistischen Willen zum Überleben und zur Reproduktion
+zuzusprechen, da sie sich statistisch genau so verhalten, als ob sie
+diese Ziele verfolgen würden. Ideen haben also Agency, aber andererseits
+auch keine Planungsfähigkeit: Sie besitzen keine (menschliche)
+Intelligenz, um Vorbereitungen für die Zukunft zu treffen. Diese
+Eigenschaft dummen Verlangens prädestiniert Ideen -- zumindest
+theoretisch -- für computerbasierte Simulation. Ein solches Verhalten
+lässt sich sehr einfach implementieren.
+
+\textbf{Abbildung einer Landschaft als Netzwerk} \newline 
+
+\textbf{Konstruktion von Vergleichsproxies nach Vorlage von
+\textcite{neiman_stylistic_1995}} \newline 
 
 Abbildung \ref{fig:neiman-general}
 
@@ -5830,7 +5861,7 @@ Arbeit zum Einsatz kamen. Im Gegensatz zu den Ausführungen im Kontext
 von Datenvorbereitung und -analyse in Kapitel \ref{radonb-dataset}, wo
 darauf zugunsten des Leseflusses bewusst verzichtet wurde, werden hier
 nun die wesentlichen Funktionen und Klassen namentlich genannt. Das soll
-es erleichtern, die grundsätzlicher Architektur der Software zu
+es ermöglichen, die grundsätzliche Architektur der Software zu
 verstehen.
 
 \hypertarget{popgenerator}{%
@@ -5908,7 +5939,7 @@ Paramter & Beschreibung & Theoretischer Wertebereich\\
 \addlinespace \hline \addlinespace
 \textit{Ideenparameter}\newline \textbf{start\_distribution}\newline \textit{data.frame} & Proportionaler Anteil der Ideen in jeder Region zum Startzeitpunkt der Simulation. Eine Tabelle mit einer Zeile für jede Gruppe und einer Spalte für jede Idee. & \textit{data.frame} mit Proportionen pro Gruppe und Idee. In den Zellen ist der Anteil der Idee in dieser Gruppe als Doublewert zwischen 0 und 1 angegeben. Die Zeilensumme muss 1 sein: \newline     \texttt{data.frame(ideaA = c(0.2, 0.5), ideaB = c(0.8, 0.5))}\\
 \addlinespace \hline \addlinespace
-\textit{Ideenparameter}\newline \textbf{strength}\newline \textit{double vector} & Stärke der Ideen. Diese Option ist zwar definiert, aber nicht weiter implementiert. & Integervektor: \newline     \texttt{c(1,1)}\\
+\textit{Ideenparameter}\newline \textbf{strength}\newline \textit{integer vector} & Stärke der Ideen. Diese Option ist zwar definiert, aber nicht weiter implementiert. & Integervektor: \newline     \texttt{c(1,1)}\\
 \bottomrule
 \end{tabu}
 \end{table*}
