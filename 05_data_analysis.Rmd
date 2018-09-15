@@ -500,10 +500,16 @@ Die Expansionssimulation endet, wenn sich die Größe des Netzwerks von einem Ze
 
 ### Parameter und Simulationsverhalten {#simulation-parameters}
 
-TODO: An welchen Knöpfen kann man drehen und was geschieht?
+```{r sim-popsize-crossregions, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/simulation_parameter_exploration/popsize_crossregions.jpeg")
+```
 
-```{r sim-demo-1, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
-knitr::include_graphics("../neomod_analysis/figures_plots/development_simulation/development_proportions_regions_simulation_improved_vis.jpeg")
+```{r sim-startprop-distancemat, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/simulation_parameter_exploration/startprop_distancemat.jpeg")
+```
+
+```{r sim-vertitrans, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/simulation_parameter_exploration/vertitrans.jpeg")
 ```
 
 ## Kulturelle und Räumliche Distanz {#cultural-and-spatial-distance}
@@ -540,7 +546,7 @@ Die Analyse ist zweigeteilt in einen Abschnitt zu kultureller Distanz innerhalb 
 
 Um die kulturelle Distanz zwischen den Regionen basierend auf den Variablen *burial_type* und *burial construction* zu berechnen, wurden die in Kapitel \@ref(descriptive-data-analysis) vorgestellten Datensätze zur relativen Entwicklung der Varianten weiterverwendet. Diese enthalten zu jedem Jahr im Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen Anteil der verschiedenen Bestattungsformen in den in Kapitel \@ref(data-prep-and-segmentation) etablierten, künstlichen Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die Squared Euclidian Distance (SED) zwischen jeder Region berechnen. Die Abbildungen \@ref(fig:sed-dev-matrix-bt) und \@ref(fig:sed-dev-matrix-bc) zeigen den Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer Plotmatrix. 
 
-Die Mehrzahl der Kurven in Abbildung \@ref(fig:sed-dev-matrix-bt) für *burial type* entspricht den Erwartungen: Zu Beginn der Bronzezeit ist Körperbestattung im gesamten Untersuchungsareal weit verbreitet, also ist die Euklidische Distanz 2200calBC in fast jeder Regionenbeziehung gering. Nur der Benelux-Raum, in dem der Brandbestattungsanteil schon in der Frühbronzezeit groß ist, schert aus. Ab der Mittel-, besonders aber am Übergang zur Spätbronzezeit, vollzog sich in ganz Europa der Übergang zur Dominanz der Brandbestattung. Die SED-Werte steigen über diesen Zeitraum durchweg an und zeichnen deutliche Peaks oder Entwicklungen mit mehreren, aufeinanderfolgenden Maxima. Das ist Konsequenz dessen, dass der Übergangsprozess in jeder Region tatsächlich und so wie er in Radon-B abgebildet ist unterschiedlich und gegenüber anderen Räumen zeitversetzt ablief. Am Ende der Spätbronzezeit nähert sich die durchschnittliche SED wieder Null an, da dann in fast ganz Europa die Brandbestattung vorherrschte. Abbildung \@ref(fig:sed-dev-bt) stellt den selben Sachverhalt in einer an Abbildung \@ref(fig:development-amount-regions-burial-type) orientierten Form dar. Das erleichtert es, die Rolle einzelner Regionen im Gesamtkontext zu beurteilen. Die in Radon-B dargestellte, frühe und vollständige Übernahme des Brandbestattungsritus im Benelux-Raum hebt ihn deutlich von den anderen Regionen ab. England dagegen, mit seinem langsamen, graduellen Übergang von Körper- zu Brandbestattung fällt durch durchgehend mäßige Distanzen zu allen anderen Regionen auf. Sie kommt ohne deutliche Minima und Maxima aus. Die Situation für *burial construction* ist, wie aus den Abbildungen \@ref(fig:sed-dev-matrix-bc) und \@ref(fig:sed-dev-bc) ersichtlich, komplizierter. Hier ist kein allgemeiner Trend zu erkennen, sondern eine Vielzahl an lokalen und zeitlich begrenzten Phänomenen. Das liegt auch daran, wie der aus Radon-B entwickelte Proxy die Entwicklungen der realen Welt abbildet (siehe Kapitel \@ref(representativity)). Zur Mittelbronzezeit sollte die Hügelgräberkultur eine grundsätzliche Reduktion der SED für fast alle Regionenbeziehungen bewirken -- dieser Effekt ist tatsächlich leicht, aber bei weitem nicht so akzentuiert wie wünschenwert sichtbar. 
+Die Mehrzahl der Kurven in Abbildung \@ref(fig:sed-dev-matrix-bt) für *burial type* entspricht den Erwartungen: Zu Beginn der Bronzezeit ist Körperbestattung im gesamten Untersuchungsareal weit verbreitet, also ist die euklidische Distanz 2200calBC in fast jeder Regionenbeziehung gering. Nur der Benelux-Raum, in dem der Brandbestattungsanteil schon in der Frühbronzezeit groß ist, schert aus. Ab der Mittel-, besonders aber am Übergang zur Spätbronzezeit, vollzog sich in ganz Europa der Übergang zur Dominanz der Brandbestattung. Die SED-Werte steigen über diesen Zeitraum durchweg an und zeichnen deutliche Peaks oder Entwicklungen mit mehreren, aufeinanderfolgenden Maxima. Das ist Konsequenz dessen, dass der Übergangsprozess in jeder Region tatsächlich und so wie er in Radon-B abgebildet ist unterschiedlich und gegenüber anderen Räumen zeitversetzt ablief. Am Ende der Spätbronzezeit nähert sich die durchschnittliche SED wieder Null an, da dann in fast ganz Europa die Brandbestattung vorherrschte. Abbildung \@ref(fig:sed-dev-bt) stellt den selben Sachverhalt in einer an Abbildung \@ref(fig:development-amount-regions-burial-type) orientierten Form dar. Das erleichtert es, die Rolle einzelner Regionen im Gesamtkontext zu beurteilen. Die in Radon-B dargestellte, frühe und vollständige Übernahme des Brandbestattungsritus im Benelux-Raum hebt ihn deutlich von den anderen Regionen ab. England dagegen, mit seinem langsamen, graduellen Übergang von Körper- zu Brandbestattung fällt durch durchgehend mäßige Distanzen zu allen anderen Regionen auf. Es kommt ohne deutliche Minima und Maxima aus. Die Situation für *burial construction* ist, wie aus den Abbildungen \@ref(fig:sed-dev-matrix-bc) und \@ref(fig:sed-dev-bc) ersichtlich, komplizierter. Hier ist kein allgemeiner Trend zu erkennen, sondern eine Vielzahl an lokalen und zeitlich begrenzten Phänomenen. Das liegt auch daran, wie der aus Radon-B entwickelte Proxy die Entwicklungen der realen Welt abbildet (siehe Kapitel \@ref(representativity)). Zur Mittelbronzezeit sollte die Hügelgräberkultur eine grundsätzliche Reduktion der SED für fast alle Regionenbeziehungen bewirken -- dieser Effekt ist tatsächlich leicht, aber bei weitem nicht so akzentuiert wie wünschenwert sichtbar. 
 
 ```{r sed-dev-matrix-bt, echo = FALSE, fig.scap = "Plotmatrix der SEDs für \\textit{burial type}", fig.cap = "Plotmatrix der SEDs für \\textit{burial type}. Matrix mit $8*8=64$ Einzelplots. Jeder Plot zeigt die Entwicklung der Squared Euclidian Distance (SED) für die Variable \\textit{burial type} über den Zeitraum von 2200 bis 800calBC für jeweils eine Regionenbeziehung. Über der grauen Linie der echten Datenentwicklung liegt jeweils eine stärkere in der Farbe der Spaltenregion, die den Verlauf eines dynamisch eingepassten Splines (loess, span = 0.3) zeigt.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg")
@@ -616,13 +622,27 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_
 
 ### Simulation
 
-TODO: Was kann man im Kontext von Distanz Feines mit der Simulation tun?
+\begin{landscape}
+```{r sim-sed, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/squared_euclidian_distance_vs_spatial_distance_sim_multiple.jpeg")
+```
+\end{landscape}
 
-```{r sim-mantel-test, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
-knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/mantel_test_many_simulations.jpeg")
+```{r sim-spearman-low-equal, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/low_equal_interaction.jpeg")
 ```
 
+```{r sim-spearman-high-equal, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/high_equal_interaction.jpeg")
+```
 
+```{r sim-spearman-low-spatial, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/low_spatial_interaction.jpeg")
+```
+
+```{r sim-spearman-high-spatial, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/high_spatial_interaction.jpeg")
+```
 
 \newpage
 \pby[title={Literatur},segment=\therefsegment,heading=subbibintoc]
