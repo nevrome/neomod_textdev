@@ -433,7 +433,7 @@ tibble::tibble(
     kableExtra::linebreak
   ) %>%
   knitr::kable(
-    caption = "Parameter des popgenerator Moduls",
+    caption = "Simulationsparameter (v.a. für das popgenerator Modul)",
     format = "latex",
     booktabs = T,
     escape = F,
