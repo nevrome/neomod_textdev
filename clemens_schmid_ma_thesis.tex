@@ -5950,17 +5950,17 @@ Mit dieser Information können die entsprechenden Menschen mit der
 \texttt{generate\_humans} Funktion zufällig generiert werden. Das
 Beispiele in Abbildung \ref{fig:popgen-sizedev-example} belegt die
 Funktionalität dieses Ansatzes, illustriert aber auch den Umfang der
-Abweichungen von Ergebnispopulationsgröße und Vorgabefunktion.
-\textbf{TODO: Diskussion}. Zum Abschluss der Berechnungen in
-\texttt{population\_generator} werden die Gruppenpopulationen zur
-Gesamtpopulation zusammengeführt. Diese liegt in der Form eines
-\texttt{data.frames} vor, wobei jede Zeile ein Indiviuum repräsentiert.
-Jedes Individuum erhält eine eindeutige ID und bringt Informationen zu
-seiner Lebensdauer, seinem Geburts- und Sterbezeitpunkt sowie seiner
-Gruppenzugehörigkeit mit. Das Sortierkriterium im Gesamtdatensatz ist
-das Geburtsjahr. Ein solcher Ergebnisdatensatz wird für jedes Modell,
-also jede Zeile, im Eingabedatensatz \texttt{models\_grid} erzeugt und
-kann entsprechend als \texttt{list} zurückgegeben werden.
+Abweichungen von Ergebnispopulationsgröße und Vorgabefunktion. Zum
+Abschluss der Berechnungen in \texttt{population\_generator} werden die
+Gruppenpopulationen zur Gesamtpopulation zusammengeführt. Diese liegt in
+der Form eines \texttt{data.frames} vor, wobei jede Zeile ein Indiviuum
+repräsentiert. Jedes Individuum erhält eine eindeutige ID und bringt
+Informationen zu seiner Lebensdauer, seinem Geburts- und Sterbezeitpunkt
+sowie seiner Gruppenzugehörigkeit mit. Das Sortierkriterium im
+Gesamtdatensatz ist das Geburtsjahr. Ein solcher Ergebnisdatensatz wird
+für jedes Modell, also jede Zeile, im Eingabedatensatz
+\texttt{models\_grid} erzeugt und kann entsprechend als \texttt{list}
+zurückgegeben werden.
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/popgenerator_examples/create_unit_population_size_development_comparison} \caption[huhu]{huhu}\label{fig:popgen-sizedev-example}
@@ -6179,15 +6179,31 @@ eingelesen werden kann.
 \subsection{Parameter und
 Simulationsverhalten}\label{simulation-parameters}}
 
-TODO: An welchen Knöpfen kann man drehen und was geschieht?
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/simulation_parameter_exploration/popsize_crossregions} \caption[huhu]{huhu}\label{fig:sim-popsize-crossregions}
+\end{figure}
 
 \begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/development_simulation/development_proportions_regions_simulation_improved_vis} \caption[huhu]{huhu}\label{fig:sim-demo-1}
+\includegraphics{../neomod_analysis/figures_plots/simulation_parameter_exploration/startprop_distancemat} \caption[huhu]{huhu}\label{fig:sim-startprop-distancemat}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/simulation_parameter_exploration/vertitrans} \caption[huhu]{huhu}\label{fig:sim-vertitrans}
 \end{figure}
 
 \hypertarget{cultural-and-spatial-distance}{%
 \section{Kulturelle und Räumliche
 Distanz}\label{cultural-and-spatial-distance}}
+
+Die Abweichung der diachronen Entwicklung der Variablen
+\emph{burial\_type} und \emph{burial\_construction} ist Konsequenz der
+jeweils eigenständigen, kulturellen Prozesse und Dynamiken, die die
+definierten Untersuchungsregionen im Laufe der Bronzezeit durchlaufen.
+Die Entwicklungsproxies der Regionen können quantitativ auf Ähnlichkeit
+verglichen werden, um ein Distanzmaß für die Unterschiede jeder Region
+zu jeder anderen zu ermitteln. Dieses Maß bezieht sich freilich nur auf
+die einzelnen Variablen, lässt sich jedoch durchaus in einem größeren
+kulturhistorischen Kontext interpretieren.
 
 \hypertarget{fragestellung-und-methode}{%
 \subsection{Fragestellung und Methode}\label{fragestellung-und-methode}}
@@ -6255,7 +6271,7 @@ einer Plotmatrix.
 Die Mehrzahl der Kurven in Abbildung \ref{fig:sed-dev-matrix-bt} für
 \emph{burial type} entspricht den Erwartungen: Zu Beginn der Bronzezeit
 ist Körperbestattung im gesamten Untersuchungsareal weit verbreitet,
-also ist die Euklidische Distanz 2200calBC in fast jeder
+also ist die euklidische Distanz 2200calBC in fast jeder
 Regionenbeziehung gering. Nur der Benelux-Raum, in dem der
 Brandbestattungsanteil schon in der Frühbronzezeit groß ist, schert aus.
 Ab der Mittel-, besonders aber am Übergang zur Spätbronzezeit, vollzog
@@ -6274,7 +6290,7 @@ Gesamtkontext zu beurteilen. Die in Radon-B dargestellte, frühe und
 vollständige Übernahme des Brandbestattungsritus im Benelux-Raum hebt
 ihn deutlich von den anderen Regionen ab. England dagegen, mit seinem
 langsamen, graduellen Übergang von Körper- zu Brandbestattung fällt
-durch durchgehend mäßige Distanzen zu allen anderen Regionen auf. Sie
+durch durchgehend mäßige Distanzen zu allen anderen Regionen auf. Es
 kommt ohne deutliche Minima und Maxima aus. Die Situation für
 \emph{burial construction} ist, wie aus den Abbildungen
 \ref{fig:sed-dev-matrix-bc} und \ref{fig:sed-dev-bc} ersichtlich,
@@ -6466,10 +6482,26 @@ zwischen Großregionen anzeigen (Zinn z. B.).}
 \hypertarget{simulation-1}{%
 \subsection{Simulation}\label{simulation-1}}
 
-TODO: Was kann man im Kontext von Distanz Feines mit der Simulation tun?
+\begin{landscape}
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed_simulation/squared_euclidian_distance_vs_spatial_distance_sim_multiple} \caption[huhu]{huhu}\label{fig:sim-sed}
+\end{figure}
+\end{landscape}
 
 \begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/sed_simulation/mantel_test_many_simulations} \caption[huhu]{huhu}\label{fig:sim-mantel-test}
+\includegraphics{../neomod_analysis/figures_plots/sed_simulation/low_equal_interaction} \caption[huhu]{huhu}\label{fig:sim-spearman-low-equal}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed_simulation/high_equal_interaction} \caption[huhu]{huhu}\label{fig:sim-spearman-high-equal}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed_simulation/low_spatial_interaction} \caption[huhu]{huhu}\label{fig:sim-spearman-low-spatial}
+\end{figure}
+
+\begin{figure}
+\includegraphics{../neomod_analysis/figures_plots/sed_simulation/high_spatial_interaction} \caption[huhu]{huhu}\label{fig:sim-spearman-high-spatial}
 \end{figure}
 
 \newpage
