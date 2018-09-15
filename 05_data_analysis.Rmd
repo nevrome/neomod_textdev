@@ -464,12 +464,12 @@ Die Erzeugung der vertikalen Beziehungen mit `generate_vertical_relations` funkt
 Sind die vertikalen und horizontalen Beziehungen gruppenintern etabliert, dann werden mit `modify_relations_cross_unit` einige dieser Verbindungen zugunsten von gruppenübergreifenden Beziehungen aufgelöst. Die Eingabeparamter `cross_unit_proportion_child_of` und `cross_unit_proportion_friend` sind entscheidend dafür, in welchem Umfang das für die beiden Beziehungstypen passiert. Davon abhängig werden mehr oder weniger Beziehungen für eine Modifikation zufällig ausgewählt. Diese besteht darin, dass eines der beiden Individuen durch ein anderes aus einer anderen Gruppe, aber dem selben Geburtsfenster ersetzt wird. Welche andere Gruppe gewählt wird, wird über eine Zufallsentscheidung auf Grundlage der `unit_interaction_matrix` festgelegt. In einem letzten Schritt innerhalb des `relations_generator` Submoduls werden die Beziehungen nach den Eingabevariablen `weight_child_of` und `weight_friend` mit einem Gewichtswert versehen. Die vier Teilschritte dienen gemeinsam dazu einen `data.frame` zu schaffen, der sinnvolle Beziehungen zwischen Individuen der Gesamtpopulation dokumentiert. Die `data.frames` für jedes Modell in Form einer Liste zurückgegeben.
 
 \begin{landscape}
-```{r group-graph, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r group-graph, echo = FALSE, fig.scap = "Überblicksdarstellung eines von popgenerator erzeugten Netzwerks", fig.cap = "Überblicksdarstellung eines von popgenerator erzeugten Netzwerks. Statt einzelner Individuen werden nach Region zusammengefasste Gruppen anhand ihrer Größe zu Zeitpunkten im 100-Jahre-Abstand dargestellt. Die Netzwerkverbindungen umfassen für diese Darstellung nur Kanten zwischen und nicht innerhalb von Regionen.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/simulation_population_graph/population_group_graph.jpeg")
 ```
 \end{landscape}
 
-```{r graph-tulip, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r graph-tulip, echo = FALSE, fig.scap = "Vollständige Darstellung eines von popgenerator erzeugten Netzwerks", fig.cap = "Vollständige Darstellung eines von popgenerator erzeugten Netzwerks. Rot markiert sind individuelle Knoten, die durch graue Kanten verknüpft werden. In der vom Fruchterman-Reingold-Algorithmus angeordneten Darstellung bilden die Regionalgruppen aufgrund des intern höheren Grads an Verknüpfung dicht gepackte, (diachron) langgestreckte, lineare Strukturen. Sie bilden in wesentlich geringerem Umfang Querverbindungen untereinander aus.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/simulation_population_graph/population_graph_tulip.jpeg")
 ```
 
