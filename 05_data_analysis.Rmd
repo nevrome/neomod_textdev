@@ -296,9 +296,9 @@ Die vorliegende Arbeit ist also eine klare Sekundärverwendung von Radon-B. Ein 
 
 Eines der wesentlichen Ziele dieser Arbeit war es, jenseits der induktiven Datenanalyse anzukommen und selbst eine computerbasierte Simulation zu entwickeln. Das folgende Kapitel beschreibt die Ergebnisse dieses Unterfangens. Gemessen an der Menge möglicher Permutatione von Implementierung und Parametern, die auf Grundlage des Modellansatzes erprobt und ausgewertet werden könnten, ist dieses Kapitel radikal gekürzt. Hier besteht viel Raum für zukünftige Forschung.
 
-### Theoretische Grundlagen und Funktionalität {#simulation-theorie}
+### Grundlagen und Funktionalität {#simulation-theorie}
 
-TODO: Wie komme ich von der Theorie zur Praxis, v.a. Neiman
+Der 
 
 Abbildung \@ref(fig:neiman-general)
 
@@ -319,7 +319,7 @@ Letztere hätte eine Unterscheidung nach dem Geschlecht erfordert.
 
 ### Implementierung und Algorithmen
 
-Die Simulationssoftware besteht aus zwei speziell für diese Anwendung entwickelten Modulen: Dem Populationsgenerator *popgenerator* und der Expansionssimulation *gluesless*. Die Module sind aufeinander abgestimmt und in den verwendeten Versionen funktional auf die Fragestellungen dieser Arbeit zugeschnitten. Beide lassen sich jedoch relativ leicht für einen breiteren Anwendungsbereich öffnen, wenn dafür in Zukunft Notwendigkeit bestehen sollte. Die im folgenden ausgearbeitete Beschreibungen beziehen sich entsprechend jeweils speziell auf Version 1.0 der Module, die für die Berechnung in dieser Arbeit zum Einsatz kamen. Im Gegensatz zu den Ausführungen im Kontext von Datenvorbereitung und -analyse in Kapitel \@ref(#radonb-dataset), wo darauf zugunsten des Leseflusses bewusst verzichtet wurde, werden hier nun die wesentlichen Funktionen und Klassen namentlich genannt. Das soll es erleichtern, die grundsätzlicher Architektur der Software zu verstehen. 
+Die Simulationssoftware besteht aus zwei speziell für diese Anwendung entwickelten Modulen: Dem Populationsgenerator *popgenerator* und der Expansionssimulation *gluesless*. Die Module sind aufeinander abgestimmt und in den verwendeten Versionen funktional auf die Fragestellungen dieser Arbeit zugeschnitten. Beide lassen sich jedoch relativ leicht für einen breiteren Anwendungsbereich öffnen, wenn dafür in Zukunft Notwendigkeit bestehen sollte. Die im folgenden ausgearbeitete Beschreibungen beziehen sich entsprechend jeweils speziell auf Version 1.0 der Module, die für die Berechnung in dieser Arbeit zum Einsatz kamen. Im Gegensatz zu den Ausführungen im Kontext von Datenvorbereitung und -analyse in Kapitel \@ref(radonb-dataset), wo darauf zugunsten des Leseflusses bewusst verzichtet wurde, werden hier nun die wesentlichen Funktionen und Klassen namentlich genannt. Das soll es erleichtern, die grundsätzlicher Architektur der Software zu verstehen. 
 
 #### Populationsgenerator *popgenerator* {#popgenerator}
 
@@ -381,52 +381,50 @@ tibble::tibble(
     "double vector"
   ),
   description = c(
-    "Eine Liste der Kalenderjahre über die sich die Simulation erstrecken soll. Das kann eine künstliche Sequenz sein, oder sich an dem Realweltphänomen orientieren, das mit der Simulation erforscht werden soll.",
+    "Eine Liste der Kalenderjahre über die sich die Simulation erstrecken soll.",
     "Anzahl der Gruppen, in die die Population untergliedert sein soll.",
     "Eine Liste der Gruppennamen, wahlweise mit einer Definition ihrer inneren Reihenfolge.",
     "Funktionen, die die Populationsgröße für jede Gruppe in Abhängigkeit von der Simulationszeit definieren.",
-    "Funktion, die die durchschnittliche Altersverteilung der Menschen in der Population beschreibt.",
+    "Funktion, die die altersabhängige Sterbewahrscheinlichkeit einer Population beschreibt.",
     "Altersfenster, auf das die Altersverteilungsfunktion angewandt wird.",
     "Menge an horizontalen Beziehungen, die ein Individuum aufbaut.",
-    "Matrix die definiert, welche Gruppe in welchem Umfang mit welcher anderen Gruppe interagiert. Diese Tabelle kann verschiedene -- räumliche, kulturelle, wirtschaftliche -- Distanzen ausdrücken.",
-    "Anteil der vertikalen Beziehungen, die nicht innerhalb einer Gruppe bestehen, sondern über Gruppengrenzen hinweg reichen.",
+    "Distanzmatrix die definiert, welche Gruppe in welchem Umfang mit welcher anderen Gruppe interagiert.",
+    "Anteil der vertikalen Beziehungen, die nicht innerhalb, sondern über Gruppengrenzen hinweg bestehen.",
     "Anteil der horizontalen Beziehungen, die über Gruppengrenzen hinweg reichen.",
-    "Stärke einer vertikalen Beziehung. Die Beziehungsstärke hat Einfluss darauf, ob eine Idee beim Versuch von einem Individuum zum anderen zu springen Erfolg hat.",
+    "Stärke einer vertikalen Beziehung. Die Beziehungsstärke hat Einfluss darauf, ob eine Idee ein Individuum besetzen kann.",
     "Stärke einer horizontalen Beziehung.",
     "Namen der Ideen.",
     "Proportionaler Anteil der Ideen in jeder Region zum Startzeitpunkt der Simulation. Eine Tabelle mit einer Zeile für jede Gruppe und einer Spalte für jede Idee.",
-    "Stärke der Ideen."
+    "Stärke der Ideen. Diese Option ist zwar definiert, aber nicht weiter implementiert."
   ),
   values = c(
-    "Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten:
-    \\texttt{-2200:-800}, \\texttt{0:500}, \\texttt{seq(-1000, 1000)}",
-    "Beliebiger positiver Integerwert.
+    "Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten: \\texttt{-2200:-800}, \\texttt{0:500}",
+    "Beliebiger positiver Integerwert: 
     \\texttt{1}, \\texttt{8}, \\texttt{100}",
-    "Liste mit Namen. Die Anzahl muss \\textit{unit\\_amount} entsprechen.
+    "Liste mit Namen. Die Anzahl muss \\textit{unit\\_amount} entsprechen: 
     \\texttt{list(factor(\"regionA\", levels = regionen), factor(\"regionB\", levels = regionen))}",
-    "Liste mit Funktionen. Die Anzahl muss \\textit{unit\\_amount} entsprechen.
+    "Liste mit Funktionen. Die Anzahl muss \\textit{unit\\_amount} entsprechen: 
     \\texttt{list('regionA' = function(t) \\{100\\}, 'regionB' = function(t) \\{100 + 10 * cos(t * 0.1)\\})}",
-    "Eine Funktion, die einen Wert für jeden Eingabewert aus \\textit{age\\_range} zurückgibt.
-    \\texttt{function(x) \\{1 / (1 + 0.0004 * 0.7\\^\\ (-7 * log(x)))\\}}",
-    "Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten im Bereich der menschlichen Lebenserwartung:
-    \\texttt{1:70}, \\texttt{1:120}",
-    "Beliebiger positiver Integerwert oder 0.
+    "Eine Funktion, die einen Wert für jeden Eingabewert aus \\textit{age\\_range} zurückgibt: 
+    \\texttt{function(x) \\{1 - x / 100\\}}",
+    "Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten im Bereich der menschlichen Lebenserwartung: \\texttt{1:100}",
+    "Beliebiger positiver Integerwert oder 0: 
     \\texttt{0}, \\texttt{5}, \\texttt{100}",
-    "Kreuztabelle in Form einer Integermatrix. Die Werte können beliebige positive Integerwert oder 0 sein.
+    "Kreuztabelle in Form einer Integermatrix. Die Werte können beliebige positive Integerwert oder 0 sein:
     \\texttt{matrix(c(0, 1, 1, 0), nrow = 2, ncol = 2)}",
-    "Double Wert zwischen 0 und 1.
+    "Double Wert zwischen 0 und 1: 
     \\texttt{0}, \\texttt{0.02}, \\texttt{0.7}",
-    "Doublewert zwischen 0 und 1.
+    "Doublewert zwischen 0 und 1: 
     \\texttt{0}, \\texttt{0.02}, \\texttt{0.7}",
-    "Beliebiger positiver Integerwert oder 0.
+    "Beliebiger positiver Integerwert oder 0: 
     \\texttt{0}, \\texttt{5}, \\texttt{100}",
-    "Beliebiger positiver Integerwert oder 0.
+    "Beliebiger positiver Integerwert oder 0: 
     \\texttt{0}, \\texttt{5}, \\texttt{100}",
-    "Vektor mit Namen.
+    "Vektor mit Namen: 
     \\texttt{c('ideaA', 'ideaB')}",
-    "\\textit{data.frame} mit Proportionen pro Gruppe und Idee. In den Zellen ist der Anteil der Idee in dieser Gruppe als Doublewert zwischen 0 und 1 angegeben. Die Zeilensumme muss 1 sein.
-    \\texttt{data.frame(ideaA = c(0.2, 0.5), ideaB = c(0.8, 0.5))}",
-    "Integervektor mit Werten zwischen ...
+    "\\textit{data.frame} mit Proportionen pro Gruppe und Idee. In den Zellen ist der Anteil der Idee in dieser Gruppe als Doublewert zwischen 0 und 1 angegeben. Die Zeilensumme muss 1 sein: 
+    \\texttt{data.frame(ideaA = c(0.2, 0.5), ideaB = c(0.8, 0.5))}", 
+    "Integervektor: 
     \\texttt{c(1,1)}"
   )
 ) %>%
@@ -451,9 +449,9 @@ tibble::tibble(
     linesep = "\\addlinespace \\hline \\addlinespace"
   ) %>%
   kableExtra::kable_styling(full_width = T, font_size = 8) %>%
-  kableExtra::column_spec(1, width = "14em") %>%
-  kableExtra::column_spec(2, width = "20em") %>%
-  kableExtra::column_spec(3, width = "20em") %>%
+  kableExtra::column_spec(1, width = "18em") %>%
+  kableExtra::column_spec(2, width = "18em") %>%
+  kableExtra::column_spec(3, width = "18em") %>%
   gsub("table", "table*", .)
 ```
 

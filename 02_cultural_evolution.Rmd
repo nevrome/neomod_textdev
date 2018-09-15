@@ -59,7 +59,7 @@ tibble::tribble(
     col.names = c("", "Evolutionary Psychology", "Behavioural Ecology", "Dual Inheritance Theory"),
     linesep = "\\addlinespace"
   ) %>%
-  kableExtra::kable_styling(full_width = T) %>%
+  kableExtra::kable_styling(full_width = T, font_size = 8) %>%
   kableExtra::column_spec(1, width = "15em") %>%
   kableExtra::column_spec(2, width = "10em") %>%
   kableExtra::column_spec(3, width = "10em") %>%
