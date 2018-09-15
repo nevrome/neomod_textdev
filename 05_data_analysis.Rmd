@@ -378,7 +378,7 @@ tibble::tibble(
     "integer",
     "character vector",
     "data.frame",
-    "double vector"
+    "integer vector"
   ),
   description = c(
     "Eine Liste der Kalenderjahre über die sich die Simulation erstrecken soll.",
