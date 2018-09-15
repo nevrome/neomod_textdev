@@ -767,6 +767,7 @@ menschlichen Verhaltens aus einer Evolutionsperspektive:
 
 \caption{\label{tab:smiththreestyles}Three Styles of Evolutionary Explanation (nach \textcite{SmithThreestylesevolutionary2000})}
 \centering
+\fontsize{8}{10}\selectfont
 \begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{15em}>{\raggedright\arraybackslash}p{10em}>{\raggedright\arraybackslash}p{10em}>{\raggedright\arraybackslash}p{10em}}
 \toprule
  & Evolutionary Psychology & Behavioural Ecology & Dual Inheritance Theory\\
@@ -5775,10 +5776,9 @@ erprobt und ausgewertet werden könnten, ist dieses Kapitel radikal
 gekürzt. Hier besteht viel Raum für zukünftige Forschung.
 
 \hypertarget{simulation-theorie}{%
-\subsection{Theoretische Grundlagen und
-Funktionalität}\label{simulation-theorie}}
+\subsection{Grundlagen und Funktionalität}\label{simulation-theorie}}
 
-TODO: Wie komme ich von der Theorie zur Praxis, v.a. Neiman
+Der
 
 Abbildung \ref{fig:neiman-general}
 
@@ -5827,7 +5827,7 @@ in Zukunft Notwendigkeit bestehen sollte. Die im folgenden
 ausgearbeitete Beschreibungen beziehen sich entsprechend jeweils
 speziell auf Version 1.0 der Module, die für die Berechnung in dieser
 Arbeit zum Einsatz kamen. Im Gegensatz zu den Ausführungen im Kontext
-von Datenvorbereitung und -analyse in Kapitel @ref(\#radonb-dataset), wo
+von Datenvorbereitung und -analyse in Kapitel \ref{radonb-dataset}, wo
 darauf zugunsten des Leseflusses bewusst verzichtet wurde, werden hier
 nun die wesentlichen Funktionen und Klassen namentlich genannt. Das soll
 es erleichtern, die grundsätzlicher Architektur der Software zu
@@ -5876,39 +5876,39 @@ abgelegt und von \emph{gluesless} gelesen werden.
 \caption{\label{tab:param-popgenerator}Parameter des popgenerator Moduls}
 \centering
 \fontsize{8}{10}\selectfont
-\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{14em}>{\raggedright\arraybackslash}p{20em}>{\raggedright\arraybackslash}p{20em}}
+\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{18em}>{\raggedright\arraybackslash}p{18em}>{\raggedright\arraybackslash}p{18em}}
 \toprule
 Paramter & Beschreibung & Theoretischer Wertebereich\\
 \midrule
-\textit{Allgemeine Parameter}\newline \textbf{timeframe}\newline \textit{integer vector} & Eine Liste der Kalenderjahre über die sich die Simulation erstrecken soll. Das kann eine künstliche Sequenz sein, oder sich an dem Realweltphänomen orientieren, das mit der Simulation erforscht werden soll. & Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten:\newline     \texttt{-2200:-800}, \texttt{0:500}, \texttt{seq(-1000, 1000)}\\
+\textit{Allgemeine Parameter}\newline \textbf{timeframe}\newline \textit{integer vector} & Eine Liste der Kalenderjahre über die sich die Simulation erstrecken soll. & Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten: \texttt{-2200:-800}, \texttt{0:500}\\
 \addlinespace \hline \addlinespace
-\textit{Populationsparamter}\newline \textbf{unit\_amount}\newline \textit{integer} & Anzahl der Gruppen, in die die Population untergliedert sein soll. & Beliebiger positiver Integerwert.\newline     \texttt{1}, \texttt{8}, \texttt{100}\\
+\textit{Populationsparamter}\newline \textbf{unit\_amount}\newline \textit{integer} & Anzahl der Gruppen, in die die Population untergliedert sein soll. & Beliebiger positiver Integerwert: \newline     \texttt{1}, \texttt{8}, \texttt{100}\\
 \addlinespace \hline \addlinespace
-\textit{Populationsparamter}\newline \textbf{unit\_names}\newline \textit{list of factors} & Eine Liste der Gruppennamen, wahlweise mit einer Definition ihrer inneren Reihenfolge. & Liste mit Namen. Die Anzahl muss \textit{unit\_amount} entsprechen.\newline     \texttt{list(factor("regionA", levels = regionen), factor("regionB", levels = regionen))}\\
+\textit{Populationsparamter}\newline \textbf{unit\_names}\newline \textit{list of factors} & Eine Liste der Gruppennamen, wahlweise mit einer Definition ihrer inneren Reihenfolge. & Liste mit Namen. Die Anzahl muss \textit{unit\_amount} entsprechen: \newline     \texttt{list(factor("regionA", levels = regionen), factor("regionB", levels = regionen))}\\
 \addlinespace \hline \addlinespace
-\textit{Populationsparamter}\newline \textbf{unit\_size\_functions}\newline \textit{list of functions} & Funktionen, die die Populationsgröße für jede Gruppe in Abhängigkeit von der Simulationszeit definieren. & Liste mit Funktionen. Die Anzahl muss \textit{unit\_amount} entsprechen.\newline     \texttt{list('regionA' = function(t) \{100\}, 'regionB' = function(t) \{100 + 10 * cos(t * 0.1)\})}\\
+\textit{Populationsparamter}\newline \textbf{unit\_size\_functions}\newline \textit{list of functions} & Funktionen, die die Populationsgröße für jede Gruppe in Abhängigkeit von der Simulationszeit definieren. & Liste mit Funktionen. Die Anzahl muss \textit{unit\_amount} entsprechen: \newline     \texttt{list('regionA' = function(t) \{100\}, 'regionB' = function(t) \{100 + 10 * cos(t * 0.1)\})}\\
 \addlinespace \hline \addlinespace
-\textit{Populationsparamter}\newline \textbf{age\_distribution\_function}\newline \textit{function} & Funktion, die die durchschnittliche Altersverteilung der Menschen in der Population beschreibt. & Eine Funktion, die einen Wert für jeden Eingabewert aus \textit{age\_range} zurückgibt.\newline     \texttt{function(x) \{1 / (1 + 0.0004 * 0.7\^\ (-7 * log(x)))\}}\\
+\textit{Populationsparamter}\newline \textbf{age\_distribution\_function}\newline \textit{function} & Funktion, die die altersabhängige Sterbewahrscheinlichkeit einer Population beschreibt. & Eine Funktion, die einen Wert für jeden Eingabewert aus \textit{age\_range} zurückgibt: \newline     \texttt{function(x) \{1 - x / 100\}}\\
 \addlinespace \hline \addlinespace
-\textit{Populationsparamter}\newline \textbf{age\_range}\newline \textit{integer vector} & Altersfenster, auf das die Altersverteilungsfunktion angewandt wird. & Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten im Bereich der menschlichen Lebenserwartung:\newline     \texttt{1:70}, \texttt{1:120}\\
+\textit{Populationsparamter}\newline \textbf{age\_range}\newline \textit{integer vector} & Altersfenster, auf das die Altersverteilungsfunktion angewandt wird. & Beliebige, unterbrechungsfreie Sequenz von sukzessive aufeinander folgenden Integerwerten im Bereich der menschlichen Lebenserwartung: \texttt{1:100}\\
 \addlinespace \hline \addlinespace
-\textit{Beziehungsparameter}\newline \textbf{amount\_friends}\newline \textit{integer} & Menge an horizontalen Beziehungen, die ein Individuum aufbaut. & Beliebiger positiver Integerwert oder 0.\newline     \texttt{0}, \texttt{5}, \texttt{100}\\
+\textit{Beziehungsparameter}\newline \textbf{amount\_friends}\newline \textit{integer} & Menge an horizontalen Beziehungen, die ein Individuum aufbaut. & Beliebiger positiver Integerwert oder 0: \newline     \texttt{0}, \texttt{5}, \texttt{100}\\
 \addlinespace \hline \addlinespace
-\textit{Beziehungsparameter}\newline \textbf{unit\_interaction\_matrix}\newline \textit{integer matrix} & Matrix die definiert, welche Gruppe in welchem Umfang mit welcher anderen Gruppe interagiert. Diese Tabelle kann verschiedene -- räumliche, kulturelle, wirtschaftliche -- Distanzen ausdrücken. & Kreuztabelle in Form einer Integermatrix. Die Werte können beliebige positive Integerwert oder 0 sein.\newline     \texttt{matrix(c(0, 1, 1, 0), nrow = 2, ncol = 2)}\\
+\textit{Beziehungsparameter}\newline \textbf{unit\_interaction\_matrix}\newline \textit{integer matrix} & Distanzmatrix die definiert, welche Gruppe in welchem Umfang mit welcher anderen Gruppe interagiert. & Kreuztabelle in Form einer Integermatrix. Die Werte können beliebige positive Integerwert oder 0 sein:\newline     \texttt{matrix(c(0, 1, 1, 0), nrow = 2, ncol = 2)}\\
 \addlinespace \hline \addlinespace
-\textit{Beziehungsparameter}\newline \textbf{cross\_unit\_proportion\_child\_of}\newline \textit{double} & Anteil der vertikalen Beziehungen, die nicht innerhalb einer Gruppe bestehen, sondern über Gruppengrenzen hinweg reichen. & Double Wert zwischen 0 und 1.\newline     \texttt{0}, \texttt{0.02}, \texttt{0.7}\\
+\textit{Beziehungsparameter}\newline \textbf{cross\_unit\_proportion\_child\_of}\newline \textit{double} & Anteil der vertikalen Beziehungen, die nicht innerhalb, sondern über Gruppengrenzen hinweg bestehen. & Double Wert zwischen 0 und 1: \newline     \texttt{0}, \texttt{0.02}, \texttt{0.7}\\
 \addlinespace \hline \addlinespace
-\textit{Beziehungsparameter}\newline \textbf{cross\_unit\_proportion\_friend}\newline \textit{double} & Anteil der horizontalen Beziehungen, die über Gruppengrenzen hinweg reichen. & Doublewert zwischen 0 und 1.\newline     \texttt{0}, \texttt{0.02}, \texttt{0.7}\\
+\textit{Beziehungsparameter}\newline \textbf{cross\_unit\_proportion\_friend}\newline \textit{double} & Anteil der horizontalen Beziehungen, die über Gruppengrenzen hinweg reichen. & Doublewert zwischen 0 und 1: \newline     \texttt{0}, \texttt{0.02}, \texttt{0.7}\\
 \addlinespace \hline \addlinespace
-\textit{Beziehungsparameter}\newline \textbf{weight\_child\_of}\newline \textit{integer} & Stärke einer vertikalen Beziehung. Die Beziehungsstärke hat Einfluss darauf, ob eine Idee beim Versuch von einem Individuum zum anderen zu springen Erfolg hat. & Beliebiger positiver Integerwert oder 0.\newline     \texttt{0}, \texttt{5}, \texttt{100}\\
+\textit{Beziehungsparameter}\newline \textbf{weight\_child\_of}\newline \textit{integer} & Stärke einer vertikalen Beziehung. Die Beziehungsstärke hat Einfluss darauf, ob eine Idee ein Individuum besetzen kann. & Beliebiger positiver Integerwert oder 0: \newline     \texttt{0}, \texttt{5}, \texttt{100}\\
 \addlinespace \hline \addlinespace
-\textit{Beziehungsparameter}\newline \textbf{weight\_friend}\newline \textit{integer} & Stärke einer horizontalen Beziehung. & Beliebiger positiver Integerwert oder 0.\newline     \texttt{0}, \texttt{5}, \texttt{100}\\
+\textit{Beziehungsparameter}\newline \textbf{weight\_friend}\newline \textit{integer} & Stärke einer horizontalen Beziehung. & Beliebiger positiver Integerwert oder 0: \newline     \texttt{0}, \texttt{5}, \texttt{100}\\
 \addlinespace \hline \addlinespace
-\textit{Ideenparameter}\newline \textbf{names}\newline \textit{character vector} & Namen der Ideen. & Vektor mit Namen.\newline     \texttt{c('ideaA', 'ideaB')}\\
+\textit{Ideenparameter}\newline \textbf{names}\newline \textit{character vector} & Namen der Ideen. & Vektor mit Namen: \newline     \texttt{c('ideaA', 'ideaB')}\\
 \addlinespace \hline \addlinespace
-\textit{Ideenparameter}\newline \textbf{start\_distribution}\newline \textit{data.frame} & Proportionaler Anteil der Ideen in jeder Region zum Startzeitpunkt der Simulation. Eine Tabelle mit einer Zeile für jede Gruppe und einer Spalte für jede Idee. & \textit{data.frame} mit Proportionen pro Gruppe und Idee. In den Zellen ist der Anteil der Idee in dieser Gruppe als Doublewert zwischen 0 und 1 angegeben. Die Zeilensumme muss 1 sein.\newline     \texttt{data.frame(ideaA = c(0.2, 0.5), ideaB = c(0.8, 0.5))}\\
+\textit{Ideenparameter}\newline \textbf{start\_distribution}\newline \textit{data.frame} & Proportionaler Anteil der Ideen in jeder Region zum Startzeitpunkt der Simulation. Eine Tabelle mit einer Zeile für jede Gruppe und einer Spalte für jede Idee. & \textit{data.frame} mit Proportionen pro Gruppe und Idee. In den Zellen ist der Anteil der Idee in dieser Gruppe als Doublewert zwischen 0 und 1 angegeben. Die Zeilensumme muss 1 sein: \newline     \texttt{data.frame(ideaA = c(0.2, 0.5), ideaB = c(0.8, 0.5))}\\
 \addlinespace \hline \addlinespace
-\textit{Ideenparameter}\newline \textbf{strength}\newline \textit{double vector} & Stärke der Ideen. & Integervektor mit Werten zwischen ...\newline     \texttt{c(1,1)}\\
+\textit{Ideenparameter}\newline \textbf{strength}\newline \textit{double vector} & Stärke der Ideen. Diese Option ist zwar definiert, aber nicht weiter implementiert. & Integervektor: \newline     \texttt{c(1,1)}\\
 \bottomrule
 \end{tabu}
 \end{table*}
