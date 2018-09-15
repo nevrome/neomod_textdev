@@ -500,11 +500,11 @@ knitr::include_graphics("../neiman1995/static_plots/neiman_general.jpeg")
 knitr::include_graphics("../neomod_analysis/figures_plots/simulation_parameter_exploration/popsize_crossregions.jpeg")
 ```
 
-```{r sim-startprop-distancemat, echo = FALSE, fig.scap = "Simulationsparameter: Populationsgröße & Zwischengruppenaustausch", fig.cap = "huhu", out.extra = ""}
+```{r sim-startprop-distancemat, echo = FALSE, fig.scap = "Simulationsparameter: Startkonfigurationen & Zwischengruppendistanzen", fig.cap = "Simulationsparameter: Startkonfigurationen & Zwischengruppendistanzen. Wie Abbildung \\ref{fig:sim-popsize-crossregions}, allerdings mit anderen Parametern. Auf der X-Achse der Plotmatrix werden Startkonfigurationen, auf der Y-Achse Zwischengruppendistanzmatrizen variiert. eq: equal, sp: spatial, bt: burial_type, bc: burial_construction.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/simulation_parameter_exploration/startprop_distancemat.jpeg")
 ```
 
-```{r sim-vertitrans, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sim-vertitrans, echo = FALSE, fig.scap = "Simulationsparameter: Nur vertikale Transmission", fig.cap = "Simulationsparameter: Nur vertikale Transmission. Wie Abbildung \\ref{fig:sim-popsize-crossregions}, allerdings mit anderen Parametern und unter Ausschluss der horizontalen Transmission. Die Y-Achse der Plotmatrix variiert das Kantengewicht der Eltern-Kind Relation (5, 20, 100).", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/simulation_parameter_exploration/vertitrans.jpeg")
 ```
 
