@@ -4771,6 +4771,15 @@ Rcpp\footnote{\textcite{eddelbuettel_extending_2017};
   \textcite{eddelbuettel_seamless_2013}}, rlang\footnote{\textcite{henry_rlang_2018}},
 roxygen2\footnote{\textcite{wickham_roxygen2_2017}}, testthat\footnote{\textcite{wickham_testthat_2011}}).
 
+Die für die Kartengestaltung benötigten Raumdaten, also
+Landmasse-Außengrenzen, administrative Ländergrenzen sowie Flüsse und
+Seen, stammen aus dem Natural Earth Projekt\footnote{\url{https://www.naturalearthdata.com}
+  {[}02.08.2018{]}}. Verwendet wurden Daten des mittleren
+Auflösungssniveaus, das eine Maßstabsperspektive von 1:50.000.000
+wiedergeben soll. Die Daten wurden mittels des R Pakets
+rnaturalearth\footnote{\textcite{south_rnaturalearth_2017}} direkt in R
+heruntergeladen.
+
 Die Expansionssimultion \emph{gluesless} ist in C++\footnote{\textcite{standard-cpp-foundation_international_2017}}
 umgesetzt, um auf dessen höhere Geschwindigkeit und bessere Werkzeuge
 für objektorientiertes Programmieren zurückgreifen zu können. Zur
@@ -4781,14 +4790,15 @@ dann aber aufgrund von Performance-Problemen durch die C++ Bibliothek
 des Stanford Network Analysis Project\footnote{\url{https://snap.stanford.edu/}
   {[}01.08.2018{]}; \textcite{leskovec2016snap}} (SNAP) abgelöst.
 
-Die für die Kartengestaltung benötigten Raumdaten, also
-Landmasse-Außengrenzen, administrative Ländergrenzen sowie Flüsse und
-Seen, stammen aus dem Natural Earth Projekt\footnote{\url{https://www.naturalearthdata.com}
-  {[}02.08.2018{]}}. Verwendet wurden Daten des mittleren
-Auflösungssniveaus, das eine Maßstabsperspektive von 1:50.000.000
-wiedergeben soll. Die Daten wurden mittels des R Pakets
-rnaturalearth\footnote{\textcite{south_rnaturalearth_2017}} direkt in R
-heruntergeladen.
+Aufgrund des hohen Speicherbedarfs von \emph{popgenerator} und
+\emph{gluesless} bei der Verarbeitung sehr großer Graphen mit einer
+Knotenanzahl im bis zu fünf-, und einer Kantenanzahl im bis zu
+sechsstelligen Bereich, kam für alle finalen Simulationsberechnungen ein
+virtueller Computer aus der Google Cloud\footnote{\url{https://cloud.google.com/}
+  {[}15.09.2018{]}} zum Einsatz. Das Berechnungssystem war mit sechs
+virtuellen CPUs und 32 GB Arbeitsspeicher ausgestattet, liegt also
+durchaus im Bereich von Hardware für Privatanwender. Auf ein
+Großrechensystem wurde nicht zurückgegriffen.
 
 \hypertarget{radonb-dataset}{%
 \section{Datensatz Radon-B}\label{radonb-dataset}}
