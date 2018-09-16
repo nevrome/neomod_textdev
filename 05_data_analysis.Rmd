@@ -488,7 +488,9 @@ Die Expansionssimulation endet, wenn sich die Größe des Netzwerks von einem Ze
 
 ### Parameter und Simulationsverhalten {#simulation-parameters}
 
-Tabelle \@ref(tab:param-popgenerator)
+Tabelle \@ref(tab:param-popgenerator) enthält jene dynamischen Parameter, die in zur Steuerung der Simulation für jeden einzelnen Durchlauf festgelegt werden können. In der Implementierung stecken weitere Parameter, die als statisch festgelegt wurden. Dazu gehört zum Beispiel der Umfang künstlicher Modellzeiterhöhung (sichtbar z.B. in Abbildung \@ref(fig:group-grap)), der erforderlich ist, um die Populationsgrößenentwicklung korrekt abbilden zu können, der statistische Up- und Downshift bei der Auswahl von Partnern für horizontale und vertikale Beziehungen oder die Wertebereiche aus denen Zahlen gleichverteilt zufallsgeneriert werden, um im Laufe der Ideenexpansion zu entscheiden, ob eine Idee bei einer einzelnen Eroberung erfolgreich ist.
+
+Unter den dynamischen Parametern wurden einige vom Falbeispiel der Arbeit abgeleitet und für alle Betrachtungen dieser Arbeit vereinheitlicht. Dazu gehört die Simulationsdauer in Jahren (`timeframe`), die auf 1401 Zeitschritte, von 2200 bis 800calBC, festgelegt wurde. Die Anzahl der Gruppen (`unit_amount`) wurde nach der Anzahl künstlicher Makroregionen auf acht fixiert. Die Gruppennamen (`unit_names`) ergaben sich entsprechend. Die Namen der Ideen (`names`) sind willkürlich -- im Falle eines stärker evolutionären Modells, das auch neue Ideen hervorbringen kann, müsste die Ideenamen iteriert werden. 
 
 Abbildung \@ref(fig:neiman-general)
 
