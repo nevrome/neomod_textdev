@@ -1,6 +1,6 @@
 # Bestattungsritus in der Europäischen Bronzezeit {#bronze-age-burial-rites}
 
-## Wahl des Fallbeispiels (#case-study)
+## Wahl des Fallbeispiels {#case-study}
 
 Ausgangspunkt dieser Arbeit war die Formulierung eines computerbasierten *Cultural Evolution* Modells. Um sich mit diesem Ansatz inhaltlich und technisch auseinander zu setzen war es unerlässlich ein Fallbeispiel heranzuziehen, das potentiell geeignet ist überhaupt durch ein solches abgebildet zu werden. Für den Kontext des Fallbeispiels sollen sich idealerweise Synergieeffekte ergeben. Das heißt, das Modell sollte geeignet sein, archäologische Fragestellungen in seinem Kontext zu beantworten oder zumindest aus einer neuen Perspektive zugänglich zu machen.
 
