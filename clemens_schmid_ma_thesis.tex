@@ -6308,7 +6308,12 @@ gezogen werden.
 Die Abbildungen \ref{fig:neiman-general},
 \ref{fig:sim-popsize-crossregions}, \ref{fig:sim-startprop-distancemat},
 \ref{fig:sim-vertitrans} zeigen Plotmatrizen mit 12 bis 15
-Modellvarianten, die jeweils in acht Durchläufen berechnet und auf einen
+Modellvarianten, die jeweils in acht\footnote{Die Simulationen wurden
+  auch mit größeren Durchlaufzahlen wiederholt, es hat sich aber
+  gezeigt, dass für die im folgenden angewandte, visuelle Auswertung
+  Abbildungen mit weniger Iterationen und klar differenzierter
+  Farbmarkierung inhaltlich ausreichend korrekt und didaktisch enorm
+  verständnisfördernd sind.} Durchläufen berechnet und auf einen
 Ausgabeproxy reduziert wurden, der die diachrone Entwicklung der
 Ideenverteilung für jeden Durchlauf wiedergibt (vergleiche Abbildungen
 \ref{fig:development-proportions-regions-burial-type} und
@@ -6425,28 +6430,57 @@ kulturhistorischen Kontext interpretieren.
 \hypertarget{fragestellung-und-methode}{%
 \subsection{Fragestellung und Methode}\label{fragestellung-und-methode}}
 
-TODO: Neiman + Porcic
+Eine Kernfragestellung der vorliegenden Arbeit ist, in welchem Umfang
+sich verschiedene Regionen hinsichtlich der untersuchten
+Bestattungssitten unterscheiden, und ob sich gegenseitige Beeinflussung
+feststellen oder sogar messen lässt. Der erarbeitete Entwicklungsproxy
+(siehe Abbildungen \ref{fig:development-proportions-regions-burial-type}
+und \ref{fig:development-proportions-regions-burial-construction})
+bietet dafür eine gute Ausgangsposition und kann durchaus in sich
+diskutiert werden (siehe Kapitel \ref{descriptive-data-analysis}). Noch
+bessere Vergleichbarkeit kann allerdings durch die Einführung eines
+Distanzmaßes erreicht werden. Nach Vorbild von
+\textcite{neiman_stylistic_1995} wurde dafür die quadrierte euklidische
+Distanz (\emph{Squared Euclidian Distance -- SED}) eingeführt. Sie steht
+neben verschiedenen anderen Distanzmaßen, die für diesen Zweck hätten
+eingesetzt werden können, und wurde ausgewählt da sie einerseits für das
+Skalenniveau der Proxydaten geeignet ist und andererseits durch die
+Quadrierung Unterschiede besonders hervorhebt. Das ist wünschenswert, um
+Übergangsprozesse mit stärkeren Abweichungen zwischen den Regionen
+sichtbar zu machen.
+
+Die Berechnung der SED basiert auf einer einfachen Gleichung und kann
+unmittelbar implementiert werden:
 
 \[d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2\]
 
 \begin{itemize}
 \tightlist
 \item
-  \(d_{ij}^2\): Squared Euclidean distance between two groups \(i\) and
-  \(j\)
+  \(d_{ij}^2\): SED zwischen zwei Gruppen \(i\) und \(j\)
 \item
-  \(k\): Variant counter
+  \(k\): Variantenzähler
 \item
-  \(n\): Total amount of variants in a population
+  \(n\): menge der Varianten in der Gesamtpopulation
 \item
-  \(p_{ik}\): Relative frequency of the \(k\)'th variant in population
-  \(i\)
+  \(p_{ik}\): Relative Häufigkeit der \(k\)ten Variante in Gruppe \(i\)
 \item
-  \(p_{jk}\): Relative frequency of the \(k\)'th variant in population
-  \(j\)
+  \(p_{jk}\): Relative Häufigkeit der \(k\)ten Variante in Gruppe \(j\)
 \end{itemize}
 
-SED überbetont Unterschiede
+Ein Beispiel: Das Verhältnis von Brand- zu Körpergrab in der künstlichen
+Region \emph{England} beträgt der Proxyberechnung zufolge im Jahr
+2200calBC 0.25:0.75, also 1:3. Im \emph{Benelux}-Raum sind es 0.5:0.5,
+also 1:1. Diese Angaben kann man in die SED Gleichung einsetzen:
+
+\[d_{England Benelux}^2 = (p_{England Brandgrab} - p_{Benelux Brandgrab})^2 + (p_{England Körpergrab} - p_{Benelux Körpergrab})^2\]
+
+\[d_{England Benelux}^2 = (0.25 - 0.5)^2 + (0.75 - 0.5)^2\]
+
+\[d_{England Benelux}^2 = 0.125\]
+
+Die Distanz ist in diesem Fall also gering: Beide Varianten sind in
+beiden Regionen zu diesem Zeitpunkt in größerem Umfang vorhanden.
 
 Korrelieren die beiden Kulturdistanten?
 
