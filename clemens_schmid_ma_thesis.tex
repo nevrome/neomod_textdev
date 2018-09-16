@@ -5910,8 +5910,7 @@ Arbeit zum Einsatz kamen. Im Gegensatz zu den Ausführungen im Kontext
 von Datenvorbereitung und -analyse in Kapitel \ref{radonb-dataset}, wo
 darauf zugunsten des Leseflusses bewusst verzichtet wurde, werden hier
 nun die wesentlichen Funktionen und Klassen namentlich genannt. Das soll
-es ermöglichen, die grundsätzliche Architektur der Software zu
-verstehen.
+es ermöglichen, die Architektur der Software zu verstehen.
 
 \hypertarget{popgenerator}{%
 \subsubsection{\texorpdfstring{Populationsgenerator
@@ -5920,24 +5919,24 @@ verstehen.
 Der Populationsgenerator ist als R Paket implementiert. Er ist in drei
 Submodule gegliedert: \texttt{population\_generator},
 \texttt{relations\_generator} und \texttt{ideas\_generator}, die
-nacheinander aufgerufen werden können -- die Interfacefunktion
-\texttt{prepare\_pops\_rels\_ideas} automatisiert das. Jedes dieser
-Module erweitert einen Eingabedatensatz sukzessive um nondeterministisch
-generierte Daten hinsichtlich der zeitübergreifenden Gesamtpopulation,
-der Beziehungen innerhalb dieser Population und der Verteilung zweier
-Ideen darin zu einem hypothetischen Nullzeitpunkt. Der Eingabedatensatz
--- das \texttt{models\_grid} -- muss in Form eines \texttt{data.frames},
-also der in R üblichen Datenstruktur für tabellierte Daten, vorliegen.
-Jede Zeile in diesem Datensatz enthält zunächst die Parameter -- später
-auch die Ausgabedaten -- für eine Population, ihre Relationen und Ideen.
-Komplexe Parameter sind dabei in \texttt{list\ columns} gespeichert.
-Diese erlauben es, fast beliebige Datenstrukturen in den Zellen eines
-\texttt{data.frames} zu schachteln. Tabelle \ref{tab:param-popgenerator}
-beschreibt alle Parameter kurz und umreißt ihren theoretischen
-Wertebereich. Die tatsächlich für die Simulation relevanten Werte werden
-in Kapitel \ref{simulation-parameters} diskutiert. Die Erzeugung von
-Populationen und Relationen ist soweit wie möglich vektorisiert, also
-ohne Schleifen oder schleifenersetzende Strukturen (\texttt{apply},
+nacheinander aufgerufen werden können. Jedes dieser Module erweitert
+einen Eingabedatensatz sukzessive um nondeterministisch generierte Daten
+hinsichtlich der zeitübergreifenden Gesamtpopulation, der Beziehungen
+innerhalb dieser Population und der Verteilung zweier Ideen darin zu
+einem hypothetischen Nullzeitpunkt. Der Eingabedatensatz -- das
+\texttt{models\_grid} -- muss in Form eines \texttt{data.frames}, also
+der in R üblichen Datenstruktur für tabellierte Daten, vorliegen. Jede
+Zeile in diesem Datensatz enthält zunächst die Konfigurationsparameter
+für eine Population, ihre Relationen und schließlich die in ihr
+expandierenden Ideen. Komplexe Parameter sind dabei in
+\texttt{list\ columns} gespeichert. Diese erlauben es, fast beliebige
+Datenstrukturen in den Zellen eines \texttt{data.frames} zu schachteln.
+Tabelle \ref{tab:param-popgenerator} beschreibt alle Parameter kurz und
+umreißt ihren theoretischen Wertebereich. Die tatsächlich für die
+Simulation relevanten Werte werden in Kapitel
+\ref{simulation-parameters} diskutiert. Die Erzeugung von Populationen
+und Relationen ist soweit wie möglich vektorisiert, also ohne Schleifen
+oder schleifenersetzende Strukturen (\texttt{apply},
 \texttt{purrr::map}) programmiert, um die Berechnungsdauer zu
 minimieren. Dieser Schritt ist eine Konzession an die Technik und führte
 zu einem höheren Abstraktionsgrad der Populationsnetzwerke als
@@ -5949,7 +5948,8 @@ ursprünglich geplant.
 Populationsnetzwerks an die Expansionssimulation \emph{gluesless}
 ermöglichen sollen. Der Austausch erfolgt über verschiedene, speziell
 formatierte Textdateien, die von \emph{popgenerator} ins Dateisystem
-abgelegt und von \emph{gluesless} gelesen werden.
+abgelegt und von \emph{gluesless} gelesen werden. Die Interfacefunktion
+\texttt{run\_simulation} automatisiert den gesamten Simulationsablauf.
 
 \begin{table*}
 
