@@ -6127,7 +6127,7 @@ in Form einer Liste zurückgegeben.
 \end{landscape}
 
 \begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/simulation_population_graph/population_graph_tulip} \caption[Vollständige Darstellung eines von popgenerator erzeugten Netzwerks]{Vollständige Darstellung eines von popgenerator erzeugten Netzwerks. Rot markiert sind individuelle Knoten, die durch graue Kanten verknüpft werden. In der vom Fruchterman-Reingold-Algorithmus angeordneten Darstellung bilden die Regionalgruppen aufgrund des intern höheren Grads an Verknüpfung dicht gepackte, (diachron) langgestreckte, lineare Strukturen. Sie bilden in wesentlich geringerem Umfang Querverbindungen untereinander aus.}\label{fig:graph-tulip}
+\includegraphics{../neomod_analysis/figures_plots/simulation_population_graph/population_graph_tulip} \caption[Vollständige Darstellung eines von popgenerator erzeugten Netzwerks]{Vollständige Darstellung eines von popgenerator erzeugten Netzwerks. Rot markiert sind individuelle Knoten, die durch graue Kanten verknüpft werden. In dem mittels des Fruchterman-Reingold-Algorithmus angeordneten Visualisierung bilden die Regionalgruppen aufgrund des intern höheren Grads an Verknüpfung dicht gepackte, (diachron) langgestreckte, lineare Strukturen. In wesentlich geringerem Umfang bestehen Querverbindungen zwischen den Gruppen.}\label{fig:graph-tulip}
 \end{figure}
 
 \textbf{idea\_generator} \newline  Das letzte und einfachste Submodul
@@ -6384,38 +6384,38 @@ anderen Gruppen in eine andere Richtung wirkt.
 
 \begin{figure}[!t]
 
-{\centering \includegraphics[width=.9\textwidth,]{../neiman1995/static_plots/neiman_general} 
+{\centering \includegraphics[width=.8\textwidth,]{../neiman1995/static_plots/neiman_general} 
 
 }
 
-\caption[Simulationsparameter: Populationsgröße \& Zwischengruppenaustausch (Neiman Simulation)]{Simulationsparameter: Populationsgröße \& Zwischengruppenaustausch (Neiman Simulation). Parameterexploration für eine Neiman-artige Simulation. Jeder Einzelplot (A, B, C, ...) präsentiert das Ergebnis von acht Simulationsdurchläufen mit einer Parameterkonstellation nach Vorlage der Abbildungen \ref{fig:development-proportions-regions-burial-type} und \ref{fig:development-proportions-regions-burial-construction}. Die Farbmarkerierung gilt den Durchläufen. In der Plotmatrix wird auf der X-Achse der Grad des Zwischengruppenaustauschs (0, 0.01, 0.1, 0.5, 1) und auf der Y-Achse die Populationsgröße (10, 50, 200) abgebildet.}\label{fig:neiman-general}
+\caption[Explorative Simulationsläufe: Populationsgröße \& Zwischengruppenaustausch (Neiman Simulation)]{Explorative Simulationsläufe: Populationsgröße \& Zwischengruppenaustausch (Neiman Simulation). Parameterexploration für eine Neiman-artige Simulation. Jeder Einzelplot (A, B, C, ...) präsentiert das Ergebnis von acht Simulationsläufen mit einer Parameterkonstellation. Vorlage der Einzelplots sind die Abbildungen \ref{fig:development-proportions-regions-burial-type} und \ref{fig:development-proportions-regions-burial-construction}, dass heißt, jedes kleine Fenster repräsentiert die Entwicklung einer Regionalgruppe, während die Läufe durch Farbmarkierungen unterschieden werden. In der Plotmatrix wird auf der X-Achse der Grad des Zwischengruppenaustauschs (0, 0.01, 0.1, 0.5, 1) und auf der Y-Achse die Populationsgröße (10, 50, 200) variiert.}\label{fig:neiman-general}
 \end{figure}
 
 \begin{figure}[!t]
 
-{\centering \includegraphics[width=.9\textwidth,]{../neomod_analysis/figures_plots/simulation_parameter_exploration/popsize_crossregions} 
+{\centering \includegraphics[width=.8\textwidth,]{../neomod_analysis/figures_plots/simulation_parameter_exploration/popsize_crossregions} 
 
 }
 
-\caption[Simulationsparameter: Populationsgröße \& Zwischengruppenaustausch]{Simulationsparameter: Populationsgröße \& Zwischengruppenaustausch. Wie Abbildung \ref{fig:neiman-general}, nun allerdings für die in dieser Arbeit entwickelte Simulation. Der Grad des Zwischengruppenaustauschs wird hier in eine vertikale (v) und eine horizontale (h) Komponente aufgeteilt, die allerdings hier nicht voneinander abweicht.}\label{fig:sim-popsize-crossregions}
+\caption[Explorative Simulationsläufe: Populationsgröße \& Zwischengruppenaustausch]{Explorative Simulationsläufe: Populationsgröße \& Zwischengruppenaustausch. Wie Abbildung \ref{fig:neiman-general}, nun allerdings für die in dieser Arbeit entwickelte, graphenbasierte Simulation. Der Grad des Zwischengruppenaustauschs wird hier im Gegensatz zur Neiman Simulation in eine vertikale (v) und eine horizontale (h) Komponente aufgeteilt, die nach Festlegung durch Faktor 5 unterschieden werden. Siehe Kapitel \ref{simulation-parameters} für die allgemeine Parametrisierung. Startverteilung und Gruppendistanzmatrix sind jeweils so formatiert, dass alle Ideen und Regionen im selben Umfang Beachtung finden: \textit{gleichwertig}.}\label{fig:sim-popsize-crossregions}
 \end{figure}
 
 \begin{figure}[!t]
 
-{\centering \includegraphics[width=.9\textwidth,]{../neomod_analysis/figures_plots/simulation_parameter_exploration/vertitrans} 
+{\centering \includegraphics[width=.8\textwidth,]{../neomod_analysis/figures_plots/simulation_parameter_exploration/vertitrans} 
 
 }
 
-\caption[Simulationsparameter: Nur vertikale Transmission]{Simulationsparameter: Nur vertikale Transmission. Wie Abbildung \ref{fig:sim-popsize-crossregions}, allerdings unter Ausschluss der horizontalen Transmission.}\label{fig:sim-vertitrans}
+\caption[Explorative Simulationsläufe: Nur vertikale Transmission]{Simulationsparameter: Nur vertikale Transmission. Wie Abbildung \ref{fig:sim-popsize-crossregions}, allerdings Simulation unter Ausschluss der horizontalen Transmission.}\label{fig:sim-vertitrans}
 \end{figure}
 
 \begin{figure}[!t]
 
-{\centering \includegraphics[width=0.9\textwidth,]{../neomod_analysis/figures_plots/simulation_parameter_exploration/startprop_distancemat} 
+{\centering \includegraphics[width=0.8\textwidth,]{../neomod_analysis/figures_plots/simulation_parameter_exploration/startprop_distancemat} 
 
 }
 
-\caption[Simulationsparameter: Startkonfigurationen \& Zwischengruppendistanzen]{Simulationsparameter: Startkonfigurationen \& Zwischengruppendistanzen. Wie Abbildung \ref{fig:sim-popsize-crossregions}, allerdings mit anderen Parametern. Auf der X-Achse der Plotmatrix werden Startkonfigurationen, auf der Y-Achse Zwischengruppendistanzmatrizen variiert. eq: equal, sp: spatial, bt: burial type, bc: burial construction.}\label{fig:sim-startprop-distancemat}
+\caption[Explorative Simulationsläufe: Startkonfigurationen \& Zwischengruppendistanzen]{Explorative Simulationsläufe: Startkonfigurationen \& Zwischengruppendistanzen. Wie Abbildung \ref{fig:sim-popsize-crossregions}, allerdings mit anderen Simulationsparametern. Grundsätzlich orientiert sich die Parametrisierung an \ref{fig:sim-popsize-crossregions} H. Auf der X-Achse der Plotmatrix werden Startkonfigurationen, auf der Y-Achse Zwischengruppendistanzmatrizen variiert. eq: equal, sp: spatial, bt: burial type, bc: burial construction.}\label{fig:sim-startprop-distancemat}
 \end{figure}
 
 \hypertarget{cultural-and-spatial-distance}{%
