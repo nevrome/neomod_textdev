@@ -625,7 +625,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_
 ### Simulation
 
 \begin{landscape}
-```{r sim-sed, echo = FALSE, fig.scap = "", fig.cap = "", out.extra = ""}
+```{r sim-sed, echo = FALSE, fig.scap = "Simulation SED aufgetragen gegen die räumlichen Distanzklassen für verschiedene Zeitfenster.", fig.cap = "Simulation SED aufgetragen gegen die räumlichen Distanzklassen für verschiedene Zeitfenster. Wie die Abbildungen \\ref(fig:mantel-bt-spatial) und \\ref(fig:mantel-bc-spatial), allerdings nun mit Vergleichswerten der Simulationen hinter den Abbildungen \\ref(fig:sim-spearman-low-equal), \\ref(fig:sim-spearman-high-equal), \\ref(fig:sim-spearman-low-spatial) und \\ref(fig:sim-spearman-high-spatial). Für die Berechnung der Boxplots wurden jeweils jene der 100 Simulationsdurchläufe entfernt, die Aufgrund von Drift und Flow kollektiv einen SED-Wert von Null im jeweiligen Zeitfenster eingenommen haben.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/squared_euclidian_distance_vs_spatial_distance_sim_multiple.jpeg")
 ```
 \end{landscape}
