@@ -516,7 +516,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/simulation_parameter_e
 
 Die Abweichung der diachronen Entwicklung der Variablen *burial_type* und *burial_construction* ist Konsequenz der jeweils eigenständigen, kulturellen Prozesse und Dynamiken, die die definierten Untersuchungsregionen im Laufe der Bronzezeit durchlaufen. Die Entwicklungsproxies der Regionen können quantitativ auf Ähnlichkeit verglichen werden, um ein Distanzmaß für die Unterschiede jeder Region zu jeder anderen zu ermitteln. Dieses Maß bezieht sich freilich nur auf die einzelnen Variablen, lässt sich jedoch durchaus in einem größeren kulturhistorischen Kontext interpretieren. 
 
-### Fragestellung und Methode
+### Fragestellung und Methodik
 
 Eine Kernfragestellung der vorliegenden Arbeit ist, in welchem Umfang sich verschiedene Regionen hinsichtlich der untersuchten Bestattungssitten unterscheiden, und ob sich gegenseitige Beeinflussung feststellen oder sogar messen lässt. Der erarbeitete Entwicklungsproxy (siehe Abbildungen \@ref(fig:development-proportions-regions-burial-type) und \@ref(fig:development-proportions-regions-burial-construction)) bietet dafür eine gute Ausgangsposition und kann durchaus in sich diskutiert werden (siehe Kapitel \@ref(descriptive-data-analysis)). Noch bessere Vergleichbarkeit kann allerdings durch die Einführung eines Distanzmaßes erreicht werden. Nach Vorbild von @neiman_stylistic_1995 wurde dafür die quadrierte euklidische Distanz (*Squared Euclidian Distance -- SED*) berechnet. Sie steht neben verschiedenen anderen Distanzmaßen, die für diesen Zweck hätten eingesetzt werden können, und wurde ausgewählt, da sie einerseits für das Skalenniveau der Proxydaten geeignet ist und andererseits durch die Quadrierung Unterschiede besonders hervorhebt. Das ist wünschenswert, um Übergangsprozesse mit stärkeren Abweichungen zwischen den Regionen sichtbar zu machen.
 
@@ -532,22 +532,15 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 
 Ein Beispiel: Das Verhältnis von Brand- ($Br$) zu Körpergrab ($Kö$) in der künstlichen Region *England* ($En$) beträgt der Proxyberechnung zufolge im Jahr 2200calBC 0.25:0.75, also 1:3. Im *Benelux*-Raum ($Be$) sind es 0.5:0.5, also 1:1. Diese Angaben kann man in die SED Gleichung einsetzen:
 
-$$d_{England Benelux}^2 = (p_{En Br} - p_{Be Br})^2 + (p_{En Kö} - p_{Be Kö})^2$$
+$$d_{En Be}^2 = (p_{En Br} - p_{Be Br})^2 + (p_{En Kö} - p_{Be Kö})^2$$
 
-$$d_{England Benelux}^2 = (0.25 - 0.5)^2 + (0.75 - 0.5)^2$$
+$$d_{En Be}^2 = (0.25 - 0.5)^2 + (0.75 - 0.5)^2$$
 
-$$d_{England Benelux}^2 = 0.125$$
+$$d_{En Be}^2 = 0.125$$
 
-Die Distanz ist in diesem Fall also gering: Beide Varianten sind in beiden Regionen zu diesem Zeitpunkt in größerem Umfang vorhanden.
+Die Distanz ist in diesem Fall also gering: Beide Varianten sind in beiden Regionen zu diesem Zeitpunkt in jeweils signifikantem Umfang vorhanden.
 
-Neben 
-Aus Perspektive der klassischen *Diffusion of Innovation* Forschung 
-
-Mantel Test: Was das, und warum?
-
-Toblers Gesetz
-
-Im Fall der großen, künstlichen und sich gegenseitig sogar überlappenden Regionen, die in dieser Arbeit als Untersuchungseinheiten festgelegt wurden, kann das nur mithilfe von Distanzklassen umgesetzt werden. Realitätsnähere oder auch nur kontinuierlich skalierte Distanzen erfordern eine Festlegung von Punkten 
+Die Berechnung von Distanzmatrizen für die beiden Variablen *burial_type* und *burial_construction* ermöglicht die Prüfung ihrer Korrelation. Dafür kam nach Vorlage von @porcic_simulating_2014 Mantels Matrix Korrelationstest^[@mantel_detection_1967] zum Einsatz. Neben der der rein kulturellen Korrelation ist aus Perspektive der klassischen *Diffusion of Innovation* Forschung eine besondere Betrachtung der kulturellen im Vergleich zur räumlichen Distanz sinnvoll: *Tobler's first law of geography* besagt, dass Phänomene, die näher beinander sind, einander tendenziell eher ähneln^[@tobler_computer_1970]. Entsprechend ist eine Korrelation von räumlicher und kultureller Distanz in einzelnen Zeitscheiben zu prüfen. Im Fall der großen, künstlichen und sich gegenseitig sogar überlappenden Regionen, die in dieser Arbeit als Untersuchungseinheiten festgelegt wurden, kann das hinsichtliche der räumlichen Distanz nur mithilfe von Distanzklassen umgesetzt werden. Realitätsnähere oder auch nur kontinuierlich skalierte Distanzen würden eine Festlegung von Beobachtungspunkten erfordern, was hier nicht sinnvoll möglich ist. 
 
 ### Analyse und Ergebnisse
 
