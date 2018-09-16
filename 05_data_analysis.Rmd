@@ -556,7 +556,7 @@ Die Mehrzahl der Kurven in Abbildung \@ref(fig:sed-dev-matrix-bt) für *burial t
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
-```{r sed-dev-bt, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial type} SEDs für jede Region", fig.cap = "Entwicklung der \\textit{burial type} SEDs für jede Region. Alternative Darstellung der Plotmatrix in \\ref{fig:sed-dev-matrix-bt}.", out.extra = ""}
+```{r sed-dev-bt, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial type} SEDs für jede Region", fig.cap = "Entwicklung der \\textit{burial type} SEDs für jede Region. Alternative Darstellung der Plotmatrix in Abbildung \\ref{fig:sed-dev-matrix-bt}.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
@@ -564,17 +564,17 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_eu
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
-```{r sed-dev-bc, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial construction} SEDs für jede Region", fig.cap = "Entwicklung der \\textit{burial construction} SEDs für jede Region. Alternative Darstellung der Plotmatrix in \\ref{fig:sed-dev-matrix-bc}.", out.extra = ""}
+```{r sed-dev-bc, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial construction} SEDs für jede Region", fig.cap = "Entwicklung der \\textit{burial construction} SEDs für jede Region. Alternative Darstellung der Plotmatrix in Abbildung \\ref{fig:sed-dev-matrix-bc}.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
 Das arithmetische Mittel der SEDs zweier Regionen ist ein Maß für deren diachrone Gesamtähnlichkeit. Die Abbildungen \@ref(fig:sed-mean-matrix-bt) und \@ref(fig:sed-mean-matrix-bc) visualiseren diesen Wert in Form einer Matrix. Für *burial type* ist eine grundsätzliche Ähnlichkeit der Zentral- und Nordeuropäischen Regionen (*Southeastern Central Europe*, *Poland*, *Southern Germany*, *Northeastern France*, *Northern Germany*, *Southern Scandinavia*) zu erkennen, während der Benelux-Raum und Großbritannien davon distanziert scheinen, untereinander aber große Ähnlichkeit aufweisen. Die größten Übereinstimmungen bestehen in Zentraleuropa zwischen *Southern Scandinavia* und *Southern Germany*, zwischen *Poland* und *Southern Germany* sowie zwischen *Northeastern France* und *Northern Germany*. Das spricht für ein hinsichtlich dieser Variable ausgeprägtes Austauschnetzwerk nördlich der Alpen. Für *burial construction* gelten dagegen andere Bedingungen. Im durch diese Variable definierten Interaktionsnetzwerk sind die mittleren Distanzen in Zentraleuropa viel größer. Stattdessen bilden Nord- und Nordwesteuropa (*Southern Scandinavia*, *Benelux*, *England*) ein relativ kohärente Einheit. Besonders *Benelux* und *England* verhalten sich hinsichtlich der Entwicklung von Flach- und Hügelgrabsitte bemerkenswert ähnlich.   
 
-```{r sed-mean-matrix-bt, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SEDs für \\textit{burial type}", fig.cap = "Matrix der durchschnittlichen SEDs für \\textit{burial type}. Die Farbintensität bildet die Werteverteilung ab.", out.extra = ""}
+```{r sed-mean-matrix-bt, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SEDs für \\textit{burial type}", fig.cap = "Matrix der durchschnittlichen SEDs für \\textit{burial type}.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type.jpeg")
 ```
 
-```{r sed-mean-matrix-bc, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SEDs für \\textit{burial construction}", fig.cap = "Matrix der durchschnittlichen SEDs für \\textit{burial construction}. Wie Abbildung \\ref{fig:sed-dev-matrix-bc}.", out.extra = ""}
+```{r sed-mean-matrix-bc, echo = FALSE, fig.scap = "Matrix der durchschnittlichen SEDs für \\textit{burial construction}", fig.cap = "Matrix der durchschnittlichen SEDs für \\textit{burial construction}.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
