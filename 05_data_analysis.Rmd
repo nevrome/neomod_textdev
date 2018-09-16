@@ -518,11 +518,13 @@ Die Abweichung der diachronen Entwicklung der Variablen *burial_type* und *buria
 
 ### Fragestellung und Methode
 
-TODO: Neiman + Porcic 
+Eine Kernfragestellung der vorliegenden Arbeit ist, in welchem Umfang sich verschiedene Regionen hinsichtlich der untersuchten Bestattungssitten unterscheiden, und ob sich gegenseitige Beeinflussung feststellen oder sogar messen lässt. Der erarbeitete Entwicklungsproxy (siehe Abbildungen \@ref(fig:development-proportions-regions-burial-type) und \@ref(fig:development-proportions-regions-burial-construction)) bietet dafür eine gute Ausgangsposition und kann durchaus in sich diskutiert werden (siehe Kapitel \@ref(descriptive-data-analysis)). Noch bessere Vergleichbarkeit kann allerdings durch die Einführung eines Distanzmaßes erreicht werden. Nach Vorbild von @neiman_stylistic_1995 wurde dafür die quadrierte euklidische Distanz (*Squared Euclidian Distance -- SED*) eingeführt. Sie steht neben verschiedenen anderen Distanzmaßen, die für diesen Zweck hätten eingesetzt werden können, und wurde ausgewählt da sie einerseits für das Skalenniveau der Proxydaten geeignet ist und andererseits durch die Quadrierung Unterschiede besonders hervorhebt. Das ist wünschenswert, um Übergangsprozesse mit stärkeren Abweichungen zwischen den Regionen sichtbar zu machen.
+
+
 
 $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 
-- $d_{ij}^2$: Squared Euclidean distance between two groups $i$ and $j$
+- $d_{ij}^2$: Squared Euclidean Distance between two groups $i$ and $j$
 - $k$: Variant counter
 - $n$: Total amount of variants in a population
 - $p_{ik}$: Relative frequency of the $k$'th variant in population $i$
