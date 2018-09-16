@@ -6210,7 +6210,7 @@ Dazu gehört zum Beispiel die verbleibende Größe des Netzwerks. Auch
 \texttt{Timeline} verfügt über eine \texttt{develop} Methode, die
 einerseits die \texttt{develop} Methode im Aether anstößt und
 andererseits die Messung der diagnostischen Werte auslöst. Es ist diese
-\texttt{develop} Methode die im Hauptprogrammablauf in einer
+\texttt{develop} Methode, die im Hauptprogrammablauf in einer
 while-Schleife so lange immer wieder aufgerufen wird, bis die
 Ideenexpansion endet.
 
@@ -6220,42 +6220,42 @@ sinnvoll, da Ideen als aktiv handelnde Agenten modelliert werden sollen:
 Jede Form von Aktivität soll von ihnen ausgehen, während etwa die
 Netzwerkwelt, die Menschen und ihre Beziehungen abbildet, nur als
 passive Landschaft verstanden wird (siehe Kapitel
-\ref{simulation-theorie} für eine Erläuterung dieser Perspektive). Ideen
-besitzen einen Namen, einen Zeiger auf die Instanz der
-\texttt{Networkland} Klasse in der sie leben und zwei Vektoren, die die
-IDs der Netzwerkknoten speichern, auf denen sie aktuell sitzen und auf
-denen sie zum Zeitpunkt deren Todes saßen. Um letzteres zu verstehen,
-muss man den Algorithmus in der \texttt{expand} Methode betrachten, die
-die Ausbreitung der Ideen steuert. Zu Programmbeginn besetzen alle Ideen
-die ihnen mittels einer Eingabedatei zugewiesenen Startknoten im
-Netzwerk. In jedem Zeitschritt der Simulation darf nun jede Idee einmal
-handeln -- \texttt{Aether::develop} legt die Reihenfolge dabei fest. Der
-erste Schritt der Idee ist es, eine Liste aller Nachbarknoten zu den von
-ihr okkupierten zu erstellen. Die Idee versucht all diese Nachbarknoten
-einzunehmen, muss dafür allerdings verschiedene Hindernisse überwinden,
-die sich auf die Zufallsentscheidung ob sie Erfolg hat auswirken. Da in
-diesem Kontext viele Abfragen von Beziehungs- und Knoteninformationen im
-Netzwerk durchgeführt werden müssen, findet die Berechnung dieser
-Entscheidungen in einem Subnetzwerk statt, dass sich auf den aktuellen
-Dominanzbereich einer Idee und den unmittelbaren Nachbarn beschränkt.
-Für jeden Nachbarn werden drei Informationen abgefragt: Die Anzahl an
-Verbindungen zu Knoten, die die Idee schon hält, das maximale
-Kantengewicht unter all diesen Beziehungen und ob der Knoten selbst
-bereits von einer anderen Idee besetzt wird. Grundsätzlich wird für die
-Entscheidung ob ein Nachbarknoten der Idee zugesprochen wird gegen das
-Kantengewicht gewürfelt. Die Wahrscheinlichkeit wird erhöht, wenn
-mehrere Verbindungen zu Knoten der Idee bestehen und deutlich
-verringert, wenn der Nachbarknoten bereits Teil des Einflussgebiets
-einer anderen Idee ist. Nachdem auf dieser Grundlage für jeden
-Nachbarknoten entschieden wurde, ob er zu der aktuell handelnden Idee
-gehören wird, verlagert die Idee ihre Existenz auf diese Nachbarknoten.
-Ihre bisherigen Knoten sterben, das heißt sie werden aus dem Netzwerk
-gelöscht. Nur ihre Bezeichnung wird als Eroberung der Idee gespeichert.
-Das Löschen der alten Knoten führt automatisch dazu, dass die Ideen
-entlang der impliziten Zeitachse des Populationsnetzwerks voran
-schreiten und bildet gleichermaßen semantisch den Forschungskontext ab:
-Ideen zur Bestattungsformen drücken sich im Tod ihrer Träger aus. Dieser
-Algorithmus wird für jede Ideen in jedem Zeitschritt ausgeführt.
+\ref{simulation-theorie}). Ideen besitzen einen Namen, einen Zeiger auf
+die Instanz der \texttt{Networkland} Klasse in der sie leben und zwei
+Vektoren, die die IDs der Netzwerkknoten speichern, auf denen sie
+aktuell sitzen und auf denen sie zum Zeitpunkt deren Todes saßen. Um
+letzteres zu verstehen, muss man den Algorithmus in der \texttt{expand}
+Methode betrachten, die die Ausbreitung der Ideen steuert. Zu
+Programmbeginn besetzen alle Ideen die ihnen mittels einer Eingabedatei
+zugewiesenen Startknoten im Netzwerk. In jedem Zeitschritt der
+Simulation darf nun jede Idee einmal handeln -- \texttt{Aether::develop}
+legt die Reihenfolge dabei fest. Der erste Schritt der Idee ist es, eine
+Liste aller Nachbarknoten zu den von ihr okkupierten zu erstellen. Die
+Idee versucht all diese Nachbarknoten einzunehmen, muss dafür allerdings
+verschiedene Hindernisse überwinden, die sich auf die
+Zufallsentscheidung ob sie Erfolg hat auswirken. Da in diesem Kontext
+viele Abfragen von Beziehungs- und Knoteninformationen im Netzwerk
+durchgeführt werden müssen, findet die Berechnung dieser Entscheidungen
+in einem Subnetzwerk statt, dass sich auf den aktuellen Dominanzbereich
+einer Idee und den unmittelbaren Nachbarn dazu beschränkt. Für jeden
+Nachbarn werden drei Informationen abgefragt: Die Anzahl an Verbindungen
+zu Knoten, die die Idee schon hält, das maximale Kantengewicht unter all
+diesen Beziehungen und ob der Knoten selbst bereits von einer anderen
+Idee besetzt wird. Grundsätzlich wird für die Entscheidung ob ein
+Nachbarknoten der Idee zugesprochen wird gegen das Kantengewicht
+gewürfelt. Die Wahrscheinlichkeit wird erhöht, wenn mehrere Verbindungen
+zu Knoten der Idee bestehen und deutlich verringert, wenn der
+Nachbarknoten bereits Teil des Einflussgebiets einer anderen Idee ist.
+Nachdem auf dieser Grundlage für jeden Nachbarknoten entschieden wurde,
+ob er zu der aktuell handelnden Idee gehören wird, verlagert die Idee
+ihre Existenz auf diese Nachbarknoten. Ihre bisherigen Knoten sterben,
+das heißt sie werden aus dem Netzwerk gelöscht. Nur ihre Bezeichnung
+wird als Eroberung der Idee gespeichert. Das Löschen der alten Knoten
+führt automatisch dazu, dass die Ideen entlang der impliziten Zeitachse
+des Populationsnetzwerks voran schreiten und bildet gleichermaßen
+semantisch den Forschungskontext ab: Ideen zu Bestattungsformen drücken
+sich im Tod ihrer Träger aus. Dieser Algorithmus wird für jede Ideen in
+jedem Zeitschritt ausgeführt.
 
 Die Expansionssimulation endet, wenn sich die Größe des Netzwerks von
 einem Zeitschritt zum nächsten nicht mehr ändert, also wenn die Ideen
