@@ -6296,10 +6296,14 @@ Die Anzahl horizontaler Beziehungen einer Person
 number}\footnote{\textcite{dunbar_neocortex_1992}} auf 10 festgelegt, in
 der Anahme, dass Menschen nur eine kleine Zahl von Beziehungen
 unterhalten, die so tief greifen, um ihre Ansicht zu Bestattungssitten
-zu manipulieren. Alle weiteren Parameter wurden zumindest experimentell
-variiert -- obgleich die Anzahl ihrer möglichen Permutationen eine
-vollständige Betrachtung enorm erschwert: Nur ausgewählte
-Optionskombinationen konnten in Betracht gezogen werden.
+zu manipulieren. Die Altersverteilung der Populationsgruppen
+(\texttt{age\_distribution\_functions} und \texttt{age\_ranges}) wurde
+durch eine plausible, logarithmische Wachstumsfunktion abgebildet.
+Dieses Parameterset ist von untergeordneter Bedeutung. Alle weiteren
+Parameter wurden zumindest experimentell variiert -- obgleich die Anzahl
+ihrer möglichen Permutationen eine vollständige Betrachtung enorm
+erschwert: Nur ausgewählte Optionskombinationen konnten in Betracht
+gezogen werden.
 
 Die Abbildungen \ref{fig:neiman-general},
 \ref{fig:sim-popsize-crossregions}, \ref{fig:sim-startprop-distancemat},
@@ -6330,17 +6334,43 @@ der Emergenz der Netzwerksimulation nicht unmittelbar zu beantworten.
 Wahrscheinlich ist allerdings, dass die starke, horizontale
 Verschränkung des sozialen Netzwerks, die Neimans generationales Modell
 nicht beachtet, zu mehr lateralem Druck auf die zufällig unterlegene
-Idee führt. Hinsichlich \emph{Flow} verhalten sich beide Modelle
-zumindest tendenziell gleich: Je größer die Verbindung zwischen den
-Gruppen, desto größer die Ähnlichkeit. Bei Neiman ist dieser
-Zusammenhang stärker, da es keine Störeffekte durch die Struktur des
-sozialen Netzwerks beachtet. Da allerdings Austausch zwischen Menschen
-nicht derart zufällig wie von Neiman angenommen erfolgt, ist davon
-auszugehen, dass das parameterabhängige Verhalten des Netzwerkmodells
-näher an der Realität liegt. Wie von der Populationsgenetik\footnote{\textcite{frankham_introduction_2002},
+Idee führt. Andererseits führt das Deaktivieren der horizontalen
+Transmission in der Netzwerksimulation, wie für Abbildung
+\ref{fig:sim-vertitrans} vorgenommen, nur zu leichten Unterschieden.
+Hinsichlich \emph{Flow} verhalten sich beide Modelle zumindest
+tendenziell gleich: Je größer die Verbindung zwischen den Gruppen, desto
+größer die Ähnlichkeit. Bei Neiman ist dieser Zusammenhang stärker, da
+es keine Störeffekte durch die Struktur des sozialen Netzwerks beachtet.
+Da allerdings Austausch zwischen Menschen nicht derart zufällig wie von
+Neiman angenommen erfolgt, ist davon auszugehen, dass das
+parameterabhängige Verhalten des Netzwerkmodells näher an der Realität
+liegt. Wie von der Populationsgenetik\footnote{\textcite{frankham_introduction_2002},
   328.} zu \emph{Genetic Flow} vorhergesagt, ist unabhängig davon ein
 geringer Grad an Verbindung ausreichend, um eine allgemein ähnliche
 Entwicklung der Gruppen bzw. Subpopulationen herbeizuführen.
+
+Für die Simulationsläufe in Abbildung \ref{fig:sim-popsize-crossregions}
+wurde davon ausgegangen, dass sowohl die Ausgangsverteilung der Ideen
+zum Startzeitpunkt als auch die Interaktionsmatrix zwischen den Gruppen
+gleichwertig ist. Für Abbildung \ref{fig:sim-startprop-distancemat}
+wurden diese Angaben nun manipuliert. Grundlage ist ein Modell mit einer
+Gruppenpopulationsgröße von 50 und einem Grad des
+Zwischengruppenaustauschs von 0.1 (wie Abbildung
+\ref{fig:sim-popsize-crossregions} H). Die Plotmatrix variiert zwischen
+Gleichverteilung zum Startzeitpunkt und den Gegenheiten, wie sie für die
+Variablen \emph{burial\_type} und \emph{burial\_construction} ermittelt
+wurden. Außerdem wurde Zwischengruppendistanzmatrizen mit Äquidistanz,
+räumlicher Distanz und durchschnittlicher, kultureller Distanz
+eingesetzt. Es zeigt sich, dass die unausgeglichenen Startverhältnisse
+im Kontext von \emph{burial\_type} \emph{Drift} begünstigen. Dieser
+Modelltyp gewährt prominenten Ideen grundsätzlich einen Vorteil.
+Andererseits kommt es in einzelnen Durchläufen durchaus dazu, dass sich
+auch die schwache Idee langfristig durchsetzt. Die komplexen, nicht
+gleichwertigen Distanzmatrizen wirken \emph{Drift} scheinbar entgegen.
+Wahrscheinlich führt die Variation der Distanzen zwischen Gruppen zur
+Ausbildung von Gruppenverbänden, die jeweils auch langfristig
+alternative Ideen aufrechterhalten können, selbst wenn der Konsens der
+anderen Gruppen in eine andere Richtung wirkt.
 
 \begin{figure}[!t]
 
@@ -6362,20 +6392,20 @@ Entwicklung der Gruppen bzw. Subpopulationen herbeizuführen.
 
 \begin{figure}[!t]
 
+{\centering \includegraphics[width=.9\textwidth,]{../neomod_analysis/figures_plots/simulation_parameter_exploration/vertitrans} 
+
+}
+
+\caption[Simulationsparameter: Nur vertikale Transmission]{Simulationsparameter: Nur vertikale Transmission. Wie Abbildung \ref{fig:sim-popsize-crossregions}, allerdings unter Ausschluss der horizontalen Transmission.}\label{fig:sim-vertitrans}
+\end{figure}
+
+\begin{figure}[!t]
+
 {\centering \includegraphics[width=0.9\textwidth,]{../neomod_analysis/figures_plots/simulation_parameter_exploration/startprop_distancemat} 
 
 }
 
 \caption[Simulationsparameter: Startkonfigurationen \& Zwischengruppendistanzen]{Simulationsparameter: Startkonfigurationen \& Zwischengruppendistanzen. Wie Abbildung \ref{fig:sim-popsize-crossregions}, allerdings mit anderen Parametern. Auf der X-Achse der Plotmatrix werden Startkonfigurationen, auf der Y-Achse Zwischengruppendistanzmatrizen variiert. eq: equal, sp: spatial, bt: burial\_type, bc: burial\_construction.}\label{fig:sim-startprop-distancemat}
-\end{figure}
-
-\begin{figure}[!t]
-
-{\centering \includegraphics[width=.9\textwidth,]{../neomod_analysis/figures_plots/simulation_parameter_exploration/vertitrans} 
-
-}
-
-\caption[Simulationsparameter: Nur vertikale Transmission]{Simulationsparameter: Nur vertikale Transmission. Wie Abbildung \ref{fig:sim-popsize-crossregions}, allerdings mit anderen Parametern und unter Ausschluss der horizontalen Transmission. Die Y-Achse der Plotmatrix variiert das Kantengewicht der Eltern-Kind Relation (5, 20, 100).}\label{fig:sim-vertitrans}
 \end{figure}
 
 \hypertarget{cultural-and-spatial-distance}{%
