@@ -617,7 +617,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_
 \end{landscape}
 
 \begin{landscape}
-```{r mantel-bc-spatial, echo = FALSE, fig.scap = "\\textit{burial type} SED aufgetragen gegen die räumlichen Distanzklassen für verschiedene Zeitfenster", fig.cap = "\\textit{burial type} SED aufgetragen gegen die räumlichen Distanzklassen für verschiedene Zeitfenster.", out.extra = ""}
+```{r mantel-bc-spatial, echo = FALSE, fig.scap = "\\textit{burial construction} SED aufgetragen gegen die räumlichen Distanzklassen für verschiedene Zeitfenster", fig.cap = "\\textit{burial construction} SED aufgetragen gegen die räumlichen Distanzklassen für verschiedene Zeitfenster.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_construction.jpeg")
 ```
 \end{landscape}
@@ -625,24 +625,24 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/squared_euclidian_
 ### Simulation
 
 \begin{landscape}
-```{r sim-sed, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sim-sed, echo = FALSE, fig.scap = "", fig.cap = "", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/squared_euclidian_distance_vs_spatial_distance_sim_multiple.jpeg")
 ```
 \end{landscape}
 
-```{r sim-spearman-low-equal, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sim-spearman-low-equal, echo = FALSE, fig.scap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und äquidistantes Gruppendistanznetzwerk", fig.cap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und äquidistantes Gruppendistanznetzwerk. Die Spearmansche Rangkorrelation aufgetragen zwischen durchschnittlicher kultureller und räumlicher Distanz aufgeteilt nach Zeitschritten von 200 Jahren. Die 100 Simulationsdurchläufe werden durch kleine Markierungspunkte und schwache Verbindungslinien repräsentiert. Alle Durchläufe werden nach Zeitschritten durch Box- und Dotplots zusammengefasst. Die Füllfarbe der Dotplot-Marker gibt das Signifikanznivau des Manteltests für einen Simulationsdurchlauf in einem Zeitschritt wieder. Die Werte der Realweltvariablen \\textit{burial_type} und \\textit{burial_construction} sind in blau und grün auf die Simulationsdaten projiziert. Die horizontale rote Linie hebt den Null-Wert des Korrelationskoeffizienten hervor. Die Simulation basiert auf der üblichen Parameterauswahl, einer konstanten Gruppenpopulationsgröße von 50 und einem Zwischengruppeninteraktionswert von vertikal 0.002 und horizontal 0.01. Die Startverteilung ist gleichwertig und das Distanznetzwerk ist äquidistant.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/low_equal_interaction.jpeg")
 ```
 
-```{r sim-spearman-high-equal, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sim-spearman-high-equal, echo = FALSE, fig.scap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für hohe Interaktion und äquidistantes Gruppendistanznetzwerk", fig.cap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für hohe Interaktion und äquidistantes Gruppendistanznetzwerk. Wie Abbildung \\ref(fig:sim-spearman-low-equal), die Simulation aber mit höherer Interaktion: vertikal 0.02 und horizontal 0.1.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/high_equal_interaction.jpeg")
 ```
 
-```{r sim-spearman-low-spatial, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sim-spearman-low-spatial, echo = FALSE, fig.scap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und räumliches Gruppendistanznetzwerk", fig.cap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und räumliches Gruppendistanznetzwerk. Wie Abbildung \\ref(fig:sim-spearman-low-equal), die Simulation aber mit räumlichen Distanznetzwerk.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/low_spatial_interaction.jpeg")
 ```
 
-```{r sim-spearman-high-spatial, echo = FALSE, fig.scap = "huhu", fig.cap = "huhu", out.extra = ""}
+```{r sim-spearman-high-spatial, echo = FALSE, fig.scap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für hohe Interaktion und räumliches Gruppendistanznetzwerk", fig.cap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für hohe Interaktion und räumliches Gruppendistanznetzwerk. Wie Abbildung \\ref(fig:sim-spearman-low-spatial), die Simulation aber mit höherer Interaktion: vertikal 0.02 und horizontal 0.1.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/high_spatial_interaction.jpeg")
 ```
 
