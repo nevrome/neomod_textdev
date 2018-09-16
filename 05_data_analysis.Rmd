@@ -518,7 +518,7 @@ Die Abweichung der diachronen Entwicklung der Variablen *burial_type* und *buria
 
 ### Fragestellung und Methode
 
-Eine Kernfragestellung der vorliegenden Arbeit ist, in welchem Umfang sich verschiedene Regionen hinsichtlich der untersuchten Bestattungssitten unterscheiden, und ob sich gegenseitige Beeinflussung feststellen oder sogar messen lässt. Der erarbeitete Entwicklungsproxy (siehe Abbildungen \@ref(fig:development-proportions-regions-burial-type) und \@ref(fig:development-proportions-regions-burial-construction)) bietet dafür eine gute Ausgangsposition und kann durchaus in sich diskutiert werden (siehe Kapitel \@ref(descriptive-data-analysis)). Noch bessere Vergleichbarkeit kann allerdings durch die Einführung eines Distanzmaßes erreicht werden. Nach Vorbild von @neiman_stylistic_1995 wurde dafür die quadrierte euklidische Distanz (*Squared Euclidian Distance -- SED*) eingeführt. Sie steht neben verschiedenen anderen Distanzmaßen, die für diesen Zweck hätten eingesetzt werden können, und wurde ausgewählt da sie einerseits für das Skalenniveau der Proxydaten geeignet ist und andererseits durch die Quadrierung Unterschiede besonders hervorhebt. Das ist wünschenswert, um Übergangsprozesse mit stärkeren Abweichungen zwischen den Regionen sichtbar zu machen.
+Eine Kernfragestellung der vorliegenden Arbeit ist, in welchem Umfang sich verschiedene Regionen hinsichtlich der untersuchten Bestattungssitten unterscheiden, und ob sich gegenseitige Beeinflussung feststellen oder sogar messen lässt. Der erarbeitete Entwicklungsproxy (siehe Abbildungen \@ref(fig:development-proportions-regions-burial-type) und \@ref(fig:development-proportions-regions-burial-construction)) bietet dafür eine gute Ausgangsposition und kann durchaus in sich diskutiert werden (siehe Kapitel \@ref(descriptive-data-analysis)). Noch bessere Vergleichbarkeit kann allerdings durch die Einführung eines Distanzmaßes erreicht werden. Nach Vorbild von @neiman_stylistic_1995 wurde dafür die quadrierte euklidische Distanz (*Squared Euclidian Distance -- SED*) berechnet. Sie steht neben verschiedenen anderen Distanzmaßen, die für diesen Zweck hätten eingesetzt werden können, und wurde ausgewählt, da sie einerseits für das Skalenniveau der Proxydaten geeignet ist und andererseits durch die Quadrierung Unterschiede besonders hervorhebt. Das ist wünschenswert, um Übergangsprozesse mit stärkeren Abweichungen zwischen den Regionen sichtbar zu machen.
 
 Die Berechnung der SED basiert auf einer einfachen Gleichung und kann unmittelbar implementiert werden:
 
@@ -530,9 +530,9 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 - $p_{ik}$: Relative Häufigkeit der $k$ten Variante in Gruppe $i$
 - $p_{jk}$: Relative Häufigkeit der $k$ten Variante in Gruppe $j$
 
-Ein Beispiel: Das Verhältnis von Brand- zu Körpergrab in der künstlichen Region *England* beträgt der Proxyberechnung zufolge im Jahr 2200calBC 0.25:0.75, also 1:3. Im *Benelux*-Raum sind es 0.5:0.5, also 1:1. Diese Angaben kann man in die SED Gleichung einsetzen:
+Ein Beispiel: Das Verhältnis von Brand- ($Br$) zu Körpergrab ($Kö$) in der künstlichen Region *England* ($En$) beträgt der Proxyberechnung zufolge im Jahr 2200calBC 0.25:0.75, also 1:3. Im *Benelux*-Raum ($Be$) sind es 0.5:0.5, also 1:1. Diese Angaben kann man in die SED Gleichung einsetzen:
 
-$$d_{England Benelux}^2 = (p_{England Brandgrab} - p_{Benelux Brandgrab})^2 + (p_{England Körpergrab} - p_{Benelux Körpergrab})^2$$
+$$d_{England Benelux}^2 = (p_{En Br} - p_{Be Br})^2 + (p_{En Kö} - p_{Be Kö})^2$$
 
 $$d_{England Benelux}^2 = (0.25 - 0.5)^2 + (0.75 - 0.5)^2$$
 
@@ -540,9 +540,8 @@ $$d_{England Benelux}^2 = 0.125$$
 
 Die Distanz ist in diesem Fall also gering: Beide Varianten sind in beiden Regionen zu diesem Zeitpunkt in größerem Umfang vorhanden.
 
-
-
-Korrelieren die beiden Kulturdistanten?
+Neben 
+Aus Perspektive der klassischen *Diffusion of Innovation* Forschung 
 
 Mantel Test: Was das, und warum?
 
@@ -556,7 +555,7 @@ Die Analyse ist zweigeteilt in einen Abschnitt zu kultureller Distanz innerhalb 
 
 #### Kulturelle Distanz
 
-Um die kulturelle Distanz zwischen den Regionen basierend auf den Variablen *burial_type* und *burial construction* zu berechnen, wurden die in Kapitel \@ref(descriptive-data-analysis) vorgestellten Datensätze zur relativen Entwicklung der Varianten weiterverwendet. Diese enthalten zu jedem Jahr im Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen Anteil der verschiedenen Bestattungsformen in den in Kapitel \@ref(data-prep-and-segmentation) etablierten, künstlichen Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die Squared Euclidian Distance (SED) zwischen jeder Region berechnen. Die Abbildungen \@ref(fig:sed-dev-matrix-bt) und \@ref(fig:sed-dev-matrix-bc) zeigen den Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer Plotmatrix. 
+Um die kulturelle Distanz zwischen den Regionen basierend auf den Variablen *burial_type* und *burial construction* zu berechnen, wurden die in Kapitel \@ref(descriptive-data-analysis) vorgestellten Datensätze zur relativen Entwicklung der Varianten weiterverwendet. Diese enthalten zu jedem Jahr im Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen Anteil der verschiedenen Bestattungsformen in den in Kapitel \@ref(data-prep-and-segmentation) etablierten, künstlichen Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die SED zwischen jeder Region berechnen. Die Abbildungen \@ref(fig:sed-dev-matrix-bt) und \@ref(fig:sed-dev-matrix-bc) zeigen den Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer Plotmatrix. 
 
 Die Mehrzahl der Kurven in Abbildung \@ref(fig:sed-dev-matrix-bt) für *burial type* entspricht den Erwartungen: Zu Beginn der Bronzezeit ist Körperbestattung im gesamten Untersuchungsareal weit verbreitet, also ist die euklidische Distanz 2200calBC in fast jeder Regionenbeziehung gering. Nur der Benelux-Raum, in dem der Brandbestattungsanteil schon in der Frühbronzezeit groß ist, schert aus. Ab der Mittel-, besonders aber am Übergang zur Spätbronzezeit, vollzog sich in ganz Europa der Übergang zur Dominanz der Brandbestattung. Die SED-Werte steigen über diesen Zeitraum durchweg an und zeichnen deutliche Peaks oder Entwicklungen mit mehreren, aufeinanderfolgenden Maxima. Das ist Konsequenz dessen, dass der Übergangsprozess in jeder Region tatsächlich und so wie er in Radon-B abgebildet ist unterschiedlich und gegenüber anderen Räumen zeitversetzt ablief. Am Ende der Spätbronzezeit nähert sich die durchschnittliche SED wieder Null an, da dann in fast ganz Europa die Brandbestattung vorherrschte. Abbildung \@ref(fig:sed-dev-bt) stellt den selben Sachverhalt in einer an Abbildung \@ref(fig:development-amount-regions-burial-type) orientierten Form dar. Das erleichtert es, die Rolle einzelner Regionen im Gesamtkontext zu beurteilen. Die in Radon-B dargestellte, frühe und vollständige Übernahme des Brandbestattungsritus im Benelux-Raum hebt ihn deutlich von den anderen Regionen ab. England dagegen, mit seinem langsamen, graduellen Übergang von Körper- zu Brandbestattung fällt durch durchgehend mäßige Distanzen zu allen anderen Regionen auf. Es kommt ohne deutliche Minima und Maxima aus. Die Situation für *burial construction* ist, wie aus den Abbildungen \@ref(fig:sed-dev-matrix-bc) und \@ref(fig:sed-dev-bc) ersichtlich, komplizierter. Hier ist kein allgemeiner Trend zu erkennen, sondern eine Vielzahl an lokalen und zeitlich begrenzten Phänomenen. Das liegt auch daran, wie der aus Radon-B entwickelte Proxy die Entwicklungen der realen Welt abbildet (siehe Kapitel \@ref(representativity)). Zur Mittelbronzezeit sollte die Hügelgräberkultur eine grundsätzliche Reduktion der SED für fast alle Regionenbeziehungen bewirken -- dieser Effekt ist tatsächlich leicht, aber bei weitem nicht so akzentuiert wie wünschenwert sichtbar. 
 
