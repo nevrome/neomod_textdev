@@ -4907,19 +4907,19 @@ inhumation}, \emph{Grave (mound) cremation}, \emph{Grave (flat)},
 \emph{Grave (flat) inhumation}, \emph{Grave (flat) cremation},
 \emph{Grave (cremation)} und \emph{Grave (inhumation)} (2361 Daten).
 Statt der Variablen \emph{Feature Type} wurden mittels Pattern Matching
-zwei neue Variablen mit jeweils drei Werten geschaffen:
-\emph{burial\_type} mit den Kategorien \emph{inhumation},
-\emph{cremation} und \emph{unknown} sowie \emph{burial\_construction}
-mit den Kategorien \emph{mound}, \emph{flat} und \emph{unknown}. Die
-Fragestellung erfordert es auch, alle Daten ohne Raumbezug, also ohne
+zwei neue Variablen mit jeweils drei Werten geschaffen: \emph{burial
+type} mit den Kategorien \emph{inhumation}, \emph{cremation} und
+\emph{unknown} sowie \emph{burial construction} mit den Kategorien
+\emph{mound}, \emph{flat} und \emph{unknown}. Die Fragestellung
+erfordert es auch, alle Daten ohne Raumbezug, also ohne
 Koordinateninformation, zu entfernen (2336 Daten). Nach diesen
 Arbeitsschritten lässt sich der Hauptausgangsdatensatz als Tabelle mit
 2336 Zeilen und 15 Spalten beschreiben, darunter die hier wesentlichen
 mit Angaben zu Labornummer, Koordinaten, Dichteverteilung des
-kalibrierten Alters und \emph{burial\_type} sowie
-\emph{burial\_construction}. Eine Karte der so vorbereiteten Gräberdaten
-zeigt die hohe Heterogenität der Datendichte und -qualität in
-verschiedenen Regionen Europas (siehe Abbildung \ref{fig:general-map}).
+kalibrierten Alters und \emph{burial type} sowie \emph{burial
+construction}. Eine Karte der so vorbereiteten Gräberdaten zeigt die
+hohe Heterogenität der Datendichte und -qualität in verschiedenen
+Regionen Europas (siehe Abbildung \ref{fig:general-map}).
 
 \begin{figure}
 \includegraphics{../neomod_analysis/figures_plots/general_maps/general_map} \caption[Übersichtskarte der \textsuperscript{14}C Daten an bronzezeitlichen Gräbern in Europa]{Übersichtskarte der \textsuperscript{14}C Daten an bronzezeitlichen Gräbern in Europa. Die Karte zeigt Daten aus einem  Zeitfenster von 2200 bis 800calBC. Einzelne Daten liegen außerhalb des gewählten Kartenausschnitts. Jedes Datum ist nach seinen Kontextinformationen hinsichtlich der Variablen \textit{burial type} und \textit{burial construction} in Form und Farbe markiert.}\label{fig:general-map}
@@ -4941,7 +4941,7 @@ vergleichbaren, räumlichen Untersuchungseinheiten. 1894 der 2336 oben
 ausgewählten Daten stammen aus dem Rechteckareal.
 
 \begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area} \caption[Karte mit den Grenzen des Untersuchungsareals]{Karte mit den Grenzen des Untersuchungsareals. Wie Abbildung \ref{fig:general-map}.}\label{fig:general-map-research-area}
+\includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area} \caption[Karte mit den Grenzen des Untersuchungsareals]{Karte mit den Grenzen des Untersuchungsareals. Wie Abbildung \ref{fig:general-map}, aber zugeschnitten und um Grenzen erweitert.}\label{fig:general-map-research-area}
 \end{figure}
 
 Der nach oben beschriebenem Vorgehen zusammengestellte Arbeitsdatensatz
@@ -5033,8 +5033,8 @@ zusammengeführten Daten liegt. Aus der Perspektive der
 korrekt, angesichts der zugrundeliegenden Fragestellung und der
 Herausforderungen des Datensatzes jedoch sinnvoll: Jeder Eintrag im
 Datensatz soll einen Ort und einen Zeitraum definieren, in dem die mit
-ihm assoziierten Angaben für die Primärvariablen \emph{burial\_type} und
-\emph{burial\_construction} auftraten. Durch die Reduktion der Daten auf
+ihm assoziierten Angaben für die Primärvariablen \emph{burial type} und
+\emph{burial construction} auftraten. Durch die Reduktion der Daten auf
 einen einzelnen Eintrag wird die Überbetonung dieser Information
 vermieden. Gleichzeitig wird aber auch der mitunter langen
 Belegungsdauer eines durch den einzelnen Eintrag repräsentierten
@@ -5045,54 +5045,54 @@ ermöglichen. Nach der vorgenommenen Reduktion verblieben 1704 jeweils
 befundspezifische Einträge.
 
 Innerhalb des Untersuchungsareals wurden künstliche Regionen abgegrenzt,
-um die zeitliche und räumliche Entwicklung der Variablen
-\emph{burial\_type} und \emph{burial\_construction} in sinnvollen und
-der verfügbaren Datenmenge angemessenen Einheiten beobachten zu können
-(siehe Abbildung \ref{fig:general-map-research-area-regions}). Der
-Prozess der Erstellung dieser Regionen war semiautomatisch und darauf
-angelegt kulturelle Makroregionen der Bronzezeit zumindest
-näherungsweise abzubilden. Dafür stand mir auch eine unpublizierte,
-händisch entworfene Regionengliederung von Jutta Kneisel und Oliver
-Nakoinz als Vorlage zur Verfügung. In den Grenzen des
-Untersuchungsareals wurde ein Raster von Punkten angelegt, die jeweils
-als Zentrum einer der geplant runden Regionen dienen sollten. Dieses
-Raster wurde manuell so angepasst, bis es sich den Zentrumspunkten
-wesentlicher geographischer, kultureller und/oder
-forschungsgeschichtlicher Einheiten annährte. Die Distanz zwischen den
-Zentren beträgt in dieser Konfiguration 400km (im Bezugssystem der
-EPSG:102013 Projektion). In einem weiteren Schritt wurden kreisförmige
-Regionen um die Zentrumspunkte aufgebaut. Der Kreisradius wurde nach
-Augenmaß mit 240km so gewählt, dass möglichst alle bekannten
-\textsuperscript{14}C-Daten (also damit auch Gräber) in mindestens einer
-Region verortet sind. Das Überlappen von Regionen wurde dabei in Kauf
-genommen. Andere Regionendefinitionen anhand alternativer geometrischer
-Formen (Rechtecke, Hexagone, Polygone), nach der Dichteverteilung von
-Fundpunkten, anhand sich zeitlich wandelnder, archäologisch erfasster,
-kultureller Einheiten sind denkbar und sollten bei zunehmender
-Datenverfügbarkeit in Zukunft evaluiert werden. Das gilt auch
-hinsichtlich der Größe der Einheiten, die aufgrund der diachron geringen
-Datenmenge sehr groß gewählt werden mussten. Nur aus den acht Regionen,
-die in Abbildung \ref{fig:general-map-research-area-regions} definiert
-werden, sind ausreichend \textsuperscript{14}C-Daten an Gräbern bekannt,
-um eine nähere Betrachtung zu rechtfertigen. Der Schwellwert dafür wurde
-mit 60 Gräbern jedoch sehr niedrig angelegt, um das effektive
-Untersuchungsareal nicht noch weiter verkleinern zu müssen. Die
-Benennung der Regionen war an den modernen, administrativen Einheiten
-orientiert, die die Kreise im wesentlichen einschließen (siehe Kapitel
-\ref{representativity} für eine nähere Beschreibung der geographischen
-Ausdehnung der Regionen). Ihre im folgenden stets eingehaltene,
-geographische Reihenfolge von Südost nach Nordwest soll die Lesbarkeit-
-und Interpretierbarkeit von Abbildungen erhöhen. Mit angegeben ist die
-Menge an Gräbern pro Region: \emph{Southeastern Central Europe} (70),
-\emph{Poland} (134), \emph{Southern Germany} (213), \emph{Northeastern
-France} (64), \emph{Northern Germany} (475), \emph{Southern Scandinavia}
-(209), \emph{Benelux} (284), \emph{England} (113). Durch die
-Regionengliederung verringerte sich das effektive Untersuchungsareal
-weiter. Von den 1704 Gräbern im Rechteckareal verblieben 1562. Das ist
-der Ausgangsdatensatz auf dem alle folgenden Beobachtungen beruhen.
+um die zeitliche und räumliche Entwicklung der Variablen \emph{burial
+type} und \emph{burial construction} in sinnvollen und der verfügbaren
+Datenmenge angemessenen Einheiten beobachten zu können (siehe Abbildung
+\ref{fig:general-map-research-area-regions}). Der Prozess der Erstellung
+dieser Regionen war semiautomatisch und darauf angelegt kulturelle
+Makroregionen der Bronzezeit zumindest näherungsweise abzubilden. Dafür
+stand mir auch eine unpublizierte, händisch entworfene
+Regionengliederung von Jutta Kneisel und Oliver Nakoinz als Vorlage zur
+Verfügung. In den Grenzen des Untersuchungsareals wurde ein Raster von
+Punkten angelegt, die jeweils als Zentrum einer der geplant runden
+Regionen dienen sollten. Dieses Raster wurde manuell so angepasst, bis
+es sich den Zentrumspunkten wesentlicher geographischer, kultureller
+und/oder forschungsgeschichtlicher Einheiten annährte. Die Distanz
+zwischen den Zentren beträgt in dieser Konfiguration 400km (im
+Bezugssystem der EPSG:102013 Projektion). In einem weiteren Schritt
+wurden kreisförmige Regionen um die Zentrumspunkte aufgebaut. Der
+Kreisradius wurde nach Augenmaß mit 240km so gewählt, dass möglichst
+alle bekannten \textsuperscript{14}C-Daten (also damit auch Gräber) in
+mindestens einer Region verortet sind. Das Überlappen von Regionen wurde
+dabei in Kauf genommen. Andere Regionendefinitionen anhand alternativer
+geometrischer Formen (Rechtecke, Hexagone, Polygone), nach der
+Dichteverteilung von Fundpunkten, anhand sich zeitlich wandelnder,
+archäologisch erfasster, kultureller Einheiten sind denkbar und sollten
+bei zunehmender Datenverfügbarkeit in Zukunft evaluiert werden. Das gilt
+auch hinsichtlich der Größe der Einheiten, die aufgrund der diachron
+geringen Datenmenge sehr groß gewählt werden mussten. Nur aus den acht
+Regionen, die in Abbildung \ref{fig:general-map-research-area-regions}
+definiert werden, sind ausreichend \textsuperscript{14}C-Daten an
+Gräbern bekannt, um eine nähere Betrachtung zu rechtfertigen. Der
+Schwellwert dafür wurde mit 60 Gräbern jedoch sehr niedrig angelegt, um
+das effektive Untersuchungsareal nicht noch weiter verkleinern zu
+müssen. Die Benennung der Regionen war an den modernen, administrativen
+Einheiten orientiert, die die Kreise im wesentlichen einschließen (siehe
+Kapitel \ref{representativity} für eine nähere Beschreibung der
+geographischen Ausdehnung der Regionen). Ihre im folgenden stets
+eingehaltene, geographische Reihenfolge von Südost nach Nordwest soll
+die Lesbarkeit- und Interpretierbarkeit von Abbildungen erhöhen. Mit
+angegeben ist die Menge an Gräbern pro Region: \emph{Southeastern
+Central Europe} (70), \emph{Poland} (134), \emph{Southern Germany}
+(213), \emph{Northeastern France} (64), \emph{Northern Germany} (475),
+\emph{Southern Scandinavia} (209), \emph{Benelux} (284), \emph{England}
+(113). Durch die Regionengliederung verringerte sich das effektive
+Untersuchungsareal weiter. Von den 1704 Gräbern im Rechteckareal
+verblieben 1562. Das ist der Ausgangsdatensatz auf dem alle folgenden
+Beobachtungen beruhen.
 
 \begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area_regions} \caption[Karte mit künstlichen Untersuchungsregionen]{Karte mit künstlichen Untersuchungsregionen. Wie Abbildung \ref{fig:general-map-research-area}. Die Regionen sind farblich markiert.}\label{fig:general-map-research-area-regions}
+\includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area_regions} \caption[Karte mit künstlichen Untersuchungsregionen]{Karte mit künstlichen Untersuchungsregionen. Wie Abbildung \ref{fig:general-map-research-area}, aber um farblich markierte Regionen erweitert.}\label{fig:general-map-research-area-regions}
 \end{figure}
 
 \hypertarget{descriptive-data-analysis}{%
@@ -5113,7 +5113,7 @@ Daten wurden an Probenmaterial von Knochen und Zähnen (mindestens 169
 davon verbrannt), 367 von Holz und Holzkohle, ein kleiner Teil (20) von
 sonstigen Materialien wie Nüssen, Harz oder Pech gemessen. Für die
 restlichen 154 Daten ist keine Materialangabe hinterlegt. Hinsichtlich
-der Variablen \emph{burial\_type} und \emph{burial\_construction} gelten
+der Variablen \emph{burial type} und \emph{burial construction} gelten
 die in Tabelle \ref{tab:dprcrosstab} dargestellte Verhältnisse.
 
 \begin{table}[!h]
@@ -5138,14 +5138,14 @@ Von besonderem Interesse für die vorliegende Arbeit ist eine diachrone
 Perspektive in der Bestattungssittenentwicklung. Schon eine Kartierung
 der Gräber in Zeitschritten von 200 Jahren (siehe Abbildung
 \ref{fig:general-map-research-area-timeslices}) offenbart generelle
-Trends hinsichtlich \emph{burial\_type} und \emph{burial\_construction}
-in Früh-, Mittel- und Spätbronzezeit. Diese Beobachtungen können mittels
+Trends hinsichtlich \emph{burial type} und \emph{burial construction} in
+Früh-, Mittel- und Spätbronzezeit. Diese Beobachtungen können mittels
 des erstellten Datensatzes erheblich präzisiert sowie räumlich- und
 zeitlich explizit gemacht werden.
 
 \begin{landscape}
 \begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area_timeslices} \caption[Einzelkarten nach Zeitschritten]{Einzelkarten nach Zeitschritten. Chronologische und räumliche Entwicklung der \textsuperscript{14}C Datenverteilung. Einzelabbildungen wie Abbildung \ref{fig:general-map-research-area}, jeweils aber nur mit den Daten, deren $2\sigma$ Wahrscheinlichkeitsbereich das entsprechende calBC Datum (2200calBC, 2000calBC, 1800calBC, ...) überspannt. Die Transparenz bzw. Opazität spiegelt die normierte Wahrscheinlichkeit des Auftretens eines Datums für genau diesen Zeitpunkt wieder.}\label{fig:general-map-research-area-timeslices}
+\includegraphics{../neomod_analysis/figures_plots/general_maps/general_map_research_area_timeslices} \caption[Einzelkarten nach Zeitschritten]{Einzelkarten nach Zeitschritten. Chronologische und räumliche Entwicklung der \textsuperscript{14}C Datenverteilung. Einzelabbildungen wie Abbildung \ref{fig:general-map-research-area}, jeweils aber nur mit den Daten, deren $2\sigma$ Wahrscheinlichkeitsbereich das entsprechende calBC Datum (2200calBC, 2000calBC, 1800calBC, ...) überspannt. Die Transparenz bzw. Opazität spiegelt die normierte Wahrscheinlichkeit des Auftretens eines Datums für genau diesen Zeitpunkt wider.}\label{fig:general-map-research-area-timeslices}
 \end{figure}
 \end{landscape}
 
@@ -5162,18 +5162,18 @@ anwesend gewesen sein, da dieses Jahr im \(2\sigma\) Bereich des
 \textsuperscript{14}C-Datums NZA-32497 liegt, das für die
 Körperbestattung I2639/25217 vom Fundplatz Amesbury Down angefertigt
 wurde. Liegen mehrere Daten aus einer Region für ein Jahr vor, dann kann
-das Auftreten der verschiedenen Ausprägungen von \emph{burial\_type} und
-\emph{burial\_construction} gezählt werden. Tut man das für alle Jahre
+das Auftreten der verschiedenen Ausprägungen von \emph{burial type} und
+\emph{burial construction} gezählt werden. Tut man das für alle Jahre
 mit allen Ausprägungen, dann ergeben sich sechs aufschlussreiche
 Zeitreihen, die sich jahrweise sinnvoll zur Gesamtzahl der Beobachtungen
-addieren (für \emph{burial\_type} siehe Abbildung
-\ref{fig:development-amount-regions-burial-type}, für
-\emph{burial\_construction} Abbildung
+addieren (für \emph{burial type} siehe Abbildung
+\ref{fig:development-amount-regions-burial-type}, für \emph{burial
+construction} Abbildung
 \ref{fig:development-amount-regions-burial-construction}). Aus den
 Ausprägungsmengen lässt sich auch das jeweilige Verhältnis der Ideen in
-jedem Jahr in jeder Region berechnen (für \emph{burial\_type} siehe
+jedem Jahr in jeder Region berechnen (für \emph{burial type} siehe
 Abbildung \ref{fig:development-proportions-regions-burial-type}, für
-\emph{burial\_construction} siehe Abbildung
+\emph{burial construction} siehe Abbildung
 \ref{fig:development-proportions-regions-burial-construction}). Dabei
 wurden die Gräber, für die keine Information zu den Primärvariablen
 vorliegt (\emph{unknown}) ignoriert. Die Entwicklung der Verhältnisse
@@ -5401,8 +5401,8 @@ Ungleichverteilung der Daten hat viele verschiedene Gründe.
   nicht abgebildet.
 \end{itemize}
 
-Hinsichtlich der Primärvariablen dieser Arbeit \emph{burial\_type} und
-\emph{burial\_construction} ergeben sich weitere, besondere Effekte: Die
+Hinsichtlich der Primärvariablen dieser Arbeit \emph{burial type} und
+\emph{burial construction} ergeben sich weitere, besondere Effekte: Die
 Störung und Beraubung von Gräbern war ein in Geschichte und
 Vorgeschichte weit verbreitetes Phänomen. Hügelgräber wurden dabei
 aufgrund ihrer guten Sichtbarkeit üblicherweise stärker angegriffen als
@@ -5530,10 +5530,10 @@ ausschließlich aus den Woiwodschaften Kajuwien-Pommern, Lodsch und
 Niederschlesien. Die Datenmenge ist insgesamt gering, mit deutlich mehr
 Daten aus der Frühbronzezeit bis etwa 1700calBC. Aus Mittel- und
 Spätbronzezeit sind nahezu keine Informationen vorhanden. Das gilt
-sowohl für die \emph{burial\_type} als auch die
-\emph{burial\_construction} Variable, wobei erstere immerhin geringfügig
-besser dokumentiert ist. Die relative Entwicklung von \emph{burial type}
-gibt die \emph{realen} -- also dem klassischen, archäologischen Narrativ
+sowohl für die \emph{burial type} als auch die \emph{burial
+construction} Variable, wobei erstere immerhin geringfügig besser
+dokumentiert ist. Die relative Entwicklung von \emph{burial type} gibt
+die \emph{realen} -- also dem klassischen, archäologischen Narrativ
 entsprechend -- Verhältnisse näherungsweise wieder: Körperbestattungen
 waren bis in die Spätbronzezeit in Westpolen tatsächlich deutlich
 häufiger, während Brandbestattungen erst mit der Urnenfelderzeit
@@ -6368,11 +6368,11 @@ Gruppenpopulationsgröße von 50 und einem Grad des
 Zwischengruppenaustauschs von 0.1 (wie Abbildung
 \ref{fig:sim-popsize-crossregions} H). Die Plotmatrix variiert zwischen
 Gleichverteilung zum Startzeitpunkt und den Gegenheiten, wie sie für die
-Variablen \emph{burial\_type} und \emph{burial\_construction} ermittelt
+Variablen \emph{burial type} und \emph{burial construction} ermittelt
 wurden. Außerdem wurde Zwischengruppendistanzmatrizen mit Äquidistanz,
 räumlicher Distanz und durchschnittlicher, kultureller Distanz
 eingesetzt. Es zeigt sich, dass die unausgeglichenen Startverhältnisse
-im Kontext von \emph{burial\_type} \emph{Drift} begünstigen. Dieser
+im Kontext von \emph{burial type} \emph{Drift} begünstigen. Dieser
 Modelltyp gewährt prominenten Ideen grundsätzlich einen Vorteil.
 Andererseits kommt es in einzelnen Durchläufen durchaus dazu, dass sich
 auch die schwache Idee langfristig durchsetzt. Die komplexen, nicht
@@ -6415,18 +6415,18 @@ anderen Gruppen in eine andere Richtung wirkt.
 
 }
 
-\caption[Simulationsparameter: Startkonfigurationen \& Zwischengruppendistanzen]{Simulationsparameter: Startkonfigurationen \& Zwischengruppendistanzen. Wie Abbildung \ref{fig:sim-popsize-crossregions}, allerdings mit anderen Parametern. Auf der X-Achse der Plotmatrix werden Startkonfigurationen, auf der Y-Achse Zwischengruppendistanzmatrizen variiert. eq: equal, sp: spatial, bt: burial\_type, bc: burial\_construction.}\label{fig:sim-startprop-distancemat}
+\caption[Simulationsparameter: Startkonfigurationen \& Zwischengruppendistanzen]{Simulationsparameter: Startkonfigurationen \& Zwischengruppendistanzen. Wie Abbildung \ref{fig:sim-popsize-crossregions}, allerdings mit anderen Parametern. Auf der X-Achse der Plotmatrix werden Startkonfigurationen, auf der Y-Achse Zwischengruppendistanzmatrizen variiert. eq: equal, sp: spatial, bt: burial type, bc: burial construction.}\label{fig:sim-startprop-distancemat}
 \end{figure}
 
 \hypertarget{cultural-and-spatial-distance}{%
 \section{Kulturelle und Räumliche
 Distanz}\label{cultural-and-spatial-distance}}
 
-Die Abweichung der diachronen Entwicklung der Variablen
-\emph{burial\_type} und \emph{burial\_construction} ist Konsequenz der
-jeweils eigenständigen, kulturellen Prozesse und Dynamiken, die die
-definierten Untersuchungsregionen im Laufe der Bronzezeit durchlaufen.
-Die Entwicklungsproxies der Regionen können quantitativ auf Ähnlichkeit
+Die Abweichung der diachronen Entwicklung der Variablen \emph{burial
+type} und \emph{burial construction} ist Konsequenz der jeweils
+eigenständigen, kulturellen Prozesse und Dynamiken, die die definierten
+Untersuchungsregionen im Laufe der Bronzezeit durchlaufen. Die
+Entwicklungsproxies der Regionen können quantitativ auf Ähnlichkeit
 verglichen werden, um ein Distanzmaß für die Unterschiede jeder Region
 zu jeder anderen zu ermitteln. Dieses Maß bezieht sich freilich nur auf
 die einzelnen Variablen, lässt sich jedoch durchaus in einem größeren
@@ -6490,9 +6490,9 @@ Die Distanz ist in diesem Fall also gering: Beide Varianten sind in
 beiden Regionen zu diesem Zeitpunkt in jeweils signifikantem Umfang
 vorhanden.
 
-Die Berechnung von Distanzmatrizen für die beiden Variablen
-\emph{burial\_type} und \emph{burial\_construction} ermöglicht die
-Prüfung ihrer Korrelation. Dafür kam nach Vorlage von
+Die Berechnung von Distanzmatrizen für die beiden Variablen \emph{burial
+type} und \emph{burial construction} ermöglicht die Prüfung ihrer
+Korrelation. Dafür kam nach Vorlage von
 \textcite{porcic_simulating_2014} Mantels Matrix
 Korrelationstest\footnote{\textcite{mantel_detection_1967}} zum Einsatz.
 Neben der der rein kulturellen Korrelation ist aus Perspektive der
@@ -6513,7 +6513,7 @@ sinnvoll möglich ist.
 \subsection{Analyse und Ergebnisse}\label{analyse-und-ergebnisse}}
 
 Die Analyse ist zweigeteilt in einen Abschnitt zu kultureller Distanz
-innerhalb des von den Variablen \emph{burial\_type} und \emph{burial
+innerhalb des von den Variablen \emph{burial type} und \emph{burial
 construction} geschaffenen Bezugssystems, und einen Abschnitt, der
 dieser internen Betrachtung räumliche Distanz gegenüberstellt.
 
@@ -6521,7 +6521,7 @@ dieser internen Betrachtung räumliche Distanz gegenüberstellt.
 \subsubsection{Kulturelle Distanz}\label{kulturelle-distanz}}
 
 Um die kulturelle Distanz zwischen den Regionen basierend auf den
-Variablen \emph{burial\_type} und \emph{burial construction} zu
+Variablen \emph{burial type} und \emph{burial construction} zu
 berechnen, wurden die in Kapitel \ref{descriptive-data-analysis}
 vorgestellten Datensätze zur relativen Entwicklung der Varianten
 weiterverwendet. Diese enthalten zu jedem Jahr im
@@ -6758,15 +6758,15 @@ kultureller und räumlicher Distanz (siehe Abbildung
 Ergebniskorrelation ohne diese Vorgabe näherungsweise normalverteilt um
 den Nullpunkt (siehe Abbildungen \ref{fig:sim-spearman-low-equal}
 und\ref{fig:sim-spearman-high-equal}). Die Korrelation der Variable
-\emph{burial\_construction} liegt im Laufe ihrer gesamten Entwicklung
+\emph{burial construction} liegt im Laufe ihrer gesamten Entwicklung
 durchaus im Rahmen dessen, was auch als Erwartungsbereich einer
 Simulation mit räumlicher Vorgabe ermittelt werden kann. Obgleich die
 auf ihrer Grundlage errechnete Kulturdistanz also nach Teststatistik
 nicht durchgängig signifikant mit räumlicher Distanz korreliert (siehe
 Abbildung \ref{mantel-bc-spatial}), so ist ihre Entwicklung doch
 plausibel vollständig als Effekt räumlicher Interaktion interpretierbar.
-Für \emph{burial\_type} kann diese Aussage so nicht getroffen werden.
-Die Zunahme der Brandbestattung in Europa ab der Mittelbronzezeit ist
+Für \emph{burial type} kann diese Aussage so nicht getroffen werden. Die
+Zunahme der Brandbestattung in Europa ab der Mittelbronzezeit ist
 wahrscheinlich ein Prozess, dem ein nicht-räumliches
 Interaktionsnetzwerk zugrunde liegt. Es ist aufgrund der Überschneidung
 anderer, kultureller Charakteristika und Symbolik im Urnenfelderkontext
@@ -6784,7 +6784,7 @@ falsifizieren und ggf. zeitlich und räumlich explizit zu erfassen.
 \end{landscape}
 
 \begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/sed_simulation/low_equal_interaction} \caption[Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und äquidistantes Gruppendistanznetzwerk]{Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und äquidistantes Gruppendistanznetzwerk. Die Spearmansche Rangkorrelation durchschnittlicher kultureller und räumlicher Distanz wird für Zeitschritte von 200 Jahren abgebildet. Die 100 Simulationsdurchläufe werden durch kleine Markierungspunkte und schwache Verbindungslinien repräsentiert. Alle Durchläufe werden nach Zeitschritten durch Box- und Dotplots zusammengefasst. Die Füllfarbe der Dotplot-Marker gibt das Signifikanznivau des Manteltests für einen Simulationsdurchlauf in einem Zeitschritt wieder. Die Werte der Realweltvariablen \textit{burial\_type} und \textit{burial\_construction} sind in blau und grün auf die Simulationsdaten projiziert. Die horizontale rote Linie hebt den Null-Wert des Korrelationskoeffizienten hervor. Die Simulation basiert auf der üblichen Parameterauswahl, einer konstanten Gruppenpopulationsgröße von 50 und einem Zwischengruppeninteraktionswert von vertikal 0.002 und horizontal 0.01. Die Startverteilung ist gleichwertig und das Distanznetzwerk ist äquidistant.}\label{fig:sim-spearman-low-equal}
+\includegraphics{../neomod_analysis/figures_plots/sed_simulation/low_equal_interaction} \caption[Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und äquidistantes Gruppendistanznetzwerk]{Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und äquidistantes Gruppendistanznetzwerk. Die Spearmansche Rangkorrelation durchschnittlicher kultureller und räumlicher Distanz wird für Zeitschritte von 200 Jahren abgebildet. Die 100 Simulationsdurchläufe werden durch kleine Markierungspunkte und schwache Verbindungslinien repräsentiert. Alle Durchläufe werden nach Zeitschritten durch Box- und Dotplots zusammengefasst. Die Füllfarbe der Dotplot-Marker gibt das Signifikanznivau des Manteltests für einen Simulationsdurchlauf in einem Zeitschritt wieder. Die Werte der Realweltvariablen \textit{burial type} und \textit{burial construction} sind in blau und grün auf die Simulationsdaten projiziert. Die horizontale rote Linie hebt den Null-Wert des Korrelationskoeffizienten hervor. Die Simulation basiert auf der üblichen Parameterauswahl, einer konstanten Gruppenpopulationsgröße von 50 und einem Zwischengruppeninteraktionswert von vertikal 0.002 und horizontal 0.01. Die Startverteilung ist gleichwertig und das Distanznetzwerk ist äquidistant.}\label{fig:sim-spearman-low-equal}
 \end{figure}
 
 \begin{figure}
