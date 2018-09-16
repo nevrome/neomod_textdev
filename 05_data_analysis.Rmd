@@ -469,7 +469,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/simulation_population_
 ```
 \end{landscape}
 
-```{r graph-tulip, echo = FALSE, fig.scap = "Vollständige Darstellung eines von popgenerator erzeugten Netzwerks", fig.cap = "Vollständige Darstellung eines von popgenerator erzeugten Netzwerks. Rot markiert sind individuelle Knoten, die durch graue Kanten verknüpft werden. In dem mittels des Fruchterman-Reingold-Algorithmus angeordneten Visualisierung bilden die Regionalgruppen aufgrund des intern höheren Grads an Verknüpfung dicht gepackte, (diachron) langgestreckte, lineare Strukturen. In wesentlich geringerem Umfang bestehen Querverbindungen zwischen den Gruppen.", out.extra = ""}
+```{r graph-tulip, echo = FALSE, fig.scap = "Vollständige Darstellung eines von popgenerator erzeugten Netzwerks", fig.cap = "Vollständige Darstellung eines von popgenerator erzeugten Netzwerks. Rot markiert sind individuelle Knoten, die durch graue Kanten verknüpft werden. In dem mittels des Fruchterman-Reingold-Algorithmus angeordneten Visualisierung bilden die Regionalgruppen aufgrund des intern höheren Grads an Verknüpfung dicht gepackte, (diachron) langgestreckte, lineare Strukturen. In wesentlich geringerem Umfang bestehen Querverbindungen zwischen den Gruppen.", out.extra = "", out.width = ".9\\textwidth", fig.align = "center", fig.pos = "!t"}
 knitr::include_graphics("../neomod_analysis/figures_plots/simulation_population_graph/population_graph_tulip.jpeg")
 ```
 
@@ -556,7 +556,7 @@ Die Mehrzahl der Kurven in Abbildung \@ref(fig:sed-dev-matrix-bt) für *burial t
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
-```{r sed-dev-bt, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial type} SEDs für jede Region", fig.cap = "Entwicklung der \\textit{burial type} SEDs für jede Region. Alternative Darstellung der Plotmatrix in Abbildung \\ref{fig:sed-dev-matrix-bt}.", out.extra = ""}
+```{r sed-dev-bt, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial type} SEDs für jede Region", fig.cap = "Entwicklung der \\textit{burial type} SEDs für jede Region. Alternative Darstellung der Plotmatrix in Abbildung \\ref{fig:sed-dev-matrix-bt}.", out.extra = "", out.width = ".9\\textwidth", fig.align = "center", fig.pos = "!t"}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_type.jpeg")
 ```
 
@@ -564,7 +564,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_eu
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
-```{r sed-dev-bc, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial construction} SEDs für jede Region", fig.cap = "Entwicklung der \\textit{burial construction} SEDs für jede Region. Alternative Darstellung der Plotmatrix in Abbildung \\ref{fig:sed-dev-matrix-bc}.", out.extra = ""}
+```{r sed-dev-bc, echo = FALSE, fig.scap = "Entwicklung der \\textit{burial construction} SEDs für jede Region", fig.cap = "Entwicklung der \\textit{burial construction} SEDs für jede Region. Alternative Darstellung der Plotmatrix in Abbildung \\ref{fig:sed-dev-matrix-bc}.", out.extra = "", out.width = ".9\\textwidth", fig.align = "center", fig.pos = "!t"}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg")
 ```
 
