@@ -6427,8 +6427,9 @@ zu jeder anderen zu ermitteln. Dieses Maß bezieht sich freilich nur auf
 die einzelnen Variablen, lässt sich jedoch durchaus in einem größeren
 kulturhistorischen Kontext interpretieren.
 
-\hypertarget{fragestellung-und-methode}{%
-\subsection{Fragestellung und Methode}\label{fragestellung-und-methode}}
+\hypertarget{fragestellung-und-methodik}{%
+\subsection{Fragestellung und
+Methodik}\label{fragestellung-und-methodik}}
 
 Eine Kernfragestellung der vorliegenden Arbeit ist, in welchem Umfang
 sich verschiedene Regionen hinsichtlich der untersuchten
@@ -6441,10 +6442,10 @@ diskutiert werden (siehe Kapitel \ref{descriptive-data-analysis}). Noch
 bessere Vergleichbarkeit kann allerdings durch die Einführung eines
 Distanzmaßes erreicht werden. Nach Vorbild von
 \textcite{neiman_stylistic_1995} wurde dafür die quadrierte euklidische
-Distanz (\emph{Squared Euclidian Distance -- SED}) eingeführt. Sie steht
+Distanz (\emph{Squared Euclidian Distance -- SED}) berechnet. Sie steht
 neben verschiedenen anderen Distanzmaßen, die für diesen Zweck hätten
-eingesetzt werden können, und wurde ausgewählt da sie einerseits für das
-Skalenniveau der Proxydaten geeignet ist und andererseits durch die
+eingesetzt werden können, und wurde ausgewählt, da sie einerseits für
+das Skalenniveau der Proxydaten geeignet ist und andererseits durch die
 Quadrierung Unterschiede besonders hervorhebt. Das ist wünschenswert, um
 Übergangsprozesse mit stärkeren Abweichungen zwischen den Regionen
 sichtbar zu machen.
@@ -6468,31 +6469,40 @@ unmittelbar implementiert werden:
   \(p_{jk}\): Relative Häufigkeit der \(k\)ten Variante in Gruppe \(j\)
 \end{itemize}
 
-Ein Beispiel: Das Verhältnis von Brand- zu Körpergrab in der künstlichen
-Region \emph{England} beträgt der Proxyberechnung zufolge im Jahr
-2200calBC 0.25:0.75, also 1:3. Im \emph{Benelux}-Raum sind es 0.5:0.5,
-also 1:1. Diese Angaben kann man in die SED Gleichung einsetzen:
+Ein Beispiel: Das Verhältnis von Brand- (\(Br\)) zu Körpergrab (\(Kö\))
+in der künstlichen Region \emph{England} (\(En\)) beträgt der
+Proxyberechnung zufolge im Jahr 2200calBC 0.25:0.75, also 1:3. Im
+\emph{Benelux}-Raum (\(Be\)) sind es 0.5:0.5, also 1:1. Diese Angaben
+kann man in die SED Gleichung einsetzen:
 
-\[d_{England Benelux}^2 = (p_{England Brandgrab} - p_{Benelux Brandgrab})^2 + (p_{England Körpergrab} - p_{Benelux Körpergrab})^2\]
+\[d_{En Be}^2 = (p_{En Br} - p_{Be Br})^2 + (p_{En Kö} - p_{Be Kö})^2\]
 
-\[d_{England Benelux}^2 = (0.25 - 0.5)^2 + (0.75 - 0.5)^2\]
+\[d_{En Be}^2 = (0.25 - 0.5)^2 + (0.75 - 0.5)^2\]
 
-\[d_{England Benelux}^2 = 0.125\]
+\[d_{En Be}^2 = 0.125\]
 
 Die Distanz ist in diesem Fall also gering: Beide Varianten sind in
-beiden Regionen zu diesem Zeitpunkt in größerem Umfang vorhanden.
+beiden Regionen zu diesem Zeitpunkt in jeweils signifikantem Umfang
+vorhanden.
 
-Korrelieren die beiden Kulturdistanten?
-
-Mantel Test: Was das, und warum?
-
-Toblers Gesetz
-
-Im Fall der großen, künstlichen und sich gegenseitig sogar überlappenden
-Regionen, die in dieser Arbeit als Untersuchungseinheiten festgelegt
-wurden, kann das nur mithilfe von Distanzklassen umgesetzt werden.
-Realitätsnähere oder auch nur kontinuierlich skalierte Distanzen
-erfordern eine Festlegung von Punkten
+Die Berechnung von Distanzmatrizen für die beiden Variablen
+\emph{burial\_type} und \emph{burial\_construction} ermöglicht die
+Prüfung ihrer Korrelation. Dafür kam nach Vorlage von
+\textcite{porcic_simulating_2014} Mantels Matrix
+Korrelationstest\footnote{\textcite{mantel_detection_1967}} zum Einsatz.
+Neben der der rein kulturellen Korrelation ist aus Perspektive der
+klassischen \emph{Diffusion of Innovation} Forschung eine besondere
+Betrachtung der kulturellen im Vergleich zur räumlichen Distanz
+sinnvoll: \emph{Tobler's first law of geography} besagt, dass Phänomene,
+die näher beinander sind, einander tendenziell eher ähneln\footnote{\textcite{tobler_computer_1970}}.
+Entsprechend ist eine Korrelation von räumlicher und kultureller Distanz
+in einzelnen Zeitscheiben zu prüfen. Im Fall der großen, künstlichen und
+sich gegenseitig sogar überlappenden Regionen, die in dieser Arbeit als
+Untersuchungseinheiten festgelegt wurden, kann das hinsichtliche der
+räumlichen Distanz nur mithilfe von Distanzklassen umgesetzt werden.
+Realitätsnähere oder auch nur kontinuierlich skalierte Distanzen würden
+eine Festlegung von Beobachtungspunkten erfordern, was hier nicht
+sinnvoll möglich ist.
 
 \hypertarget{analyse-und-ergebnisse}{%
 \subsection{Analyse und Ergebnisse}\label{analyse-und-ergebnisse}}
@@ -6513,11 +6523,11 @@ weiterverwendet. Diese enthalten zu jedem Jahr im
 Untersuchungszeitfenster 2200-800calBC Proxyinformationen zum relativen
 Anteil der verschiedenen Bestattungsformen in den in Kapitel
 \ref{data-prep-and-segmentation} etablierten, künstlichen
-Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die
-Squared Euclidian Distance (SED) zwischen jeder Region berechnen. Die
-Abbildungen \ref{fig:sed-dev-matrix-bt} und \ref{fig:sed-dev-matrix-bc}
-zeigen den Verlauf der SED-Entwicklung für jede Regionenbeziehung in
-einer Plotmatrix.
+Untersuchungsregionen. Auf dieser Grundlage lässt sich jahrweise die SED
+zwischen jeder Region berechnen. Die Abbildungen
+\ref{fig:sed-dev-matrix-bt} und \ref{fig:sed-dev-matrix-bc} zeigen den
+Verlauf der SED-Entwicklung für jede Regionenbeziehung in einer
+Plotmatrix.
 
 Die Mehrzahl der Kurven in Abbildung \ref{fig:sed-dev-matrix-bt} für
 \emph{burial type} entspricht den Erwartungen: Zu Beginn der Bronzezeit
