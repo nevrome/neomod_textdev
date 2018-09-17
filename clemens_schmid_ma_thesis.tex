@@ -6463,15 +6463,15 @@ und \ref{fig:development-proportions-regions-burial-construction})
 bietet dafür eine gute Ausgangsposition und kann durchaus in sich
 diskutiert werden (siehe Kapitel \ref{descriptive-data-analysis}). Noch
 bessere Vergleichbarkeit kann allerdings durch die Einführung eines
-Distanzmaßes erreicht werden. Nach Vorbild von
+quantitativen Distanzmaßes erreicht werden. Nach Vorbild von
 \textcite{neiman_stylistic_1995} wurde dafür die quadrierte euklidische
 Distanz (\emph{Squared Euclidian Distance -- SED}) berechnet. Sie steht
 neben verschiedenen anderen Distanzmaßen, die für diesen Zweck hätten
 eingesetzt werden können, und wurde ausgewählt, da sie einerseits für
 das Skalenniveau der Proxydaten geeignet ist und andererseits durch die
 Quadrierung Unterschiede besonders hervorhebt. Das ist wünschenswert, um
-Übergangsprozesse mit stärkeren Abweichungen zwischen den Regionen
-sichtbar zu machen.
+regional unterschiedliche Übergangsprozesse als deutliche Abweichungen
+zwischen den Regionen sichtbar zu machen.
 
 Die Berechnung der SED basiert auf einer einfachen Gleichung und kann
 unmittelbar implementiert werden:
@@ -6496,7 +6496,7 @@ Ein Beispiel: Das Verhältnis von Brand- (\(Br\)) zu Körpergrab (\(Kö\))
 in der künstlichen Region \emph{England} (\(En\)) beträgt der
 Proxyberechnung zufolge im Jahr 2200calBC 0.25:0.75, also 1:3. Im
 \emph{Benelux}-Raum (\(Be\)) sind es 0.5:0.5, also 1:1. Diese Angaben
-kann man in die SED Gleichung einsetzen:
+kann man folgendermaßen in die SED Gleichung einsetzen:
 
 \[d_{En Be}^2 = (p_{En Br} - p_{Be Br})^2 + (p_{En Kö} - p_{Be Kö})^2\]
 
@@ -6514,16 +6514,17 @@ Korrelation. Dafür kam nach Vorlage von
 \textcite{porcic_simulating_2014} Mantels Matrix
 Korrelationstest\footnote{\textcite{mantel_detection_1967}} zum Einsatz.
 Neben der der rein kulturellen Korrelation ist aus Perspektive der
-klassischen \emph{Diffusion of Innovation} Forschung eine besondere
-Betrachtung der kulturellen im Vergleich zur räumlichen Distanz
-sinnvoll: \emph{Tobler's first law of geography} besagt, dass Phänomene,
-die näher beinander sind, einander tendenziell eher ähneln\footnote{\textcite{tobler_computer_1970}}.
-Entsprechend ist eine Korrelation von räumlicher und kultureller Distanz
-in einzelnen Zeitscheiben zu prüfen. Im Fall der großen, künstlichen und
-sich gegenseitig sogar überlappenden Regionen, die in dieser Arbeit als
+klassischen \emph{Diffusion of Innovation} Forschung eine vergleichende
+Betrachtung unter Einbezug der räumlichen Distanz sinnvoll:
+\emph{Tobler's first law of geography} besagt, dass Phänomene in
+größerer, geographischer Nähe einander tendenziell stärker
+ähneln\footnote{\textcite{tobler_computer_1970}}. Entsprechend ist eine
+Korrelation von räumlicher und kultureller Distanz in einzelnen
+Zeitscheiben zu prüfen. Im Fall der großen, künstlichen und sich
+gegenseitig sogar überlappenden Regionen, die in dieser Arbeit als
 Untersuchungseinheiten festgelegt wurden, kann das hinsichtliche der
 räumlichen Distanz nur mithilfe von Distanzklassen umgesetzt werden.
-Realitätsnähere oder auch nur kontinuierlich skalierte Distanzen würden
+Realitätsnahe oder auch nur kontinuierlich skalierte Distanzen würden
 eine Festlegung von Beobachtungspunkten erfordern, was hier nicht
 sinnvoll möglich ist.
 
@@ -6637,7 +6638,7 @@ und \emph{England} verhalten sich hinsichtlich der Entwicklung von
 Flach- und Hügelgrabsitte bemerkenswert ähnlich.
 
 \begin{figure}
-\includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type} \caption[Matrix der durchschnittlichen SEDs für \textit{burial type}]{Matrix der durchschnittlichen SEDs für \textit{burial type}.}\label{fig:sed-mean-matrix-bt}
+\includegraphics{../neomod_analysis/figures_plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type} \caption[Matrix der durchschnittlichen SEDs für \textit{burial type}]{Matrix der durchschnittlichen SEDs für \textit{burial type}. Diese und die in Abbildung \ref{fig:sed-mean-matrix-bc} dargestellte Matrix sind Eingabedaten von Simulationen in Abbildung \ref{sim-startprop-distancemat}.}\label{fig:sed-mean-matrix-bt}
 \end{figure}
 
 \begin{figure}
