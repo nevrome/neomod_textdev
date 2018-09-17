@@ -626,7 +626,7 @@ knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/low_equ
 knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/high_equal_interaction.jpeg")
 ```
 
-```{r sim-spearman-low-spatial, echo = FALSE, fig.scap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und räumliches Gruppendistanznetzwerk", fig.cap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und räumliches Gruppendistanznetzwerk. Wie Abbildung \\ref{fig:sim-spearman-low-equal}, die Simulation aber mit räumlichen Distanznetzwerk.", out.extra = ""}
+```{r sim-spearman-low-spatial, echo = FALSE, fig.scap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und räumliches Gruppendistanznetzwerk", fig.cap = "Simulationsergebnisse: Rangkorrelation kultureller und räumlicher Distanz für niedere Interaktion und räumliches Gruppendistanznetzwerk. Wie Abbildung \\ref{fig:sim-spearman-low-equal}, die Simulation aber mit räumlichem Distanznetzwerk.", out.extra = ""}
 knitr::include_graphics("../neomod_analysis/figures_plots/sed_simulation/low_spatial_interaction.jpeg")
 ```
 
