@@ -52,7 +52,7 @@ tibble::tribble(
                                    "Favoured topics:", "Mating, parenting, sex differences",   "Subsistence, reproductive strategies", "Large-scale cooperation, maladaptation"
                  ) %>%
   knitr::kable(
-    caption = "Three Styles of Evolutionary Explanation (nach \\textcite{SmithThreestylesevolutionary2000})",
+    caption = "Three Styles of Evolutionary Explanation nach \\textcite{SmithThreestylesevolutionary2000}",
     format = "latex",
     booktabs = T,
     escape = F,
