@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/nevrome/neomod_textdev.svg?token=vxsQ9RjxoGASGtX4Q8jc&branch=master)](https://travis-ci.com/nevrome/neomod_textdev)
+[![Build Status](https://travis-ci.com/nevrome/neomod_textdev.svg?token=vxsQ9RjxoGASGtX4Q8jc&branch=master)](https://travis-ci.com/nevrome/neomod_textdev) [![DOI](https://zenodo.org/badge/90750543.svg)](https://zenodo.org/badge/latestdoi/90750543)
 
 Text of my master thesis *Ein computerbasiertes Cultural Evolution Modell zur Ausbreitungsdynamik europäisch-bronzezeitlicher Bestattungssitten*. 
 
